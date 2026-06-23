@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>eduroam Outer Identity Map</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #f7f8fb;
+      color: #111827;
+    }
+    header {
+      background: white;
+      padding: 28px 36px 18px 36px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 28px;
+    }
+    .subtitle {
+      color: #4b5563;
+      line-height: 1.5;
+      max-width: 1050px;
+    }
+    .tabs {
+      padding: 18px 36px 0 36px;
+      display: flex;
+      gap: 10px;
+    }
+    button {
+      border: 1px solid #d1d5db;
+      background: white;
+      padding: 10px 16px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    button.active {
+      background: #111827;
+      color: white;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(150px, 1fr));
+      gap: 14px;
+      padding: 20px 36px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+    .label {
+      color: #6b7280;
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    .value {
+      font-size: 26px;
+      font-weight: 800;
+    }
+    #map {
+      height: 680px;
+      margin: 0 24px 24px 24px;
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .section {
+      padding: 0 36px 34px 36px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border: 1px solid #e5e7eb;
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+      font-size: 14px;
+    }
+    th {
+      background: #f3f4f6;
+    }
+    .note {
+      margin-top: 12px;
+      color: #6b7280;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    code {
+      background: #f3f4f6;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>eduroam Android Profile Outer Identity Map</h1>
+    <div class="subtitle">
+      Country-level distribution of Android eap-config profiles.
+      Darker countries have a higher percentage of profiles that do <b>not</b> explicitly contain
+      an <code>OuterIdentity</code> or <code>AnonymousIdentity</code> field.
+      This is profile-level analysis only.
+    </div>
+  </header>
+
+  <div class="tabs">
+    <button id="btn-geteduroam" class="active" onclick="setDataset('geteduroam')">geteduroam discovery</button>
+    <button id="btn-cat" onclick="setDataset('cat')">CAT User API</button>
+  </div>
+
+  <div class="cards">
+    <div class="card"><div class="label">Countries</div><div class="value" id="countries"></div></div>
+    <div class="card"><div class="label">Profiles</div><div class="value" id="profiles"></div></div>
+    <div class="card"><div class="label">Outer identity exists</div><div class="value" id="exists"></div></div>
+    <div class="card"><div class="label">Outer identity missing</div><div class="value" id="missing"></div></div>
+  </div>
+
+  <div id="map"></div>
+
+  <div class="section">
+    <h2>Countries with highest missing outer identity percentage</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Profiles</th>
+          <th>Outer identity exists</th>
+          <th>Outer identity missing</th>
+          <th>Missing %</th>
+        </tr>
+      </thead>
+      <tbody id="top-table"></tbody>
+    </table>
+    <div class="note" id="note"></div>
+  </div>
+
+<script>
+const datasets = {"geteduroam": [{"dataset": "geteduroam", "country_code": "AE", "iso3": "ARE", "country": "United Arab Emirates", "profiles": 6, "outer_identity_exists": 0, "outer_identity_not_exists": 6, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "AM", "iso3": "ARM", "country": "Armenia", "profiles": 14, "outer_identity_exists": 0, "outer_identity_not_exists": 14, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "CZ", "iso3": "CZE", "country": "Czechia", "profiles": 2, "outer_identity_exists": 0, "outer_identity_not_exists": 2, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "ET", "iso3": "ETH", "country": "Ethiopia", "profiles": 62, "outer_identity_exists": 0, "outer_identity_not_exists": 62, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "GE", "iso3": "GEO", "country": "Georgia", "profiles": 22, "outer_identity_exists": 0, "outer_identity_not_exists": 22, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "GH", "iso3": "GHA", "country": "Ghana", "profiles": 46, "outer_identity_exists": 0, "outer_identity_not_exists": 46, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "IL", "iso3": "ISR", "country": "Israel", "profiles": 14, "outer_identity_exists": 0, "outer_identity_not_exists": 14, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "MA", "iso3": "MAR", "country": "Morocco", "profiles": 2, "outer_identity_exists": 0, "outer_identity_not_exists": 2, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "MK", "iso3": "MKD", "country": "North Macedonia", "profiles": 2, "outer_identity_exists": 0, "outer_identity_not_exists": 2, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "MW", "iso3": "MWI", "country": "Malawi", "profiles": 2, "outer_identity_exists": 0, "outer_identity_not_exists": 2, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "MX", "iso3": "MEX", "country": "Mexico", "profiles": 14, "outer_identity_exists": 0, "outer_identity_not_exists": 14, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "OM", "iso3": "OMN", "country": "Oman", "profiles": 38, "outer_identity_exists": 0, "outer_identity_not_exists": 38, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "PE", "iso3": "PER", "country": "Peru", "profiles": 6, "outer_identity_exists": 0, "outer_identity_not_exists": 6, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "SG", "iso3": "SGP", "country": "Singapore", "profiles": 2, "outer_identity_exists": 0, "outer_identity_not_exists": 2, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "SK", "iso3": "SVK", "country": "Slovakia", "profiles": 2, "outer_identity_exists": 0, "outer_identity_not_exists": 2, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "UA", "iso3": "UKR", "country": "Ukraine", "profiles": 22, "outer_identity_exists": 0, "outer_identity_not_exists": 22, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "ZM", "iso3": "ZMB", "country": "Zambia", "profiles": 28, "outer_identity_exists": 0, "outer_identity_not_exists": 28, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "geteduroam", "country_code": "EC", "iso3": "ECU", "country": "Ecuador", "profiles": 78, "outer_identity_exists": 2, "outer_identity_not_exists": 76, "outer_identity_exists_pct": 2.56, "outer_identity_not_exists_pct": 97.44}, {"dataset": "geteduroam", "country_code": "JP", "iso3": "JPN", "country": "Japan", "profiles": 76, "outer_identity_exists": 2, "outer_identity_not_exists": 74, "outer_identity_exists_pct": 2.63, "outer_identity_not_exists_pct": 97.37}, {"dataset": "geteduroam", "country_code": "PT", "iso3": "PRT", "country": "Portugal", "profiles": 66, "outer_identity_exists": 4, "outer_identity_not_exists": 62, "outer_identity_exists_pct": 6.06, "outer_identity_not_exists_pct": 93.94}, {"dataset": "geteduroam", "country_code": "UG", "iso3": "UGA", "country": "Uganda", "profiles": 60, "outer_identity_exists": 4, "outer_identity_not_exists": 56, "outer_identity_exists_pct": 6.67, "outer_identity_not_exists_pct": 93.33}, {"dataset": "geteduroam", "country_code": "AU", "iso3": "AUS", "country": "Australia", "profiles": 54, "outer_identity_exists": 4, "outer_identity_not_exists": 50, "outer_identity_exists_pct": 7.41, "outer_identity_not_exists_pct": 92.59}, {"dataset": "geteduroam", "country_code": "NO", "iso3": "NOR", "country": "Norway", "profiles": 24, "outer_identity_exists": 2, "outer_identity_not_exists": 22, "outer_identity_exists_pct": 8.33, "outer_identity_not_exists_pct": 91.67}, {"dataset": "geteduroam", "country_code": "CO", "iso3": "COL", "country": "Colombia", "profiles": 22, "outer_identity_exists": 2, "outer_identity_not_exists": 20, "outer_identity_exists_pct": 9.09, "outer_identity_not_exists_pct": 90.91}, {"dataset": "geteduroam", "country_code": "KE", "iso3": "KEN", "country": "Kenya", "profiles": 36, "outer_identity_exists": 4, "outer_identity_not_exists": 32, "outer_identity_exists_pct": 11.11, "outer_identity_not_exists_pct": 88.89}, {"dataset": "geteduroam", "country_code": "LT", "iso3": "LTU", "country": "Lithuania", "profiles": 9, "outer_identity_exists": 1, "outer_identity_not_exists": 8, "outer_identity_exists_pct": 11.11, "outer_identity_not_exists_pct": 88.89}, {"dataset": "geteduroam", "country_code": "AR", "iso3": "ARG", "country": "Argentina", "profiles": 14, "outer_identity_exists": 2, "outer_identity_not_exists": 12, "outer_identity_exists_pct": 14.29, "outer_identity_not_exists_pct": 85.71}, {"dataset": "geteduroam", "country_code": "TR", "iso3": "TUR", "country": "Turkey", "profiles": 11, "outer_identity_exists": 2, "outer_identity_not_exists": 9, "outer_identity_exists_pct": 18.18, "outer_identity_not_exists_pct": 81.82}, {"dataset": "geteduroam", "country_code": "TZ", "iso3": "TZA", "country": "Tanzania", "profiles": 20, "outer_identity_exists": 4, "outer_identity_not_exists": 16, "outer_identity_exists_pct": 20.0, "outer_identity_not_exists_pct": 80.0}, {"dataset": "geteduroam", "country_code": "US", "iso3": "USA", "country": "United States", "profiles": 385, "outer_identity_exists": 83, "outer_identity_not_exists": 302, "outer_identity_exists_pct": 21.56, "outer_identity_not_exists_pct": 78.44}, {"dataset": "geteduroam", "country_code": "AT", "iso3": "AUT", "country": "Austria", "profiles": 45, "outer_identity_exists": 10, "outer_identity_not_exists": 35, "outer_identity_exists_pct": 22.22, "outer_identity_not_exists_pct": 77.78}, {"dataset": "geteduroam", "country_code": "SE", "iso3": "SWE", "country": "Sweden", "profiles": 9, "outer_identity_exists": 2, "outer_identity_not_exists": 7, "outer_identity_exists_pct": 22.22, "outer_identity_not_exists_pct": 77.78}, {"dataset": "geteduroam", "country_code": "UK", "iso3": "GBR", "country": "United Kingdom", "profiles": 356, "outer_identity_exists": 87, "outer_identity_not_exists": 269, "outer_identity_exists_pct": 24.44, "outer_identity_not_exists_pct": 75.56}, {"dataset": "geteduroam", "country_code": "NG", "iso3": "NGA", "country": "Nigeria", "profiles": 8, "outer_identity_exists": 2, "outer_identity_not_exists": 6, "outer_identity_exists_pct": 25.0, "outer_identity_not_exists_pct": 75.0}, {"dataset": "geteduroam", "country_code": "PL", "iso3": "POL", "country": "Poland", "profiles": 24, "outer_identity_exists": 6, "outer_identity_not_exists": 18, "outer_identity_exists_pct": 25.0, "outer_identity_not_exists_pct": 75.0}, {"dataset": "geteduroam", "country_code": "BE", "iso3": "BEL", "country": "Belgium", "profiles": 23, "outer_identity_exists": 7, "outer_identity_not_exists": 16, "outer_identity_exists_pct": 30.43, "outer_identity_not_exists_pct": 69.57}, {"dataset": "geteduroam", "country_code": "CR", "iso3": "CRI", "country": "Costa Rica", "profiles": 6, "outer_identity_exists": 2, "outer_identity_not_exists": 4, "outer_identity_exists_pct": 33.33, "outer_identity_not_exists_pct": 66.67}, {"dataset": "geteduroam", "country_code": "ZA", "iso3": "ZAF", "country": "South Africa", "profiles": 24, "outer_identity_exists": 8, "outer_identity_not_exists": 16, "outer_identity_exists_pct": 33.33, "outer_identity_not_exists_pct": 66.67}, {"dataset": "geteduroam", "country_code": "BR", "iso3": "BRA", "country": "Brazil", "profiles": 233, "outer_identity_exists": 78, "outer_identity_not_exists": 155, "outer_identity_exists_pct": 33.48, "outer_identity_not_exists_pct": 66.52}, {"dataset": "geteduroam", "country_code": "NL", "iso3": "NLD", "country": "Netherlands", "profiles": 53, "outer_identity_exists": 20, "outer_identity_not_exists": 33, "outer_identity_exists_pct": 37.74, "outer_identity_not_exists_pct": 62.26}, {"dataset": "geteduroam", "country_code": "DK", "iso3": "DNK", "country": "Denmark", "profiles": 10, "outer_identity_exists": 4, "outer_identity_not_exists": 6, "outer_identity_exists_pct": 40.0, "outer_identity_not_exists_pct": 60.0}, {"dataset": "geteduroam", "country_code": "CH", "iso3": "CHE", "country": "Switzerland", "profiles": 28, "outer_identity_exists": 12, "outer_identity_not_exists": 16, "outer_identity_exists_pct": 42.86, "outer_identity_not_exists_pct": 57.14}, {"dataset": "geteduroam", "country_code": "IT", "iso3": "ITA", "country": "Italy", "profiles": 88, "outer_identity_exists": 40, "outer_identity_not_exists": 48, "outer_identity_exists_pct": 45.45, "outer_identity_not_exists_pct": 54.55}, {"dataset": "geteduroam", "country_code": "CL", "iso3": "CHL", "country": "Chile", "profiles": 71, "outer_identity_exists": 33, "outer_identity_not_exists": 38, "outer_identity_exists_pct": 46.48, "outer_identity_not_exists_pct": 53.52}, {"dataset": "geteduroam", "country_code": "NP", "iso3": "NPL", "country": "Nepal", "profiles": 12, "outer_identity_exists": 6, "outer_identity_not_exists": 6, "outer_identity_exists_pct": 50.0, "outer_identity_not_exists_pct": 50.0}, {"dataset": "geteduroam", "country_code": "NZ", "iso3": "NZL", "country": "New Zealand", "profiles": 12, "outer_identity_exists": 6, "outer_identity_not_exists": 6, "outer_identity_exists_pct": 50.0, "outer_identity_not_exists_pct": 50.0}, {"dataset": "geteduroam", "country_code": "MY", "iso3": "MYS", "country": "Malaysia", "profiles": 68, "outer_identity_exists": 36, "outer_identity_not_exists": 32, "outer_identity_exists_pct": 52.94, "outer_identity_not_exists_pct": 47.06}, {"dataset": "geteduroam", "country_code": "IE", "iso3": "IRL", "country": "Ireland", "profiles": 34, "outer_identity_exists": 20, "outer_identity_not_exists": 14, "outer_identity_exists_pct": 58.82, "outer_identity_not_exists_pct": 41.18}, {"dataset": "geteduroam", "country_code": "ES", "iso3": "ESP", "country": "Spain", "profiles": 141, "outer_identity_exists": 89, "outer_identity_not_exists": 52, "outer_identity_exists_pct": 63.12, "outer_identity_not_exists_pct": 36.88}, {"dataset": "geteduroam", "country_code": "BG", "iso3": "BGR", "country": "Bulgaria", "profiles": 12, "outer_identity_exists": 8, "outer_identity_not_exists": 4, "outer_identity_exists_pct": 66.67, "outer_identity_not_exists_pct": 33.33}, {"dataset": "geteduroam", "country_code": "PH", "iso3": "PHL", "country": "Philippines", "profiles": 24, "outer_identity_exists": 16, "outer_identity_not_exists": 8, "outer_identity_exists_pct": 66.67, "outer_identity_not_exists_pct": 33.33}, {"dataset": "geteduroam", "country_code": "GR", "iso3": "GRC", "country": "Greece", "profiles": 44, "outer_identity_exists": 30, "outer_identity_not_exists": 14, "outer_identity_exists_pct": 68.18, "outer_identity_not_exists_pct": 31.82}, {"dataset": "geteduroam", "country_code": "FR", "iso3": "FRA", "country": "France", "profiles": 233, "outer_identity_exists": 164, "outer_identity_not_exists": 69, "outer_identity_exists_pct": 70.39, "outer_identity_not_exists_pct": 29.61}, {"dataset": "geteduroam", "country_code": "CA", "iso3": "CAN", "country": "Canada", "profiles": 157, "outer_identity_exists": 130, "outer_identity_not_exists": 27, "outer_identity_exists_pct": 82.8, "outer_identity_not_exists_pct": 17.2}, {"dataset": "geteduroam", "country_code": "DE", "iso3": "DEU", "country": "Germany", "profiles": 268, "outer_identity_exists": 225, "outer_identity_not_exists": 43, "outer_identity_exists_pct": 83.96, "outer_identity_not_exists_pct": 16.04}, {"dataset": "geteduroam", "country_code": "FI", "iso3": "FIN", "country": "Finland", "profiles": 18, "outer_identity_exists": 16, "outer_identity_not_exists": 2, "outer_identity_exists_pct": 88.89, "outer_identity_not_exists_pct": 11.11}, {"dataset": "geteduroam", "country_code": "TW", "iso3": "TWN", "country": "Taiwan", "profiles": 38, "outer_identity_exists": 34, "outer_identity_not_exists": 4, "outer_identity_exists_pct": 89.47, "outer_identity_not_exists_pct": 10.53}, {"dataset": "geteduroam", "country_code": "BD", "iso3": "BGD", "country": "Bangladesh", "profiles": 38, "outer_identity_exists": 36, "outer_identity_not_exists": 2, "outer_identity_exists_pct": 94.74, "outer_identity_not_exists_pct": 5.26}, {"dataset": "geteduroam", "country_code": "BW", "iso3": "BWA", "country": "Botswana", "profiles": 2, "outer_identity_exists": 2, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "geteduroam", "country_code": "HR", "iso3": "HRV", "country": "Croatia", "profiles": 4, "outer_identity_exists": 4, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "geteduroam", "country_code": "HU", "iso3": "HUN", "country": "Hungary", "profiles": 2, "outer_identity_exists": 2, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "geteduroam", "country_code": "LU", "iso3": "LUX", "country": "Luxembourg", "profiles": 2, "outer_identity_exists": 2, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "geteduroam", "country_code": "MT", "iso3": "MLT", "country": "Malta", "profiles": 1, "outer_identity_exists": 1, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "geteduroam", "country_code": "SA", "iso3": "SAU", "country": "Saudi Arabia", "profiles": 2, "outer_identity_exists": 2, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "geteduroam", "country_code": "SI", "iso3": "SVN", "country": "Slovenia", "profiles": 6, "outer_identity_exists": 6, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "geteduroam", "country_code": "UY", "iso3": "URY", "country": "Uruguay", "profiles": 2, "outer_identity_exists": 2, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}], "cat": [{"dataset": "cat", "country_code": "AE", "iso3": "ARE", "country": "United Arab Emirates", "profiles": 3, "outer_identity_exists": 0, "outer_identity_not_exists": 3, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "AM", "iso3": "ARM", "country": "Armenia", "profiles": 6, "outer_identity_exists": 0, "outer_identity_not_exists": 6, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "CZ", "iso3": "CZE", "country": "Czechia", "profiles": 5, "outer_identity_exists": 0, "outer_identity_not_exists": 5, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "ET", "iso3": "ETH", "country": "Ethiopia", "profiles": 32, "outer_identity_exists": 0, "outer_identity_not_exists": 32, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "GE", "iso3": "GEO", "country": "Georgia", "profiles": 11, "outer_identity_exists": 0, "outer_identity_not_exists": 11, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "GH", "iso3": "GHA", "country": "Ghana", "profiles": 23, "outer_identity_exists": 0, "outer_identity_not_exists": 23, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "IL", "iso3": "ISR", "country": "Israel", "profiles": 8, "outer_identity_exists": 0, "outer_identity_not_exists": 8, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "IS", "iso3": "ISL", "country": "Iceland", "profiles": 1, "outer_identity_exists": 0, "outer_identity_not_exists": 1, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "LK", "iso3": "LKA", "country": "Sri Lanka", "profiles": 1, "outer_identity_exists": 0, "outer_identity_not_exists": 1, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "LT", "iso3": "LTU", "country": "Lithuania", "profiles": 4, "outer_identity_exists": 0, "outer_identity_not_exists": 4, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "MK", "iso3": "MKD", "country": "North Macedonia", "profiles": 1, "outer_identity_exists": 0, "outer_identity_not_exists": 1, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "MW", "iso3": "MWI", "country": "Malawi", "profiles": 1, "outer_identity_exists": 0, "outer_identity_not_exists": 1, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "MX", "iso3": "MEX", "country": "Mexico", "profiles": 7, "outer_identity_exists": 0, "outer_identity_not_exists": 7, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "OM", "iso3": "OMN", "country": "Oman", "profiles": 17, "outer_identity_exists": 0, "outer_identity_not_exists": 17, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "PE", "iso3": "PER", "country": "Peru", "profiles": 3, "outer_identity_exists": 0, "outer_identity_not_exists": 3, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "PK", "iso3": "PAK", "country": "Pakistan", "profiles": 1, "outer_identity_exists": 0, "outer_identity_not_exists": 1, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "SG", "iso3": "SGP", "country": "Singapore", "profiles": 1, "outer_identity_exists": 0, "outer_identity_not_exists": 1, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "SK", "iso3": "SVK", "country": "Slovakia", "profiles": 1, "outer_identity_exists": 0, "outer_identity_not_exists": 1, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "UA", "iso3": "UKR", "country": "Ukraine", "profiles": 16, "outer_identity_exists": 0, "outer_identity_not_exists": 16, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "ZM", "iso3": "ZMB", "country": "Zambia", "profiles": 13, "outer_identity_exists": 0, "outer_identity_not_exists": 13, "outer_identity_exists_pct": 0.0, "outer_identity_not_exists_pct": 100.0}, {"dataset": "cat", "country_code": "EC", "iso3": "ECU", "country": "Ecuador", "profiles": 39, "outer_identity_exists": 1, "outer_identity_not_exists": 38, "outer_identity_exists_pct": 2.56, "outer_identity_not_exists_pct": 97.44}, {"dataset": "cat", "country_code": "JP", "iso3": "JPN", "country": "Japan", "profiles": 38, "outer_identity_exists": 1, "outer_identity_not_exists": 37, "outer_identity_exists_pct": 2.63, "outer_identity_not_exists_pct": 97.37}, {"dataset": "cat", "country_code": "AU", "iso3": "AUS", "country": "Australia", "profiles": 26, "outer_identity_exists": 1, "outer_identity_not_exists": 25, "outer_identity_exists_pct": 3.85, "outer_identity_not_exists_pct": 96.15}, {"dataset": "cat", "country_code": "PT", "iso3": "PRT", "country": "Portugal", "profiles": 33, "outer_identity_exists": 2, "outer_identity_not_exists": 31, "outer_identity_exists_pct": 6.06, "outer_identity_not_exists_pct": 93.94}, {"dataset": "cat", "country_code": "UG", "iso3": "UGA", "country": "Uganda", "profiles": 29, "outer_identity_exists": 2, "outer_identity_not_exists": 27, "outer_identity_exists_pct": 6.9, "outer_identity_not_exists_pct": 93.1}, {"dataset": "cat", "country_code": "CO", "iso3": "COL", "country": "Colombia", "profiles": 11, "outer_identity_exists": 1, "outer_identity_not_exists": 10, "outer_identity_exists_pct": 9.09, "outer_identity_not_exists_pct": 90.91}, {"dataset": "cat", "country_code": "NO", "iso3": "NOR", "country": "Norway", "profiles": 11, "outer_identity_exists": 1, "outer_identity_not_exists": 10, "outer_identity_exists_pct": 9.09, "outer_identity_not_exists_pct": 90.91}, {"dataset": "cat", "country_code": "KE", "iso3": "KEN", "country": "Kenya", "profiles": 18, "outer_identity_exists": 2, "outer_identity_not_exists": 16, "outer_identity_exists_pct": 11.11, "outer_identity_not_exists_pct": 88.89}, {"dataset": "cat", "country_code": "AR", "iso3": "ARG", "country": "Argentina", "profiles": 8, "outer_identity_exists": 1, "outer_identity_not_exists": 7, "outer_identity_exists_pct": 12.5, "outer_identity_not_exists_pct": 87.5}, {"dataset": "cat", "country_code": "TZ", "iso3": "TZA", "country": "Tanzania", "profiles": 10, "outer_identity_exists": 2, "outer_identity_not_exists": 8, "outer_identity_exists_pct": 20.0, "outer_identity_not_exists_pct": 80.0}, {"dataset": "cat", "country_code": "TR", "iso3": "TUR", "country": "Turkey", "profiles": 50, "outer_identity_exists": 11, "outer_identity_not_exists": 39, "outer_identity_exists_pct": 22.0, "outer_identity_not_exists_pct": 78.0}, {"dataset": "cat", "country_code": "US", "iso3": "USA", "country": "United States", "profiles": 184, "outer_identity_exists": 41, "outer_identity_not_exists": 143, "outer_identity_exists_pct": 22.28, "outer_identity_not_exists_pct": 77.72}, {"dataset": "cat", "country_code": "UK", "iso3": "GBR", "country": "United Kingdom", "profiles": 161, "outer_identity_exists": 38, "outer_identity_not_exists": 123, "outer_identity_exists_pct": 23.6, "outer_identity_not_exists_pct": 76.4}, {"dataset": "cat", "country_code": "AT", "iso3": "AUT", "country": "Austria", "profiles": 21, "outer_identity_exists": 5, "outer_identity_not_exists": 16, "outer_identity_exists_pct": 23.81, "outer_identity_not_exists_pct": 76.19}, {"dataset": "cat", "country_code": "NG", "iso3": "NGA", "country": "Nigeria", "profiles": 4, "outer_identity_exists": 1, "outer_identity_not_exists": 3, "outer_identity_exists_pct": 25.0, "outer_identity_not_exists_pct": 75.0}, {"dataset": "cat", "country_code": "PL", "iso3": "POL", "country": "Poland", "profiles": 12, "outer_identity_exists": 3, "outer_identity_not_exists": 9, "outer_identity_exists_pct": 25.0, "outer_identity_not_exists_pct": 75.0}, {"dataset": "cat", "country_code": "ZA", "iso3": "ZAF", "country": "South Africa", "profiles": 11, "outer_identity_exists": 3, "outer_identity_not_exists": 8, "outer_identity_exists_pct": 27.27, "outer_identity_not_exists_pct": 72.73}, {"dataset": "cat", "country_code": "BE", "iso3": "BEL", "country": "Belgium", "profiles": 9, "outer_identity_exists": 3, "outer_identity_not_exists": 6, "outer_identity_exists_pct": 33.33, "outer_identity_not_exists_pct": 66.67}, {"dataset": "cat", "country_code": "CR", "iso3": "CRI", "country": "Costa Rica", "profiles": 3, "outer_identity_exists": 1, "outer_identity_not_exists": 2, "outer_identity_exists_pct": 33.33, "outer_identity_not_exists_pct": 66.67}, {"dataset": "cat", "country_code": "BR", "iso3": "BRA", "country": "Brazil", "profiles": 113, "outer_identity_exists": 39, "outer_identity_not_exists": 74, "outer_identity_exists_pct": 34.51, "outer_identity_not_exists_pct": 65.49}, {"dataset": "cat", "country_code": "DK", "iso3": "DNK", "country": "Denmark", "profiles": 7, "outer_identity_exists": 3, "outer_identity_not_exists": 4, "outer_identity_exists_pct": 42.86, "outer_identity_not_exists_pct": 57.14}, {"dataset": "cat", "country_code": "NZ", "iso3": "NZL", "country": "New Zealand", "profiles": 7, "outer_identity_exists": 3, "outer_identity_not_exists": 4, "outer_identity_exists_pct": 42.86, "outer_identity_not_exists_pct": 57.14}, {"dataset": "cat", "country_code": "NL", "iso3": "NLD", "country": "Netherlands", "profiles": 23, "outer_identity_exists": 10, "outer_identity_not_exists": 13, "outer_identity_exists_pct": 43.48, "outer_identity_not_exists_pct": 56.52}, {"dataset": "cat", "country_code": "SE", "iso3": "SWE", "country": "Sweden", "profiles": 9, "outer_identity_exists": 4, "outer_identity_not_exists": 5, "outer_identity_exists_pct": 44.44, "outer_identity_not_exists_pct": 55.56}, {"dataset": "cat", "country_code": "IT", "iso3": "ITA", "country": "Italy", "profiles": 44, "outer_identity_exists": 20, "outer_identity_not_exists": 24, "outer_identity_exists_pct": 45.45, "outer_identity_not_exists_pct": 54.55}, {"dataset": "cat", "country_code": "CL", "iso3": "CHL", "country": "Chile", "profiles": 35, "outer_identity_exists": 16, "outer_identity_not_exists": 19, "outer_identity_exists_pct": 45.71, "outer_identity_not_exists_pct": 54.29}, {"dataset": "cat", "country_code": "MY", "iso3": "MYS", "country": "Malaysia", "profiles": 36, "outer_identity_exists": 17, "outer_identity_not_exists": 19, "outer_identity_exists_pct": 47.22, "outer_identity_not_exists_pct": 52.78}, {"dataset": "cat", "country_code": "NP", "iso3": "NPL", "country": "Nepal", "profiles": 6, "outer_identity_exists": 3, "outer_identity_not_exists": 3, "outer_identity_exists_pct": 50.0, "outer_identity_not_exists_pct": 50.0}, {"dataset": "cat", "country_code": "CH", "iso3": "CHE", "country": "Switzerland", "profiles": 17, "outer_identity_exists": 9, "outer_identity_not_exists": 8, "outer_identity_exists_pct": 52.94, "outer_identity_not_exists_pct": 47.06}, {"dataset": "cat", "country_code": "IE", "iso3": "IRL", "country": "Ireland", "profiles": 15, "outer_identity_exists": 9, "outer_identity_not_exists": 6, "outer_identity_exists_pct": 60.0, "outer_identity_not_exists_pct": 40.0}, {"dataset": "cat", "country_code": "ES", "iso3": "ESP", "country": "Spain", "profiles": 70, "outer_identity_exists": 43, "outer_identity_not_exists": 27, "outer_identity_exists_pct": 61.43, "outer_identity_not_exists_pct": 38.57}, {"dataset": "cat", "country_code": "BG", "iso3": "BGR", "country": "Bulgaria", "profiles": 6, "outer_identity_exists": 4, "outer_identity_not_exists": 2, "outer_identity_exists_pct": 66.67, "outer_identity_not_exists_pct": 33.33}, {"dataset": "cat", "country_code": "PH", "iso3": "PHL", "country": "Philippines", "profiles": 12, "outer_identity_exists": 8, "outer_identity_not_exists": 4, "outer_identity_exists_pct": 66.67, "outer_identity_not_exists_pct": 33.33}, {"dataset": "cat", "country_code": "GR", "iso3": "GRC", "country": "Greece", "profiles": 22, "outer_identity_exists": 15, "outer_identity_not_exists": 7, "outer_identity_exists_pct": 68.18, "outer_identity_not_exists_pct": 31.82}, {"dataset": "cat", "country_code": "FR", "iso3": "FRA", "country": "France", "profiles": 116, "outer_identity_exists": 81, "outer_identity_not_exists": 35, "outer_identity_exists_pct": 69.83, "outer_identity_not_exists_pct": 30.17}, {"dataset": "cat", "country_code": "TW", "iso3": "TWN", "country": "Taiwan", "profiles": 8, "outer_identity_exists": 6, "outer_identity_not_exists": 2, "outer_identity_exists_pct": 75.0, "outer_identity_not_exists_pct": 25.0}, {"dataset": "cat", "country_code": "CA", "iso3": "CAN", "country": "Canada", "profiles": 77, "outer_identity_exists": 64, "outer_identity_not_exists": 13, "outer_identity_exists_pct": 83.12, "outer_identity_not_exists_pct": 16.88}, {"dataset": "cat", "country_code": "DE", "iso3": "DEU", "country": "Germany", "profiles": 134, "outer_identity_exists": 113, "outer_identity_not_exists": 21, "outer_identity_exists_pct": 84.33, "outer_identity_not_exists_pct": 15.67}, {"dataset": "cat", "country_code": "BD", "iso3": "BGD", "country": "Bangladesh", "profiles": 18, "outer_identity_exists": 17, "outer_identity_not_exists": 1, "outer_identity_exists_pct": 94.44, "outer_identity_not_exists_pct": 5.56}, {"dataset": "cat", "country_code": "BW", "iso3": "BWA", "country": "Botswana", "profiles": 1, "outer_identity_exists": 1, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "cat", "country_code": "FI", "iso3": "FIN", "country": "Finland", "profiles": 7, "outer_identity_exists": 7, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "cat", "country_code": "HR", "iso3": "HRV", "country": "Croatia", "profiles": 2, "outer_identity_exists": 2, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "cat", "country_code": "HU", "iso3": "HUN", "country": "Hungary", "profiles": 1, "outer_identity_exists": 1, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "cat", "country_code": "LU", "iso3": "LUX", "country": "Luxembourg", "profiles": 1, "outer_identity_exists": 1, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "cat", "country_code": "MT", "iso3": "MLT", "country": "Malta", "profiles": 1, "outer_identity_exists": 1, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "cat", "country_code": "SA", "iso3": "SAU", "country": "Saudi Arabia", "profiles": 1, "outer_identity_exists": 1, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "cat", "country_code": "SI", "iso3": "SVN", "country": "Slovenia", "profiles": 3, "outer_identity_exists": 3, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}, {"dataset": "cat", "country_code": "UY", "iso3": "URY", "country": "Uruguay", "profiles": 1, "outer_identity_exists": 1, "outer_identity_not_exists": 0, "outer_identity_exists_pct": 100.0, "outer_identity_not_exists_pct": 0.0}]};
+const summary = {"geteduroam": {"countries": 66, "profiles": 3237, "exists": 1264, "missing": 1973, "missing_pct": 60.95}, "cat": {"countries": 68, "profiles": 1626, "exists": 622, "missing": 1004, "missing_pct": 61.75}};
+
+const notes = {
+  geteduroam: "geteduroam discovery dataset: confirmed-university subset using UniRank strong matches plus Wikidata confirmations; ambiguous institutions excluded.",
+  cat: "CAT User API dataset: university-matched Android eap-config profiles after conservative false UniRank match removal."
+};
+
+function fmt(n) {
+  return Number(n).toLocaleString();
+}
+
+function setDataset(name) {
+  document.getElementById("btn-geteduroam").classList.toggle("active", name === "geteduroam");
+  document.getElementById("btn-cat").classList.toggle("active", name === "cat");
+
+  const rows = datasets[name];
+  const s = summary[name];
+
+  document.getElementById("countries").innerText = fmt(s.countries);
+  document.getElementById("profiles").innerText = fmt(s.profiles);
+  document.getElementById("exists").innerText = fmt(s.exists);
+  document.getElementById("missing").innerText = s.missing_pct + "%";
+  document.getElementById("note").innerText = notes[name];
+
+  const trace = {
+    type: "choropleth",
+    locationmode: "ISO-3",
+    locations: rows.map(d => d.iso3),
+    z: rows.map(d => d.outer_identity_not_exists_pct),
+    text: rows.map(d => d.country),
+    customdata: rows.map(d => [
+      d.country_code,
+      d.profiles,
+      d.outer_identity_exists,
+      d.outer_identity_not_exists,
+      d.outer_identity_exists_pct,
+      d.outer_identity_not_exists_pct
+    ]),
+    zmin: 0,
+    zmax: 100,
+    colorscale: [
+      [0.00, "#dbeafe"],
+      [0.25, "#93c5fd"],
+      [0.50, "#3b82f6"],
+      [0.75, "#1d4ed8"],
+      [1.00, "#111827"]
+    ],
+    marker: {line: {color: "white", width: 0.5}},
+    colorbar: {title: "Missing outer identity (%)"},
+    hovertemplate:
+      "<b>%{text}</b><br>" +
+      "Country code: %{customdata[0]}<br>" +
+      "Profiles: %{customdata[1]}<br>" +
+      "Outer identity exists: %{customdata[2]} (%{customdata[4]}%)<br>" +
+      "Outer identity missing: %{customdata[3]} (%{customdata[5]}%)<br>" +
+      "<extra></extra>"
+  };
+
+  const layout = {
+    margin: {l: 0, r: 0, t: 0, b: 0},
+    geo: {
+      projection: {type: "natural earth"},
+      showframe: false,
+      showcoastlines: true,
+      coastlinecolor: "#9ca3af",
+      showcountries: true,
+      countrycolor: "white",
+      showland: true,
+      landcolor: "#e5e7eb",
+      bgcolor: "white"
+    }
+  };
+
+  Plotly.react("map", [trace], layout, {responsive: true});
+
+  const tbody = document.getElementById("top-table");
+  tbody.innerHTML = "";
+  rows.slice(0, 20).forEach(d => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${d.country}</td>
+      <td>${fmt(d.profiles)}</td>
+      <td>${fmt(d.outer_identity_exists)}</td>
+      <td>${fmt(d.outer_identity_not_exists)}</td>
+      <td>${d.outer_identity_not_exists_pct}%</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+setDataset("geteduroam");
+</script>
+</body>
+</html>

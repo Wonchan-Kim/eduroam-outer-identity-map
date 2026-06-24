@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="franklinpierce.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIID3TCCAsWgAwIBAgIQcSzNqV6eNpJPuQt9F3vKQjANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDEyJGcmFua2xpbiBQaWVyY2UgVW5pdmVyc2l0eSBSb290IENBMB4XDTE3MDQyNzExMzk1OFoXDTM3MDQyNzE4MTY0N1owLTErMCkGA1UEAxMiRnJhbmtsaW4gUGllcmNlIFVuaXZlcnNpdHkgUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALmQdcf3YwgXpIIbDA81sCmyfZOJLvEbIkvHCHjK5Gl25iNq6WBnODmopS+gUUKumOXZjmhmLUJKzzmCYhMK6j/a1wcM/norQ/7Uw7+hIWREShtS8e3B/LOLuS6k2aDl2f+YqnG6j8nf56vDTwP85FGeRacO7Nc0bnZDevZdP6GRlsxLTrP+JZ4VYfUXe2c107qLiDT6clcQ7zm838XZfEfP6JbeiIeAwaKyA8cBBStv6YJ6s436msiXUck5/P/VS3CPlveqA9tOx4LJZwk1+HOriP0DORFpAiJHAdK9NlmIuzxCTMspYRHlI6tlxi2Xb8JZnpFoBOo6EySnLcGjocECAwEAAaOB+DCB9TALBgNVHQ8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUkluz2Y0fAEGW+kWWaFp9bqrhViQwEAYJKwYBBAGCNxUBBAMCAQEwfwYDVR0gBHgwdjB0BggqAwSLL0NZBTBoMDoGCCsGAQUFBwICMC4eLABMAGUAZwBhAGwAIABQAG8AbABpAGMAeQAgAFMAdABhAHQAZQBtAGUAbgB0MCoGCCsGAQUFBwIBFh5odHRwOi8vY2EuZnBjLmVkdS9QS0kvY3BzLnR4dAAwIwYJKwYBBAGCNxUCBBYEFI5B0HQtw6ti3khRapU2IPJQrAHoMA0GCSqGSIb3DQEBCwUAA4IBAQAZsY5goZhyOmDU3kQGGilZfLBxqrNGK3GnI7ShBygl9zDsqonHrGPippJawknheXeiA7gHpKtKMb3SbZJYYsZn+0jIWglNpIJ3+ULe5h2QnZSPaOA3wtrrba7o1B8Tcpy1IdbQnfwwUV6HZ412mcKMHw/ahpFsfSN7FV/Jnre5+XH8aL3hrhIbjXIcdxcoI65PiIepPLMffytUXtCU2b+s/A0jYU8cLnLLa4dt4GH679Ky87rMesv1rzmI7k1fe/TXKlk8A/yUM2oNwhVfuGqkwxfmp4TPweGtg43ogIw18VSToEfQcrWLSmUOKYpkCwzeC0/eQTmMVPcfnIJ4QUaY</CA>
+          <CA format="X.509" encoding="base64">MIIFGDCCBACgAwIBAgITFgAAAAdaKrcjPyDk2QABAAAABzANBgkqhkiG9w0BAQsFADAtMSswKQYDVQQDEyJGcmFua2xpbiBQaWVyY2UgVW5pdmVyc2l0eSBSb290IENBMB4XDTIyMDMzMTE0MDk1MloXDTMyMDMzMTE0MTk1MlowXzETMBEGCgmSJomT8ixkARkWA2VkdTETMBEGCgmSJomT8ixkARkWA2ZwYzEzMDEGA1UEAxMqRnJhbmtsaW4gUGllcmNlIFVuaXZlcnNpdHkgSW50ZXJtZWRpYXRlIENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn0Bl5HCSyKhSap2XC+tvYlvKbo0GIx86u3om4B9WdijiWhZQIWQ89fEO41gtVrggFDbN3Sribno6qgFcS7pzrx6Xcvaw5MCopoeOCUGSCoCTXrO1Vmp0uViVfREDU6GEknN2QMzZIXTlfYm7xGoJ2vd9+iHHwgX2KACDoVjOEYPgo7zlBtsQVQ8ssoXGTkgsao9NYi3QOTyWeEOcpXRnhGm9BiM8nPny7sbGrEnlLKt+jESZ8RduY3UNXEgx4iFxptw56meqo8CDFWCsqrsFGW0xaSjB9eXuu9EyYx8pL5PThwUydPfd6WGGDupYGRxBzxNQPBPTGPoTmd8/pX2LQwIDAQABo4IB/TCCAfkwEAYJKwYBBAGCNxUBBAMCAQQwIwYJKwYBBAGCNxUCBBYEFKmf7MUiDt2jv3PjAkDk9xdmDhipMB0GA1UdDgQWBBQra3p6g4FQtKXT/0vzvLrKv8LFTTB/BgNVHSAEeDB2MHQGCCoDBIsvQ1kFMGgwOgYIKwYBBQUHAgIwLh4sAEwAZQBnAGEAbAAgAFAAbwBsAGkAYwB5ACAAUwB0AGEAdABlAG0AZQBuAHQwKgYIKwYBBQUHAgEWHmh0dHA6Ly9jYS5mcGMuZWR1L3BraS9jcHMudHh0ADAZBgkrBgEEAYI3FAIEDB4KAFMAdQBiAEMAQTALBgNVHQ8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAfBgNVHSMEGDAWgBSSW7PZjR8AQZb6RZZoWn1uquFWJDBVBgNVHR8ETjBMMEqgSKBGhkRodHRwOi8vY2EuZnBjLmVkdS9wa2kvRnJhbmtsaW4lMjBQaWVyY2UlMjBVbml2ZXJzaXR5JTIwUm9vdCUyMENBLmNybDBvBggrBgEFBQcBAQRjMGEwXwYIKwYBBQUHMAKGU2h0dHA6Ly9jYS5mcGMuZWR1L3BraS9GUC1DZXJ0Um9vdF9GcmFua2xpbiUyMFBpZXJjZSUyMFVuaXZlcnNpdHklMjBSb290JTIwQ0EoMSkuY3J0MA0GCSqGSIb3DQEBCwUAA4IBAQA9NAN3RwXa9HD+kKLTee+ZUSWVzdEo42vNKsSiqAPV7pbezsA7Z7UA1qZ/tPzi+V9juUYLUvkUm6S3QtHK7wGtS7qRngeIb3btECDZwAOUV6bFYV67MIkPOYyBIyBHW9yo0NGWLITQAL3CNvZWzKwuHkx8VM4M87dz405pm0usgDqr1XaiLPO9aDKD2Y7fQh8qZJkrqjP6ogzFTfv7+JNAM+u3eH/YNCYBQq6Aq4EmggJy0GmZ7mTISpt2+l3+c/qkMmKPEQFvoqEWIDKJKEzu1ZZYYxuvxSj7MTQv4WYyUINrD4UmIN+/Va8S3sELtWNfKHaK/WwE/21hBP/PGp4P</CA>
+          <ServerID>login.franklinpierce.edu</ServerID>
+          <ServerID>login1.franklinpierce.edu</ServerID>
+          <ServerID>login2.franklinpierce.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>franklinpierce.edu</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Franklin Pierce University</DisplayName>
+      <Description>All Franklin Pierce University Faculty, Staff, and Students</Description>
+      <ProviderLocation>
+        <Longitude>-72.0571344</Longitude>
+        <Latitude>42.7810662</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>ithelpdesk@franklinpierce.edu</EmailAddress>
+        <WebAddress>http://ithelpdesk.franklinpierce.edu</WebAddress>
+        <Phone>1 (603) 899-4214</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

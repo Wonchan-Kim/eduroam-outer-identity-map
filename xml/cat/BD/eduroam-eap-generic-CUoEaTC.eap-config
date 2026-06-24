@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="cuet.ac.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE6zCCA9OgAwIBAgIUJD1zkinvr3J1GvmFn9qkm6W0YDowDQYJKoZIhvcNAQELBQAwgY4xCzAJBgNVBAYTAkJEMRMwEQYDVQQIDApDaGl0dGFnb25nMRMwEQYDVQQHDApDaGl0dGFnb25nMQ0wCwYDVQQKDARDVUVUMSEwHwYJKoZIhvcNAQkBFhJqYW1pbEBiZHJlbi5uZXQuYmQxIzAhBgNVBAMMGkNVRVQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTIzMDgwMTA2NDExNVoXDTI2MDczMTA2NDExNVowgY4xCzAJBgNVBAYTAkJEMRMwEQYDVQQIDApDaGl0dGFnb25nMRMwEQYDVQQHDApDaGl0dGFnb25nMQ0wCwYDVQQKDARDVUVUMSEwHwYJKoZIhvcNAQkBFhJqYW1pbEBiZHJlbi5uZXQuYmQxIzAhBgNVBAMMGkNVRVQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0yRHf9VKgBbJw0WBnoHkKAKoNVPr5BPu+n0RbqtdWcHIMm10EAtnm4wtv0USYRD9DNvr4CLQb+MEF7/dhuV/vhDlZwJPRegjHD4P7qXpdMlaoelFDXpBwRoBz08vW/n+5vrxN83DerLoKAprGh/AY5FU3NdBk0MiVgImbXBZPgr3KwUyCLgfDDjyI5wTLOAgxMSloy5BS18Rd7SyNXN8CBTY0pk2lIZaYA4Nzsm/9XxXwVF8Wy/3wUr2/Ca/xVTVB6DjOc5CvU6nMCRst+NqDjGD932SBUQuCZ6QkwEoGEBT+PI+ommtmu/lAIlAYrOwJgopkB4mvZ8G38fj+6wxuwIDAQABo4IBPTCCATkwHQYDVR0OBBYEFDthw5AEZ6aCAnqgXefQIu1XHnz/MIHOBgNVHSMEgcYwgcOAFDthw5AEZ6aCAnqgXefQIu1XHnz/oYGUpIGRMIGOMQswCQYDVQQGEwJCRDETMBEGA1UECAwKQ2hpdHRhZ29uZzETMBEGA1UEBwwKQ2hpdHRhZ29uZzENMAsGA1UECgwEQ1VFVDEhMB8GCSqGSIb3DQEJARYSamFtaWxAYmRyZW4ubmV0LmJkMSMwIQYDVQQDDBpDVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUJD1zkinvr3J1GvmFn9qkm6W0YDowDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBdEF838m5twbkGVQwD/7pXJFNgovAzRnUHAQPStck2dsBcL56ECS8Jp5EWL4hy5CbJTVT6nDDRU9FzONOM2tjKqG68DEhniKFUUFDlOsC+BUP1trxbOLw7pgzBa+Vkw2zV2QzMf8mhHLt7EJNbhcq7zeNEupHtGHTeQud65KfOlulvViGkEqYTvGWGtY8XA4xzryjLQHqETjnTA5vs9p5aN7O8NupO/1uoCsfwvd1jtCi4MpIFv+jqttlrBjZ+5AMxY0AS8T1dYcVjEmLhKBzKyHL9OSqQgTPhXAXuyLwjQKoyXFDnZlsiBLFhABYfIkrt8Wj6X271lXrGwS79IyRE</CA>
+          <ServerID>irs.cuet.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@cuet.ac.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE6zCCA9OgAwIBAgIUJD1zkinvr3J1GvmFn9qkm6W0YDowDQYJKoZIhvcNAQELBQAwgY4xCzAJBgNVBAYTAkJEMRMwEQYDVQQIDApDaGl0dGFnb25nMRMwEQYDVQQHDApDaGl0dGFnb25nMQ0wCwYDVQQKDARDVUVUMSEwHwYJKoZIhvcNAQkBFhJqYW1pbEBiZHJlbi5uZXQuYmQxIzAhBgNVBAMMGkNVRVQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTIzMDgwMTA2NDExNVoXDTI2MDczMTA2NDExNVowgY4xCzAJBgNVBAYTAkJEMRMwEQYDVQQIDApDaGl0dGFnb25nMRMwEQYDVQQHDApDaGl0dGFnb25nMQ0wCwYDVQQKDARDVUVUMSEwHwYJKoZIhvcNAQkBFhJqYW1pbEBiZHJlbi5uZXQuYmQxIzAhBgNVBAMMGkNVRVQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0yRHf9VKgBbJw0WBnoHkKAKoNVPr5BPu+n0RbqtdWcHIMm10EAtnm4wtv0USYRD9DNvr4CLQb+MEF7/dhuV/vhDlZwJPRegjHD4P7qXpdMlaoelFDXpBwRoBz08vW/n+5vrxN83DerLoKAprGh/AY5FU3NdBk0MiVgImbXBZPgr3KwUyCLgfDDjyI5wTLOAgxMSloy5BS18Rd7SyNXN8CBTY0pk2lIZaYA4Nzsm/9XxXwVF8Wy/3wUr2/Ca/xVTVB6DjOc5CvU6nMCRst+NqDjGD932SBUQuCZ6QkwEoGEBT+PI+ommtmu/lAIlAYrOwJgopkB4mvZ8G38fj+6wxuwIDAQABo4IBPTCCATkwHQYDVR0OBBYEFDthw5AEZ6aCAnqgXefQIu1XHnz/MIHOBgNVHSMEgcYwgcOAFDthw5AEZ6aCAnqgXefQIu1XHnz/oYGUpIGRMIGOMQswCQYDVQQGEwJCRDETMBEGA1UECAwKQ2hpdHRhZ29uZzETMBEGA1UEBwwKQ2hpdHRhZ29uZzENMAsGA1UECgwEQ1VFVDEhMB8GCSqGSIb3DQEJARYSamFtaWxAYmRyZW4ubmV0LmJkMSMwIQYDVQQDDBpDVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUJD1zkinvr3J1GvmFn9qkm6W0YDowDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBdEF838m5twbkGVQwD/7pXJFNgovAzRnUHAQPStck2dsBcL56ECS8Jp5EWL4hy5CbJTVT6nDDRU9FzONOM2tjKqG68DEhniKFUUFDlOsC+BUP1trxbOLw7pgzBa+Vkw2zV2QzMf8mhHLt7EJNbhcq7zeNEupHtGHTeQud65KfOlulvViGkEqYTvGWGtY8XA4xzryjLQHqETjnTA5vs9p5aN7O8NupO/1uoCsfwvd1jtCi4MpIFv+jqttlrBjZ+5AMxY0AS8T1dYcVjEmLhKBzKyHL9OSqQgTPhXAXuyLwjQKoyXFDnZlsiBLFhABYfIkrt8Wj6X271lXrGwS79IyRE</CA>
+          <ServerID>irs.cuet.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@cuet.ac.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Chittagong University of Engineering and Technology (CUET)</DisplayName>
+      <ProviderLocation>
+        <Longitude>91.97275339556148</Longitude>
+        <Latitude>22.46500855</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>noc@bdren.net.bd</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

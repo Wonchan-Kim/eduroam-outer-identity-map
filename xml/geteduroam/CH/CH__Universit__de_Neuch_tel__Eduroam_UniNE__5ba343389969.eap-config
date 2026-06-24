@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="unine.ch" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFtzCCA5+gAwIBAgICBQkwDQYJKoZIhvcNAQEFBQAwRTELMAkGA1UEBhMCQk0xGTAXBgNVBAoTEFF1b1ZhZGlzIExpbWl0ZWQxGzAZBgNVBAMTElF1b1ZhZGlzIFJvb3QgQ0EgMjAeFw0wNjExMjQxODI3MDBaFw0zMTExMjQxODIzMzNaMEUxCzAJBgNVBAYTAkJNMRkwFwYDVQQKExBRdW9WYWRpcyBMaW1pdGVkMRswGQYDVQQDExJRdW9WYWRpcyBSb290IENBIDIwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCaGMpLlA0ALa8DKYrwD4HIrkwZhR0In6spRIXzL4GtMh6QRr+jhiYaHv5+HBg6XJxgFyo6dIMzMH1hVBHL7avg5tKifvVrbxi3Cgst/ek+7wrGsxDp3MJGF/hd/aTa/55JWpzmM+Yklvc/ulsrHHo1wtZn/qtmUIttKGAr79dgw8eTvI02kfN/+NsRE8Scd3bBrrcCaoF6qUWD4gXmuVbBlDePSHFjIuwXZQeVikvfj8ZaCuWw419eaxGrDPmF60Tp+ARz8un+XJiM9XOva7R+zdRcAitMOeGylZUtQofX1bOQQ7dsE/He3fbE+Ik/0XX1ksOR1YqI0JDs3G3eicJlcZaLDQP9nL9bFqyS2+r+eXyt66/3FsvbzSUr5R/7mp/iUcw6UwxI5g69ybR2BlLmEROFcmMDBOAENisgGQLodKcftslWZvB1JdxnwQ5hYIizPtGo/KPaHbDRsSNU30R2be1B2MGyIrZTHN81Hdyhdyox5C315eXbyOD/5YDXC2Og/zOhD7osFRXql7PSorW+8oyWHhqPHWykYTe5hnMz15eWniN9gqRMgeKh0bpnX5UHoycR7hYQe7xFSkyyBNKr79X9DFHOUGoIMfmR2gyPZFwDwzqLID9ujWc9Otb+fVuIyV77zGHcizN300QyNQliBJIWENieJ0f7OyHj+OsdWwIDAQABo4GwMIGtMA8GA1UdEwEB/wQFMAMBAf8wCwYDVR0PBAQDAgEGMB0GA1UdDgQWBBQahGK8SEwzJQTU7tD2A8QZRtGUazBuBgNVHSMEZzBlgBQahGK8SEwzJQTU7tD2A8QZRtGUa6FJpEcwRTELMAkGA1UEBhMCQk0xGTAXBgNVBAoTEFF1b1ZhZGlzIExpbWl0ZWQxGzAZBgNVBAMTElF1b1ZhZGlzIFJvb3QgQ0EgMoICBQkwDQYJKoZIhvcNAQEFBQADggIBAD4KFk2fBluornFdLwUvZ+YTRYPENvbzwCYMDbVHZF34tHLJRqUDGCdViXh9duqWNIAXINzng/iN/Ae42l9NLmeyhP3ZRPx3UIHmfLTJDQtyU/h2BwdBR5YM++CCJpNVjP4iH2BlfF/nJrP3MpCYUNQ3cVX2kiF495V5+vgtJodmVjB3pjd4M1IQWK4/YY7yarHvGH5KWWPKjaJW1acvvFYfzznB4vsKqBUsfU16Y8Zsl0Q80m/DShcK+JDSV6IZUaUtl0HaB0+pUNqQjZRG4T7wlP0QADj1O+hA4bRuVhogzG9Yje0uRY/W6ZM/57Es3zrWIozchLsib9D45MY56QSIPMO661V6bYCZJPVsAfv4l7CUW+v90m/xd2gNNWQjrLhVoQPRTUIZ3Ph1WVaj+ahJefivDrkRoHy3au000LYmYjgahwz46P0u05B/B5EqHdZ+XIWDmbA4CD/pXvk1B+TJYm5Xf6dQlfe6yJvmjqIBxdZmv3lh8zwc4bmCXF2gw+nYSL0ZohEUGW6yhhtoPkg3Goi3XZZenMfvJ2II4pEZXNLxId26F0KCl3GBUzGpn/Z9Yr9y4aOTHcyKJloJONDO1w2AFrR4pTqHTI2KpdVGl/IsELm8VCLAAVBpQ570su9t+Oza8eOx79+Rj1QqCyXBJhnEUhAFZdWCEOrCMc0u</CA>
+          <ServerID>radius.unine.ch</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@unine.ch</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Université de Neuchâtel</DisplayName>
+      <Description>Eduroam profile for users of University of Neuchatel</Description>
+      <ProviderLocation>
+        <Longitude>6.938655700000027</Longitude>
+        <Latitude>46.9938817</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>hotline.sitel@unine.ch</EmailAddress>
+        <WebAddress>https://www.unine.ch/sitel/reseau#cid0e9c8bf1-1275-4796-8326-317cce1db846</WebAddress>
+        <Phone>+41327182010</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

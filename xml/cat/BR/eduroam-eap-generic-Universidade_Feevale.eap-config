@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="feevale.br" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIICHjCCAaSgAwIBAgIRYFlJ4CYuu1X5CneKcflK2GwwCgYIKoZIzj0EAwMwUDEkMCIGA1UECxMbR2xvYmFsU2lnbiBFQ0MgUm9vdCBDQSAtIFI1MRMwEQYDVQQKEwpHbG9iYWxTaWduMRMwEQYDVQQDEwpHbG9iYWxTaWduMB4XDTEyMTExMzAwMDAwMFoXDTM4MDExOTAzMTQwN1owUDEkMCIGA1UECxMbR2xvYmFsU2lnbiBFQ0MgUm9vdCBDQSAtIFI1MRMwEQYDVQQKEwpHbG9iYWxTaWduMRMwEQYDVQQDEwpHbG9iYWxTaWduMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAER0UOlvt9Xb/pOdEh+J8LttV7HpI6SFkc8GIxLcB6KP4ap1yztsyX50XUWPrRd21DosCHZTQKH3rd6zwzocWdTaRvQZU4f8kehOvRnkmSh5SHDDqFSmafnVmTTZdhBoZKo0IwQDAOBgNVHQ8BAf8EBAMCAQYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUPeYpSJvqB8ohREom3m7e0oPQn1kwCgYIKoZIzj0EAwMDaAAwZQIxAOVpEslu28YxuglB4Zf4+/2a4n0Sye18ZNPLBSWLVtmg515dTguDnFt2KaAJJiFqYgIwcdK1j1zqO+F4CYWodZI7yFz9SO8NdCKoCOJuxUnOxwy8p2Fp8fc74SrL+SvzZpA3</CA>
+          <CA format="X.509" encoding="base64">MIIDAjCCAomgAwIBAgINAe5fIpVCSQX5AZGo3DAKBggqhkjOPQQDAzBQMSQwIgYDVQQLExtHbG9iYWxTaWduIEVDQyBSb290IENBIC0gUjUxEzARBgNVBAoTCkdsb2JhbFNpZ24xEzARBgNVBAMTCkdsb2JhbFNpZ24wHhcNMTgxMTIxMDAwMDAwWhcNMjgxMTIxMDAwMDAwWjBQMQswCQYDVQQGEwJCRTEZMBcGA1UEChMQR2xvYmFsU2lnbiBudi1zYTEmMCQGA1UEAxMdR2xvYmFsU2lnbiBFQ0MgT1YgU1NMIENBIDIwMTgwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAATDoRGNZSPhluG7q6bQA11PTe0ZD/xx44QlFam1BM4eLeN+wfgwalsbkjzARCM9si/fnQeKNtKAlgNmNOHTmV3VfwGbocj6+22HVWZuVeX/VeIGoWh1u7Lja/NDE7RsXaCjggEpMIIBJTAOBgNVHQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHQ4EFgQUWHuOdSr+YYCqkEABrtboB0ZuP0gwHwYDVR0jBBgwFoAUPeYpSJvqB8ohREom3m7e0oPQn1kwPgYIKwYBBQUHAQEEMjAwMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcDIuZ2xvYmFsc2lnbi5jb20vcm9vdHI1MDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly9jcmwuZ2xvYmFsc2lnbi5jb20vcm9vdC1yNS5jcmwwRwYDVR0gBEAwPjA8BgRVHSAAMDQwMgYIKwYBBQUHAgEWJmh0dHBzOi8vd3d3Lmdsb2JhbHNpZ24uY29tL3JlcG9zaXRvcnkvMAoGCCqGSM49BAMDA2cAMGQCMC4lzZGQw5mpNZBmztq8huxKf9/tRUJ5yLI4q6YU+i2fjF2FRBNA64EBmljA7dkSOwIwL9qYB0APhsLmV0LhknrzHZVvtqzg7NQaIV18BEIDZQgK3gjxYzADjHSH5uk4mCdW</CA>
+          <ServerID>eduroam3.feevale.br</ServerID>
+          <ServerID>eduroam4.feevale.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIICHjCCAaSgAwIBAgIRYFlJ4CYuu1X5CneKcflK2GwwCgYIKoZIzj0EAwMwUDEkMCIGA1UECxMbR2xvYmFsU2lnbiBFQ0MgUm9vdCBDQSAtIFI1MRMwEQYDVQQKEwpHbG9iYWxTaWduMRMwEQYDVQQDEwpHbG9iYWxTaWduMB4XDTEyMTExMzAwMDAwMFoXDTM4MDExOTAzMTQwN1owUDEkMCIGA1UECxMbR2xvYmFsU2lnbiBFQ0MgUm9vdCBDQSAtIFI1MRMwEQYDVQQKEwpHbG9iYWxTaWduMRMwEQYDVQQDEwpHbG9iYWxTaWduMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAER0UOlvt9Xb/pOdEh+J8LttV7HpI6SFkc8GIxLcB6KP4ap1yztsyX50XUWPrRd21DosCHZTQKH3rd6zwzocWdTaRvQZU4f8kehOvRnkmSh5SHDDqFSmafnVmTTZdhBoZKo0IwQDAOBgNVHQ8BAf8EBAMCAQYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUPeYpSJvqB8ohREom3m7e0oPQn1kwCgYIKoZIzj0EAwMDaAAwZQIxAOVpEslu28YxuglB4Zf4+/2a4n0Sye18ZNPLBSWLVtmg515dTguDnFt2KaAJJiFqYgIwcdK1j1zqO+F4CYWodZI7yFz9SO8NdCKoCOJuxUnOxwy8p2Fp8fc74SrL+SvzZpA3</CA>
+          <CA format="X.509" encoding="base64">MIIDAjCCAomgAwIBAgINAe5fIpVCSQX5AZGo3DAKBggqhkjOPQQDAzBQMSQwIgYDVQQLExtHbG9iYWxTaWduIEVDQyBSb290IENBIC0gUjUxEzARBgNVBAoTCkdsb2JhbFNpZ24xEzARBgNVBAMTCkdsb2JhbFNpZ24wHhcNMTgxMTIxMDAwMDAwWhcNMjgxMTIxMDAwMDAwWjBQMQswCQYDVQQGEwJCRTEZMBcGA1UEChMQR2xvYmFsU2lnbiBudi1zYTEmMCQGA1UEAxMdR2xvYmFsU2lnbiBFQ0MgT1YgU1NMIENBIDIwMTgwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAATDoRGNZSPhluG7q6bQA11PTe0ZD/xx44QlFam1BM4eLeN+wfgwalsbkjzARCM9si/fnQeKNtKAlgNmNOHTmV3VfwGbocj6+22HVWZuVeX/VeIGoWh1u7Lja/NDE7RsXaCjggEpMIIBJTAOBgNVHQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHQ4EFgQUWHuOdSr+YYCqkEABrtboB0ZuP0gwHwYDVR0jBBgwFoAUPeYpSJvqB8ohREom3m7e0oPQn1kwPgYIKwYBBQUHAQEEMjAwMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcDIuZ2xvYmFsc2lnbi5jb20vcm9vdHI1MDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly9jcmwuZ2xvYmFsc2lnbi5jb20vcm9vdC1yNS5jcmwwRwYDVR0gBEAwPjA8BgRVHSAAMDQwMgYIKwYBBQUHAgEWJmh0dHBzOi8vd3d3Lmdsb2JhbHNpZ24uY29tL3JlcG9zaXRvcnkvMAoGCCqGSM49BAMDA2cAMGQCMC4lzZGQw5mpNZBmztq8huxKf9/tRUJ5yLI4q6YU+i2fjF2FRBNA64EBmljA7dkSOwIwL9qYB0APhsLmV0LhknrzHZVvtqzg7NQaIV18BEIDZQgK3gjxYzADjHSH5uk4mCdW</CA>
+          <ServerID>eduroam3.feevale.br</ServerID>
+          <ServerID>eduroam4.feevale.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Universidade Feevale</DisplayName>
+      <Description>Perfil padrão Universidade Feevale</Description>
+      <ProviderLocation>
+        <Longitude>-51.05177500000002</Longitude>
+        <Latitude>-29.6564359</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-51.114028399999995</Longitude>
+        <Latitude>-29.67773</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-51.118269999999995</Longitude>
+        <Latitude>-29.662865</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>falecomafeevale@feevale.br</EmailAddress>
+        <WebAddress>https://www.feevale.br/wireless</WebAddress>
+        <Phone>55+ 51 - 35868800</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

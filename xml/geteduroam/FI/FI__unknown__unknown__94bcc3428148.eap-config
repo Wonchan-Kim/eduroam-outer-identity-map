@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="samk.fi" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE3zCCA8egAwIBAgIUDv4EPJqsgX5MUxPmPYNY45RqYG0wDQYJKoZIhvcNAQELBQAwgYoxCzAJBgNVBAYTAkZJMRIwEAYDVQQIDAlTYXRha3VudGExDTALBgNVBAcMBFBvcmkxDTALBgNVBAoMBFNBTUsxHDAaBgkqhkiG9w0BCQEWDWFkbWluQHNhbWsuZmkxKzApBgNVBAMMIlNBTUsgRWR1cm9hbSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjUwNDA3MTIyMjQzWhcNMzUwNDA1MTIyMjQzWjCBijELMAkGA1UEBhMCRkkxEjAQBgNVBAgMCVNhdGFrdW50YTENMAsGA1UEBwwEUG9yaTENMAsGA1UECgwEU0FNSzEcMBoGCSqGSIb3DQEJARYNYWRtaW5Ac2Ftay5maTErMCkGA1UEAwwiU0FNSyBFZHVyb2FtIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJNg+quRy34K30r7W7OyH2yTlTZ1bQW+x4LL2wRm+JPy8bp553j1RdWDA3HvqfNZ6VNA6iY0RGp7JrYi9Km0a58GaaiMAzqaSIhpwl+x0bJ2Tz73m9M8xELBtG7tYD3TzMY4Q/oIq/12cjO+OL+eSVDYeZXzYHzGjEn6FiaHv7wbdZmdNsyREMsBBspd3c/aK+eeubice0H01b8c47EQOGFoWUN/JxjtlHTgBveMHJf+HWMb1gvJ12TB8eEV3gWZqBbsAsdIki3HJnl5Tm74swJ4CGCoKz3ks0+swapQdHr5JTt0DUiyeTdZHQ4gPFu/dedjmJwwnt4EN0RR2bcMirECAwEAAaOCATkwggE1MB0GA1UdDgQWBBT9Cf4kJefo4pma6vsLK5TmC1rv9zCBygYDVR0jBIHCMIG/gBT9Cf4kJefo4pma6vsLK5TmC1rv96GBkKSBjTCBijELMAkGA1UEBhMCRkkxEjAQBgNVBAgMCVNhdGFrdW50YTENMAsGA1UEBwwEUG9yaTENMAsGA1UECgwEU0FNSzEcMBoGCSqGSIb3DQEJARYNYWRtaW5Ac2Ftay5maTErMCkGA1UEAwwiU0FNSyBFZHVyb2FtIENlcnRpZmljYXRlIEF1dGhvcml0eYIUDv4EPJqsgX5MUxPmPYNY45RqYG0wDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBffQcK/lniekKk6dyQLZEuE6+Rx16IKoqwmW2y7tJZkO8or/sIreKJmwcEv6FRUiV4cuUDxFNom084kIiM1HAT0lRVJ8LAeLjT0LyJ9RY0HciW5xRAf57dnlDGwa2tVhHHJFLiVcx50saNaYa4lOWXY6lIgvWaqUm7wUyl/WjohS8yoeUnCEDUfr1OioQ0GcyG7oC6vd2lMaM6P4rShDG2d/1iAGxNoXxXL4LBW/55C1ZDp9TDdlI8KUNcUjNNycz8lGRNWnrHU8MxcvO5rSQaTQnNg3nzVOSAr0H33qx83e8hBXyG8E82+grY9TkyhXYBBWiXqEaaBEsy9PflQR9c</CA>
+          <ServerID>eduroam.samk.fi</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@samk.fi</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Satakunnan ammattikorkeakoulu</DisplayName>
+      <ProviderLocation>
+        <Longitude>21.78997759999993</Longitude>
+        <Latitude>61.47797139999999</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <WebAddress>https://samk.efectecloud.com/ssc</WebAddress>
+        <Phone>+358447103080</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="ku.de" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDwzCCAqugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwHhcNMDgxMDAxMTA0MDE0WhcNMzMxMDAxMjM1OTU5WjCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqX9obX+hzkeXaXPSi5kfl82hVYAUdAqSzm1nzHoqvNK38DcLZSBnuaY/JIPwhqgcZ7bBcrGXHX+0CfHt8LRvWurmAwhiCFoT6ZrAIxlQjgeTNuUk/9k9uN0goOA/FvudocP05l03Sx5iRUKrERLMjfTlH6VJi1hKTXrcxlkIF+3anHqP1wvzpesVsqXFP6st4vGCvx9702cu+fjOlbpSD8DT6IavqjnKgP6TeMFvvhk1qlVtDRKgQFRzlAVfFmPHmBiiRqiDFt1MmUUOyCxGVWOHAD3bZwI18gfNycJ5v/hqO2V81xrJvNHy+SE/iWjnX2J14np+GPgNeGYtEotXHAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBS/WSA2AHmgoCJrjNXyYdK4LMuCSjANBgkqhkiG9w0BAQsFAAOCAQEAMQOiYQsfdOhyNsZt+U2e+iKo4YFWz827n+qrkRk4r6p8FU3ztqONpfSO9kSpp+ghla0+AGIWiPACuvxhI+YzmzB6azZie60EI4RYZeLbK4rnJVM3YlNfvNoBYimipidx5joifsFvHZVwIEoHNN/q/xWA5brXethbdXwFeilHfkCoMRN3zUA7tFFHei4R40cR3p1m0IvVVGb6g1XqfMIpiRvpb7PO4gWEyS8+eIVibslfwXhjdFjASBgMmTnrpMwatXlajRWc2BQN9noHV8cigwUtPJslJj0Ys6lDfMjIq2SPDqO/nBudMNva0Bkuqjzx+zOAduTNrRlPBSeOE6Fuwg==</CA>
+          <CA format="X.509" encoding="base64">MIIFyjCCA7KgAwIBAgIBATANBgkqhkiG9w0BAQsFADB2MQswCQYDVQQGEwJERTFFMEMGA1UECgw8VmVyZWluIHp1ciBGb2VyZGVydW5nIGVpbmVzIERldXRzY2hlbiBGb3JzY2h1bmdzbmV0emVzIGUuIFYuMSAwHgYDVQQDDBdlZHVyb2FtIFNlcnZpY2UgUm9vdCBDQTAeFw0yMjAxMjYxNDA4NDFaFw00MjAxMjExNDA4NDFaMHYxCzAJBgNVBAYTAkRFMUUwQwYDVQQKDDxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMgZS4gVi4xIDAeBgNVBAMMF2VkdXJvYW0gU2VydmljZSBSb290IENBMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAiwNYy6Q6n5Q5357N0a59mRkZV4eQfpa/RTCzOSWbCSXGbTCeJKwlP0Wc5E+1URkijo9U5f7CdUayHy5E1roQIEisgPh08zwysiG2jZQDGpInjXD0kmRlc6FpH7dmb56MujDqNNP82Xp6glYWLTeMqmvPUy6I0bfaAwqSO2+Atn5iHffxPkjc8BbKT2BMbwYJ/RlSNl9NXjHBjmKwP8BB3SSW87oI2xSLpJew01dNKx9MwYFZWgiIr3HUSIR/EnKiBdd7DB9qyHAABbHl1YYwsici7XaZhkd5MkbwLfRy2lJmvrwFpbtdNvJreCPhEucPbFvV8VFlTIEa4DBVp9/Q7YvObL6EV0RxP1UJi62OqhBEd3clmn7PxejlViQN+1BDgl8B1PT7X+DbQHGmcPpMJhEQfAsGBNcfWo3JrFjAd8ItjVoTAVvmNw+ASW6Fze5s+mgJVrqs0GNBvdJsr/SO8GMvr/ukRYKGKSkoWunsp04TAYQmfnNkzYsE7txqdZEGAFGpC55kNe4ArUW3VrEbjOwpYUXR1eWh8TB3GG2VSiShTBTppDEDiPPMzQYwngLJrvdzAeTTX5vyUp/RFcBRpp1i7e8r1XWycB2Y+3OcxZU6IUUieY38YlFICzjDL40sNsiPwPVWpqtluin2+BmBkuKOuOSYqezrYUkL1NCvlYkCAwEAAaNjMGEwHQYDVR0OBBYEFFPLKUyxWyl2t4GJ407o/+oooQjiMB8GA1UdIwQYMBaAFFPLKUyxWyl2t4GJ407o/+oooQjiMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMA0GCSqGSIb3DQEBCwUAA4ICAQBu1sRCrz3vwDB6bxpT33eofMN0l/7/7ob7IP3aSYkqG4mWJ6VxzuDSq1qAUU/SxivFdxDoSXCa5ZDzcHOLMCFAugRYFQpQ+Zfmn8y7JgBS6/S/EM2mHCbbKNCADnikkVvY93zW04GXBcx8g/s946/gdM7fH/sUeWqW+/jDiQmGWcl4IvT4gxTS7JduoACdaBgVdt4mVT+6eIrp5RTfEnTAnrU4GjCMrdCV0tRmsz4ohgGDqCUXZe1wRzjhBWBSJgBo9K/fts7UtqFgJiovXnBbPQhbzJiVE8bilQbp6eBa8GXDFGJ4Uirfkz/PHQ9HgsXzOHLneyXG5GILX74WG5KTk3UYC6wcJxA8A/LSjxWBJzXEc8n1QEcXRZ35lHLGCNDkgcvJN9edlfH3o0YZ00zZDlKRnbSOlR+MNqi0tyEQdOuNdT/5tE8hXD8YpuudbLZqbyy5g4VhJh9Y6czeb6D3tM6VmOCBC31hVXJW5h04RcQB3AK2jzIrsgSD0UcSmCtQcO0FpeHpckz9Wa9Ai4duXy2kTpc+bUjbcL+5yRjFdlA+dzx55FmO5T/VoV501p5VWH0NApJ0gRKEJeZUhrAtR/G6GFCbWGXJamLvz/tA4ZX/sI1F8C4tQyrWJFRKasUgbpKAe/iOPphSML9wMQjiAolHJTTg0SzmAVBCEV1J7w==</CA>
+          <ServerID>eduroam.ku.de</ServerID>
+          <ServerID>eo-vmw-eduroamb.ku.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>2023-03-01-0750@ku.de</OuterIdentity>
+          <InnerIdentitySuffix>ku.de</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Catholic University of Eichstaett-Ingolstadt - TTLS-PAP</DisplayName>
+      <Description>TTLS-PAP</Description>
+      <ProviderLocation>
+        <Longitude>11.18772589664368</Longitude>
+        <Latitude>48.8898899653326</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>it-support@ku.de</EmailAddress>
+        <Phone>+4984219321010</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

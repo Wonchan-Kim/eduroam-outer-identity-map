@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="ug.edu.ec" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFiDCCA3CgAwIBAgIUKpXHfxjT7fa1h7ho0aFhC6TdBPkwDQYJKoZIhvcNAQELBQAwGDEWMBQGA1UEAwwNY2EuZWR1cm9hbS5lYzAeFw0yMzA4MDgyMTAxMDNaFw00MzA0MjUyMTAxMDNaMBgxFjAUBgNVBAMMDWNhLmVkdXJvYW0uZWMwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQC3/noCedmzUOdquOic39O30vOt7nY+uPbSarRh5Nt8VXCb8u+kt+mUGewDtx95T+TLEyQu8tW+uZP/KQmDeIIzmPkbyBqZuu3rTaNSgi2r9u6G7wbWspdlH7yyN26yFIYZt6jL/XKGvEQyJtm/JbX+QtG5+eOcLLI9z0j4U26myYtnzxOlgFfG0oGJcHyw9wkqOcGfujNFuwCcXzCfgVeXlsYm4kJdB4O28uCuBzSrikyrXITBy6hQIfyv5d67nddsR0VJTdQDm8ZEE0JqhAErgy4l4uRlzm7CaaqIrQf87t4F7pZC1cBeIxjSspEt0GrP/KAdVgC0bBPUl8TNir84VKx+SxrBme7IRxD1IAIMYGoKhXB3cOqwYHhEFGVEGlof0NbO1op+ZF/fVk6Kg+tuDc1pChrb7nDpS/fBX+YnQ8lMorEnOb4nKdw5tSIsVqFoXWlwoVAKGi25tyZFtrVqrHm+N8w0Ydxt4xscF8jApXhFvZi3od9dkapP8Omw+IMzr9glXNyrXmyv5sttLFwnYlADVtyYhDQz3LziQX0JhxZW9a5iBM2lbgW76WDeWLcLqXVengSnmIxDDxxiAFXrbITZRk1fvIib01fumGKiG/N3n42KRAM7b8VQyCUg5rBy+J5UlISYaLIPFaBhNlCYVmunBWe7nEii+CTYgiTclQIDAQABo4HJMIHGMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFCg+lUYRqqRCQPGhyu9A31aSL3OTMFMGA1UdIwRMMEqAFCg+lUYRqqRCQPGhyu9A31aSL3OToRykGjAYMRYwFAYDVQQDDA1jYS5lZHVyb2FtLmVjghQqlcd/GNPt9rWHuGjRoWELpN0E+TALBgNVHQ8EBAMCAQYwNQYDVR0fBC4wLDAqoCigJoYkaHR0cDovL3d3dy5lZHVyb2FtLmVjL2NhX2VkdXJvYW0uY3JsMA0GCSqGSIb3DQEBCwUAA4ICAQBk90IrLFBT7Vtx6icYJ/u4ib7yq2IIRlc6LVntrqXEtUXci1sM6JHNCD5/4uUrIp60+4E848ufd63dMmLqBJnHcaC6sjIc1tmjaXMzwILib9yhZDIkXAQKnod3Bzjt1hZM51aF7eRVxsoMiC9OeacL18Hw34hdyBVy07394y75uLbgHOi7erhA37PX8JXlZdmuXzD9846Ts9fd26GFSp5s08sTrHTbjR+hVsjqVEkzX1d5mh87Q67+4c57hjfx7hn+5peFSxhYHRq26+I7an8Xe/crSX//sLax8gEVRXJA1ASHfipweCbfw0V2MfBUj/1EnGiEJk9f8StpY+juB/c1LslOXpxW+hryzv29py9fSi2r6RAM2pHQOD0fuadjZUtYRWFfTOA7fJfmHcAkkrt2Vzxfh5gg21Wt3PIkOaRrFVY4hOkNtJgaww7nXnHUFVd4JUpZXGLh+wjaEBMZEhWqwVCdOlBMgi4WA4Un/WSa0U4sFxZlot2/ENt3StMRl7rUD575xqkzhpAqd7s4ObESAz88U7Krcqav9aMhET1cQSI+gbFf5EbWwLjmRKCg719drUPaZI9PUdQLlGmijgcNxBlY9tA+xvEVWaPKSfABLRxEhdQBEJA7xxQB4UbbTGcu0QQ0XreP7LUGXIZ3hdN4HLwVFBhC3Uj4WXkUySJo+g==</CA>
+          <ServerID>radius.eduroam.ug.edu.ec</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>ug.edu.ec</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Universidad de Guayaquil - ug</DisplayName>
+      <ProviderLocation>
+        <Longitude>-79.89875158026655</Longitude>
+        <Latitude>-2.1812929</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

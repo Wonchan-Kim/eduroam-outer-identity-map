@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="ufra.edu.br" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDqDCCAxGgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMjAwMzE5MTMyOTE2WhcNMzAwMzE3MTMyOTE2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo4H9MIH6MAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFDuXcVFFi3iOBq6PPJkvLtlvNsvdMIHKBgNVHSMEgcIwgb+AFDuXcVFFi3iOBq6PPJkvLtlvNsvdoYGbpIGYMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnKCCQDCcRaDGAgAVzANBgkqhkiG9w0BAQUFAAOBgQDDdZa3zWDWN2E3NH1xNtVGSePyQN5rNPoyb62QvyoeUJuP+Ez04MY7J+8W3JmXhkEZ4EW9hSgZyE/9ntE8gIQMcvU8jPaLScm7pWeptA4jY6vyQWFLTJ7H24hEDl7Aftm7bJrISMllSfw14FVO25ijE4IHbVh8aZu8QPlD/Khfjg==</CA>
+          <CA format="X.509" encoding="base64">MIIEDTCCAvWgAwIBAgICA6cwDQYJKoZIhvcNAQELBQAwfDELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0wHhcNMjMxMTIzMTgyMTA0WhcNMjYwMjIwMTgyMTA0WjCBpTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEfMB0GA1UEAwwWY2FmZWR1cm9hbS51ZnJhLmVkdS5icjEfMB0GCSqGSIb3DQEJARYQZHNpdEB1ZnJhLmVkdS5icjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALVPRhKgDIuUxV9kPh4QrKLjWkywLpHkFKofcBenpes7H5tfZ8SDxSJgdIDa7LAlk7xlpUBw89/Na8QDoD+wAURapyl1gm+xrZoRGv5hJC9H5inln77Sm8bECjJMUzu/4QMSRkNSJ1ppO4EqHbzc2xMI7zCUzJcJOGHrLNHhrLrVJyuT/NCOOfMRIDk6etSxztpdk5jAFDvu7ebMIP6xBofK/2xaVJtf7F3Znofu0e+7ld6zrFNwZzuZy1nsPFhkKChhpaqaiYNRnzKDlzjegpeTH0XZpvlO5QnUD47seA6WkU1RUMBhbBDWkC6fnQQX1tgRpwHKK2OfWibFlSeP7gkCAwEAAaNvMG0wHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQWBBT/umDoxgTObthsuKJHCwDcmVAffTAfBgNVHSMEGDAWgBRJ/b37leO3uzJA7AiLZ/FQH5T4DDAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBsDWcq+yU4Xi7aVK7PZyF1sXz9zbQLMs9RCAjW35nNRyXaWkQRqYrkZAoKhat5CMgTCB4Fas2Gw/W+in2kANSVD0uimbm+Wi4lor3rlNtsU6XtL37dAzjlzWJNfWtkXuJDjNhxKf3gOd/ud6KOccbZHUoyCFfcEzaRxhiZBIZF6vynaYrUVQj7GxiFw0WGMIUdxpDkpH0w6z3jyHhsXVkhA8GF0LV5a2pxp6i1yS6Cw2x80ViSprXHNLEW7sIGjBdoixUmfe8yxg1HX+3FoSm9goh0skHhDS7OoPXDc/hdyWooLSSxo2QpI2iq6vvnqvyjVBSHX+6VxoQDYMYvfB0W</CA>
+          <ServerID>cafeduroam.ufra.edu.br</ServerID>
+          <ServerID>eduroamcafe.ufra.edu.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>13</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDqDCCAxGgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMjAwMzE5MTMyOTE2WhcNMzAwMzE3MTMyOTE2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo4H9MIH6MAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFDuXcVFFi3iOBq6PPJkvLtlvNsvdMIHKBgNVHSMEgcIwgb+AFDuXcVFFi3iOBq6PPJkvLtlvNsvdoYGbpIGYMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnKCCQDCcRaDGAgAVzANBgkqhkiG9w0BAQUFAAOBgQDDdZa3zWDWN2E3NH1xNtVGSePyQN5rNPoyb62QvyoeUJuP+Ez04MY7J+8W3JmXhkEZ4EW9hSgZyE/9ntE8gIQMcvU8jPaLScm7pWeptA4jY6vyQWFLTJ7H24hEDl7Aftm7bJrISMllSfw14FVO25ijE4IHbVh8aZu8QPlD/Khfjg==</CA>
+          <CA format="X.509" encoding="base64">MIIEDTCCAvWgAwIBAgICA6cwDQYJKoZIhvcNAQELBQAwfDELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0wHhcNMjMxMTIzMTgyMTA0WhcNMjYwMjIwMTgyMTA0WjCBpTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEfMB0GA1UEAwwWY2FmZWR1cm9hbS51ZnJhLmVkdS5icjEfMB0GCSqGSIb3DQEJARYQZHNpdEB1ZnJhLmVkdS5icjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALVPRhKgDIuUxV9kPh4QrKLjWkywLpHkFKofcBenpes7H5tfZ8SDxSJgdIDa7LAlk7xlpUBw89/Na8QDoD+wAURapyl1gm+xrZoRGv5hJC9H5inln77Sm8bECjJMUzu/4QMSRkNSJ1ppO4EqHbzc2xMI7zCUzJcJOGHrLNHhrLrVJyuT/NCOOfMRIDk6etSxztpdk5jAFDvu7ebMIP6xBofK/2xaVJtf7F3Znofu0e+7ld6zrFNwZzuZy1nsPFhkKChhpaqaiYNRnzKDlzjegpeTH0XZpvlO5QnUD47seA6WkU1RUMBhbBDWkC6fnQQX1tgRpwHKK2OfWibFlSeP7gkCAwEAAaNvMG0wHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQWBBT/umDoxgTObthsuKJHCwDcmVAffTAfBgNVHSMEGDAWgBRJ/b37leO3uzJA7AiLZ/FQH5T4DDAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBsDWcq+yU4Xi7aVK7PZyF1sXz9zbQLMs9RCAjW35nNRyXaWkQRqYrkZAoKhat5CMgTCB4Fas2Gw/W+in2kANSVD0uimbm+Wi4lor3rlNtsU6XtL37dAzjlzWJNfWtkXuJDjNhxKf3gOd/ud6KOccbZHUoyCFfcEzaRxhiZBIZF6vynaYrUVQj7GxiFw0WGMIUdxpDkpH0w6z3jyHhsXVkhA8GF0LV5a2pxp6i1yS6Cw2x80ViSprXHNLEW7sIGjBdoixUmfe8yxg1HX+3FoSm9goh0skHhDS7OoPXDc/hdyWooLSSxo2QpI2iq6vvnqvyjVBSHX+6VxoQDYMYvfB0W</CA>
+          <ServerID>cafeduroam.ufra.edu.br</ServerID>
+          <ServerID>eduroamcafe.ufra.edu.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>UFRA - Universidade Federal Rural da Amazônia</DisplayName>
+      <Description>UFRA</Description>
+      <ProviderLocation>
+        <Longitude>-48.4462091</Longitude>
+        <Latitude>-1.4552769</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-49.81546932322089</Longitude>
+        <Latitude>-6.073697199038861</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>dsit@ufra.edu.br</EmailAddress>
+        <WebAddress>https://suporte.ufra.edu.br/glpi/</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

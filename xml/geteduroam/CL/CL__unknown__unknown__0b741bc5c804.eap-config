@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="udp.cl" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDdDCCAlygAwIBAgIQJ1XOd7XmP5VLJ+OzrJAoiDANBgkqhkiG9w0BAQsFADBCMRIwEAYKCZImiZPyLGQBGRYCY2wxEzARBgoJkiaJk/IsZAEZFgN1ZHAxFzAVBgNVBAMTDnVkcC1VRFBEQzAzLUNBMB4XDTIyMDkwNzE1MzgzNFoXDTI3MDkwNzE1NDgzNFowQjESMBAGCgmSJomT8ixkARkWAmNsMRMwEQYKCZImiZPyLGQBGRYDdWRwMRcwFQYDVQQDEw51ZHAtVURQREMwMy1DQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL2fyf3t4V50cK2Yg9N6McvTyvNNuR+GNDLSNn6hObp+85oVmLGdpcp12wTYb9Ygvk+uJRqoLPaCPIq5/UXcj39V8Nckii6+OR22Q3U6Bib1onfrFc7QvtiPiSrPpoTaAqg1rI6twu8dqJZLsci7/olu1qFdtoENlWoeDPJqSJYe/5WlUMydKDSgPSjaImedLUZ/tHUUxwLtfQBFXMow8qFe72EIe/PAZ8uaQ2BrLddYrQu+okVHgNDIFWUZjxh4X1B+LJ08fmDcpm/4ibLNlG8lBhDYrf5uSn9i9s8feN910zpUKfdcQTjF3KJYC4Uo4rtXCXh4aQ4MC6SxXmjRfmECAwEAAaNmMGQwEwYJKwYBBAGCNxQCBAYeBABDAEEwCwYDVR0PBAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFHH9aKoK7DaD95V0otLAykD4p0RzMBAGCSsGAQQBgjcVAQQDAgEAMA0GCSqGSIb3DQEBCwUAA4IBAQADixktU6jAq6IeDruh8BameGSxfjbc2aMALZzudbP06bomKiOM7nGvNLFzGL4uRB/wWjrixAfbf6l7LMaq5e3J9JMBO8JZIRdluD0ooC+xrqTZ2ud2IblGq1ZPPt3IW3xTi4TMr9wVX2WxIypXeQWIvuT3cORaYdhLtM0paTHzwhevd5otDTeD78VI8FXpuHmQ8JfiKxMiz+TZM14a5d9Vpq89wI9E3RPLElPoQ6EsxEFbzg31ZTMbRZWGbt8ZAciMayCwj/dRRm5S6fTdMgJa6YA2t3v8V9FM66aSR3kWsU/244r0V6vJOmjGSLYZF/wrj3ljYouvvb7q7P607Ogc</CA>
+          <ServerID>summer.udp.cl</ServerID>
+          <ServerID>verano.udp.cl</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>udp.cl</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Universidad Diego Portales - UDP Funcionarios</DisplayName>
+      <Description>(Acceso Universidad Diego Portales)</Description>
+      <ProviderLocation>
+        <Longitude>-71.3187697</Longitude>
+        <Latitude>-31.7613365</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>mesa.ayuda@udp.cl</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

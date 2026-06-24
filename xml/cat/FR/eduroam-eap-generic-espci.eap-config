@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="espci.fr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDWjCCAkKgAwIBAgIUOhYRRvd9uBKBo0Y3lhH94dNJF1gwDQYJKoZIhvcNAQELBQAwGzEZMBcGA1UEAxMQRVNQQ0kgZWR1cm9hbSBDQTAeFw0yNDAzMDUwOTI5NTBaFw0zNDAzMDMwOTI5NTBaMBsxGTAXBgNVBAMTEEVTUENJIGVkdXJvYW0gQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDRNsuQPVds5KhutTcPk6dNH8rq4iyz4svT2K2RTCYzpyl2dc9DdvcFksPfO8Ooju9rBAmc9s+3/CjUmEQmUnpayZ3yEfJpvGtXELDFbIlfGXpN9SY0Z5EzJTPXvK+4FvJ28iP6avkZAGHE67pgM4HdSgwhHfaIHe/CAcUPslf/NZiyHUgspgAlS3ILq8jnJFOtDj1MqB/Xj2FC1hSZGj/+O9c0sN+eO9wfoQFoMTAqZzZplywQGpd5duPmS2Utn8my6shZaEMSZAVdGGtQTupWZDUFCAh1hdvMJYr3nzaV7ZzDez1zEDG+SJ56UoKVDvCUogEE+VEvZPaZVY9B9rpvAgMBAAGjgZUwgZIwHQYDVR0OBBYEFMiobZK8GlhswGA1zrShlwVE7ycaMFYGA1UdIwRPME2AFMiobZK8GlhswGA1zrShlwVE7ycaoR+kHTAbMRkwFwYDVQQDExBFU1BDSSBlZHVyb2FtIENBghQ6FhFG9324EoGjRjeWEf3h00kXWDAMBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIBBjANBgkqhkiG9w0BAQsFAAOCAQEAeOjVXbTnopUyLcxiN/BvD12CCdh0RNTesADfRSsV3PdDnDfC+7fuxagAhaheZGO2wBVUadg0vGOG6qWQ1Tar+K+U3/O8MhDmO/yf0fBjlq4yVPNqx9n2R92w62yAQXi/d7FOGvkTCXaQtfX7MyJPlUxCdcYhEWS3aRGQUNyk15hXCL9sKCt+prcbIT3slfzRATARlFE3FO1NBcz/Nnp/VA1c1vE1tc12p7g4YrB1OfSolTc2tNc89LZmwi3RqSOQz4TzvoEQye+z0LFPHkUMVygPH5s0TA5myEb5Hbpy2+VPc1gzBy0kkyJFtaCodvXVRj+2vp9sKDRIf6BtrUtWUA==</CA>
+          <ServerID>eduroam.espci.fr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@espci.fr</OuterIdentity>
+          <InnerIdentitySuffix>espci.fr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDWjCCAkKgAwIBAgIUOhYRRvd9uBKBo0Y3lhH94dNJF1gwDQYJKoZIhvcNAQELBQAwGzEZMBcGA1UEAxMQRVNQQ0kgZWR1cm9hbSBDQTAeFw0yNDAzMDUwOTI5NTBaFw0zNDAzMDMwOTI5NTBaMBsxGTAXBgNVBAMTEEVTUENJIGVkdXJvYW0gQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDRNsuQPVds5KhutTcPk6dNH8rq4iyz4svT2K2RTCYzpyl2dc9DdvcFksPfO8Ooju9rBAmc9s+3/CjUmEQmUnpayZ3yEfJpvGtXELDFbIlfGXpN9SY0Z5EzJTPXvK+4FvJ28iP6avkZAGHE67pgM4HdSgwhHfaIHe/CAcUPslf/NZiyHUgspgAlS3ILq8jnJFOtDj1MqB/Xj2FC1hSZGj/+O9c0sN+eO9wfoQFoMTAqZzZplywQGpd5duPmS2Utn8my6shZaEMSZAVdGGtQTupWZDUFCAh1hdvMJYr3nzaV7ZzDez1zEDG+SJ56UoKVDvCUogEE+VEvZPaZVY9B9rpvAgMBAAGjgZUwgZIwHQYDVR0OBBYEFMiobZK8GlhswGA1zrShlwVE7ycaMFYGA1UdIwRPME2AFMiobZK8GlhswGA1zrShlwVE7ycaoR+kHTAbMRkwFwYDVQQDExBFU1BDSSBlZHVyb2FtIENBghQ6FhFG9324EoGjRjeWEf3h00kXWDAMBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIBBjANBgkqhkiG9w0BAQsFAAOCAQEAeOjVXbTnopUyLcxiN/BvD12CCdh0RNTesADfRSsV3PdDnDfC+7fuxagAhaheZGO2wBVUadg0vGOG6qWQ1Tar+K+U3/O8MhDmO/yf0fBjlq4yVPNqx9n2R92w62yAQXi/d7FOGvkTCXaQtfX7MyJPlUxCdcYhEWS3aRGQUNyk15hXCL9sKCt+prcbIT3slfzRATARlFE3FO1NBcz/Nnp/VA1c1vE1tc12p7g4YrB1OfSolTc2tNc89LZmwi3RqSOQz4TzvoEQye+z0LFPHkUMVygPH5s0TA5myEb5Hbpy2+VPc1gzBy0kkyJFtaCodvXVRj+2vp9sKDRIf6BtrUtWUA==</CA>
+          <ServerID>eduroam.espci.fr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@espci.fr</OuterIdentity>
+          <InnerIdentitySuffix>espci.fr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Ecole Supérieure de Physique et de Chimie Industrielles de la Ville de Paris</DisplayName>
+      <Description>Eduroam ESPCI Paris 2024</Description>
+      <ProviderLocation>
+        <Longitude>2.3472064000000046</Longitude>
+        <Latitude>48.8414272</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>service.informatique@espci.fr</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="butex.edu.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE3DCCA8SgAwIBAgIUI4jXgZ9LgoN5vLrxzbC2qZpSSGYwDQYJKoZIhvcNAQELBQAwgYkxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDjAMBgNVBAoMBUJVVEVYMSQwIgYJKoZIhvcNAQkBFhVpY3QuY2VsbEBidXRleC5lZHUuYmQxJDAiBgNVBAMMG0JVVEVYIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yMzExMjgwODU1NTlaFw0yNjExMjcwODU1NTlaMIGJMQswCQYDVQQGEwJCRDEOMAwGA1UECAwFRGhha2ExDjAMBgNVBAcMBURoYWthMQ4wDAYDVQQKDAVCVVRFWDEkMCIGCSqGSIb3DQEJARYVaWN0LmNlbGxAYnV0ZXguZWR1LmJkMSQwIgYDVQQDDBtCVVRFWCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCa5UjU8zHOUx8chxd+BOSGLbk4p5Y3YAT+WbE+cIgAslerJFuxQVvXEJVFEzeOQu6J9xu6n+SHYxarOT+ax22S6JeyOfEf+/p+jXw2DRHpfYHqq5EBqv5vg6RlfmVX8v3wZuy3FuUHRKxgYQKi1OiUcNTB9k+HSgnVLa7TyAII+eWV0UWHeSv41NyiclQB3ZvqzxW/OQyIMG4qQYQyO/uFjFdPK6yLrTYdA5Zav+1e+7E+5jSNayNNn7PrYBY1vzPybk6Q7mvPeTP0GTp5t/S9gjYlO/wE/r4jw4ID2z2hI5ujH2uhaJzeiSutCpkMGVGVxFzgLKxNw5m618LfVp/3AgMBAAGjggE4MIIBNDAdBgNVHQ4EFgQUxBLkGkSXrXeZGNxeF0cZgX1OmMcwgckGA1UdIwSBwTCBvoAUxBLkGkSXrXeZGNxeF0cZgX1OmMehgY+kgYwwgYkxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDjAMBgNVBAoMBUJVVEVYMSQwIgYJKoZIhvcNAQkBFhVpY3QuY2VsbEBidXRleC5lZHUuYmQxJDAiBgNVBAMMG0JVVEVYIENlcnRpZmljYXRlIEF1dGhvcml0eYIUI4jXgZ9LgoN5vLrxzbC2qZpSSGYwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQB5QM6LvRQpRSkPGkXniiYnjEn3vkPcHipJ67p9izaSC22ah0OvfHae0kiyljfCliduZKDaaWTUqtGNy3Ldw5BChPROkuwXy7wPOEmhtWTCoOZeAedrJIg0Uqm/5hoZqTNBCKSvwyL7K8pzLX6Qi+0HDTQ9sij1D+AhhD6mUBy04iVuo9vQQx3AzVYOGeoL1fQZYLS3DZlyNQFeyDgcfJLm5ZuLsOzcd2ew+tPJp/KKCI+FOpzeQXZ/pEqk0btCKHhywwLI8Fx9y5xSXtYeBiNmEFsQ/VBYKGtvjiu42ujFvM8/dHpdDZIB1w12RLLUFUBpXTuEhR3D9kpP4PqJZUdQ</CA>
+          <ServerID>irs.butex.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@butex.edu.bd</OuterIdentity>
+          <InnerIdentitySuffix>butex.edu.bd</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE3DCCA8SgAwIBAgIUI4jXgZ9LgoN5vLrxzbC2qZpSSGYwDQYJKoZIhvcNAQELBQAwgYkxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDjAMBgNVBAoMBUJVVEVYMSQwIgYJKoZIhvcNAQkBFhVpY3QuY2VsbEBidXRleC5lZHUuYmQxJDAiBgNVBAMMG0JVVEVYIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yMzExMjgwODU1NTlaFw0yNjExMjcwODU1NTlaMIGJMQswCQYDVQQGEwJCRDEOMAwGA1UECAwFRGhha2ExDjAMBgNVBAcMBURoYWthMQ4wDAYDVQQKDAVCVVRFWDEkMCIGCSqGSIb3DQEJARYVaWN0LmNlbGxAYnV0ZXguZWR1LmJkMSQwIgYDVQQDDBtCVVRFWCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCa5UjU8zHOUx8chxd+BOSGLbk4p5Y3YAT+WbE+cIgAslerJFuxQVvXEJVFEzeOQu6J9xu6n+SHYxarOT+ax22S6JeyOfEf+/p+jXw2DRHpfYHqq5EBqv5vg6RlfmVX8v3wZuy3FuUHRKxgYQKi1OiUcNTB9k+HSgnVLa7TyAII+eWV0UWHeSv41NyiclQB3ZvqzxW/OQyIMG4qQYQyO/uFjFdPK6yLrTYdA5Zav+1e+7E+5jSNayNNn7PrYBY1vzPybk6Q7mvPeTP0GTp5t/S9gjYlO/wE/r4jw4ID2z2hI5ujH2uhaJzeiSutCpkMGVGVxFzgLKxNw5m618LfVp/3AgMBAAGjggE4MIIBNDAdBgNVHQ4EFgQUxBLkGkSXrXeZGNxeF0cZgX1OmMcwgckGA1UdIwSBwTCBvoAUxBLkGkSXrXeZGNxeF0cZgX1OmMehgY+kgYwwgYkxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDjAMBgNVBAoMBUJVVEVYMSQwIgYJKoZIhvcNAQkBFhVpY3QuY2VsbEBidXRleC5lZHUuYmQxJDAiBgNVBAMMG0JVVEVYIENlcnRpZmljYXRlIEF1dGhvcml0eYIUI4jXgZ9LgoN5vLrxzbC2qZpSSGYwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQB5QM6LvRQpRSkPGkXniiYnjEn3vkPcHipJ67p9izaSC22ah0OvfHae0kiyljfCliduZKDaaWTUqtGNy3Ldw5BChPROkuwXy7wPOEmhtWTCoOZeAedrJIg0Uqm/5hoZqTNBCKSvwyL7K8pzLX6Qi+0HDTQ9sij1D+AhhD6mUBy04iVuo9vQQx3AzVYOGeoL1fQZYLS3DZlyNQFeyDgcfJLm5ZuLsOzcd2ew+tPJp/KKCI+FOpzeQXZ/pEqk0btCKHhywwLI8Fx9y5xSXtYeBiNmEFsQ/VBYKGtvjiu42ujFvM8/dHpdDZIB1w12RLLUFUBpXTuEhR3D9kpP4PqJZUdQ</CA>
+          <ServerID>irs.butex.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@butex.edu.bd</OuterIdentity>
+          <InnerIdentitySuffix>butex.edu.bd</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Bangladesh University of Textiles (BUTex)</DisplayName>
+      <ProviderLocation>
+        <Longitude>90.40198501668971</Longitude>
+        <Latitude>23.76016645</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>ict.cell@butex.edu.bd</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="unicampania.it" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIID/zCCAuegAwIBAgIUGE0WitP9aw8nev0v/TNl1n1VT3swDQYJKoZIhvcNAQELBQAwgY4xCzAJBgNVBAYTAklUMQswCQYDVQQIDAJDRTEPMA0GA1UEBwwGQVZFUlNBMQwwCgYDVQQKDANTU1IxDDAKBgNVBAsMA1NTUjEUMBIGA1UEAwwLb3BlbmxkYXB0bHMxLzAtBgkqhkiG9w0BCQEWIGxlb3BvbGRvLnBldHJ1Y2NpQHVuaWNhbXBhbmlhLml0MB4XDTIyMTAxMzEzMDYxMloXDTMyMTAxMDEzMDYxMlowgY4xCzAJBgNVBAYTAklUMQswCQYDVQQIDAJDRTEPMA0GA1UEBwwGQVZFUlNBMQwwCgYDVQQKDANTU1IxDDAKBgNVBAsMA1NTUjEUMBIGA1UEAwwLb3BlbmxkYXB0bHMxLzAtBgkqhkiG9w0BCQEWIGxlb3BvbGRvLnBldHJ1Y2NpQHVuaWNhbXBhbmlhLml0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnvMW+KlaWVhqfUaHcSEUwjkx1ONosl30tLAcEi1M1S9Z3XMk6hl+P4xT623hTcqR9BDsgPpZUUVwyD2DzFvKmRvploj9Kb28W1q3LolaCG7EfC0MYTTF4gpq4P14LZ29VwnIBdsOmSgAfqSOi32OLBdVyrA6vFppG3PFyHMaATGP/pSlpE7UD4VJIoGUjQGcKDyoNUeSqOl7kSmDeEXJjyyy6FzZh9+PtPYdUSxlgQ0lHSsBeofz3128xwMf8qxyApMBpLfJRIOXDMt9OWmq4azB8W2I9d8P7yS1IYd0lQJGspVFNa8nDATF8VouIw5FeZsSA42FeTGP3/LWMI2XswIDAQABo1MwUTAdBgNVHQ4EFgQUdWVITFtZdqVnAnBV/0gc3ND6mp0wHwYDVR0jBBgwFoAUdWVITFtZdqVnAnBV/0gc3ND6mp0wDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAZgJI+exGjvWFPcyYo+EgOclIdGOQhw3Ek2+56V06O0KVPEvrffM5MfL8z2XQqmo4eK8cFSAsOQXDayd21/FxU+d0XDNF6cKt2QIA2MqZfDqOzNZeA/07G9ppC0Tto/tcBh9iNX4skdaEpghCbcc+yVvh/KDvECdQIJqnYgcVFd3SVA4K4F6vDrLiIDjq6/17wdD4gsqpaONcd7tdM13VyybRcLQkQ7psAhpEkoozKHWZTI17G3qpktw5mU5jKdZ7dz0bwJ4e8mQZ+7SHphzq7El46J5+65vQmpZ2NoVMbGaBJVzY/eBJH+cmA7vyCA3ciYNKTICWBONVRPs1rLLaig==</CA>
+          <ServerID>radius.wifi.unicampania.it</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@unicampania.it</OuterIdentity>
+          <InnerIdentitySuffix>unicampania.it</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <SSID>vanvitelli</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Università degli studi della Campania "Luigi Vanvitelli"</DisplayName>
+      <Description>tool configurazione automatica</Description>
+      <ProviderLocation>
+        <Longitude>14.3490471</Longitude>
+        <Latitude>41.0653197</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>urt@unicampania.it</EmailAddress>
+        <Phone>+39 0815010455</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

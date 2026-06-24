@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="iseclisboa.pt" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFijCCBHKgAwIBAgITOAAAAAw1FRzanUIEUwACAAAADDANBgkqhkiG9w0BAQsFADBTMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxGjAYBgoJkiaJk/IsZAEZFgpJU0VDTElTQk9BMR4wHAYDVQQDExVpc2VjbGlzYm9hLVNSVi1EQzItQ0EwHhcNMjMxMDA2MDg1MzUxWhcNMzMxMDA2MDg0OTA2WjBTMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxGjAYBgoJkiaJk/IsZAEZFgpJU0VDTElTQk9BMR4wHAYDVQQDExVpc2VjbGlzYm9hLVNSVi1EQzItQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC22wBWruAPNWcnpx8aVufUdmXt2ca3JYWeEK1K3xMLoE0Pt3H1H46DrUmiPGGMBvO+LsgtAY5b6lKRH/SA40xaUFf+LHIELNkrBbBvNptP/blG8yR/P3pl/nxDgl0uzwUOqUxvl1vFQVU20FDPwLg3bk/luLmlwK/DLflztyKCr6fe1bN1fdRUiK3KZ5eu7NGN/i1I6/aMRbhKoEyHdrIb7GRD4b9C9ohFLE5xzDPb7fNjA4loSr/wOFfwklyOUJdO06nw9kq2QlsY/qbWUGXfdX/Ul1+zVyV6BLNVzT2QDl7sOm/HEIpQGNGmLeHVJ8sabsoF01+/mqKGozMiYKhzAgMBAAGjggJVMIICUTAdBgNVHQ4EFgQUpY9cabE6csMncVdM3eIVoEmCWWAwEgYJKwYBBAGCNxUWBAUCAwIAATAfBgNVHSMEGDAWgBRD+DDnchElP9h3aTzl72P5sj5TdDCB2wYDVR0fBIHTMIHQMIHNoIHKoIHHhoHEbGRhcDovLy9DTj1pc2VjbGlzYm9hLVNSVi1EQzItQ0EoMiksQ049c3J2LWRjMixDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1JU0VDTElTQk9BLERDPWxvY2FsP2NlcnRpZmljYXRlUmV2b2NhdGlvbkxpc3Q/YmFzZT9vYmplY3RDbGFzcz1jUkxEaXN0cmlidXRpb25Qb2ludDCBzAYIKwYBBQUHAQEEgb8wgbwwgbkGCCsGAQUFBzAChoGsbGRhcDovLy9DTj1pc2VjbGlzYm9hLVNSVi1EQzItQ0EsQ049QUlBLENOPVB1YmxpYyUyMEtleSUyMFNlcnZpY2VzLENOPVNlcnZpY2VzLENOPUNvbmZpZ3VyYXRpb24sREM9SVNFQ0xJU0JPQSxEQz1sb2NhbD9jQUNlcnRpZmljYXRlP2Jhc2U/b2JqZWN0Q2xhc3M9Y2VydGlmaWNhdGlvbkF1dGhvcml0eTAdBgkrBgEEAYI3FAIEEB4OAEMAcgBvAHMAcwBDAEEwCwYDVR0PBAQDAgGGMBEGA1UdIAQKMAgwBgYEVR0gADAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQB2pJHPXVDdqSIi7kg2j2COt5WExph5vSXenuRYazbJgW4Sq3j1sU25dZ3Ru9aN6DUKFNQImlma8VjCBrMgNu+eV5cXM81/Hhr595T3FxPkiawe32jW/MKOAqrQi+S360QDw/Od6pNA7tPald5k/lKQJctsxdztf42IJXgK3ovE91zBvw7lp3JzftMlPZ3lysXTxCO/mC11s2xdSkEhIyQyoxDiw8mlXz9ngbjPS7H93ZE149N/dz05WKyfMRaLFUOeA3fKQllPEk5ZWWF4MqQvqdLwJWwSiMYPdJ7Ad+GfAjNQtioC0oFN6AnLOw4tnL72o7PRbdvQ6S5Ctm+UAr5W</CA>
+          <ServerID>srv-dc2.iseclisboa.local</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>iseclisboa.pt</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>ISEC Lisboa- Instituto Superior de Educação e Ciências</DisplayName>
+      <ProviderLocation>
+        <Longitude>-9.160108566284178</Longitude>
+        <Latitude>38.76895732719217</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>apoioinformatico@iseclisboa.pt</EmailAddress>
+        <Phone>+351 217 541 310, ext 424</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

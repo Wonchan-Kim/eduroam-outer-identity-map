@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="undefined" namespace="urn:undefined">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE8DCCA9igAwIBAgIURcImsVljRazrOPWMkD2XJtoqzN0wDQYJKoZIhvcNAQELBQAwgZAxCzAJBgNVBAYTAkRFMRAwDgYDVQQIDAdCYXZhcmlhMQ8wDQYDVQQHDAZNdW5pY2gxGDAWBgNVBAoMD09wZW5DYW1wdXMgR21iSDEiMCAGCSqGSIb3DQEJARYTaW5mb0BvcGVuY2FtcHVzLm5ldDEgMB4GA1UEAwwXT3BlbkNhbXB1cyBHbWJIIFJvb3QgQ0EwHhcNMjQwMTEyMTIxMTM3WhcNMzQwMTA5MTIxMTM3WjCBkDELMAkGA1UEBhMCREUxEDAOBgNVBAgMB0JhdmFyaWExDzANBgNVBAcMBk11bmljaDEYMBYGA1UECgwPT3BlbkNhbXB1cyBHbWJIMSIwIAYJKoZIhvcNAQkBFhNpbmZvQG9wZW5jYW1wdXMubmV0MSAwHgYDVQQDDBdPcGVuQ2FtcHVzIEdtYkggUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANoVPuDDfJz5luDAXuzV21hUOf6R8BjJzkmcuL0xayo21wr9PWfYkIJBcMFEWJQodkmCoAkbrsoWVkY2nKoKnZvh8O/a/LFJuE5j/Vb41nTrbOVBA4+KExLxeGiL3KN7RIf1WxmtWCnor2Hy7VPLC0QluxqIczQiPocje7ovHkp9x5sLp+nlaq2WB75HXkAYSRTLZeAYRKYOyr7JS24ogfJTGUTC+E25MI6O3sj+ducH8x050PMMSnDajM1QadeAALX/NBbGcEDG1G65swh3zAj5LYI1Q7kWd+M+aJCaKvP8s221d5cKrNlLcKlshQTNduK/u5JAMAZMW1kWSBJNyiMCAwEAAaOCAT4wggE6MB0GA1UdDgQWBBQOO1prR0vraiwrNxgTdzN2Kxa5qjCB0AYDVR0jBIHIMIHFgBQOO1prR0vraiwrNxgTdzN2Kxa5qqGBlqSBkzCBkDELMAkGA1UEBhMCREUxEDAOBgNVBAgMB0JhdmFyaWExDzANBgNVBAcMBk11bmljaDEYMBYGA1UECgwPT3BlbkNhbXB1cyBHbWJIMSIwIAYJKoZIhvcNAQkBFhNpbmZvQG9wZW5jYW1wdXMubmV0MSAwHgYDVQQDDBdPcGVuQ2FtcHVzIEdtYkggUm9vdCBDQYIURcImsVljRazrOPWMkD2XJtoqzN0wDwYDVR0TAQH/BAUwAwEB/zA1BgNVHR8ELjAsMCqgKKAmhiRodHRwczovL3d3dy5vcGVuY2FtcHVzLm5ldC9vY19jYS5jcmwwDQYJKoZIhvcNAQELBQADggEBAAAfUaEXYMFafxaNSun6/RYuGz3CgGo2M+ynxcPv2B4ybfQ8UQGye2grj4aCb/+XJvNbd/EfcN5VpY25ot5Jr/JGjcfZ6Mdw2YWAAWaXGD8HSAYbCop53hU3HmXNZ6jzUaoQwOYx8g7QBfgDb3XQb4DAI/uix4Lqr/yZgDnQ8z29gxZ6jBxCwRbj+3AEoJcpaMByiHt7GMtBe8gd0nH7HESW7fKgaINxTNiO3nKWjoGlbT4Xrf47ZBqKs24+OYZq34nkh6zAdAXkbNCiJA4KB1KuCh5uYMzkKq9IgDybz4MhAu8HqZOlYb5i7rpI4Xup0j/+xUBpCbwyfwJ5k8IgFLU=</CA>
+          <ServerID>kl-radius.cloud.opencampus.net</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix/>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Karl Landsteiner Privatuniversität für Gesundheitswissenschaften GmbH</DisplayName>
+      <Description>eduroam profile for KL users</Description>
+      <ProviderLocation>
+        <Longitude>15.5885777</Longitude>
+        <Latitude>48.4073403</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>edv-hotline@kl.ac.at</EmailAddress>
+        <Phone>+43273272090220</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

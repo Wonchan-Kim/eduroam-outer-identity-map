@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="enautica.pt" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDmjCCAoKgAwIBAgIQXz6EaEznwKlA4i2/lqPjTzANBgkqhkiG9w0BAQUFADBMMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFzAVBgoJkiaJk/IsZAEZFgdyaW9zZG9tMRowGAYDVQQDExFyaW9zZG9tLURDVEVKTy1DQTAeFw0xNjAyMjIxNjI3MDRaFw0yMTAyMjExNjM3MDNaMEwxFTATBgoJkiaJk/IsZAEZFgVsb2NhbDEXMBUGCgmSJomT8ixkARkWB3Jpb3Nkb20xGjAYBgNVBAMTEXJpb3Nkb20tRENURUpPLUNBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuM5x4Kh4Xe6UHjR9kT/EzTq8i9HO/UZAOlMDsLxeGrhQH7vLt1YC/Gm0h2di2Q3pnTvv1YnpZ++AAGiG8SsHukLqcxiUbDMRT/iSTgta6La3onJ+lqYO7ctdwmij8saXv7zRA8WJABfwFzwBfbJQzvNkCC9EazT0pVKmq3Bef/vVbrP168y9pmYNMlxGSK46wXYPuWxOkgusQ/M05VFQ7N7QDYCNYW0VCxnZvXNzuhy1Re8notJu8Vy5XpwYQjoT5G8AW+n0hv8Llkapi/Zz8JfEEEYFVhf01pE/++L18Ed80/LrOZBvFZelpjo1lIbZI5rOVJ9pyXdxjQWn9K208QIDAQABo3gwdjALBgNVHQ8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUvkQaG3UaX8uljKPjVuTmG/GB9c8wEgYJKwYBBAGCNxUBBAUCAwEAATAjBgkrBgEEAYI3FQIEFgQURJ9DNmYzaNrfTFbaMyj/2HQL3aEwDQYJKoZIhvcNAQEFBQADggEBAIrzpk4HON+BL1xtRPKIy9xBxYOdBiOoc7YaVPcwJihAHk7IfX1xlbshfkI/MVC/2D3XHG9tEE19ZZU9j9S533Ga9sj4gBauOUBBb+5f/GoGCb0Q2hzheMRXydCj4VQ7WXLaDKbH+DWRz63ENRjdSVdyJZ+1zN0UyuRh7EKUxLF8dIWGs4fdmW7hWMuonJLjTlaz+XBUdeMehbiDp/PS6YgtkTCfIkc6ia5xETx2kMcjh98y6lS4V83ZUp0v47dANdSD5iI41LvcEAajUS3zFEtkC9s6Dci8ff70txO2KgqXhPQfns0tWOpOwzf+JmngJPNzUTOrv9Hpgp5jhQBlnpY=</CA>
+          <ServerID>radiusliz.riosdom.local</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Escola Superior Náutica Infante D. Henrique - ENIDH</DisplayName>
+      <Description>ENIDH</Description>
+      <ProviderLocation>
+        <Longitude>-9.299956899999984</Longitude>
+        <Latitude>38.6904827</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@enautica.pt</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

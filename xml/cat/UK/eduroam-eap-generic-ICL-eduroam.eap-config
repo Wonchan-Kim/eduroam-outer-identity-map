@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="ic.ac.uk" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDjjCCAnagAwIBAgIQAzrx5qcRqaC7KGSxHQn65TANBgkqhkiG9w0BAQsFADBhMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBHMjAeFw0xMzA4MDExMjAwMDBaFw0zODAxMTUxMjAwMDBaMGExCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5jb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IEcyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuzfNNNx7a8myaJCtSnX/RrohCgiN9RlUyfuI2/Ou8jqJkTx65qsGGmvPrC3oXgkkRLpimn7Wo6h+4FR1IAWsULecYxpsMNzaHxmx1x7e/dfgy5SDN67sH0NO3Xss0r0upS/kqbitOtSZpLYl6ZtrAGCSYP9PIUkY92eQq2EGnI/yuum06ZIya7XzV+hdG82MHauVBJVJ8zUtluNJbd134/tJS7SsVQepj5WztCO7TG1F8PapspUwtP1MVYwnSlcUfIKdzXOS0xZKBgyMUNGPHgm+F6HmIcr9g+UQvIOlCsRnKPZzFBQ9RnbDhxSJITRNrw9FDKZJobq7nMWxM4MphQIDAQABo0IwQDAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBhjAdBgNVHQ4EFgQUTiJUIBiV5uNu5g/6+rkS7QYXjzkwDQYJKoZIhvcNAQELBQADggEBAGBnKJRvDkhj6zHd6mcY1Yl9PMWLSn/pvtsrF9+wX3N3KjITOYFnQoQj8kVnNeyIv/iPsGEMNKSuIEyExtv4NeF22d+mQrvHRAiGfzZ0JFrabA0UWTW98kndth/Jsw1HKj2ZL7tcu7XUIOGZX1NGFdtom/DzMNU+MeKNhJ7jitralj41E6Vf8PlwUHBHQRFXGU7Aj64GxJUTFy8bJZ918rGOmaFvE7FBcf6IKshPECBV1/MUReXgRPTqh5Uykw7+U0b6LJ3/iyK5S9kJRaTepLiaWN0bfVKfjllDiIGknibVb63dDcY3fe0Dkhvld1927jyNxF1WW6LZZm6zNTflMrY=</CA>
+          <ServerID>wireless.ic.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>ic.ac.uk</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Imperial College London - eduroam</DisplayName>
+      <Description>eduroam for all college users</Description>
+      <ProviderLocation>
+        <Longitude>-0.1728798999999981</Longitude>
+        <Latitude>51.5171041</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-0.17411519999996017</Longitude>
+        <Latitude>51.49817909999999</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-0.17888459999994666</Longitude>
+        <Latitude>51.48892009999999</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-0.21923989468996297</Longitude>
+        <Latitude>51.487764240787875</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-0.23801579999997102</Longitude>
+        <Latitude>51.5158662</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-0.26218772105710286</Longitude>
+        <Latitude>51.52287982725664</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-0.3195271364929795</Longitude>
+        <Latitude>51.575227763274526</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-0.40301049999993666</Longitude>
+        <Latitude>51.4880804</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-0.46121814504397207</Longitude>
+        <Latitude>51.52629690205374</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-0.4818026000000373</Longitude>
+        <Latitude>51.60741350000001</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-0.6398917999999867</Longitude>
+        <Latitude>51.4090676</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <TermsOfUse><![CDATA[All members of college are eligible to use the JRS / eduroam service, no additional registration is required.
+
+However, the Imperial security policy requires to you obey the relevant JANET policies when using eduroam.
+
+For more information, see section 2.8 of the Conditions of Use of IT Facilities, and the JANET eduroam policy.]]></TermsOfUse>
+      <Helpdesk>
+        <EmailAddress>service.desk@imperial.ac.uk</EmailAddress>
+        <WebAddress>http://www.imperial.ac.uk/admin-services/ict/contact-ict-service-desk/</WebAddress>
+        <Phone>+44 20 7594 9000</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

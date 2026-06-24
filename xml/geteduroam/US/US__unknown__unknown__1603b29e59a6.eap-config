@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="undefined" namespace="urn:undefined">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFhjCCA26gAwIBAgIQIYo6E+vZMrhGzHwI8stO2zANBgkqhkiG9w0BAQsFADBLMRMwEQYKCZImiZPyLGQBGRYDZWR1MRgwFgYKCZImiZPyLGQBGRYIY29ubmNvbGwxGjAYBgNVBAMTEWNvbm5jb2xsLURDMy1DQS0xMB4XDTE4MDcxMDE0MTE1MFoXDTI4MDcxMDE0MjE0N1owSzETMBEGCgmSJomT8ixkARkWA2VkdTEYMBYGCgmSJomT8ixkARkWCGNvbm5jb2xsMRowGAYDVQQDExFjb25uY29sbC1EQzMtQ0EtMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAKagfmTuZ3hofYqOeDuCBuiKTXTP6eVMAcZioaatdEpYP5zTSqXoQQP1MHM0Itz9LW1u6i6ggZ87NdsQ0ZVWqNq/LzFCiY04NBPp4ypeWA8TqidE5tALmADqNBQr8Z0L6nUpdvwis5Y23lWzhmWpxN4Qxc5CgTXBUNh4wAt97+knS6ITjNR4GRo8HqGyInwfG2Yj2GFSsVEYi3YCdXJ5dLjiccITNBFIRgvOG3OrwpH+ZiF4VeUgwuUpE/GuPD10DGUbb4LYrx9HpXub+5e93nwV+gKmGqQw8u+Ac1vRZilPypHOHCVg6oJmG+kAS+wjzji2AspJD6cQNMNFCHB2OU0r2Gh3iikqqWXXlY6RY9DWlgfBr2RuIo81kUtSFYPsWxPJCJG73Iug058orKsMtXB4xY3GFczHSDxlR84wv8zEzb2aZy/vl0thzQJuC7j/a7hKCKfT+DzRcpwAU81U0SbKwY9i3v3c+odskbTWC+TXvelWA71d76/F8JN/bPeqHGJmvj9mcL7y8jv5LLlCNTy7ROi8j9bweryrO2Mo0Z8TSHF0Tn9bacqMcOyqtJkAgMbRWeTriOrz8WhxG9aBSWBNXbwltK29ncmBwFtjvQiJ6u69Q/p7meRVmUndHrRn0e2WyjXgGpZ/uOlGn6mR1OuZG03qfMd+vy2+88WeLdf7AgMBAAGjZjBkMBMGCSsGAQQBgjcUAgQGHgQAQwBBMAsGA1UdDwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQUUC0w6IMkFLZxsm/QRc6gS7wK4jAQBgkrBgEEAYI3FQEEAwIBADANBgkqhkiG9w0BAQsFAAOCAgEABTc8g9UK4DteWWO0MsqxeNCoU46juOwoK/P7bhgJ4TTW2uJ+vYDsPSyZ74AlJBhMX9p7J4OjHzf/PHacW2ud1jeAdtdrOmZ/zvP/cIUqd3hMilDRj8AKyh8R0E1+HVLGdhYXqHRTLgWbpyN+8/c5bCLagLyKDVC6yigUbNn4IvYMFFJQar6Y543cClRCGuEDB4568NnjsJsCfYKs/9jCcMCcYVHBZhq22h9XIhIXTXjld6SpODhcgXQxkrLUtSye/U2rjgcGdnMIpe5PgUMY0JdLQlLsMoXfxCdWvg19N+D6Q9fKQA1ygzkqrOKfltK2si2kB6SoEM3CFnf7WXD7b1sA6e1ZS+zeM3EJFpdhFyXXjxkIpGHvmX7IpyyvcztWiClErgpAjgfiCJH53S2SmHi0brkYKBeMwH7vbITo/oNCGiYIyBHep4dM2f7MdRMRS3MkyZ0s8SV3bz3dPkd+MA7S832KGu6kMKM6Jq65Htqhihj1EbpZCJvwvKdItUh5I5cIzwsJUu8TrftGxfVYwu4zJ2VVHniFzRBqmwxQf9JUD0/9M51a6NexYCjI3w+bur3A2jN5AtGfJoGDkA4m6S1KlEDZ6EhXFszxWy8VpZw0sy1PTyN0uck4bO+CK/AC93yvu/Ko+VIXpOyxVyib/13kSeD/FMuev8Bpx9Qs7Uk=</CA>
+          <ServerID>clearpass1.conncoll.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix/>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Connecticut College</DisplayName>
+      <Description>This is the Connecticut College eduroam Configuration Tool. Please use your full username@conncoll.edu as your username and accept the certificate if prompted.</Description>
+      <ProviderLocation>
+        <Longitude>-72.10456596295165</Longitude>
+        <Latitude>41.37866573894571</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>http://www.conncoll.edu/information-services/technology-services/it-service-desk/</EmailAddress>
+        <WebAddress>http://www.conncoll.edu/information-services/technology-services/it-service-desk/</WebAddress>
+        <Phone>(860) 439-4357</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

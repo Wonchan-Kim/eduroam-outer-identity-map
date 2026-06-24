@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="nkrumah.edu.zm" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFDzCCA/egAwIBAgIUYo/r4UswMtLTCiGGF6YF9bPDAfowDQYJKoZIhvcNAQELBQAwgZoxCzAJBgNVBAYTAlpNMRAwDgYDVQQIDAdDZW50cmFsMQ4wDAYDVQQHDAVLYWJ3ZTEWMBQGA1UECgwNS3dhbWUgTmtydW1haDEjMCEGCSqGSIb3DQEJARYUYWRtaW5AbmtydW1haC5lZHUuem0xLDAqBgNVBAMMI0t3YW1lIE5rcnVtYWggQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTI1MTAwOTE1NDkzN1oXDTI2MTAwOTE1NDkzN1owgZoxCzAJBgNVBAYTAlpNMRAwDgYDVQQIDAdDZW50cmFsMQ4wDAYDVQQHDAVLYWJ3ZTEWMBQGA1UECgwNS3dhbWUgTmtydW1haDEjMCEGCSqGSIb3DQEJARYUYWRtaW5AbmtydW1haC5lZHUuem0xLDAqBgNVBAMMI0t3YW1lIE5rcnVtYWggQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwuLJhYJwEv+e42Vqdjnyay2yV0i1b79dutxzBdlupyn0r0Van0Xf3oRNqrkwcaNGS/zqy6IT13FlqEsrkbWoEB1EdiwHQXnkTbuXJnGI0wUy4cxFeaiAt6vXm3wnIco2+gbG2vAHo2zKTIdX59N5lmMC3wmqntOZPXnPq9MtOtrfCp75n2MSL+my6mnm9gO5lwOMLloki6wL+yh8gGALVokZdRJ4RSf6hhvXCEE4FWe2CJbFoQeuGtEeFy4ni93Fw4mBpKcfrZH7O6jw3rjWZFo/dOYNDJ73fLpK80UryfPKlCK0tQq+HF4tjY0a70El1x+E2v/G8lDwbdKvY/JUswIDAQABo4IBSTCCAUUwHQYDVR0OBBYEFILOb/MuSavQs/R0EPi88s7AlQT9MIHaBgNVHSMEgdIwgc+AFILOb/MuSavQs/R0EPi88s7AlQT9oYGgpIGdMIGaMQswCQYDVQQGEwJaTTEQMA4GA1UECAwHQ2VudHJhbDEOMAwGA1UEBwwFS2Fid2UxFjAUBgNVBAoMDUt3YW1lIE5rcnVtYWgxIzAhBgkqhkiG9w0BCQEWFGFkbWluQG5rcnVtYWguZWR1LnptMSwwKgYDVQQDDCNLd2FtZSBOa3J1bWFoIENlcnRpZmljYXRlIEF1dGhvcml0eYIUYo/r4UswMtLTCiGGF6YF9bPDAfowDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCtqwpcFSJ04R/gLgH0HeKSbwkY94CWITUjr7b4uyuRx2eSmenF2E98GHPcw1e1b/UxzXJb7QUe37Jt+hK8qI+BQDBvaH7abKc2pFxHkbkEF1CccoSe6jCp/FdV1FaE7tfBF6R0xyLI7X6fJF7qoC8ngZTmgeHOGJLaqU9wJx+BxtcKzaISUFnQ9uiYvpqqakLbrivy3t8+uvix8pi/lUaQzrNQYnfWpEZi3FAzgI5b+9jR6Oa0wNBdQ3IVmBtpwpnt0VP6hfnyHKCGkCJqmPgIJqjpARdxZjzXyxi8JMycIRh3FwcRJ6c9sEA0BXUT2ZItz2zFMqkB937cGAVdjHA1</CA>
+          <ServerID>edusvr.nkrumah.edu.zm</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>nkrumah.edu.zm</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Kwame Nkrumah</DisplayName>
+      <Description>Kwame Nkurumah</Description>
+      <ProviderLocation>
+        <Longitude>28.471207788544888</Longitude>
+        <Latitude>-14.444490909055759</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>systems@zamren.zm</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="kyau.edu.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE6DCCA9CgAwIBAgIUcM6PxTRSYFgnVO3gWbs1EdyTffwwDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkJEMRIwEAYDVQQIDAlTaXJhamdhbmoxEjAQBgNVBAcMCVNpcmFqZ2FuajENMAsGA1UECgwES1lBVTEiMCAGCSqGSIb3DQEJARYTbW1oLmRiYUBreWF1LmVkdS5iZDEjMCEGA1UEAwwaS1lBVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjUxMTA2MDgzODM2WhcNMjgxMTA1MDgzODM2WjCBjTELMAkGA1UEBhMCQkQxEjAQBgNVBAgMCVNpcmFqZ2FuajESMBAGA1UEBwwJU2lyYWpnYW5qMQ0wCwYDVQQKDARLWUFVMSIwIAYJKoZIhvcNAQkBFhNtbWguZGJhQGt5YXUuZWR1LmJkMSMwIQYDVQQDDBpLWUFVIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAI8c5iSZyR3t5qJby2nG1wri+54VH5YYrhjrWPAwL0i75TMMtWhWQx3VM5OhiEw+QXVyyWbZUZSMotlC3/wblsqQK9Sz3Rye+sRy7OMs2uflM1qgZKKARbIRSGX4+WTI7ZdxnERVxdCV52lFWxM6aAvNEJdTL8L1KDJmzFDUh2M1VZYKyJVZ3Qv+5FCs/eeiV4dQk3G8Y3kA1Vz98i5JxcJndFEL/RZ5YRrtQCYp+GxqUOXhSa6N4WeCeNwbSunU18WRnA5EImpVYM4/0glXSEPXKVN2vEG4924RfZxJ+x8V+n2ft/o9EUDRz4suOcSj+aKll97uLK/QX40zSCRgdQsCAwEAAaOCATwwggE4MB0GA1UdDgQWBBRYXXo9FhIzT0DSnMCx+FZLQXxEQDCBzQYDVR0jBIHFMIHCgBRYXXo9FhIzT0DSnMCx+FZLQXxEQKGBk6SBkDCBjTELMAkGA1UEBhMCQkQxEjAQBgNVBAgMCVNpcmFqZ2FuajESMBAGA1UEBwwJU2lyYWpnYW5qMQ0wCwYDVQQKDARLWUFVMSIwIAYJKoZIhvcNAQkBFhNtbWguZGJhQGt5YXUuZWR1LmJkMSMwIQYDVQQDDBpLWUFVIENlcnRpZmljYXRlIEF1dGhvcml0eYIUcM6PxTRSYFgnVO3gWbs1EdyTffwwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBw4HqPF01loMK2Asuv+xQLuiI9LiKt4pW4rTeb/HfMCVao+0MPV+WO9LSLRJ/gTw0h+wTycciAOOwfiS/HAWUmfkKqijDjqe970lYiMFVKfUv5sr3WyO3kdoq1Xex/idIx5Kq+EJbiJKRATisaJS+Od+m46f4kPi6UzUSBzoPOEOIGVT0mjd/l0zJiw7DMTN5a7fOvHtyKsrJ5nJyR7M375FPRKPkE7ZxWeB6SEUxgcLTGt/KMDX25+eLATafoirGRvU44IfXUtXTGeau8dnWOnTj4VWoB2VaCIo40lo0tPbGG7wzZgaUyiPLQP3kdr5IV35SuzodHQwCJukYxun/c</CA>
+          <ServerID>irs.kyau.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@kyau.edu.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE6DCCA9CgAwIBAgIUcM6PxTRSYFgnVO3gWbs1EdyTffwwDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkJEMRIwEAYDVQQIDAlTaXJhamdhbmoxEjAQBgNVBAcMCVNpcmFqZ2FuajENMAsGA1UECgwES1lBVTEiMCAGCSqGSIb3DQEJARYTbW1oLmRiYUBreWF1LmVkdS5iZDEjMCEGA1UEAwwaS1lBVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjUxMTA2MDgzODM2WhcNMjgxMTA1MDgzODM2WjCBjTELMAkGA1UEBhMCQkQxEjAQBgNVBAgMCVNpcmFqZ2FuajESMBAGA1UEBwwJU2lyYWpnYW5qMQ0wCwYDVQQKDARLWUFVMSIwIAYJKoZIhvcNAQkBFhNtbWguZGJhQGt5YXUuZWR1LmJkMSMwIQYDVQQDDBpLWUFVIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAI8c5iSZyR3t5qJby2nG1wri+54VH5YYrhjrWPAwL0i75TMMtWhWQx3VM5OhiEw+QXVyyWbZUZSMotlC3/wblsqQK9Sz3Rye+sRy7OMs2uflM1qgZKKARbIRSGX4+WTI7ZdxnERVxdCV52lFWxM6aAvNEJdTL8L1KDJmzFDUh2M1VZYKyJVZ3Qv+5FCs/eeiV4dQk3G8Y3kA1Vz98i5JxcJndFEL/RZ5YRrtQCYp+GxqUOXhSa6N4WeCeNwbSunU18WRnA5EImpVYM4/0glXSEPXKVN2vEG4924RfZxJ+x8V+n2ft/o9EUDRz4suOcSj+aKll97uLK/QX40zSCRgdQsCAwEAAaOCATwwggE4MB0GA1UdDgQWBBRYXXo9FhIzT0DSnMCx+FZLQXxEQDCBzQYDVR0jBIHFMIHCgBRYXXo9FhIzT0DSnMCx+FZLQXxEQKGBk6SBkDCBjTELMAkGA1UEBhMCQkQxEjAQBgNVBAgMCVNpcmFqZ2FuajESMBAGA1UEBwwJU2lyYWpnYW5qMQ0wCwYDVQQKDARLWUFVMSIwIAYJKoZIhvcNAQkBFhNtbWguZGJhQGt5YXUuZWR1LmJkMSMwIQYDVQQDDBpLWUFVIENlcnRpZmljYXRlIEF1dGhvcml0eYIUcM6PxTRSYFgnVO3gWbs1EdyTffwwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBw4HqPF01loMK2Asuv+xQLuiI9LiKt4pW4rTeb/HfMCVao+0MPV+WO9LSLRJ/gTw0h+wTycciAOOwfiS/HAWUmfkKqijDjqe970lYiMFVKfUv5sr3WyO3kdoq1Xex/idIx5Kq+EJbiJKRATisaJS+Od+m46f4kPi6UzUSBzoPOEOIGVT0mjd/l0zJiw7DMTN5a7fOvHtyKsrJ5nJyR7M375FPRKPkE7ZxWeB6SEUxgcLTGt/KMDX25+eLATafoirGRvU44IfXUtXTGeau8dnWOnTj4VWoB2VaCIo40lo0tPbGG7wzZgaUyiPLQP3kdr5IV35SuzodHQwCJukYxun/c</CA>
+          <ServerID>irs.kyau.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@kyau.edu.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Khwaja Yunus Ali University (KYAU)</DisplayName>
+      <ProviderLocation>
+        <Longitude>89.7055333</Longitude>
+        <Latitude>24.2240931</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>noc@bdren.net.bd</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="ionio.gr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFIjCCAwqgAwIBAgIUMpt0oHRaMTm3hTcSLxCt9BVntBkwDQYJKoZIhvcNAQELBQAwNzELMAkGA1UEBhMCR1IxDjAMBgNVBAoMBUlPTklPMRgwFgYDVQQDDA9HVU5FVF9SQURJVVNfQ0EwHhcNMjMwMTI0MTAyODI3WhcNNDUwMTE4MTAyODI3WjA3MQswCQYDVQQGEwJHUjEOMAwGA1UECgwFSU9OSU8xGDAWBgNVBAMMD0dVTkVUX1JBRElVU19DQTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBANjyb3POAcc6H41VChQin2dybH0vCMMe5DmsS4UoW1SdDjToHSBxRz43RUKXkGaz0mRKHWtiXNP9Ps4tobFC9spdhsHhIFlxczgmwvFHdd42UMArP2iT2PGk3e1weQtjxgjvYzkEckie77VM1df27UZjHSE3/nj0gAlknPyTgFMi/1GHxHdm9m3IEZWH/Fyi3AAUV4USuUUaR4ZNvi+bLjvw2WLySdoC2V4StRsVrrdNh+QS2yDm2kXhHijX7j1fwydvhteZTYZkrCXD4XWwU4B/uRSvlOy+X5iyPKZ9D8kMjPPc7LPrwsTVlOAortSI7yGqSaTC6QKwGf9sIoB3VZKlreiNehRDIApdsP+Dzl6HXIe51z0tu3i/9GuKmgh/UzBY5aFnNB+zJKEJ9Bakd30X96qxCf0dsRio7la73mHTamZ1RsdSZc4IW0twLdY3osfZQ397NrFLoq4AZJ6vNpK+pS31IBOUp7x/R3I6rmuLgYeHeWaL2c7bNXVzclP81tsSm56avVUk1t1lkopppL9Pbi2HKGSn0UfypdsxW7UAXUt57MMQp+pOmHU8j12OfhD+O1I+S2FdkEEewN55XILLHtrtIIEkTG73l5a3SwivOX/wN94ZoO2GSBxblVwjLYU2XG+O2vEzmMmQcObvm0URdWO5fTUxSvlHVa6iH++JAgMBAAGjJjAkMBIGA1UdEwEB/wQIMAYBAf8CAQAwDgYDVR0PAQH/BAQDAgLkMA0GCSqGSIb3DQEBCwUAA4ICAQDSjbkQ8e0jg+ETjQa6/zS63PAJmOiVfIhEKX0ryjyR7ZOkCTglMXpTE88tK47TRfqtVzA9Sn3ywhJ5kCwkZzxonA1/3SRizJOx9loG5EciHJbnw1eF+jc2SxjRXOIkFwnnC72BXWtcWxca2lBd3ifBDSpom6kdJEGkTrTg8pRNOBXSlTYPEPTFfNL6A81fS8elQDfuiOpJkTp5+7A2J0gJYES43QOANao/6mgifoqSkX998mCCQILyKKOJyPHlgLP5UYCo4nrl1cJ6KwmPnNPQ5vbLh/Ifb2KID0dq0iBhG48TlXE+qdrRA45IAGALiACHkcsSbdwertLI8u+HhtsY/BE0Zo0Hpg/K7AYCc45EbAODaq2icIKOjwm1GJNElcVTb0o/LGY4+4r1eHTeolgUq2be1dkXCrpHfzbaem98d7W4iD78I5imw/6byP3ODaKiZPsRYdkXkcnTj0Qqa+IOSEdJsbpyRs+2/CS2xc+Hha+bPtr+x17Z2T3Ew1RVi+7kU9SLZexcoX3UTFKri6TnjAdzc+MxLfzAi5c89V9YtTjG0voOxvKENUYw/sQkOVOQMt7BBF75WJyoNYhFMugZaVfDcsKTVfL0AmaJ5zs1u9IiemtNlhYs5l2aG9FNnbH5PSALFZ7diyEds7Wr7edPwvJpPOrVmB617qmdfHu1ag==</CA>
+          <ServerID>ridp.ionio.gr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@ionio.gr</OuterIdentity>
+          <InnerIdentitySuffix>ionio.gr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFIjCCAwqgAwIBAgIUMpt0oHRaMTm3hTcSLxCt9BVntBkwDQYJKoZIhvcNAQELBQAwNzELMAkGA1UEBhMCR1IxDjAMBgNVBAoMBUlPTklPMRgwFgYDVQQDDA9HVU5FVF9SQURJVVNfQ0EwHhcNMjMwMTI0MTAyODI3WhcNNDUwMTE4MTAyODI3WjA3MQswCQYDVQQGEwJHUjEOMAwGA1UECgwFSU9OSU8xGDAWBgNVBAMMD0dVTkVUX1JBRElVU19DQTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBANjyb3POAcc6H41VChQin2dybH0vCMMe5DmsS4UoW1SdDjToHSBxRz43RUKXkGaz0mRKHWtiXNP9Ps4tobFC9spdhsHhIFlxczgmwvFHdd42UMArP2iT2PGk3e1weQtjxgjvYzkEckie77VM1df27UZjHSE3/nj0gAlknPyTgFMi/1GHxHdm9m3IEZWH/Fyi3AAUV4USuUUaR4ZNvi+bLjvw2WLySdoC2V4StRsVrrdNh+QS2yDm2kXhHijX7j1fwydvhteZTYZkrCXD4XWwU4B/uRSvlOy+X5iyPKZ9D8kMjPPc7LPrwsTVlOAortSI7yGqSaTC6QKwGf9sIoB3VZKlreiNehRDIApdsP+Dzl6HXIe51z0tu3i/9GuKmgh/UzBY5aFnNB+zJKEJ9Bakd30X96qxCf0dsRio7la73mHTamZ1RsdSZc4IW0twLdY3osfZQ397NrFLoq4AZJ6vNpK+pS31IBOUp7x/R3I6rmuLgYeHeWaL2c7bNXVzclP81tsSm56avVUk1t1lkopppL9Pbi2HKGSn0UfypdsxW7UAXUt57MMQp+pOmHU8j12OfhD+O1I+S2FdkEEewN55XILLHtrtIIEkTG73l5a3SwivOX/wN94ZoO2GSBxblVwjLYU2XG+O2vEzmMmQcObvm0URdWO5fTUxSvlHVa6iH++JAgMBAAGjJjAkMBIGA1UdEwEB/wQIMAYBAf8CAQAwDgYDVR0PAQH/BAQDAgLkMA0GCSqGSIb3DQEBCwUAA4ICAQDSjbkQ8e0jg+ETjQa6/zS63PAJmOiVfIhEKX0ryjyR7ZOkCTglMXpTE88tK47TRfqtVzA9Sn3ywhJ5kCwkZzxonA1/3SRizJOx9loG5EciHJbnw1eF+jc2SxjRXOIkFwnnC72BXWtcWxca2lBd3ifBDSpom6kdJEGkTrTg8pRNOBXSlTYPEPTFfNL6A81fS8elQDfuiOpJkTp5+7A2J0gJYES43QOANao/6mgifoqSkX998mCCQILyKKOJyPHlgLP5UYCo4nrl1cJ6KwmPnNPQ5vbLh/Ifb2KID0dq0iBhG48TlXE+qdrRA45IAGALiACHkcsSbdwertLI8u+HhtsY/BE0Zo0Hpg/K7AYCc45EbAODaq2icIKOjwm1GJNElcVTb0o/LGY4+4r1eHTeolgUq2be1dkXCrpHfzbaem98d7W4iD78I5imw/6byP3ODaKiZPsRYdkXkcnTj0Qqa+IOSEdJsbpyRs+2/CS2xc+Hha+bPtr+x17Z2T3Ew1RVi+7kU9SLZexcoX3UTFKri6TnjAdzc+MxLfzAi5c89V9YtTjG0voOxvKENUYw/sQkOVOQMt7BBF75WJyoNYhFMugZaVfDcsKTVfL0AmaJ5zs1u9IiemtNlhYs5l2aG9FNnbH5PSALFZ7diyEds7Wr7edPwvJpPOrVmB617qmdfHu1ag==</CA>
+          <ServerID>ridp.ionio.gr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@ionio.gr</OuterIdentity>
+          <InnerIdentitySuffix>ionio.gr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Ionian University</DisplayName>
+      <ProviderLocation>
+        <Longitude>19.923824787128975</Longitude>
+        <Latitude>39.62105261213489</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

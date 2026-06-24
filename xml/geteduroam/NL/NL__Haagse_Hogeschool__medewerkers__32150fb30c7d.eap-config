@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="hhs.nl" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFmzCCA4OgAwIBAgIQHA8tmd+CNrhJOSgpDvG5ADANBgkqhkiG9w0BAQsFADBLMQswCQYDVQQGEwJOTDEMMAoGA1UEChMDSEhTMQswCQYDVQQLEwJJVDEhMB8GA1UEAxMYSEhTLVBLSSBJbnRlcm5hbCBSb290IENBMB4XDTI0MDQwMjEyMDQ0MVoXDTM0MDQwMjEyMTQ0MVowSzELMAkGA1UEBhMCTkwxDDAKBgNVBAoTA0hIUzELMAkGA1UECxMCSVQxITAfBgNVBAMTGEhIUy1QS0kgSW50ZXJuYWwgUm9vdCBDQTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAPIvoAjxVN1FMq55H93igAI1iuKbICxcsa7Q3P/Ih/T+UVpvo+Apwo12pdHrGRAwkXAsmGN7aXXbj9G5tl1tuVplI7nPIW9FJ2xXAy7TzB6Cljlzr33lTH9XOwupETABgaKtahCVqM4EpNp3pqZ9Sk3TvU6vxtrrbmYrEKo9xP9Nv375zebNvEHbH0q4WZ8hw2cjNyymIvNoRllTbDn4NiKlU3pQy/WsGCMnu1VExsHJShW3j2jX/w0Ptza9Vhc0I0WAf8ISDbTwAOEBUo6pkWUM8Nj+c5ZiLrsRnZTUb/HNKgnq3g3fM2aWpzu6I+41Ixtb50kufqZ83Cdai9PPazlJo4Cy1DAaetIt+mC6mEdsW4NNMiIdTmpQuyhfkpf511iwR160vVVzGNU9F/aEb5vPOVk6baeyaGVQZtAkMyv+wpHE82z3QS2frYgO71r0g8/RQUwGO+SEjryfU92dSOqpubkoFl6B8dk9oG4g2bgzQQnIlW950SHZC7HVaXdmssIGSAIwVrPjwWmqa5d6DEWZashW5wl/8cVikH5FAm+NXEtJDiZqYvaP6FMTkdvXHXVejoWCMClXL5CQ8ir7LSMQxpu5HDEKhsiGV2jxnt5MbTFLWbybi9hPUSeD1Uv6oaq5nKe0uipGXF3jWfQY0jE/Y6szzwJnUcFTVGiwEKVbAgMBAAGjezB5MAsGA1UdDwQEAwIBhjASBgNVHRMBAf8ECDAGAQH/AgEBMB0GA1UdDgQWBBQke9EfPADDYmE/3wdSk+vhEIts1zASBgkrBgEEAYI3FQEEBQIDBAAEMCMGCSsGAQQBgjcVAgQWBBQUMTjOdjY72/vZccPMrH6uHcybtjANBgkqhkiG9w0BAQsFAAOCAgEAS0/5Vn36sqRBM6mf/eh9WIuAXvF4lA84nzxfv+CW+P7xKVFTF56ZOdgnowCkwbpyC++SbWaIgiqM/mJmLC0rvJRW5w9f6IZp0bgfbGzl9zakU7PG9dc+VyzvoWsf8ykUPcmg588eQbPbJlG05yNfxMO4H1kHqPUKevOBj21NloKkc77OR+IWu/519RuaVEz0DPeMzo+cvtjKzsW0/TD8NSyrEAD4Zx12UKVpYdbpmhA3qz813/vprKrF4uIZ2qgXh/ke1liRYiUJP7LjRcz16r33Mrqy+rl3FmrP3ZJyEPbbL9v5R43PmgCaJb6dEjUrIbnt3FF5sHSNEBNz+cuCYCDja2k+ow7Vvrq1ToGjC33xx9DnfwXJ1WEGPkTv2rkkpgLy0MJb0QPZz5KhTxwciis6nMfPUrzRI90n55TL7feYglGKx8c9aeD7XtvlmtOehFPkwZM6zIbw4gbvf1t7IXHS2VGpkyWOLdt39dk7TIREcVDyrOEiY/XWTgZIO++qLIIIN3FDijqY51suvjq46zR2sQJCUICAbFc29GSGy10SOSBzI0GBgAibGiSj+UK/YV3eqkDQqj5U0HGfp6v6vLd+3zmGk4WPrfMdX1gEjBjrQRtAZgxNT/0zESHn5nwKjkfxwWGt4PbrfyorYN5RvbA/XKmiJbQ6e37UjSuZTwU=</CA>
+          <ServerID>wifi.hhs.nl</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@hhs.nl</OuterIdentity>
+          <InnerIdentitySuffix>hhs.nl</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Haagse Hogeschool - medewerkers</DisplayName>
+      <Description>staff</Description>
+      <ProviderLocation>
+        <Longitude>4.289606457672107</Longitude>
+        <Latitude>52.05568510000003</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>4.323917101232951</Longitude>
+        <Latitude>52.06727936132701</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>4.3671077885773</Longitude>
+        <Latitude>52.00188450149005</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>4.51487689999999</Longitude>
+        <Latitude>52.046684</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">iVBORw0KGgoAAAANSUhEUgAAAL0AAAAoCAMAAACcogvyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRF9Pbm+vryrrxBydKA3+SztMBN7/HZz9eNxM505Oi/2d+mucVav8ln6e3M1NuZqbc0////oeMbkgAAA/JJREFUeNrsmdu2oyAMhjlDFZD3f9qRc6JYbet0zaxVbvYOxfgVfpJAiU9tIiE150srdmwi2g587gJoxlrLw7aRtddO294Hl0tsdqKw17DYKfmj9iiLmghHjSyl+WT6agJC2z/On3v46tihd2514sF9yi6tMV/5KeiVhdMtqPlz+uVR6Fj6vuoivYkdaueWbadghWcIiUDvranX6dfh64qaQme3Q57R0zzHhOBHRH4tVBTNolnmjDvhkXZOf0x4hz4J4B36KZNoPXhkbUDeWZMmfk3FK2ZZuzmOe9i2IIl+drWRM3ra6Xdr/oxeZhFIOZaj2GhpriqiyHkLCQHQ23DeCn14jz5PUlBl16A9C2mrGFwYLux2179KTzp9WjF6jZ4X4WCJB7bbm/lBGcb0i3Uf0Yvi+lD3NqcBi+hpIWRY4qLvTo30bfbvFzVYwhSQ6NlptG8xh5XZO6QfxoApIz1gEKkPTBOa7fq1RU2HNefN+xSAY44/oc8Pk6fxfuhvzjtzwhLPLintWQTQ260XkK2Ye5deKpxr/QV6VaIiWVDK0kUkBob8Q/p1OSTOmK/Qo2XsdY67oHtetTyj1CQLxwOG/Cf0K3/tZa/u2vMhRzGHsiwcbSV4c4GO6oMhvy6EihGN7+aUaAYm/xv0IjPTTWoyWGbzIGL6gSII653foC96qTGvvI5sd4kCK/LYeelZV3+VXhUeg1OT39JrkBqY6suTvdgWKGWPu1+g10XsUchT34cJwuTyyoL9wDO+du5h++i4UoyL1qn22erp6eRtegYDDauyRgoRwCC4vC/5heNOO6yQzf30AgV5XoswA3cnRUU7wp9V2NMzMqS399NbVAiochohy766qSEfnAx7VeBALuQ0DOmXT+gVOCGQ9n8Sdq8nikkdqlDJxpz0KmPjUTlNhI/i1qKjUIfbJ/T/cPvR/+h/9D/6/4E+372QdltL1khuBKjXgVmOPO3SdQ3u9TE6xdta+rLLkI9P79L7JSdFV48kTGvZyp5o+rkmfp/OKrZ+ZL2WpXogcjHelHuTc5fALEXePfRS0lQYIJOgsbXuiNUFJbU8Un3cgUs1NO+kd/lgRdrpQuzHNnpwcYMusa64rObH9Lmud8UikMYvZD+2GVL02k6cu9Qj82N6eOFZZ7eIO5qqS92jQlHItcSstaR7xSUwb1VO9d3mPtHLZaCcfAGih/QnLqHW7qQX+W9VZTH9AX3cfAGp+LLL23QPX6XqLajC5oCewB4mw1HMOXL5F2LOetLizvl2hssma3c5/WdIFc/lgsmWCaKlL7tsZr7cu4me8nRh0H4I5PCk58FtFU2XZu2S17M+7oLLbmaXfwQYAKictu9MPNXPAAAAAElFTkSuQmCC</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>frontoffice@hhs.nl</EmailAddress>
+        <WebAddress>http://ifrontoffice.hhs.nl</WebAddress>
+        <Phone>070-4457777</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

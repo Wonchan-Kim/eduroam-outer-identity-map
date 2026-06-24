@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="ensg.eu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>radiusEduroam.ensg.eu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@ensg.eu</OuterIdentity>
+          <InnerIdentitySuffix>ensg.eu</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>ENSG - IGN - UGE Ecole Nationale des Sciences Géographiques - Institut National de l'Information géographique et forestière - Université Gustave Eiffel - TTLS/PAP</DisplayName>
+      <Description>EAP/TTLS/PAP profile to use with your ENSG1 Active Directory Account</Description>
+      <ProviderLocation>
+        <Longitude>2.5875055789947505</Longitude>
+        <Latitude>48.84112140100808</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>rsi@ensg.eu</EmailAddress>
+        <WebAddress>http://infra.ensg.eu</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

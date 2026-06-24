@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="eduroamcat.uv.cl" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>eduroamcat.uv.cl</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Universidad de Valparaíso</DisplayName>
+      <Description>Sistema Eduroam Universidad de Valparaíso</Description>
+      <ProviderLocation>
+        <Longitude>-71.62675291299819</Longitude>
+        <Latitude>-33.04062213126887</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>redes@uv.cl	</EmailAddress>
+        <Phone>+56322995530</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

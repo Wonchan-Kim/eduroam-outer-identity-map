@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="mu.edu.tr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFWzCCA0OgAwIBAgIQYz053QAAAABpVNP/GK/R6DANBgkqhkiG9w0BAQsFADAaMRgwFgYDVQQDEw9pc2UtMS5tdS5lZHUudHIwHhcNMjIxMDA1MDgwMTMzWhcNMzIxMDAyMDgwMTMzWjAaMRgwFgYDVQQDEw9pc2UtMS5tdS5lZHUudHIwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDRAn0LhwYYYEIXnRBnxucxTsxL48KRTr3er8HoQHZzSN16Q1BEjDqSPC9+kzwr6N6sj+fMb05RDdyCAKVBLRZpOyyjY1fgWMhpkaDjV0oQqGyFTTcFF+E/ElMsftcIdqzJQ04o7LkXYUtt3wdq/QucbySo8MubiNHNhkhCoCpJFwSNNLAuHzCE2thrgFI8fEqmUD8wMLR49O7pHVpf0GfdxdA/0mKjGBvA5TJY6Rpgnh5j5M2GfOXZqAfFe7l2fAoZVGY/gR2YDqZVIMmsnsjUzJNMt93WG0WNZE9Be3B1TX3t48VVH+bLRulNhQzLaggY98cD152Xn04tu26N0w42k9pD2pzIEC2x12GUors1QSY6pw1I4nYXXabFCumjFNsvD5YRpHLEOlbKbVefO0deC0uEQzqWNyDxWBZL6ES7Z1ogjpYFmSbEcaHWeKuEsk6JejIR8iFFJaQF2Ce7m0IqR+bzT1A8XNrJgGUqB8fqZ5jlmCvB+ohuaTn0MkMo/fl2KcT+84nQFg6wkxPDqf6+/Fw1via+j/lvRqwb/VTm47ZJn3K6HC0LSFVTpOv84of9eK6hnotDSDTelFVL2ZudCxzd+nqpytb7OtIekjU9Ir95ymMbYb4yQyJj93SKl4e1gqHGMFTA/X/P/pqIEibgXQt9jQFNueJgtPO72tCtwQIDAQABo4GcMIGZMCsGA1UdEQQkMCKCD2lzZS0xLm11LmVkdS50coIPaXNlLTIubXUuZWR1LnRyMAwGA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgLsMB0GA1UdDgQWBBRe/2DMArImF4Bctyt4pZhdfyA+5jAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwEQYJYIZIAYb4QgEBBAQDAgZAMA0GCSqGSIb3DQEBCwUAA4ICAQBI1+GNK7DTUdPkMlqN/wkXzeq5AHZfZttXcx+YXxyzWmEobXqM2z/RpGky5k0iYX6531g7YlGpgPihjxnbv5DRMzwcShrjm9i/ReKzeQRFrN6pHlI/wxkBXGmVWGUMXIh1qofktkcrwSN1KN9yE5GtIESN5SyXiyAcCIPjAnSyyz2/3FTBrZv7Zxy2UaS6iWGMKpdsw+pk6qyoJnrFVR2lkgXSI5iT1aHbiUZ7gpWpm4G4hb6miX6FCoxTXTGC3a6R+eqteFzprlSRSGhTI6S4Xj9ZrjTK5bsHuXDRy4NgleR/HkORAnNgcgbivEriH4aqveNI4/knG1CTuFj+KMaWNgbQrc/rxzdCdp+j7LDn5ROFbYCgaxL9H0jyVIRlpfcuXSol7HlH1r+vQdMTx8fW5mun+WjnZ24NgUpldT6ZmR5tlzXZJ/skI/pQwkaJtM9OyjMkHMHUJ9ASStpXXgqhfGmX0IRHztilYH6RuZq9MPHn9phpq5/7C7mm+OV1LUepCFzPsAGg0cR11oCXhS37Nk/CoNpIclJ020u49BgcBMBhNxJQxVhL1+4nb58hA7tMLSSezx6HEhJE261jHWxwP/cHNWI/3cD5VJSYyrHrFj18/kwvtUUxztKvkaDQbW2aOItThD85vO600uLUfuDLukkMZeKO/r9uUCSUA+3Dtg==</CA>
+          <ServerID>ise-1.mu.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>mu.edu.tr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Mugla Sitki Kocman University - MSKÜ Eduroam</DisplayName>
+      <Description>Muğla Sıtkı Koçman Üniversitesi Eduroam Bağlantı Profili</Description>
+      <ProviderLocation>
+        <Longitude>28.375821411609646</Longitude>
+        <Latitude>37.16489510954291</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>sysadmin@mu.edu.tr</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

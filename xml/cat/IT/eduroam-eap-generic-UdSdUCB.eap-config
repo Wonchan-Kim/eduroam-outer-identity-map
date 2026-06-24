@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="uniurb.it" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFgzCCA2ugAwIBAgICEAAwDQYJKoZIhvcNAQELBQAwVTELMAkGA1UEBhMCSVQxCzAJBgNVBAgMAlBVMQ8wDQYDVQQHDAZVcmJpbm8xDzANBgNVBAoMBlVuaXVyYjEXMBUGA1UEAwwOVW5pdXJiIHJvb3QgQ0EwHhcNMTgwNDA2MTEwMjA2WhcNMjgwNDAzMTEwMjA2WjBMMQswCQYDVQQGEwJJVDELMAkGA1UECAwCUFUxDzANBgNVBAoMBlVuaXVyYjEfMB0GA1UEAwwWVW5pdXJiIGludGVybWVkaWF0ZSBDQTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBANEFJt7R8y/yOF6YnAEPjsHczWGfUYXNJYTY4601STuyzgCzkAq9+uR09wRBnY7rQI6EPeaH44VgPZ6j6buVkJvNf0/56CZAEBFqYsorl7V16J3Mh048NctCIB95SJ/04Qd3aiReJ0FwU3YPvP8xHV2lPqYa3bloP7r5/bN2V//bDSMrfHoh2uHNaJSK/wR8G1hTSOTf+TLCvf4UMoMq2QZEV+7rjNWExl9ZkTTcaWLWAq+l8LhCkiZAgYK11VLkU+UDvuCFFYPik0DBzS/6vEvqwLKWgqxgkpdZyfatsKMjKsOXsxTn5MxXfR1P2sbloPy0x1VlzXW79T7ftMhjzw4giIvF9KTJCsXBnv3IxFoffyu11ZHwMlC0F9y6YQ3Zk+Ke7p3rxQuyTK4s39CiwKLwnxZkHDMvgpIzPFBGIYp8hAOnSzM7v+9ios6kuL7Cb7urfuAcmzGbM6gmdayyit+jAjnZ1Wp1jkoID9r0V8/9Zr195t6G3rai5I2WIVLv/MINJeKi8Bduy0S4TbRKuHF0ZyOkEYam6FShmjW4gcE8CqA0W8q2td8JdN2v6mJBz3SunXGjqfAk4HZe1m/A6vGIyM9+k5R26RtOIC7wwC+15LfkBViAFHeCyG5BuIPpiKaGBGnk7ILQxEta329MvETE8Jim8mvqBSmqxMZZecCFAgMBAAGjZjBkMB0GA1UdDgQWBBSiaTa/MG8X2CA4wA7/TsifdEzxuzAfBgNVHSMEGDAWgBTNyfLCH8256znj+o11dH7e6THTgjASBgNVHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBhjANBgkqhkiG9w0BAQsFAAOCAgEAbXARntvmBaX92YFgr96fKJ37Kg9FcQvh/y0tc9BMtA5a1q7QfmpXtRSFOEIb4d/x1WrnPN8Zp3Vs138f6G5k07QJeskxw2wx/O2CTI8zmydnMV6q77RRcAg8VPpUUjYxWO6XyX2YJqDgoGr7764y74Af95CjhaSPJZa9ejk250CkJK/fzBIvL0vsgGX5NQvJXZyE2P3p0L5CZzJ+xYfl/ZC2F246/RKAcvP1wdyPEinXTp/aHS/+o9LyCe1u0AwJiZJ46TPhb1YwKoSp9jxAVuFCoOBr3L2e1CYzN9wv6g9pHeTDskNPz3HmNy0TIflH/90jjjKxlfJ+7rCangjFNCjioAVqvLmXk8cmyIY7aUMPmoXG8yuPEJxPzEzAaOZ+HRle6lmcBQW4BXUOTpsuMTNKojKGZYiqf4ArF2YUA/Hb/mvDeSg1nBbNmqtcdlAeMGX6EctQuz6OLmLIOVTyGWXlbdhG1FG5rJjKpEoXtyRpaEnShEe2XxjoWHl9HrxDs6+s1h/Z1pklc4P4RwPWScH1P/ZF/qj9PtfhhfimddkE/vZ8sOsenr5SK5rmUi+IMHB3NPOQdsAovpSjPwAZ1dvtx/4rgP9YWMGgOLdNYa0rED4jphNUmqdwhfpPEnV8s9E0JSACgHIXdON1/+z3e0HOQxCZmt9Ou5a6Zv/Yhq0=</CA>
+          <CA format="X.509" encoding="base64">MIIFkDCCA3igAwIBAgIJAPyA7s3L8qqVMA0GCSqGSIb3DQEBCwUAMFUxCzAJBgNVBAYTAklUMQswCQYDVQQIDAJQVTEPMA0GA1UEBwwGVXJiaW5vMQ8wDQYDVQQKDAZVbml1cmIxFzAVBgNVBAMMDlVuaXVyYiByb290IENBMB4XDTE4MDQwNjEwNTEyM1oXDTM4MDQwMTEwNTEyM1owVTELMAkGA1UEBhMCSVQxCzAJBgNVBAgMAlBVMQ8wDQYDVQQHDAZVcmJpbm8xDzANBgNVBAoMBlVuaXVyYjEXMBUGA1UEAwwOVW5pdXJiIHJvb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDAw+OIp8nfGEyss3BNY1o/xqDjiw99ylt3gfhkd5iLHQOtw9Xz4vAsLE4H9BCtZ9iL3jv6w0xOUbiBFYJZaBUezGjhSC00D3m3xbCz+I6uAz84p+8X/zlCloaltyxKFgPouMBQxYXBdTHTdX6nUml1h5W6dvI1jYrZ03vO6Bt1++nuNz0pkp1DxriiCuIVqVfEUR9x6IuNzvSCwdWJFA9nFviM84fMGgEsev7ClnJ0JYIWdWTPOMeKX3dIDstjIvW5c5PYhFYlz7+zkZJXfGyctLWV4rhlo6rIjPNs/VfvDCGS3Tl+TGN2TDQuBs0VykA/Mx7//fDs0aQngnxI6rAUgP4TDyiQAOxEuwC+xoSieql4HM6/h7dqP75Qrn51SlcaUcba7Rz4/tWMMpLRcHoKa4kMy9GQghmRJ9aXmzYLBv2CxRvo5hpTu+2qVVVkRQ/rhNozfJuMiv765JI0pcuMtFEw44I43TaFzh0hteI3KOc/zlh1WDngeZfCwjo0OTpXyUt7SdnuruE7Qbfv6cUMaUh3HZMasiNZsWSvexHHRpP5c6Mlalb6y6vhR4JqhtGGuLfM5A2frPb7osQnvkeJg0keJBi+eg2z/+N3bCTIA0miH38XUMFvpbUJM6ZQad7rLluKah8hd0Mm6HDu3pc/whszzhx1IZRCpntwSEp1FwIDAQABo2MwYTAdBgNVHQ4EFgQUzcnywh/Nues54/qNdXR+3ukx04IwHwYDVR0jBBgwFoAUzcnywh/Nues54/qNdXR+3ukx04IwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYwDQYJKoZIhvcNAQELBQADggIBAAK92xMjEi2PkiRqxm9ye4b6ajiGWUxB0GU9bZeP9cyxrnguxekTkaIc3l/oXrzc+G83Ev5AWxA82cK/DAoCSV9B5xSd/7e/arSxsNFqt+D7CPPNE7MjFhLJYRvHQOYsFDVA6Pyxv2PbChykfn7QPoWby4cM9Z0QduXpcmcnqLQFwkYW8UIeSLYVhPEdQzA6OCawz1Qz+nFO5tlSkTzg0jHZdPdatVoGXBX0WH6zAoGp9N53BwDYdxM8pDWnderPAPVbgahotjVQHGGMwM6SLaik+EBQwOAURLAIgBjZGNCqLU7XxCQTxcTZjOVTx//LH/gugHkB8G4YfzqTDuPbQN3RDrRns710fwwhjd4iTEceJP9F6niOyYrdiAy63NFHeJh2p9vAVYAV9p7ANOKV5Xm+B34sMX6Va5mprZgo6FRhaNFs2xawIddkgOPimbC/bjChlNpxF1orq8lAg/e6TS0S8q5N/+oSagwSfMMKTfUJhEcUhbxSmdSn1uzrSCBiaaJoKtRK5eIYb49o9e7UEXCBCw/iArFmehPNWPjcNEzC27jdIsl97IA5omN0b+MMxYX7Knp678kuY1U4z2KPL5vATc5HjU9rkCnDwQm7HaMEl7TRWgF8YlNXHoTALBlFlmRBnaQtf7fXc7Jnmg+3g6+Tu3wNs28GfegI2ux+q5Ho</CA>
+          <ServerID>eduidp.uniurb.it</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@uniurb.it</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Università degli Studi di Urbino Carlo Bo</DisplayName>
+      <Description>Profilo generico Eduroam per uniurb.it</Description>
+      <ProviderLocation>
+        <Longitude>12.636714613461322</Longitude>
+        <Latitude>43.7233177237045</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>eduroam@uniurb.it</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

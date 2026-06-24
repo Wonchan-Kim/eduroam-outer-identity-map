@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="sau.ac.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFIDCCBAigAwIBAgIJAJGPWhC8hsdKMA0GCSqGSIb3DQEBCwUAMIGnMQswCQYDVQQGEwJCRDEPMA0GA1UECAwGU3lsaGV0MQ8wDQYDVQQHDAZTeWxoZXQxLTArBgNVBAoMJFN5bGhldCBBZ3JpY3VsdHVyYWwgVW5pdmVyc2l0eSAoU0FVKTEjMCEGCSqGSIb3DQEJARYUbWFoYWRpLmljdEBzYXUuYWMuYmQxIjAgBgNVBAMMGVNBVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjQwMTA0MTAyODQxWhcNMjcwMTAzMTAyODQxWjCBpzELMAkGA1UEBhMCQkQxDzANBgNVBAgMBlN5bGhldDEPMA0GA1UEBwwGU3lsaGV0MS0wKwYDVQQKDCRTeWxoZXQgQWdyaWN1bHR1cmFsIFVuaXZlcnNpdHkgKFNBVSkxIzAhBgkqhkiG9w0BCQEWFG1haGFkaS5pY3RAc2F1LmFjLmJkMSIwIAYDVQQDDBlTQVUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt1RNtsMcxfak122Szi015sCEwChmraS1E1cyNWXgNtfmgFZaCLbNTWXDZ0DL4hJNe1fj43TSeXiJEt4JV+qja3HVfug8ZFeeWYoaG/MX8SyfUD3YA1TI9vYJrHAuCij3eke+mzkbw5qG7anzJhIHTB4SRMavp/7a2SewWZiRtJdGEyKgPjogX1XMypNvfHXI0iBqYBM7P2LaPTaH3nrpw95ZinzEt51sTBwTSkBeoO7ARNtTygNSCs4T5+KtwTRyAef0UbWUwN3ABiufuCrYbzzs8FI9ZKCQ2AAvA5XQUSLcyK+zeEjrH5Oktab3RboOVK7WeCNjBKJMUss/a4t6sQIDAQABo4IBSzCCAUcwHQYDVR0OBBYEFEbrKvuRoF4Y46k3oi+MYUYhiKchMIHcBgNVHSMEgdQwgdGAFEbrKvuRoF4Y46k3oi+MYUYhiKchoYGtpIGqMIGnMQswCQYDVQQGEwJCRDEPMA0GA1UECAwGU3lsaGV0MQ8wDQYDVQQHDAZTeWxoZXQxLTArBgNVBAoMJFN5bGhldCBBZ3JpY3VsdHVyYWwgVW5pdmVyc2l0eSAoU0FVKTEjMCEGCSqGSIb3DQEJARYUbWFoYWRpLmljdEBzYXUuYWMuYmQxIjAgBgNVBAMMGVNBVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHmCCQCRj1oQvIbHSjAPBgNVHRMBAf8EBTADAQH/MDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly93d3cuZXhhbXBsZS5vcmcvZXhhbXBsZV9jYS5jcmwwDQYJKoZIhvcNAQELBQADggEBAIxPNBHteflHmFHThG/eJzB/IL6fF4MxVpnfy1x2qDsyM7YGdW2ZiNj3nDuZSe61t8ax6qjLm5AyJnNcvK7/8TbLNz1BFq67yzUxxXsiDG9MGTwxnfLxt8QIvq/j2unSFXcbqsJ1YSIy3o7nldYtFq6t1EIezijqhfX9KoXCMg991L/dfSraFzQ8yOwDxLmone8Iyv37zZz/4vtf3Y9r6VEOYXZhAsyj2vpp28XjlJ98EWwFUwDbp4/CpR2r2MJR/pW6KYv2xzYLZ1ey3Oa2p2qmSEPmXbE17S8kmrlGnNzKwOW0Ve/JoOZ74qf7q7S3zNjvBohu0QjONBgVvM+WMYI=</CA>
+          <ServerID>irs.sau.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@sau.ac.bd</OuterIdentity>
+          <InnerIdentitySuffix>sau.ac.bd</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFIDCCBAigAwIBAgIJAJGPWhC8hsdKMA0GCSqGSIb3DQEBCwUAMIGnMQswCQYDVQQGEwJCRDEPMA0GA1UECAwGU3lsaGV0MQ8wDQYDVQQHDAZTeWxoZXQxLTArBgNVBAoMJFN5bGhldCBBZ3JpY3VsdHVyYWwgVW5pdmVyc2l0eSAoU0FVKTEjMCEGCSqGSIb3DQEJARYUbWFoYWRpLmljdEBzYXUuYWMuYmQxIjAgBgNVBAMMGVNBVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjQwMTA0MTAyODQxWhcNMjcwMTAzMTAyODQxWjCBpzELMAkGA1UEBhMCQkQxDzANBgNVBAgMBlN5bGhldDEPMA0GA1UEBwwGU3lsaGV0MS0wKwYDVQQKDCRTeWxoZXQgQWdyaWN1bHR1cmFsIFVuaXZlcnNpdHkgKFNBVSkxIzAhBgkqhkiG9w0BCQEWFG1haGFkaS5pY3RAc2F1LmFjLmJkMSIwIAYDVQQDDBlTQVUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt1RNtsMcxfak122Szi015sCEwChmraS1E1cyNWXgNtfmgFZaCLbNTWXDZ0DL4hJNe1fj43TSeXiJEt4JV+qja3HVfug8ZFeeWYoaG/MX8SyfUD3YA1TI9vYJrHAuCij3eke+mzkbw5qG7anzJhIHTB4SRMavp/7a2SewWZiRtJdGEyKgPjogX1XMypNvfHXI0iBqYBM7P2LaPTaH3nrpw95ZinzEt51sTBwTSkBeoO7ARNtTygNSCs4T5+KtwTRyAef0UbWUwN3ABiufuCrYbzzs8FI9ZKCQ2AAvA5XQUSLcyK+zeEjrH5Oktab3RboOVK7WeCNjBKJMUss/a4t6sQIDAQABo4IBSzCCAUcwHQYDVR0OBBYEFEbrKvuRoF4Y46k3oi+MYUYhiKchMIHcBgNVHSMEgdQwgdGAFEbrKvuRoF4Y46k3oi+MYUYhiKchoYGtpIGqMIGnMQswCQYDVQQGEwJCRDEPMA0GA1UECAwGU3lsaGV0MQ8wDQYDVQQHDAZTeWxoZXQxLTArBgNVBAoMJFN5bGhldCBBZ3JpY3VsdHVyYWwgVW5pdmVyc2l0eSAoU0FVKTEjMCEGCSqGSIb3DQEJARYUbWFoYWRpLmljdEBzYXUuYWMuYmQxIjAgBgNVBAMMGVNBVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHmCCQCRj1oQvIbHSjAPBgNVHRMBAf8EBTADAQH/MDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly93d3cuZXhhbXBsZS5vcmcvZXhhbXBsZV9jYS5jcmwwDQYJKoZIhvcNAQELBQADggEBAIxPNBHteflHmFHThG/eJzB/IL6fF4MxVpnfy1x2qDsyM7YGdW2ZiNj3nDuZSe61t8ax6qjLm5AyJnNcvK7/8TbLNz1BFq67yzUxxXsiDG9MGTwxnfLxt8QIvq/j2unSFXcbqsJ1YSIy3o7nldYtFq6t1EIezijqhfX9KoXCMg991L/dfSraFzQ8yOwDxLmone8Iyv37zZz/4vtf3Y9r6VEOYXZhAsyj2vpp28XjlJ98EWwFUwDbp4/CpR2r2MJR/pW6KYv2xzYLZ1ey3Oa2p2qmSEPmXbE17S8kmrlGnNzKwOW0Ve/JoOZ74qf7q7S3zNjvBohu0QjONBgVvM+WMYI=</CA>
+          <ServerID>irs.sau.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@sau.ac.bd</OuterIdentity>
+          <InnerIdentitySuffix>sau.ac.bd</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Sylhet Agricultural University (SAU)</DisplayName>
+      <ProviderLocation>
+        <Longitude>91.90178841876681</Longitude>
+        <Latitude>24.910879</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>mahadi.ict@sau.ac.bd</EmailAddress>
+        <Phone>+880 1722-435621</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

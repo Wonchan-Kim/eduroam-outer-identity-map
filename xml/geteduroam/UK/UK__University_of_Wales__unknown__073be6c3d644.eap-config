@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="wales.ac.uk" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDpTCCAo2gAwIBAgIQRRTuoGRcfYlMgOlgzgy7QDANBgkqhkiG9w0BAQUFADBZMRIwEAYKCZImiZPyLGQBGRYCdWsxEjAQBgoJkiaJk/IsZAEZFgJhYzEVMBMGCgmSJomT8ixkARkWBXdhbGVzMRgwFgYDVQQDEw93YWxlcy1VV1JTMTYtQ0EwHhcNMTMwMTA5MTA1NDM2WhcNMTgwMTA5MTEwNDM0WjBZMRIwEAYKCZImiZPyLGQBGRYCdWsxEjAQBgoJkiaJk/IsZAEZFgJhYzEVMBMGCgmSJomT8ixkARkWBXdhbGVzMRgwFgYDVQQDEw93YWxlcy1VV1JTMTYtQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC8tRMTljMWE3pr9QO1PlzZWS1wL96FIzAQOeVWtNawDvRGlczcSL5TQujbzy2eenSAlEGmJeR5FBRuuD4Vpvka7Az0iVSDiRPNt7w11ozhTIOonoH8muKSrwpqK5deYqgjDNw95oXE0rlReSfxdRKYu35y3zuFuur5aCWGebWrgDpI6vRj9nIACTcYZdKsDddk84l1dxOUT2MuX2V01KSpR87eslSGv2QMlP+HYOP7MWtt0VCtBCUDjexbPzQxxWqnYmNRf3X4YJ0oIMPui+4xLUdQhaPWzkMtEnnpnGixl1xQujH0z7SuTeXec8dH2ZQQwE3E1h7J9PNzwvR2DjAPAgMBAAGjaTBnMBMGCSsGAQQBgjcUAgQGHgQAQwBBMA4GA1UdDwEB/wQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBTsZDRNgWjzlRrJfPVL3Hkojr/s1zAQBgkrBgEEAYI3FQEEAwIBADANBgkqhkiG9w0BAQUFAAOCAQEAdWqZIsx+0HXb7UH0o8TDKhiHi7a6DxC5TikvM5UGRT4vggq2Uz3S23pxrw60+VDsAADggp3pZBJZWgppOT5NOHNqPYBrwimg088JYA6EB6Oj1FuDhFMARSEauiDBlFnkv4tIjOpqaPwY08zC152PROhkDdt6bvse4QGn+C2hSVg5OrcTA90djfvAgU6w5NichxfShTUDrfeHGaff+TNNAyTxmkdbj0pYftlQETu5l8RkNS8qAiYNM6CYVcCTNX7O4J7rq6ZWtmYJzxkZn0C68kBiwWhvrX2AnrREjKuzPiyZ9dsGVxPdyiel1eliK5zJaqiF4QUpYAjFb9M1AnK+tg==</CA>
+          <ServerID>uwrs35.wales.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of Wales</DisplayName>
+      <ProviderLocation>
+        <Longitude>-3.1811029124139622</Longitude>
+        <Latitude>51.48554680263961</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>support@wales.ac.uk</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

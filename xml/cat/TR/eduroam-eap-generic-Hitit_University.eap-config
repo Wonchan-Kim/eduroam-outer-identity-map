@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="hitit.edu.tr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEaDCCA1CgAwIBAgIJAIDYS0UwJ8GiMA0GCSqGSIb3DQEBBQUAMH8xCzAJBgNVBAYTAlRSMQ8wDQYDVQQIEwZSYWRpdXMxEjAQBgNVBAcTCVNvbWV3aGVyZTEOMAwGA1UEChMFSGl0aXQxIDAeBgkqhkiG9w0BCQEWEWJpZGJAaGl0aXQuZWR1LnRyMRkwFwYDVQQDExByYWQuaGl0aXQuZWR1LnRyMB4XDTI1MDUxMzE1NDgyOVoXDTI5MDYyMTE1NDgyOVowfzELMAkGA1UEBhMCVFIxDzANBgNVBAgTBlJhZGl1czESMBAGA1UEBxMJU29tZXdoZXJlMQ4wDAYDVQQKEwVIaXRpdDEgMB4GCSqGSIb3DQEJARYRYmlkYkBoaXRpdC5lZHUudHIxGTAXBgNVBAMTEHJhZC5oaXRpdC5lZHUudHIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDfayDOUXDqok3ENWEMfHuUVOwG716jlH8PlNzJgGKV5AKIPxCvr+5vDcp+fCXWdv99bBl6UMU/GHxBHSuk/vEDQRnbX+klyzFiRhD5/BxJnjqvajHcyMAkznn/Gef1SCTl9AMsXhS6BlJx62izBuc1BL/cnm9TRWpD+QRVxOxuchMVniJu/KWT5jgkx3MLhBXQzMuWjVSEmKPUFEVPj+AWHU5H0DfJoWn6JKupEkAnJ/AesyXkWxPifdavWJsGLDY/quc4vGC3rsOs04cu5zsInFJB9ZFqXUBMNulMV5mtwbLh0tHzYwugb0j/6S/BmnfU0PmSyLKs46c9G4rD+ofbAgMBAAGjgeYwgeMwHQYDVR0OBBYEFE+QV6ys6RsYQoZLxvoRCM8ehQgQMIGzBgNVHSMEgaswgaiAFE+QV6ys6RsYQoZLxvoRCM8ehQgQoYGEpIGBMH8xCzAJBgNVBAYTAlRSMQ8wDQYDVQQIEwZSYWRpdXMxEjAQBgNVBAcTCVNvbWV3aGVyZTEOMAwGA1UEChMFSGl0aXQxIDAeBgkqhkiG9w0BCQEWEWJpZGJAaGl0aXQuZWR1LnRyMRkwFwYDVQQDExByYWQuaGl0aXQuZWR1LnRyggkAgNhLRTAnwaIwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAQEASOROlFUBXRQr62jVDgyTGYq5hOMA1RkUyKupUzVJW0YJOhdFgJdytrCk2s4bN0qC2soYxSv3tR898fac/4sWVW+Navsgi3dMzrSnq1SUU/oatRH36PZdYNKP+8C4yzqVlfDsfnQqgmCPdJOyW7oaRtBpNpMFLRwt4jq/P7etj3QsGi7U1ZHpTvjXGQ0LJ3pRJy/hhrVMmN+PGPrF/fEABQQC7aFVKaem7N0d+aYWnjJugfqem9IWqV5UuqGA6CP0dJ+zxxAHsb8DoONbpU6RuM8NJFFwIA1f6DQ3cdw7KOyu17SG2QHzGOZ8zrTqlbdOsojGGWz6eP1Bhk0NAK1cFA==</CA>
+          <ServerID>rad.hitit.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>hitit.edu.tr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Hitit University</DisplayName>
+      <ProviderLocation>
+        <Longitude>34.7269292</Longitude>
+        <Latitude>40.5698389</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>bidb@hitit.edu.tr</EmailAddress>
+        <WebAddress>https://eduroam.hitit.edu.tr</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

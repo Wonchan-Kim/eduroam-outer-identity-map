@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="neumann.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDqDCCApCgAwIBAgIQHslEg6uIva1D1JUDDjIdczANBgkqhkiG9w0BAQUFADAlMSMwIQYDVQQDExpOZXVtYW5uIFVuaXZlcnNpdHkgUm9vdCBDQTAeFw0xMzA3MDExMzA2NTlaFw0zMzA3MDExMzE2NThaMCUxIzAhBgNVBAMTGk5ldW1hbm4gVW5pdmVyc2l0eSBSb290IENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqgWNX1va2JFZZf5xDcpyFnyMMLattN9eurmxsHSX+BRhujFCV/Ix9TBJWSDer2Sxv8IkvdMy5p7DxoXnZ1tvTz8UDCmFjQgWKUhIDh9qIVBuIAbPPxCRu30ZBrou/p/PUVnBH6iOcQR6zXtt5AyCMkF1gauwPzO8dVWeupPqfsuYOnsMgKfBl26dC+sI78/HhgGHlAS3t5gKs7fi7o9pH2BbXapWFZHj8KK6+R2nj8aAI75zIsh2VAAZxO/iyIuN9U37iPXhIN+BR5xiVJ7offBh0Dhdjx9TWw0Uzj0CQtSYpyMMP0OTSFkd4sgAxXwq+g8fsMi0xaSzH+mmPazTvQIDAQABo4HTMIHQMAsGA1UdDwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQBUW/iqHmK3HXKz7MiI2v4b/H9UDAQBgkrBgEEAYI3FQEEAwIBADB/BgNVHSAEeDB2MHQGCCoDBIsvQ1kFMGgwOgYIKwYBBQUHAgIwLh4sAEwAZQBnAGEAbAAgAFAAbwBsAGkAYwB5ACAAUwB0AGEAdABlAG0AZQBuAHQwKgYIKwYBBQUHAgEWHmh0dHA6Ly9wa2kubmV1bWFubi5lZHUvY3BzLnR4dDANBgkqhkiG9w0BAQUFAAOCAQEAkveCY1cPN/dxaXWonmWPA4v56FkSmdBUbt3ZHlVDycM3AMX+Fx0K/01sizfEdmQ1k31BmeLDvVBrQruclOfTRFTEbpjftxY5Nqn5IldTkwifl+bORUNXi6Tira/LWks+own0q+ojsG7U5oEjhIGGqEKK0sCvevRckwiaxMjF336ohCrF3O0emls5rX704jsAkTkmNOW33Jo4Pg7QhV+A16jaUqonW/3kp2UVlI4FeLsnw1dAaxGQdB6Yn0yRWRTx1KxXooQm1fX6E3vaChPGPUAX2tW7xRJS9Dc6HAZr8TTTWnBwjcUrOkpoIarmMdLzigBsMMI/b6TVQAZ3utPQyw==</CA>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>CN=NURADIUS.neumann.edu</ServerID>
+          <ServerID>CN=NURADIUS01.neumann.edu</ServerID>
+          <ServerID>CN=NURADIUS02.neumann.edu</ServerID>
+          <ServerID>CN=NURADIUS03.neumann.edu</ServerID>
+          <ServerID>NURADIUS.neumann.edu</ServerID>
+          <ServerID>NURADIUS01.neumann.edu</ServerID>
+          <ServerID>NURADIUS02.neumann.edu</ServerID>
+          <ServerID>NURADIUS03.neumann.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Neumann University</DisplayName>
+      <Description>Neumann University eduroam Access</Description>
+      <ProviderLocation>
+        <Longitude>-75.4404670888438</Longitude>
+        <Latitude>39.8755879</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@neumann.edu</EmailAddress>
+        <WebAddress>https://helpdesk.neumann.edu/</WebAddress>
+        <Phone>6105585620</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="canterbury.ac.uk" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEDzCCAvegAwIBAgIUUd/89fG6Zjcxu6DbUsIy7xzBA3owDQYJKoZIhvcNAQELBQAwgZYxCzAJBgNVBAYTAkdCMQ0wCwYDVQQIDARLZW50MRMwEQYDVQQHDApDYW50ZXJidXJ5MSwwKgYDVQQKDCNDYW50ZXJidXJ5IENocmlzdCBDaHVyY2ggVW5pdmVyc2l0eTEUMBIGA1UECwwLSVQgU2VydmljZXMxHzAdBgNVBAMMFkNDQ1UgQ29ubmVjdE1lIFJvb3QgQ0EwHhcNMjUwMjI1MTU1NTAyWhcNMzUwMjI1MTU1NTAyWjCBljELMAkGA1UEBhMCR0IxDTALBgNVBAgMBEtlbnQxEzARBgNVBAcMCkNhbnRlcmJ1cnkxLDAqBgNVBAoMI0NhbnRlcmJ1cnkgQ2hyaXN0IENodXJjaCBVbml2ZXJzaXR5MRQwEgYDVQQLDAtJVCBTZXJ2aWNlczEfMB0GA1UEAwwWQ0NDVSBDb25uZWN0TWUgUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMuyy9RWXT1RxPdNDL/ud3hGouMkhQdb52weHcCCUPf5pSQllCWBuxFqAfjXqD9Zj5voGpFWaBG/qgmnG2kxf8psMSjYJsohGdCmeHefPJ5ON2hIHP/Zd4e6bTRD1JVSK/gGSGepHOmIU06TE3kz2aeOsCGMFrXK/LDOPVUvwSv1aYvUb/LtSvB2MQeAbUD4au7L20AL3VkHJKCdib21DryPyhYYL/MpOdeAuukQl5b1O7k4hKDcIBkeJWrrQOEZOm5JyygctjH2SNZ+0pbEO2yyL1ipSACqOhGh7lNbFHM9Z2LiFvNUphhDgq3hk+alCDzFr/RDdq6vCXNHK78FImsCAwEAAaNTMFEwHQYDVR0OBBYEFJ40iZppLYX3funKIk5AyMPSf8KyMB8GA1UdIwQYMBaAFJ40iZppLYX3funKIk5AyMPSf8KyMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAGvUHCmoPPEURSYQUrV/3vxqSjyaS/M2A9TwtyBgvkLskoL7MnRIDOroyBxXYHNA4yUzFgx/rTp/tPUGy9aTOUeSxzvE06IGw90GQ2KvLdJnjxBUewAL7j40TSm91tDbWJZqP+dFJShFOWE5ysPzIP31F8Pos9GtprBpoA/nEmool6nl563Sl6/apfnHiLoISJAHnPjXXAu5C9nt2HZVgjvvj4Xp6PN0ksrosbfvaZQsPKmBbGfG3MJRAlN7gF9iWsk6FqZjn6brngXMNzA3+1Ufn3l7wNZ6A9m8Qu/la4x4KxRCJdILtJ7FYbY49ZYHbstXU+FZNeJZ+Nk/GnxY1YU=</CA>
+          <ServerID>wireless.canterbury.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>canterbury.ac.uk</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>13</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEDzCCAvegAwIBAgIUUd/89fG6Zjcxu6DbUsIy7xzBA3owDQYJKoZIhvcNAQELBQAwgZYxCzAJBgNVBAYTAkdCMQ0wCwYDVQQIDARLZW50MRMwEQYDVQQHDApDYW50ZXJidXJ5MSwwKgYDVQQKDCNDYW50ZXJidXJ5IENocmlzdCBDaHVyY2ggVW5pdmVyc2l0eTEUMBIGA1UECwwLSVQgU2VydmljZXMxHzAdBgNVBAMMFkNDQ1UgQ29ubmVjdE1lIFJvb3QgQ0EwHhcNMjUwMjI1MTU1NTAyWhcNMzUwMjI1MTU1NTAyWjCBljELMAkGA1UEBhMCR0IxDTALBgNVBAgMBEtlbnQxEzARBgNVBAcMCkNhbnRlcmJ1cnkxLDAqBgNVBAoMI0NhbnRlcmJ1cnkgQ2hyaXN0IENodXJjaCBVbml2ZXJzaXR5MRQwEgYDVQQLDAtJVCBTZXJ2aWNlczEfMB0GA1UEAwwWQ0NDVSBDb25uZWN0TWUgUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMuyy9RWXT1RxPdNDL/ud3hGouMkhQdb52weHcCCUPf5pSQllCWBuxFqAfjXqD9Zj5voGpFWaBG/qgmnG2kxf8psMSjYJsohGdCmeHefPJ5ON2hIHP/Zd4e6bTRD1JVSK/gGSGepHOmIU06TE3kz2aeOsCGMFrXK/LDOPVUvwSv1aYvUb/LtSvB2MQeAbUD4au7L20AL3VkHJKCdib21DryPyhYYL/MpOdeAuukQl5b1O7k4hKDcIBkeJWrrQOEZOm5JyygctjH2SNZ+0pbEO2yyL1ipSACqOhGh7lNbFHM9Z2LiFvNUphhDgq3hk+alCDzFr/RDdq6vCXNHK78FImsCAwEAAaNTMFEwHQYDVR0OBBYEFJ40iZppLYX3funKIk5AyMPSf8KyMB8GA1UdIwQYMBaAFJ40iZppLYX3funKIk5AyMPSf8KyMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAGvUHCmoPPEURSYQUrV/3vxqSjyaS/M2A9TwtyBgvkLskoL7MnRIDOroyBxXYHNA4yUzFgx/rTp/tPUGy9aTOUeSxzvE06IGw90GQ2KvLdJnjxBUewAL7j40TSm91tDbWJZqP+dFJShFOWE5ysPzIP31F8Pos9GtprBpoA/nEmool6nl563Sl6/apfnHiLoISJAHnPjXXAu5C9nt2HZVgjvvj4Xp6PN0ksrosbfvaZQsPKmBbGfG3MJRAlN7gF9iWsk6FqZjn6brngXMNzA3+1Ufn3l7wNZ6A9m8Qu/la4x4KxRCJdILtJ7FYbY49ZYHbstXU+FZNeJZ+Nk/GnxY1YU=</CA>
+          <ServerID>wireless.canterbury.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>canterbury.ac.uk</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Canterbury Christ Church University - CCCU eduroam</DisplayName>
+      <ProviderLocation>
+        <Longitude>1.088719367980957</Longitude>
+        <Latitude>51.279467352946796</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>it-service@canterbury.ac.uk</EmailAddress>
+        <WebAddress>https://www.canterbury.ac.uk/current-students/it-services/campus-it-facilities/connect-to-wifi</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

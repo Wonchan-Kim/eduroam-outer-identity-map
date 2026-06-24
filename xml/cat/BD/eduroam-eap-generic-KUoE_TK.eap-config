@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="kuet.ac.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEzTCCA7WgAwIBAgIUXz/4I560Do0iXfO2b1GZu+7A9b0wDQYJKoZIhvcNAQELBQAwgYQxCzAJBgNVBAYTAkJEMQ8wDQYDVQQIDAZLaHVsbmExDzANBgNVBAcMBktodWxuYTENMAsGA1UECgwES1VFVDEfMB0GCSqGSIb3DQEJARYQYWRtaW5Aa3VldC5hYy5iZDEjMCEGA1UEAwwaS1VFVCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjMwMjA5MDUwMTUyWhcNMzMwMjA2MDUwMTUyWjCBhDELMAkGA1UEBhMCQkQxDzANBgNVBAgMBktodWxuYTEPMA0GA1UEBwwGS2h1bG5hMQ0wCwYDVQQKDARLVUVUMR8wHQYJKoZIhvcNAQkBFhBhZG1pbkBrdWV0LmFjLmJkMSMwIQYDVQQDDBpLVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMW/vQXRVoCQoR8eYVojhJhQcsIzdaoGE48VRpq/e6vSwx/XPGAvz9k1rsf8ZGTQIs4VM8mGvZBSrGumJ3PWkjWwwJ/Hkmd17+no1sgPhpb2fnvvYdjlJ3EUFbG7tMISwRZHo7MToyGpNMJFsJT4MzwfsXp/9J5qJuhvNDkoN5PGWnf4Y5ILtUtoqKzP8vNUXYkgUhIaxrd3jXfJRDhnb27f74N0E7Sss4CsWDNK1Zpoc3TJ03WFOeexs1adAeB+NTJVPVDV62CUA2vW+0Cv2CFSkqvJZxvgSx0NQR1ZoHaB2hMn9Xva38E8vUaeUFdUFeLPqHJNUryrydxz3AOoUuUCAwEAAaOCATMwggEvMB0GA1UdDgQWBBQ//zrXRDpNV6AQDPx8CLRRqtJUujCBxAYDVR0jBIG8MIG5gBQ//zrXRDpNV6AQDPx8CLRRqtJUuqGBiqSBhzCBhDELMAkGA1UEBhMCQkQxDzANBgNVBAgMBktodWxuYTEPMA0GA1UEBwwGS2h1bG5hMQ0wCwYDVQQKDARLVUVUMR8wHQYJKoZIhvcNAQkBFhBhZG1pbkBrdWV0LmFjLmJkMSMwIQYDVQQDDBpLVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUXz/4I560Do0iXfO2b1GZu+7A9b0wDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCR/PK+jWki8SAvIavGCklEAiwna8f/Nal05j2rwTyDJ2tAYdO2LGWfGTNxG3/l/bHBPZ2VVQLEgCCW3GQxLfg7OTCChVpX0yhljoq+p/2DDKpqrAQozfsEYV6sl/xBOLVCgp7OVWZ4kD+1w4zqt8PBgej3V19j8caqQ+MGYYjzykH/CuPkGi4XL4yV2bkFmDrJCLPRwK9qXBiuga5ngay+YBENYjwF635xuXuH1WDgJMmAvgUL1gP2/+GuBE3URsSsebTyVIeICS2daWcEVDU4F84WUSI2EBECuqYKZygah3oeQtZBG8n3brIEqxJsK4V7fpWBQ/yW6Oxn748qzPHg</CA>
+          <ServerID>rads.kuet.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@kuet.ac.bd</OuterIdentity>
+          <InnerIdentitySuffix>kuet.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEzTCCA7WgAwIBAgIUXz/4I560Do0iXfO2b1GZu+7A9b0wDQYJKoZIhvcNAQELBQAwgYQxCzAJBgNVBAYTAkJEMQ8wDQYDVQQIDAZLaHVsbmExDzANBgNVBAcMBktodWxuYTENMAsGA1UECgwES1VFVDEfMB0GCSqGSIb3DQEJARYQYWRtaW5Aa3VldC5hYy5iZDEjMCEGA1UEAwwaS1VFVCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjMwMjA5MDUwMTUyWhcNMzMwMjA2MDUwMTUyWjCBhDELMAkGA1UEBhMCQkQxDzANBgNVBAgMBktodWxuYTEPMA0GA1UEBwwGS2h1bG5hMQ0wCwYDVQQKDARLVUVUMR8wHQYJKoZIhvcNAQkBFhBhZG1pbkBrdWV0LmFjLmJkMSMwIQYDVQQDDBpLVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMW/vQXRVoCQoR8eYVojhJhQcsIzdaoGE48VRpq/e6vSwx/XPGAvz9k1rsf8ZGTQIs4VM8mGvZBSrGumJ3PWkjWwwJ/Hkmd17+no1sgPhpb2fnvvYdjlJ3EUFbG7tMISwRZHo7MToyGpNMJFsJT4MzwfsXp/9J5qJuhvNDkoN5PGWnf4Y5ILtUtoqKzP8vNUXYkgUhIaxrd3jXfJRDhnb27f74N0E7Sss4CsWDNK1Zpoc3TJ03WFOeexs1adAeB+NTJVPVDV62CUA2vW+0Cv2CFSkqvJZxvgSx0NQR1ZoHaB2hMn9Xva38E8vUaeUFdUFeLPqHJNUryrydxz3AOoUuUCAwEAAaOCATMwggEvMB0GA1UdDgQWBBQ//zrXRDpNV6AQDPx8CLRRqtJUujCBxAYDVR0jBIG8MIG5gBQ//zrXRDpNV6AQDPx8CLRRqtJUuqGBiqSBhzCBhDELMAkGA1UEBhMCQkQxDzANBgNVBAgMBktodWxuYTEPMA0GA1UEBwwGS2h1bG5hMQ0wCwYDVQQKDARLVUVUMR8wHQYJKoZIhvcNAQkBFhBhZG1pbkBrdWV0LmFjLmJkMSMwIQYDVQQDDBpLVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUXz/4I560Do0iXfO2b1GZu+7A9b0wDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCR/PK+jWki8SAvIavGCklEAiwna8f/Nal05j2rwTyDJ2tAYdO2LGWfGTNxG3/l/bHBPZ2VVQLEgCCW3GQxLfg7OTCChVpX0yhljoq+p/2DDKpqrAQozfsEYV6sl/xBOLVCgp7OVWZ4kD+1w4zqt8PBgej3V19j8caqQ+MGYYjzykH/CuPkGi4XL4yV2bkFmDrJCLPRwK9qXBiuga5ngay+YBENYjwF635xuXuH1WDgJMmAvgUL1gP2/+GuBE3URsSsebTyVIeICS2daWcEVDU4F84WUSI2EBECuqYKZygah3oeQtZBG8n3brIEqxJsK4V7fpWBQ/yW6Oxn748qzPHg</CA>
+          <ServerID>rads.kuet.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@kuet.ac.bd</OuterIdentity>
+          <InnerIdentitySuffix>kuet.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Khulna University of Engineering &amp; Technology (KUET)</DisplayName>
+      <ProviderLocation>
+        <Longitude>89.5069194</Longitude>
+        <Latitude>22.8977575</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>90.2934413</Longitude>
+        <Latitude>24.4769288</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>noc@kuet.ac.bd</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

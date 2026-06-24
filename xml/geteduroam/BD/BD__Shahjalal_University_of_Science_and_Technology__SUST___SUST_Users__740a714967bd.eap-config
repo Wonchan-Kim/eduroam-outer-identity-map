@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="sust.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIExDCCA6ygAwIBAgIURnwdj0aMqZjaxj77X8anG08QwFUwDQYJKoZIhvcNAQELBQAwgYExCzAJBgNVBAYTAkJEMQ8wDQYDVQQIDAZTeWxoZXQxDzANBgNVBAcMBlN5bGhldDENMAsGA1UECgwEU1VTVDEcMBoGCSqGSIb3DQEJARYNc3llZEBzdXN0LmVkdTEjMCEGA1UEAwwaU1VTVCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjMxMDA2MTAxMTAzWhcNMjYxMDA1MTAxMTAzWjCBgTELMAkGA1UEBhMCQkQxDzANBgNVBAgMBlN5bGhldDEPMA0GA1UEBwwGU3lsaGV0MQ0wCwYDVQQKDARTVVNUMRwwGgYJKoZIhvcNAQkBFg1zeWVkQHN1c3QuZWR1MSMwIQYDVQQDDBpTVVNUIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJrHiL+9zFb+Sb1TdP/viNCZuZOydZtd5w1lSIyLWY6Sz8FCo53txUZZp9tmNYZq9cjLAxwEAzP2zIZVH3kxKHVfp02FMk11bCSzyboD1uhU1OCqy3XIuLwrFzO8dsLk2empt8POlIteF8Q8URGa4m63W7qugn7jzH92cMl7jNfwda/oWkNLZpYTW9OlQyQ1x+Dtj4n78BbsO5YAhwGYDVNaw9hGuiRw4anyQyIiJpNuUpdubdJ3fko+OZ9uXiT1bBTP1PUIlbQorA5q5Jo2R+JaZS9pImWn/M5LlwUMzLreABxpyXlKiKVacyQuFPfrx4cUa7n9SphaHgmOO3bRgA0CAwEAAaOCATAwggEsMB0GA1UdDgQWBBSCs+lFoGWBXwPlxKMd6Ts9Q5tfCjCBwQYDVR0jBIG5MIG2gBSCs+lFoGWBXwPlxKMd6Ts9Q5tfCqGBh6SBhDCBgTELMAkGA1UEBhMCQkQxDzANBgNVBAgMBlN5bGhldDEPMA0GA1UEBwwGU3lsaGV0MQ0wCwYDVQQKDARTVVNUMRwwGgYJKoZIhvcNAQkBFg1zeWVkQHN1c3QuZWR1MSMwIQYDVQQDDBpTVVNUIENlcnRpZmljYXRlIEF1dGhvcml0eYIURnwdj0aMqZjaxj77X8anG08QwFUwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAUxo7v43ugFnrc+iuxER352kHe4G1ghEpn5MdC7sTwcSHTf/N1yBxjACq6YJwG3pWgM+NnWhtkbkhGNh0i4DTiZXhoqyGblGhTrGtSSpUHElQn4/9Cl5vvyuGi1srxHne27pgiRwHKIXO02/ysDJeFR2+x77lbeo2QAj2OQOI7tyzXQINBOATmM2a0r3I8Oi36eRnhgkyl3t9JnRFT+KsEVTD5fY6sM2PKFg/B6thQWz/23Jsen8WiLsNCY4BgrchhMa0Y2qtq499451vjiDxbAOhb3EUSdmEbyte7ssRfi0oipL7jOENsRA2H39JXTKOEYOIoE1nbDDpBHs+jAYns</CA>
+          <ServerID>irs.sust.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@sust.edu</OuterIdentity>
+          <InnerIdentitySuffix>sust.edu</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIExDCCA6ygAwIBAgIURnwdj0aMqZjaxj77X8anG08QwFUwDQYJKoZIhvcNAQELBQAwgYExCzAJBgNVBAYTAkJEMQ8wDQYDVQQIDAZTeWxoZXQxDzANBgNVBAcMBlN5bGhldDENMAsGA1UECgwEU1VTVDEcMBoGCSqGSIb3DQEJARYNc3llZEBzdXN0LmVkdTEjMCEGA1UEAwwaU1VTVCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjMxMDA2MTAxMTAzWhcNMjYxMDA1MTAxMTAzWjCBgTELMAkGA1UEBhMCQkQxDzANBgNVBAgMBlN5bGhldDEPMA0GA1UEBwwGU3lsaGV0MQ0wCwYDVQQKDARTVVNUMRwwGgYJKoZIhvcNAQkBFg1zeWVkQHN1c3QuZWR1MSMwIQYDVQQDDBpTVVNUIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJrHiL+9zFb+Sb1TdP/viNCZuZOydZtd5w1lSIyLWY6Sz8FCo53txUZZp9tmNYZq9cjLAxwEAzP2zIZVH3kxKHVfp02FMk11bCSzyboD1uhU1OCqy3XIuLwrFzO8dsLk2empt8POlIteF8Q8URGa4m63W7qugn7jzH92cMl7jNfwda/oWkNLZpYTW9OlQyQ1x+Dtj4n78BbsO5YAhwGYDVNaw9hGuiRw4anyQyIiJpNuUpdubdJ3fko+OZ9uXiT1bBTP1PUIlbQorA5q5Jo2R+JaZS9pImWn/M5LlwUMzLreABxpyXlKiKVacyQuFPfrx4cUa7n9SphaHgmOO3bRgA0CAwEAAaOCATAwggEsMB0GA1UdDgQWBBSCs+lFoGWBXwPlxKMd6Ts9Q5tfCjCBwQYDVR0jBIG5MIG2gBSCs+lFoGWBXwPlxKMd6Ts9Q5tfCqGBh6SBhDCBgTELMAkGA1UEBhMCQkQxDzANBgNVBAgMBlN5bGhldDEPMA0GA1UEBwwGU3lsaGV0MQ0wCwYDVQQKDARTVVNUMRwwGgYJKoZIhvcNAQkBFg1zeWVkQHN1c3QuZWR1MSMwIQYDVQQDDBpTVVNUIENlcnRpZmljYXRlIEF1dGhvcml0eYIURnwdj0aMqZjaxj77X8anG08QwFUwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAUxo7v43ugFnrc+iuxER352kHe4G1ghEpn5MdC7sTwcSHTf/N1yBxjACq6YJwG3pWgM+NnWhtkbkhGNh0i4DTiZXhoqyGblGhTrGtSSpUHElQn4/9Cl5vvyuGi1srxHne27pgiRwHKIXO02/ysDJeFR2+x77lbeo2QAj2OQOI7tyzXQINBOATmM2a0r3I8Oi36eRnhgkyl3t9JnRFT+KsEVTD5fY6sM2PKFg/B6thQWz/23Jsen8WiLsNCY4BgrchhMa0Y2qtq499451vjiDxbAOhb3EUSdmEbyte7ssRfi0oipL7jOENsRA2H39JXTKOEYOIoE1nbDDpBHs+jAYns</CA>
+          <ServerID>irs.sust.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@sust.edu</OuterIdentity>
+          <InnerIdentitySuffix>sust.edu</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Shahjalal University of Science and Technology (SUST)</DisplayName>
+      <Helpdesk>
+        <EmailAddress>noc@sust.edu</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

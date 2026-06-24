@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="mbstu.ac.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE7jCCA9agAwIBAgIUd5+bTfj/huEgDeTfVq2YIouV6i4wDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAkJEMRIwEAYDVQQIDAlTaXJhamdhbmoxEjAQBgNVBAcMCVNpcmFqZ2FuajEOMAwGA1UECgwFTUJTVFUxIjAgBgkqhkiG9w0BCQEWE2ljdGNlbGxAbWJzdHUuYWMuYmQxJDAiBgNVBAMMG01CU1RVIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yNDAxMjExNjE3MDJaFw0yOTEwMTYxNjE3MDJaMIGPMQswCQYDVQQGEwJCRDESMBAGA1UECAwJU2lyYWpnYW5qMRIwEAYDVQQHDAlTaXJhamdhbmoxDjAMBgNVBAoMBU1CU1RVMSIwIAYJKoZIhvcNAQkBFhNpY3RjZWxsQG1ic3R1LmFjLmJkMSQwIgYDVQQDDBtNQlNUVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDYaStLe4JxWwo2hupT0u1gUzYeZDddAaRE0sSyqr9YEiJdEnYssr9EDIiCrooihOOqxEipF4L0786mVWTlmhBROFckK6zV6PVkEfzeCWRtBPLdQou/sJOvyl+YIbSDd4su04HNBH3yHl2zI47mpbArhQzu6OwAq9pHhMxVDFcO5e0nfvH1N6AEZFADTyBYvvN0oJdgmPLPa1walbsXTZhLsMhVxA8TlSXVrXhJ4+yDGazIgBgP2SuxFkCh9Y0T4oankTFByOTS5C5tELKEEbJ04mz4AmkBwpwW4HeLhC9RVgx2YlOYRPWYgiw0hLmRb6M+eKFjd4QdYG0D4dk5r/Q9AgMBAAGjggE+MIIBOjAdBgNVHQ4EFgQUNg7pq4eJ+rHrhscegPzRhjUTShswgc8GA1UdIwSBxzCBxIAUNg7pq4eJ+rHrhscegPzRhjUTShuhgZWkgZIwgY8xCzAJBgNVBAYTAkJEMRIwEAYDVQQIDAlTaXJhamdhbmoxEjAQBgNVBAcMCVNpcmFqZ2FuajEOMAwGA1UECgwFTUJTVFUxIjAgBgkqhkiG9w0BCQEWE2ljdGNlbGxAbWJzdHUuYWMuYmQxJDAiBgNVBAMMG01CU1RVIENlcnRpZmljYXRlIEF1dGhvcml0eYIUd5+bTfj/huEgDeTfVq2YIouV6i4wDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBwTQLIlk6DFbbpK1yrLx7k3z+lV2XTylZI7DeDqGIjp14bUfcpkdfFOve2iebCSvEdEn+Q+Vv2obsz6d0Fc/sUSBmKjZBmaOUUa6G1iTtrEzykSdMjTVZeLorYmW/jsOpwM22Kuyhfr+/NOg0/DHF9JVmOQK4NXIbZAekiYANkwwbfpxUW8lbmdKO+4akjiiD9NVeb3H8n5mHBzTf1+vS7sX7s/XvvAFssmm+itvbsZKtaYfsP6JYYO8t0N/IIn8noAOocvG3eqFS/qAbcQrPS+O5I8vEsuZQKHPMq215fTi7y5LleK0h4feiQ7NLTXoaK8oHkPCIi4aAf8J96+MZk</CA>
+          <ServerID>irs.mbstu.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@mbstu.ac.bd</OuterIdentity>
+          <InnerIdentitySuffix>mbstu.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE7jCCA9agAwIBAgIUd5+bTfj/huEgDeTfVq2YIouV6i4wDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAkJEMRIwEAYDVQQIDAlTaXJhamdhbmoxEjAQBgNVBAcMCVNpcmFqZ2FuajEOMAwGA1UECgwFTUJTVFUxIjAgBgkqhkiG9w0BCQEWE2ljdGNlbGxAbWJzdHUuYWMuYmQxJDAiBgNVBAMMG01CU1RVIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yNDAxMjExNjE3MDJaFw0yOTEwMTYxNjE3MDJaMIGPMQswCQYDVQQGEwJCRDESMBAGA1UECAwJU2lyYWpnYW5qMRIwEAYDVQQHDAlTaXJhamdhbmoxDjAMBgNVBAoMBU1CU1RVMSIwIAYJKoZIhvcNAQkBFhNpY3RjZWxsQG1ic3R1LmFjLmJkMSQwIgYDVQQDDBtNQlNUVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDYaStLe4JxWwo2hupT0u1gUzYeZDddAaRE0sSyqr9YEiJdEnYssr9EDIiCrooihOOqxEipF4L0786mVWTlmhBROFckK6zV6PVkEfzeCWRtBPLdQou/sJOvyl+YIbSDd4su04HNBH3yHl2zI47mpbArhQzu6OwAq9pHhMxVDFcO5e0nfvH1N6AEZFADTyBYvvN0oJdgmPLPa1walbsXTZhLsMhVxA8TlSXVrXhJ4+yDGazIgBgP2SuxFkCh9Y0T4oankTFByOTS5C5tELKEEbJ04mz4AmkBwpwW4HeLhC9RVgx2YlOYRPWYgiw0hLmRb6M+eKFjd4QdYG0D4dk5r/Q9AgMBAAGjggE+MIIBOjAdBgNVHQ4EFgQUNg7pq4eJ+rHrhscegPzRhjUTShswgc8GA1UdIwSBxzCBxIAUNg7pq4eJ+rHrhscegPzRhjUTShuhgZWkgZIwgY8xCzAJBgNVBAYTAkJEMRIwEAYDVQQIDAlTaXJhamdhbmoxEjAQBgNVBAcMCVNpcmFqZ2FuajEOMAwGA1UECgwFTUJTVFUxIjAgBgkqhkiG9w0BCQEWE2ljdGNlbGxAbWJzdHUuYWMuYmQxJDAiBgNVBAMMG01CU1RVIENlcnRpZmljYXRlIEF1dGhvcml0eYIUd5+bTfj/huEgDeTfVq2YIouV6i4wDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBwTQLIlk6DFbbpK1yrLx7k3z+lV2XTylZI7DeDqGIjp14bUfcpkdfFOve2iebCSvEdEn+Q+Vv2obsz6d0Fc/sUSBmKjZBmaOUUa6G1iTtrEzykSdMjTVZeLorYmW/jsOpwM22Kuyhfr+/NOg0/DHF9JVmOQK4NXIbZAekiYANkwwbfpxUW8lbmdKO+4akjiiD9NVeb3H8n5mHBzTf1+vS7sX7s/XvvAFssmm+itvbsZKtaYfsP6JYYO8t0N/IIn8noAOocvG3eqFS/qAbcQrPS+O5I8vEsuZQKHPMq215fTi7y5LleK0h4feiQ7NLTXoaK8oHkPCIi4aAf8J96+MZk</CA>
+          <ServerID>irs.mbstu.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@mbstu.ac.bd</OuterIdentity>
+          <InnerIdentitySuffix>mbstu.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Mawlana Bhashani Science and Technology University (MBSTU)</DisplayName>
+      <ProviderLocation>
+        <Longitude>89.88921619970563</Longitude>
+        <Latitude>24.23940415</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>noc@bdren.net.bd</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

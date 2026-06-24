@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="chau.ac.zm" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFDDCCA/SgAwIBAgIUTn+MkbKVUZTU6bM2SfSsFfh9YXIwDQYJKoZIhvcNAQELBQAwgZkxCzAJBgNVBAYTAlpNMQ8wDQYDVQQIDAZMdXNha2ExETAPBgNVBAcMCENob29uZ3dlMR4wHAYDVQQKDBVDaGFsaW1iYW5hIFVuaXZlcnNpdHkxHzAdBgkqhkiG9w0BCQEWEGFkbWluQGNoYXUuYWMuem0xJTAjBgNVBAMMHENIQVVDQSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjMxMTA5MTUxMjEyWhcNMjYxMDA5MTUxMjEyWjCBmTELMAkGA1UEBhMCWk0xDzANBgNVBAgMBkx1c2FrYTERMA8GA1UEBwwIQ2hvb25nd2UxHjAcBgNVBAoMFUNoYWxpbWJhbmEgVW5pdmVyc2l0eTEfMB0GCSqGSIb3DQEJARYQYWRtaW5AY2hhdS5hYy56bTElMCMGA1UEAwwcQ0hBVUNBIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKVL6OHePZmY7wbNKGEBxxS5JCwOhpGZqbcb+xXJZqLtn1EwuDf18YxzNnrIZNR2qw7E/qWL7VCo/6WKSqPmWMqaT81qU3WUe1OEnj2oM4S0Ft0GxK35NSEp8n+Sg5QQF2MmCqhrgWgkSMpnx3WB1wEPbC2R4e2pBtoHvZugj4wyb2L+BvFzLKPUjTl7yh5CvImOkJuwYeVbqAvd9ojaOnSD6p/m/jfUMAyazAWB5PvULg/x3EIN0L4dH4NqWPQrgg/5wZ9KHJ8/WxpSPA8AnzeMdnsOHmpqAtCRGnSt9WpFePQz0NqhtdMLAZWLUOUdd5e04NNVcjF1XBs1kU8wLjkCAwEAAaOCAUgwggFEMB0GA1UdDgQWBBR01D2gqZSGeV9q9lGkAUkfO+9Q5zCB2QYDVR0jBIHRMIHOgBR01D2gqZSGeV9q9lGkAUkfO+9Q56GBn6SBnDCBmTELMAkGA1UEBhMCWk0xDzANBgNVBAgMBkx1c2FrYTERMA8GA1UEBwwIQ2hvb25nd2UxHjAcBgNVBAoMFUNoYWxpbWJhbmEgVW5pdmVyc2l0eTEfMB0GCSqGSIb3DQEJARYQYWRtaW5AY2hhdS5hYy56bTElMCMGA1UEAwwcQ0hBVUNBIENlcnRpZmljYXRlIEF1dGhvcml0eYIUTn+MkbKVUZTU6bM2SfSsFfh9YXIwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCdahuJACfutQC6RgI4qfjiHGMsgHfgVAtXxGXB51D1L9MtAU/kbHs5HsekXWOoZQc9TKXGtuQnjHJIt0QvRVQMZJId3StrHlYL+a10exdlBXx8oexliqEY85t3s5MMFkHXELu3JNxmv1ZGYbm9YeBQ+IdVFwXoMeSK6KyuDAC6eyNNGIoWDAerIxZt52KuYvYjL9JqnOM0rIFO4mlKntyVWy55x9a+1P9iEh4LpOaynNRH2UlcJP4o7q0ag0U+CZMEKrCkR/GmlamqFX1OXlvyEwQExh1sgc1U6SFAoPExirHi27wgdTfpddHevcx9e0xMM4W2cZaKZYoRtlZ0TFwV</CA>
+          <ServerID>chaurad.chau.ac.zm</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>chau.ac.zm</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Chalimbana University</DisplayName>
+      <ProviderLocation>
+        <Longitude>28.67917144293489</Longitude>
+        <Latitude>-15.389135532515809</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

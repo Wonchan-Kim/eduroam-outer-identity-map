@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="fwu.edu.np" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFLTCCBBWgAwIBAgIJAJuz/ss96hboMA0GCSqGSIb3DQEBCwUAMIGsMQswCQYDVQQGEwJOUDEQMA4GA1UECBMHQmFnbWF0aTESMBAGA1UEBxMJS2F0aG1hbmR1MS0wKwYDVQQKEyROZXBhbCBSZXNlYXJjaCBhbmQgRWR1Y2F0aW9uIE5ldHdvcmsxHzAdBgkqhkiG9w0BCQEWEHRlY2hAbnJlbi5uZXQubnAxJzAlBgNVBAMTHk5lcGFsUkVOIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0xNjEwMDQwNjU3MzhaFw0yNjEwMDIwNjU3MzhaMIGsMQswCQYDVQQGEwJOUDEQMA4GA1UECBMHQmFnbWF0aTESMBAGA1UEBxMJS2F0aG1hbmR1MS0wKwYDVQQKEyROZXBhbCBSZXNlYXJjaCBhbmQgRWR1Y2F0aW9uIE5ldHdvcmsxHzAdBgkqhkiG9w0BCQEWEHRlY2hAbnJlbi5uZXQubnAxJzAlBgNVBAMTHk5lcGFsUkVOIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALx/bD2Yej8XNSTI+yMhYebr1G4RgnLh1YdN0ZGWw4bF1FCUDJXVq2tY1tQ8I+Vaxx+a1AompDaLPdBlhNOXFB7039a0TaPVM5d+33roP644k0qhYz1rZB70GB9IJq3JmIW9PMFtF1NSGHa3ZRxkCve1x1Y7+6Vym8iR4k7PBlBvTCTkxtpWknijy4MvLWmuIupPxrl/vzDfMsP4aRUhiW3l5WeSeYnP0H+v0Cn6+m1KFlK3q+u5pX2Boc1IkbamvZfu5Ljh9ZVCOvNa1zw/6pc0zfvMFPbsCImlwvURAaFeOo/MaGlQ/Ye1RlbFvbC3F7aN+rNdzyhkFWuqzgw9HRsCAwEAAaOCAU4wggFKMB0GA1UdDgQWBBR4ZX/Cytpj48echmiWtxvSB9G7MDCB4QYDVR0jBIHZMIHWgBR4ZX/Cytpj48echmiWtxvSB9G7MKGBsqSBrzCBrDELMAkGA1UEBhMCTlAxEDAOBgNVBAgTB0JhZ21hdGkxEjAQBgNVBAcTCUthdGhtYW5kdTEtMCsGA1UEChMkTmVwYWwgUmVzZWFyY2ggYW5kIEVkdWNhdGlvbiBOZXR3b3JrMR8wHQYJKoZIhvcNAQkBFhB0ZWNoQG5yZW4ubmV0Lm5wMScwJQYDVQQDEx5OZXBhbFJFTiBDZXJ0aWZpY2F0ZSBBdXRob3JpdHmCCQCbs/7LPeoW6DAPBgNVHRMBAf8EBTADAQH/MDQGA1UdHwQtMCswKaAnoCWGI2h0dHA6Ly9lZHVyb2FtLm5yZW4ubmV0Lm5wL2NybC5odG1sMA0GCSqGSIb3DQEBCwUAA4IBAQBu4GcAjIg6uy9TXmm8mJZKa0ndX5AhQw+L4mSeSJ4LIq2SsYwfjUGblLEOoFodcKKfUedqEt/I5k9I27bbdW2TyyuizsEpHB/QhCEaxq1ge3qH4FtMl3ftBiXHQNHEMskW0/fxKUm/Ii/C2mz6YJeqlDWaLX8XKgLNRbpHcHEz6swoB5D4r7ggkzBAX/9uPN8R1wgXTNB63BGiCiwXuiQDvw6iMoMZxowj/nWLimirJ49DZYLcTWvO1OWAd48a7R3choBKZ9yw5/3xMo7cg0ZABS6RsNbnWubbnPbozLD2fpf628vu2WKrjS59OF0OyXOi/GfYbEDftxkLJ+CFsMep</CA>
+          <ServerID>Eduroam  Server Certificate</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@fwu.edu.np</OuterIdentity>
+          <InnerIdentitySuffix>fwu.edu.np</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Far-Western University</DisplayName>
+      <Description>Global Roaming Wi‑Fi Network Connection for Students, Professors, Faculty, and Staff at Far Western University</Description>
+      <Helpdesk>
+        <EmailAddress>support@fwu.edu.np</EmailAddress>
+        <WebAddress>https://www.fwu.edu.np/</WebAddress>
+        <Phone>+977-099-520729</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

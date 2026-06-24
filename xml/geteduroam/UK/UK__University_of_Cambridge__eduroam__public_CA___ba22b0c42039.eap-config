@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="cam.ac.uk" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDjjCCAnagAwIBAgIQAzrx5qcRqaC7KGSxHQn65TANBgkqhkiG9w0BAQsFADBhMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBHMjAeFw0xMzA4MDExMjAwMDBaFw0zODAxMTUxMjAwMDBaMGExCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5jb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IEcyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuzfNNNx7a8myaJCtSnX/RrohCgiN9RlUyfuI2/Ou8jqJkTx65qsGGmvPrC3oXgkkRLpimn7Wo6h+4FR1IAWsULecYxpsMNzaHxmx1x7e/dfgy5SDN67sH0NO3Xss0r0upS/kqbitOtSZpLYl6ZtrAGCSYP9PIUkY92eQq2EGnI/yuum06ZIya7XzV+hdG82MHauVBJVJ8zUtluNJbd134/tJS7SsVQepj5WztCO7TG1F8PapspUwtP1MVYwnSlcUfIKdzXOS0xZKBgyMUNGPHgm+F6HmIcr9g+UQvIOlCsRnKPZzFBQ9RnbDhxSJITRNrw9FDKZJobq7nMWxM4MphQIDAQABo0IwQDAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBhjAdBgNVHQ4EFgQUTiJUIBiV5uNu5g/6+rkS7QYXjzkwDQYJKoZIhvcNAQELBQADggEBAGBnKJRvDkhj6zHd6mcY1Yl9PMWLSn/pvtsrF9+wX3N3KjITOYFnQoQj8kVnNeyIv/iPsGEMNKSuIEyExtv4NeF22d+mQrvHRAiGfzZ0JFrabA0UWTW98kndth/Jsw1HKj2ZL7tcu7XUIOGZX1NGFdtom/DzMNU+MeKNhJ7jitralj41E6Vf8PlwUHBHQRFXGU7Aj64GxJUTFy8bJZ918rGOmaFvE7FBcf6IKshPECBV1/MUReXgRPTqh5Uykw7+U0b6LJ3/iyK5S9kJRaTepLiaWN0bfVKfjllDiIGknibVb63dDcY3fe0Dkhvld1927jyNxF1WW6LZZm6zNTflMrY=</CA>
+          <ServerID>token-public.wireless.cam.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>_pub@cam.ac.uk</OuterIdentity>
+          <InnerIdentitySuffix>cam.ac.uk</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of Cambridge - eduroam (public CA)</DisplayName>
+      <Description>eduroam for @cam.ac.uk users using a public CA</Description>
+      <ProviderLocation>
+        <Longitude>0.08747666899580507</Longitude>
+        <Latitude>52.21100728237914</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>0.1024312873778399</Longitude>
+        <Latitude>52.21013498427121</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>0.10522078475332819</Longitude>
+        <Latitude>52.2139873450985</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>0.109044995278222</Longitude>
+        <Latitude>52.2016313</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>0.11661319999996067</Longitude>
+        <Latitude>52.20530369999999</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>0.119958105011479</Longitude>
+        <Latitude>52.20337465</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>0.12311648330069148</Longitude>
+        <Latitude>52.20137718074585</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>0.12732218703604303</Longitude>
+        <Latitude>52.193735133105264</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>0.13201934322817</Longitude>
+        <Latitude>52.19998955</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>0.14139220031211153</Longitude>
+        <Latitude>52.17589649287723</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/gif" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>servicedesk@uis.cam.ac.uk</EmailAddress>
+        <WebAddress>https://help.uis.cam.ac.uk/service/wifi/connect-to-eduroam</WebAddress>
+        <Phone>(+44 1223 3) 32999</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

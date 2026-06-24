@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="pau.edu.tr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDcjCCAtSgAwIBAgIUBxO+XElo3XtQKMNBO6iM0SmqspcwCgYIKoZIzj0EAwIwgasxCzAJBgNVBAYTAlRSMRAwDgYDVQQIDAdEZW5pemxpMRAwDgYDVQQHDAdEZW5pemxpMR0wGwYDVQQKDBRQYW11a2thbGUgVW5pdmVyc2l0eTElMCMGA1UECwwcQmlsZ2kgSXNsZW0gRGFpcmUgQmFza2FubGlnaTETMBEGA1UEAwwKcGF1LmVkdS50cjEdMBsGCSqGSIb3DQEJARYOcGtpQHBhdS5lZHUudHIwHhcNMjQwMTA4MTMzOTIxWhcNMzQwMTA1MTMzOTIxWjCBqzELMAkGA1UEBhMCVFIxEDAOBgNVBAgMB0Rlbml6bGkxEDAOBgNVBAcMB0Rlbml6bGkxHTAbBgNVBAoMFFBhbXVra2FsZSBVbml2ZXJzaXR5MSUwIwYDVQQLDBxCaWxnaSBJc2xlbSBEYWlyZSBCYXNrYW5saWdpMRMwEQYDVQQDDApwYXUuZWR1LnRyMR0wGwYJKoZIhvcNAQkBFg5wa2lAcGF1LmVkdS50cjCBmzAQBgcqhkjOPQIBBgUrgQQAIwOBhgAEARB1vrInQ58ipcufS/QGz/a36uxfAZ281Exp2D1JavxY2VhXzltyr5bQknEGf40bmXN+AD5axr4+Belpv09oBSeaALlB1f8b1UCRfRdkT5U4mTrGqg1kczvc0qcF6oHg5Oo2Z1l+azcOMSzY3g9wE/T0SbeJkAKRMoLKIx6eAoNO+olro4GQMIGNMB0GA1UdDgQWBBR7V0tRwCY7sZyvoGi2mPCfL5qoYzAfBgNVHSMEGDAWgBR7V0tRwCY7sZyvoGi2mPCfL5qoYzAOBgNVHQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBAjAnBgNVHR8EIDAeMBygGqAYhhZodHRwOi8vbXlDQS9teVJvb3QuY3JsMAoGCCqGSM49BAMCA4GLADCBhwJBBdL+N0pCGzcALyxP9qdbfiD26lmaiyQLdGalwNz4i+7Pzuu/a1iaADx8DrjQoSnNUGrnNq3po75elDZI60iusi8CQgHDcH5LPbPWNqtU4XCtAHZP4VyJ4xedAUyw1hSjjPBp12T8d2p+iaTL3HSRXxkRf4kk10JDNqWaSkIk/ClPmYY3Fw==</CA>
+          <CA format="X.509" encoding="base64">MIIEAjCCA2SgAwIBAgIJAL2rcV73NbGVMAoGCCqGSM49BAMCMIGrMQswCQYDVQQGEwJUUjEQMA4GA1UECAwHRGVuaXpsaTEQMA4GA1UEBwwHRGVuaXpsaTEdMBsGA1UECgwUUGFtdWtrYWxlIFVuaXZlcnNpdHkxJTAjBgNVBAsMHEJpbGdpIElzbGVtIERhaXJlIEJhc2thbmxpZ2kxEzARBgNVBAMMCnBhdS5lZHUudHIxHTAbBgkqhkiG9w0BCQEWDnBraUBwYXUuZWR1LnRyMB4XDTI0MDEwODEzNDQwM1oXDTI5MDEwNzEzNDQwM1owgYcxCzAJBgNVBAYTAlRSMRAwDgYDVQQIDAdEZW5pemxpMR0wGwYDVQQKDBRQYW11a2thbGUgVW5pdmVyc2l0eTElMCMGA1UECwwcQmlsZ2kgSXNsZW0gRGFpcmUgQmFza2FubGlnaTEgMB4GA1UEAwwXaW50ZXJtZWRpYXRlLnBhdS5lZHUudHIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLdDxMaeGE+IwPqXAUS2vtMh3WfETKB19grIl9UWeG5wKDYE7q/gUDyG4sIDUMk6fNuFWe+qqL9xxp8l98lKfHGZG8rcNr4u29hE9OnZq8m7gf+aJq7d0yBfPpzFHXSNi9rogbCgc2kWTifuJG29x5/OENpF25RZ//+MO8j828ZpcJAw7ZF0C9t4FQvr6Yme1inb6K43h3wPVgKz0ULc0CmrqJqTUTI6eU6iuW7DD/+8SHEyMwntXVnJ5C1j1aQZPNR+8gtpWn5JMbNc50fkDVn1zwWRxuxIYNv3uMLiMlkQl03TXISfMAgLU4BXiSK+LTcTG9XSR420Vynqy/m0QtAgMBAAGjgccwgcQwHQYDVR0OBBYEFHTwLER8XVEFA34iv/DtHBntJVP1MB8GA1UdIwQYMBaAFHtXS1HAJjuxnK+gaLaY8J8vmqhjMBIGA1UdEwEB/wQIMAYBAf8CAQAwDgYDVR0PAQH/BAQDAgGGMCoGA1UdHwQjMCEwH6AdoBuGGWh0dHA6Ly9teUNBL215SXNzdWluZy5jcmwwMgYIKwYBBQUHAQEEJjAkMCIGCCsGAQUFBzAChhZodHRwOi8vbXlDQS9teVJvb3QuY2VyMAoGCCqGSM49BAMCA4GLADCBhwJBZrgUJcP8nvlIdj9xncD2yKxrcALO/yTavJVxFC24sToAsWC5Lz1lA5Izlj1k4Qp8YqpTzCmhkvAIK1GUlNo9mHkCQgHMtwpxE+1FAF7yl8PCwT/S/T/gasSnHzvRqCmlJL7KTOWm0dekJvO2fFbq3+IBW3fFJj+r9GhXl/SCcMW3Ir/reQ==</CA>
+          <ServerID>eduroam.pau.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>pau.edu.tr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Pamukkale University</DisplayName>
+      <Description>EAP TTL icin Eduroam Profile</Description>
+      <ProviderLocation>
+        <Longitude>29.10197551810373</Longitude>
+        <Latitude>37.739690100000004</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>bidb@pau.edu.tr</EmailAddress>
+        <WebAddress>https://eduroam.pau.edu.tr</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

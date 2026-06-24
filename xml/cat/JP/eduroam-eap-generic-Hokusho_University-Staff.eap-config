@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="hokusho-u.ac.jp" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEjjCCA3agAwIBAgIBADANBgkqhkiG9w0BAQsFADByMQswCQYDVQQGEwJKUDERMA8GA1UECBMISG9ra2FpZG8xDzANBgNVBAcTBkViZXRzdTEbMBkGA1UEChMSSG9rdXNobyBVbml2ZXJzaXR5MQswCQYDVQQLEwJGRDEVMBMGA1UEAxMMaG9rdXNobyBSb290MB4XDTIxMDkwOTA2MjIxMVoXDTMxMDkwNzA2MjcxMVowcjELMAkGA1UEBhMCSlAxETAPBgNVBAgTCEhva2thaWRvMQ8wDQYDVQQHEwZFYmV0c3UxGzAZBgNVBAoTEkhva3VzaG8gVW5pdmVyc2l0eTELMAkGA1UECxMCRkQxFTATBgNVBAMTDGhva3VzaG8gUm9vdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAN+0kqeaP90zc1OUL2Lj/jk7kxl0VZHXZWBcg/qegprahGnOKc7zoLwL2SAJFBprlBUcJVHxF0hlmM/I3+Q3QtkPBTWX+QtTrBELHsESUaqbT0WMJBVR8CdleGlaML+Dl1wENhcYAd4mk4ahPqMXIxWopy7B/kLtZQxttzyRqr7a/kAhmTBzhIdPkuo4KLio1N6ESWAY3YMv2uhfSncrs63jJXwuRZNjhFsLEJuS+hwDuImBgg0+KkcPPgWNVoeOg7/TZtJtCYvmBd3tVsMgbH4PFNMon2Ia69gJS1kBsb13c5S3HpzOv8EQlykIr7ILthX0fSrBOuDg47B7iENH9l8CAwEAAaOCAS0wggEpMAwGA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgEGMB0GA1UdDgQWBBQjo85l/kA0T/n1UFaDWYq0DiM8TTCBnAYDVR0jBIGUMIGRgBQjo85l/kA0T/n1UFaDWYq0DiM8TaF2pHQwcjELMAkGA1UEBhMCSlAxETAPBgNVBAgTCEhva2thaWRvMQ8wDQYDVQQHEwZFYmV0c3UxGzAZBgNVBAoTEkhva3VzaG8gVW5pdmVyc2l0eTELMAkGA1UECxMCRkQxFTATBgNVBAMTDGhva3VzaG8gUm9vdIIBADARBglghkgBhvhCAQEEBAMCAQYwOwYDVR0fBDQwMjAwoC6gLIYqaHR0cDovL3dhcHJhZDA1LmFzYWkubG9jYWwvY2VydHMvY2VydHMuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBWFRgIqbulu2eTJFarulL179LlPuo19M8Bc/F+JsyVq/DyDi5v31JpoI2N8RKW+cIZa8BNPgPrOjBY4IQiiW7NvIiQi5XLOzjmd1/2PqTqzfJ51QkcW46pkZaBQFs8lko78r/LhSVFXWS+yAJ6HsqJuUdiFDx7h2kkFV+8Rs4OLkj3W/Trhbznqo8b286sGDKbd2IFVQUy7cZI4PGz0iBIgEQ09pIGJW4ltzcsPw89/K7Vh88iWtbMVD440fpkH68dGH9z3ysdRy5AoMjZtFybQs77tK8VDmVWZpaxPsfWv6PpW5Hclyv58TJ5qLma9p/bi7OeWt09Na74B1R8HcTJ</CA>
+          <ServerID>waprad05.ad.hokusho-u.ac.jp</ServerID>
+          <ServerID>waprad06.ad.hokusho-u.ac.jp</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>hokusho-u.ac.jp</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Hokusho University - Staff</DisplayName>
+      <ProviderLocation>
+        <Longitude>141.49024181996103</Longitude>
+        <Latitude>43.06436178496389</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

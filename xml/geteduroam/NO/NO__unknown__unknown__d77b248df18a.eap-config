@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="himolde.no" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIICVDCCAdugAwIBAgIQZ3SdjXfYO2rbIvT/WeK/zjAKBggqhkjOPQQDAzBsMQswCQYDVQQGEwJHUjE3MDUGA1UECgwuSGVsbGVuaWMgQWNhZGVtaWMgYW5kIFJlc2VhcmNoIEluc3RpdHV0aW9ucyBDQTEkMCIGA1UEAwwbSEFSSUNBIFRMUyBFQ0MgUm9vdCBDQSAyMDIxMB4XDTIxMDIxOTExMDExMFoXDTQ1MDIxMzExMDEwOVowbDELMAkGA1UEBhMCR1IxNzA1BgNVBAoMLkhlbGxlbmljIEFjYWRlbWljIGFuZCBSZXNlYXJjaCBJbnN0aXR1dGlvbnMgQ0ExJDAiBgNVBAMMG0hBUklDQSBUTFMgRUNDIFJvb3QgQ0EgMjAyMTB2MBAGByqGSM49AgEGBSuBBAAiA2IABDgI/rGgltJ6rK9JOtDA4MM7KKrxcm1lAEeIhPyaJmuqS7psBAqIXhfyVYf8MLA04jRYVxqEU+kw2anylnTDUR9YSTHMmE5gEYd103KUkE+bECUqqHgtvpBBWJAVcqeht6NCMEAwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUyRtTgRL+BNUW0aq8mm+3oJUZbsowDgYDVR0PAQH/BAQDAgGGMAoGCCqGSM49BAMDA2cAMGQCMBHervjcToiwqfAircJRQO9gcS3ujwLEXQNwSaSS6sUUiHCm0w2wqsosQJz76YJumgIwK0eaB8bRwoF8yguWGEEbo/QwCZ61IygNnxS2PFOiTAZpffpskcYqSUXm7LcT4Tps</CA>
+          <ServerID>nebbskate.himolde.no</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>himolde.no</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Høgskolen i Molde</DisplayName>
+      <ProviderLocation>
+        <Longitude>7.109319300000038</Longitude>
+        <Latitude>62.73659829999999</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>support@himolde.no</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

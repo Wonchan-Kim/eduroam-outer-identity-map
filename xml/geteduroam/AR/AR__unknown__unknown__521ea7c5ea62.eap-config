@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="undefined" namespace="urn:undefined">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEzzCCA7egAwIBAgIJAP+fVpStHYSgMA0GCSqGSIb3DQEBCwUAMIGMMQswCQYDVQQGEwJBUjEQMA4GA1UECAwHQ29yZG9iYTEQMA4GA1UEBwwHQ29yZG9iYTEoMCYGA1UECgwfVW5pdmVyc2lkYWQgTmFjaW9uYWwgZGUgQ29yZG9iYTEhMB8GCSqGSIb3DQEJARYScHNpLm5vY0B1bmMuZWR1LmFyMQwwCgYDVQQDDANVTkMwHhcNMTgwNDE3MTkyMjQyWhcNMjgwNDE0MTkyMjQyWjCBjDELMAkGA1UEBhMCQVIxEDAOBgNVBAgMB0NvcmRvYmExEDAOBgNVBAcMB0NvcmRvYmExKDAmBgNVBAoMH1VuaXZlcnNpZGFkIE5hY2lvbmFsIGRlIENvcmRvYmExITAfBgkqhkiG9w0BCQEWEnBzaS5ub2NAdW5jLmVkdS5hcjEMMAoGA1UEAwwDVU5DMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2E6K2BhslJ2ZZhFnGuUivg9KAVHv6FeqIK5y7pQ/FrMgl2+9v+VYqfk7ilquroat6n+d5Y+jVGa4aIjGQxRh82xHTyUs9ndlSV2sRlgjfoRD7z/fp5ko4OUDECJgVdblOhoOe71fjBBm15hw/Yx5okyEZzbYpznH8e57ybSw3bOZC6VB1e8PLFCgHAspwgc8poTMkUAD0/PvlzOP+kGWmHt/O5n0d4fLtlbJYJWTeRDN6v8s5h1/QkqPmbBNNt4TWKbnQcfYsEWeQC1RhvZ8IkoFaYK2/s9RvENrnxvgI3WkxXOJ+i6Y7Uv2C013MZMS9YUWwQswz7jvOAPZVvubTQIDAQABo4IBMDCCASwwHQYDVR0OBBYEFIOvgean2FnRu/vc/K3uQrKmVhquMIHBBgNVHSMEgbkwgbaAFIOvgean2FnRu/vc/K3uQrKmVhquoYGSpIGPMIGMMQswCQYDVQQGEwJBUjEQMA4GA1UECAwHQ29yZG9iYTEQMA4GA1UEBwwHQ29yZG9iYTEoMCYGA1UECgwfVW5pdmVyc2lkYWQgTmFjaW9uYWwgZGUgQ29yZG9iYTEhMB8GCSqGSIb3DQEJARYScHNpLm5vY0B1bmMuZWR1LmFyMQwwCgYDVQQDDANVTkOCCQD/n1aUrR2EoDAPBgNVHRMBAf8EBTADAQH/MDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly93d3cuZXhhbXBsZS5vcmcvZXhhbXBsZV9jYS5jcmwwDQYJKoZIhvcNAQELBQADggEBANeXr8ZxABoRgdH/BAMOsa4AqWXqw2GtIIx7jJE3i/TthfftYKZz8eQZKlXdSiBpO/5Ku3uJ0O2Vz+wtNMS91t1QKTSaeV9lbNXnKw4PE5aSmW2+iTIfOnv9h4EoC0UOI1nl+SxEQ2lafHlL3kVYqh14zhy2cJDkBkK18hxtKG35xonYmQCgi+vVoE0AabQgqbeQafbl3qdw9kwRxmO11WMok2EceEXuSqJVS2SPHyTg5gKV46YGfsBFqqATAx0HP+CXMredg7JTx6civC9qF0vOLLh8NyHuxVv0qMxueuIMtg/WYbMkKlBlGGLdmW0W5zipr989G/FYrDKOc3nGaoc=</CA>
+          <ServerID>radius-eduroam.unc.edu.ar</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>UNC - Universidad Nacional de Córdoba - eduroam4</DisplayName>
+      <Description>eduroam4</Description>
+      <ProviderLocation>
+        <Longitude>-64.18876740000002</Longitude>
+        <Latitude>-31.43842769999999</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>psi.redes@unc.edu.ar</EmailAddress>
+        <WebAddress>https://www.unc.edu.ar/informatica/</WebAddress>
+        <Phone>5403515353750</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="cunef.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDCzCCAnSgAwIBAgIJAMczYzWYBzDqMA0GCSqGSIb3DQEBCwUAMFIxCzAJBgNVBAYTAkVTMQ8wDQYDVQQIEwZNYWRyaWQxDzANBgNVBAcTBk1hZHJpZDEOMAwGA1UEChMFY3VuZWYxETAPBgNVBAMTCGZ1dHVyZUNBMB4XDTE3MTEyMDExNTUzNFoXDTI3MTExODExNTUzNFowUjELMAkGA1UEBhMCRVMxDzANBgNVBAgTBk1hZHJpZDEPMA0GA1UEBxMGTWFkcmlkMQ4wDAYDVQQKEwVjdW5lZjERMA8GA1UEAxMIZnV0dXJlQ0EwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBANT7TMAg/j5RrTBYtlbHpGO48KRdH6z21QpANY8KKDBjYDoy3EZ1HaLEVR8dy9YF3WbouShmpIDGdTZky9TQpo5kmZNJhW8vffp4fMYckNsuCzw/fXIKIHcT8y3Lj/eXOfcEKCEM7ORNtcrblvOSeVk1VVnLMueHxeKdBuje5mTJAgMBAAGjgegwgeUwDAYDVR0TBAUwAwEB/zAxBgNVHSUEKjAoBggrBgEFBQcDAQYIKwYBBQUHAwIGCCsGAQUFBwMEBggrBgEFBQcDAzAdBgNVHQ4EFgQUnIxzc4/JIaQ1+Ia6mOFXEWZ2ncowgYIGA1UdIwR7MHmAFJyMc3OPySGkNfiGupjhVxFmdp3KoVakVDBSMQswCQYDVQQGEwJFUzEPMA0GA1UECBMGTWFkcmlkMQ8wDQYDVQQHEwZNYWRyaWQxDjAMBgNVBAoTBWN1bmVmMREwDwYDVQQDEwhmdXR1cmVDQYIJAMczYzWYBzDqMA0GCSqGSIb3DQEBCwUAA4GBALYvRQf3iAr84IxWHP0W7b/eflWPTGqX2Zkk8uun3DQwLClrEJJoQztfooLkKHfSlBJ6zoEU1KkRCLrGuT1DkqvsEm2tBYwkrv3kPG4K5QyxBxbZzWOnVqBro27IIDqSEZtNKcMOmdxWKH51V0PHWGnOG2xrq6v1mP3uYCv5iCfR</CA>
+          <ServerID>eduroam.cunef.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>CUNEF Universidad</DisplayName>
+      <Description>Colegio Universitario de Estudios Financieros</Description>
+      <ProviderLocation>
+        <Longitude>-3.720110400000067</Longitude>
+        <Latitude>40.4516053</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>soporte@cunef.edu</EmailAddress>
+        <WebAddress>www.cunef.edu</WebAddress>
+        <Phone>+34 91 448 08 92</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

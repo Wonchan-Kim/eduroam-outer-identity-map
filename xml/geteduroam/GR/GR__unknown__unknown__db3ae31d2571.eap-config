@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="ihu.gr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFHjCCAwagAwIBAgIUUi+Z7lBAUpOmGwmbjKezsIdMLh8wDQYJKoZIhvcNAQELBQAwNTELMAkGA1UEBhMCR1IxDDAKBgNVBAoMA0lIVTEYMBYGA1UEAwwPR1VORVRfUkFESVVTX0NBMB4XDTIzMDEyNDEwMjg1MloXDTQ1MDExODEwMjg1MlowNTELMAkGA1UEBhMCR1IxDDAKBgNVBAoMA0lIVTEYMBYGA1UEAwwPR1VORVRfUkFESVVTX0NBMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAsrtIjQbebvu0xceNlnW9PeVLuIcG/nF25SHyGSlfVDEFZQFI1UDGPTRjaesIAX71yuPeYJzIxCB6JYM9gARlVoMyy7g/qxDH7LwlWsjAlTq9BZUc3Gj5sWEJrVZgr8fLjIGU5nuvO172aaOScTBorcUz4IRuk/Si1nbCaqXiPLzWUMGnNvm8Unxe2M4porMLoeMzNok6z56uPGdvkzegThR9lnF7dr9PUPMYVYbfOTxOoiofKtY4DhlE19AtJki7RtDStjZCGJ3w99zo5vjb3UPmgj4Dopntf5TQrVrdYuntsCTVtP9aTCQrblcMJEY5FSFZwoEhhJsZY3NAjfGewZEdrkuM/RmhgOo2xrACuYkM61g/GPcl7zxKTN1AG22r7+deZGtVF5LbDc5YVCQU5aXuNuhsRtAwWp7c5/VKENDL0uRXtgYesyOT0/wxbpYAMfI4DOXFZc2UOKRT1ZSWTfU6FZ+F34dfLSDPLxvQTcJkFBo/847vu2EPfHMcPSjPENW1AoH6R27DaAZj/IH9LTPDWbWk0aIZS7YHJaf7XHxYecm6C5s2YmwjZROw7POnHSxBBFUebNxvVT2Axq0u3ISIP4Qo9IB+m6bIdoxBzvYfUFCknMWcxGoaxsVkcOoEYZ8vBOiVWm8yyCs0ktbFPQId3TNpqnYowqVUEKuPw0ECAwEAAaMmMCQwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMCAuQwDQYJKoZIhvcNAQELBQADggIBAB2X428H0nTq7dr73MEuLTvGKn+/ZUfhx2XdlEQmMATFVqjWEerLcEOO4XZm6S/E50jOYj+DqASDHRcDC5fWkWXievC2iwl5rZJ8DVoix/T0iDpUsHUNYxhGn+iYehhEW+0XOdyOTGMbN0F1pSbyi4pfb1Zon24PHn1nEzdihcIBO+LK813ERgdkN0DZdqOLQTtOi7YZ/QdrSBm97wyHaUq6QUgwL3fnN8s7Y7S25lzucL0J0XH4v+tMd8lBIriM1PKkux4/BKTc7glMa9CDUlDJmdEuWprwxk9m8pZED/Ez/UK2NxZBk9aLquM5NenWLncGbJTWhNvgqPDDk/M7lkBY3GLOlv5dsJj2/c52GOr8vVOWN1WRslz95GN3lMIFQbystuJllFytBRRlpodem9+ldUsji44nmrlSoWZCZYFfSbcVY/GAnZLx40LUMA0kZCyrq9j5IP4A9+ehR14yjqOR5v5xtCepB3zsGwx4xHcpyxMXogHmg4Rx/8SwEKheK8Mpkfxe/FAVxCzocqFYj/op/qXpjQUWH3hse97pI36dNYNq4zalSxyXjDUJr0K/Q4P+58RIxBlx+dLGHJPobX0kqLPbaw3eM++GW7iOZpVjWG9KkOgtywE/PpfOcUKd5KfwgqoeUQq5CHwyBLIHtTMR+GBYc1EVSmJmiNTN6z03</CA>
+          <ServerID>ridp.ihu.gr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@ihu.gr</OuterIdentity>
+          <InnerIdentitySuffix>ihu.gr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFHjCCAwagAwIBAgIUUi+Z7lBAUpOmGwmbjKezsIdMLh8wDQYJKoZIhvcNAQELBQAwNTELMAkGA1UEBhMCR1IxDDAKBgNVBAoMA0lIVTEYMBYGA1UEAwwPR1VORVRfUkFESVVTX0NBMB4XDTIzMDEyNDEwMjg1MloXDTQ1MDExODEwMjg1MlowNTELMAkGA1UEBhMCR1IxDDAKBgNVBAoMA0lIVTEYMBYGA1UEAwwPR1VORVRfUkFESVVTX0NBMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAsrtIjQbebvu0xceNlnW9PeVLuIcG/nF25SHyGSlfVDEFZQFI1UDGPTRjaesIAX71yuPeYJzIxCB6JYM9gARlVoMyy7g/qxDH7LwlWsjAlTq9BZUc3Gj5sWEJrVZgr8fLjIGU5nuvO172aaOScTBorcUz4IRuk/Si1nbCaqXiPLzWUMGnNvm8Unxe2M4porMLoeMzNok6z56uPGdvkzegThR9lnF7dr9PUPMYVYbfOTxOoiofKtY4DhlE19AtJki7RtDStjZCGJ3w99zo5vjb3UPmgj4Dopntf5TQrVrdYuntsCTVtP9aTCQrblcMJEY5FSFZwoEhhJsZY3NAjfGewZEdrkuM/RmhgOo2xrACuYkM61g/GPcl7zxKTN1AG22r7+deZGtVF5LbDc5YVCQU5aXuNuhsRtAwWp7c5/VKENDL0uRXtgYesyOT0/wxbpYAMfI4DOXFZc2UOKRT1ZSWTfU6FZ+F34dfLSDPLxvQTcJkFBo/847vu2EPfHMcPSjPENW1AoH6R27DaAZj/IH9LTPDWbWk0aIZS7YHJaf7XHxYecm6C5s2YmwjZROw7POnHSxBBFUebNxvVT2Axq0u3ISIP4Qo9IB+m6bIdoxBzvYfUFCknMWcxGoaxsVkcOoEYZ8vBOiVWm8yyCs0ktbFPQId3TNpqnYowqVUEKuPw0ECAwEAAaMmMCQwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMCAuQwDQYJKoZIhvcNAQELBQADggIBAB2X428H0nTq7dr73MEuLTvGKn+/ZUfhx2XdlEQmMATFVqjWEerLcEOO4XZm6S/E50jOYj+DqASDHRcDC5fWkWXievC2iwl5rZJ8DVoix/T0iDpUsHUNYxhGn+iYehhEW+0XOdyOTGMbN0F1pSbyi4pfb1Zon24PHn1nEzdihcIBO+LK813ERgdkN0DZdqOLQTtOi7YZ/QdrSBm97wyHaUq6QUgwL3fnN8s7Y7S25lzucL0J0XH4v+tMd8lBIriM1PKkux4/BKTc7glMa9CDUlDJmdEuWprwxk9m8pZED/Ez/UK2NxZBk9aLquM5NenWLncGbJTWhNvgqPDDk/M7lkBY3GLOlv5dsJj2/c52GOr8vVOWN1WRslz95GN3lMIFQbystuJllFytBRRlpodem9+ldUsji44nmrlSoWZCZYFfSbcVY/GAnZLx40LUMA0kZCyrq9j5IP4A9+ehR14yjqOR5v5xtCepB3zsGwx4xHcpyxMXogHmg4Rx/8SwEKheK8Mpkfxe/FAVxCzocqFYj/op/qXpjQUWH3hse97pI36dNYNq4zalSxyXjDUJr0K/Q4P+58RIxBlx+dLGHJPobX0kqLPbaw3eM++GW7iOZpVjWG9KkOgtywE/PpfOcUKd5KfwgqoeUQq5CHwyBLIHtTMR+GBYc1EVSmJmiNTN6z03</CA>
+          <ServerID>ridp.ihu.gr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@ihu.gr</OuterIdentity>
+          <InnerIdentitySuffix>ihu.gr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <SSID>IHU-WiFi</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>International Hellenic University - IHU New</DisplayName>
+      <Description>IHU New RADIUS Profile (experimental)</Description>
+      <ProviderLocation>
+        <Longitude>23.008745741125495</Longitude>
+        <Latitude>40.53728973828197</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>support@ihu.edu.gr</EmailAddress>
+        <Phone>+302310807510</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

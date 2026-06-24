@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="kstu.edu.gh" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4WhcNMzUwNjA0MTEwNDM4WjBPMQswCQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJuZXQgU2VjdXJpdHkgUmVzZWFyY2ggR3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBYMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAK3oJHP0FDfzm54rVygch77ct984kIxuPOZXoHj3dcKi/vVqbvYATyjb3miGbESTtrFj/RQSa78f0uoxmyF+0TM8ukj13Xnfs7j/EvEhmkvBioZxaUpmZmyPfjxwv60pIgbz5MDmgK7iS4+3mX6UA5/TR5d8mUgjU+g4rk8Kb4Mu0UlXjIB0ttov0DiNewNwIRt18jA8+o+u3dpjq+sWT8KOEUt+zwvo/7V3LvSye0rgTBIlDHCNAymg4VMk7BPZ7hm/ELNKjD+Jo2FR3qyHB5T0Y3HsLuJvW5iB4YlcNHlsdu87kGJ55tukmi8mxdAQ4Q7e2RCOFvu396j3x+UCB5iPNgiV5+I3lg02dZ77DnKxHZu8A/lJBdiB3QW0KtZB6awBdpUKD9jf1b0SHzUvKBds0pjBqAlkd25HN7rOrFleaJ1/ctaJxQZBKT5ZPt0m9STJEadao0xAH0ahmbWnOlFuhjuefXKnEgV4We0+UXgVCwOPjdAvBbI+e0ocS3MFEvzG6uBQE3xDk3SzynTnjh8BCNAw1FtxNrQHusEwMFxIt4I7mKZ9YIqioymCzLq9gwQbooMDQaHWBfEbwrbwqHyGO0aoSCqI3Haadr8faqU9GY/rOPNk3sgrDQoo//fb4hVC1CLQJ13hef4Y53CIrU7m2Ys6xt0nUW7/vGT1M0NPAgMBAAGjQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR5tFnme7bl5AFzgAiIyBpY9umbbjANBgkqhkiG9w0BAQsFAAOCAgEAVR9YqbyyqFDQDLHYGmkgJykIrGF1XIpu+ILlaS/V9lZLubhzEFnTIZd+50xx+7LSYK05qAvqFyFWhfFQDlnrzuBZ6brJFe+GnY+EgPbk6ZGQ3BebYhtF8GaV0nxvwuo77x/Py9auJ/GpsMiu/X1+mvoiBOv/2X/qkSsisRcOj/KKNFtY2PwByVS5uCbMiogziUwthDyC3+6WVwW6LLv3xLfHTjuCvjHIInNzktHCgKQ5ORAzI4JMPJ+GslWYHb4phowim57iaztXOoJwTdwJx4nLCgdNbOhdjsnvzqvHu7UrTkXWStAmzOVyyghqpZXjFaH3pO3JLF+l+/+sKAIuvtd7u+Nxe5AW0wdeRlN8NwdCjNPElpzVmbUq4JUagEiuTDkHzsxHpFKVK7q4+63SM1N95R1NbdWhscdCb+ZAJzVcoyi3B43njTOQ5yOf+1CceWxG1bQVs5ZufpsMljq4Ui0/1lvh+wjChP4kqKOJ2qxq4RgqsahDYVvTH9w7jXbyLeiNdd8XM2w9U/t7y0Ff/9yi0GE44Za4rF2LN9d11TPAmRGunUHBcnWEvgJBQl9nJEiU0Zsnvgc/ubhPgXRR4Xq37Z0j4r7g1SgEEzwxA57demyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=</CA>
+          <ServerID>radius.kstu.edu.gh</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>kstu.edu.gh</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4WhcNMzUwNjA0MTEwNDM4WjBPMQswCQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJuZXQgU2VjdXJpdHkgUmVzZWFyY2ggR3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBYMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAK3oJHP0FDfzm54rVygch77ct984kIxuPOZXoHj3dcKi/vVqbvYATyjb3miGbESTtrFj/RQSa78f0uoxmyF+0TM8ukj13Xnfs7j/EvEhmkvBioZxaUpmZmyPfjxwv60pIgbz5MDmgK7iS4+3mX6UA5/TR5d8mUgjU+g4rk8Kb4Mu0UlXjIB0ttov0DiNewNwIRt18jA8+o+u3dpjq+sWT8KOEUt+zwvo/7V3LvSye0rgTBIlDHCNAymg4VMk7BPZ7hm/ELNKjD+Jo2FR3qyHB5T0Y3HsLuJvW5iB4YlcNHlsdu87kGJ55tukmi8mxdAQ4Q7e2RCOFvu396j3x+UCB5iPNgiV5+I3lg02dZ77DnKxHZu8A/lJBdiB3QW0KtZB6awBdpUKD9jf1b0SHzUvKBds0pjBqAlkd25HN7rOrFleaJ1/ctaJxQZBKT5ZPt0m9STJEadao0xAH0ahmbWnOlFuhjuefXKnEgV4We0+UXgVCwOPjdAvBbI+e0ocS3MFEvzG6uBQE3xDk3SzynTnjh8BCNAw1FtxNrQHusEwMFxIt4I7mKZ9YIqioymCzLq9gwQbooMDQaHWBfEbwrbwqHyGO0aoSCqI3Haadr8faqU9GY/rOPNk3sgrDQoo//fb4hVC1CLQJ13hef4Y53CIrU7m2Ys6xt0nUW7/vGT1M0NPAgMBAAGjQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR5tFnme7bl5AFzgAiIyBpY9umbbjANBgkqhkiG9w0BAQsFAAOCAgEAVR9YqbyyqFDQDLHYGmkgJykIrGF1XIpu+ILlaS/V9lZLubhzEFnTIZd+50xx+7LSYK05qAvqFyFWhfFQDlnrzuBZ6brJFe+GnY+EgPbk6ZGQ3BebYhtF8GaV0nxvwuo77x/Py9auJ/GpsMiu/X1+mvoiBOv/2X/qkSsisRcOj/KKNFtY2PwByVS5uCbMiogziUwthDyC3+6WVwW6LLv3xLfHTjuCvjHIInNzktHCgKQ5ORAzI4JMPJ+GslWYHb4phowim57iaztXOoJwTdwJx4nLCgdNbOhdjsnvzqvHu7UrTkXWStAmzOVyyghqpZXjFaH3pO3JLF+l+/+sKAIuvtd7u+Nxe5AW0wdeRlN8NwdCjNPElpzVmbUq4JUagEiuTDkHzsxHpFKVK7q4+63SM1N95R1NbdWhscdCb+ZAJzVcoyi3B43njTOQ5yOf+1CceWxG1bQVs5ZufpsMljq4Ui0/1lvh+wjChP4kqKOJ2qxq4RgqsahDYVvTH9w7jXbyLeiNdd8XM2w9U/t7y0Ff/9yi0GE44Za4rF2LN9d11TPAmRGunUHBcnWEvgJBQl9nJEiU0Zsnvgc/ubhPgXRR4Xq37Z0j4r7g1SgEEzwxA57demyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=</CA>
+          <ServerID>radius.kstu.edu.gh</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>kstu.edu.gh</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4WhcNMzUwNjA0MTEwNDM4WjBPMQswCQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJuZXQgU2VjdXJpdHkgUmVzZWFyY2ggR3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBYMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAK3oJHP0FDfzm54rVygch77ct984kIxuPOZXoHj3dcKi/vVqbvYATyjb3miGbESTtrFj/RQSa78f0uoxmyF+0TM8ukj13Xnfs7j/EvEhmkvBioZxaUpmZmyPfjxwv60pIgbz5MDmgK7iS4+3mX6UA5/TR5d8mUgjU+g4rk8Kb4Mu0UlXjIB0ttov0DiNewNwIRt18jA8+o+u3dpjq+sWT8KOEUt+zwvo/7V3LvSye0rgTBIlDHCNAymg4VMk7BPZ7hm/ELNKjD+Jo2FR3qyHB5T0Y3HsLuJvW5iB4YlcNHlsdu87kGJ55tukmi8mxdAQ4Q7e2RCOFvu396j3x+UCB5iPNgiV5+I3lg02dZ77DnKxHZu8A/lJBdiB3QW0KtZB6awBdpUKD9jf1b0SHzUvKBds0pjBqAlkd25HN7rOrFleaJ1/ctaJxQZBKT5ZPt0m9STJEadao0xAH0ahmbWnOlFuhjuefXKnEgV4We0+UXgVCwOPjdAvBbI+e0ocS3MFEvzG6uBQE3xDk3SzynTnjh8BCNAw1FtxNrQHusEwMFxIt4I7mKZ9YIqioymCzLq9gwQbooMDQaHWBfEbwrbwqHyGO0aoSCqI3Haadr8faqU9GY/rOPNk3sgrDQoo//fb4hVC1CLQJ13hef4Y53CIrU7m2Ys6xt0nUW7/vGT1M0NPAgMBAAGjQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR5tFnme7bl5AFzgAiIyBpY9umbbjANBgkqhkiG9w0BAQsFAAOCAgEAVR9YqbyyqFDQDLHYGmkgJykIrGF1XIpu+ILlaS/V9lZLubhzEFnTIZd+50xx+7LSYK05qAvqFyFWhfFQDlnrzuBZ6brJFe+GnY+EgPbk6ZGQ3BebYhtF8GaV0nxvwuo77x/Py9auJ/GpsMiu/X1+mvoiBOv/2X/qkSsisRcOj/KKNFtY2PwByVS5uCbMiogziUwthDyC3+6WVwW6LLv3xLfHTjuCvjHIInNzktHCgKQ5ORAzI4JMPJ+GslWYHb4phowim57iaztXOoJwTdwJx4nLCgdNbOhdjsnvzqvHu7UrTkXWStAmzOVyyghqpZXjFaH3pO3JLF+l+/+sKAIuvtd7u+Nxe5AW0wdeRlN8NwdCjNPElpzVmbUq4JUagEiuTDkHzsxHpFKVK7q4+63SM1N95R1NbdWhscdCb+ZAJzVcoyi3B43njTOQ5yOf+1CceWxG1bQVs5ZufpsMljq4Ui0/1lvh+wjChP4kqKOJ2qxq4RgqsahDYVvTH9w7jXbyLeiNdd8XM2w9U/t7y0Ff/9yi0GE44Za4rF2LN9d11TPAmRGunUHBcnWEvgJBQl9nJEiU0Zsnvgc/ubhPgXRR4Xq37Z0j4r7g1SgEEzwxA57demyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=</CA>
+          <ServerID>radius.kstu.edu.gh</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>kstu.edu.gh</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Kumasi Technical University</DisplayName>
+      <Description>This configuration profile is designed exclusively for the staff and students of Kumasi Technical University; to facilitate automatic and secure connection to the eduroam wireless network. It ensures compliant network settings and enhanced security protocols tailored to the specific needs and access privileges of university staff and students. Please install this profile only if you are a current staff or student of KSTU.</Description>
+      <ProviderLocation>
+        <Longitude>-1.6101355</Longitude>
+        <Latitude>6.6911125</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <TermsOfUse><![CDATA[Terms of Use for the Eduroam Configuration Assistant Tool
+
+1. Acceptance of Terms
+By downloading and using the eduroam Configuration Assistant Tool (the "Tool"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the Tool.
+
+2. Description of Service
+The Tool provides an automated configuration setup for devices intending to connect to the eduroam network. This service is provided to ensure compatibility and enhance security when connecting to eduroam through your institution.
+
+3. Privacy
+Your use of the Tool involves the processing of your device's network settings and may involve the collection of personal information. 
+
+4. User Responsibilities
+You are responsible for ensuring that any information required by the Tool is accurate and current. You are also responsible for the security of your device and must not share the configuration files or misuse the service in any way.
+
+5. Intellectual Property
+All intellectual property rights in the Tool and its contents are owned by KSTU or its licensors. You are granted a non-exclusive, non-transferable, revocable license to use the Tool solely for the purpose of configuring your device to connect to the eduroam network as permitted by these Terms.
+
+6. Prohibited Uses
+You may not use the Tool for any purpose that is unlawful or prohibited by these Terms, or to solicit the performance of any illegal activity or other activity which infringes the rights of KSTU or others.
+
+7. No Warranty
+The Tool is provided "as is" and KSTU makes no warranty of any kind, express or implied, including but not limited to warranties of performance, merchantability, fitness for a particular purpose, accuracy, omissions, completeness, currentness, and delays.
+
+8. Limitation of Liability
+In no event shall KSTU, its officers, directors, employees, or agents be liable for any direct, indirect, incidental, special, consequential or punitive damages resulting from the use or inability to use the Tool.
+
+9. Modifications to Terms
+KSTU reserves the right, at its sole discretion, to modify or replace these Terms at any time. If the alterations constitute a material change to the Terms, KSTU will notify you by posting an announcement on the website.
+
+10. Governing Law
+These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which KSTU is located, without regard to its conflict of law provisions.
+
+11. Contact Information
+If you have any questions about these Terms, please contact us at helpdesk@kstu.edu.gh.
+]]></TermsOfUse>
+      <Helpdesk>
+        <EmailAddress>helpdesk@kstu.edu.gh</EmailAddress>
+        <Phone>0508718748</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

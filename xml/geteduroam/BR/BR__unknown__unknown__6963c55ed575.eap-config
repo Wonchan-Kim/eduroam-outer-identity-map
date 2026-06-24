@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="unilab.edu.br" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDqDCCAxGgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMjAwMzE5MTMyOTE2WhcNMzAwMzE3MTMyOTE2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo4H9MIH6MAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFDuXcVFFi3iOBq6PPJkvLtlvNsvdMIHKBgNVHSMEgcIwgb+AFDuXcVFFi3iOBq6PPJkvLtlvNsvdoYGbpIGYMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnKCCQDCcRaDGAgAVzANBgkqhkiG9w0BAQUFAAOBgQDDdZa3zWDWN2E3NH1xNtVGSePyQN5rNPoyb62QvyoeUJuP+Ez04MY7J+8W3JmXhkEZ4EW9hSgZyE/9ntE8gIQMcvU8jPaLScm7pWeptA4jY6vyQWFLTJ7H24hEDl7Aftm7bJrISMllSfw14FVO25ijE4IHbVh8aZu8QPlD/Khfjg==</CA>
+          <ServerID>eduroam02.unilab.edu.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDqDCCAxGgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMjAwMzE5MTMyOTE2WhcNMzAwMzE3MTMyOTE2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo4H9MIH6MAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFDuXcVFFi3iOBq6PPJkvLtlvNsvdMIHKBgNVHSMEgcIwgb+AFDuXcVFFi3iOBq6PPJkvLtlvNsvdoYGbpIGYMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnKCCQDCcRaDGAgAVzANBgkqhkiG9w0BAQUFAAOBgQDDdZa3zWDWN2E3NH1xNtVGSePyQN5rNPoyb62QvyoeUJuP+Ez04MY7J+8W3JmXhkEZ4EW9hSgZyE/9ntE8gIQMcvU8jPaLScm7pWeptA4jY6vyQWFLTJ7H24hEDl7Aftm7bJrISMllSfw14FVO25ijE4IHbVh8aZu8QPlD/Khfjg==</CA>
+          <ServerID>eduroam02.unilab.edu.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDqDCCAxGgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMjAwMzE5MTMyOTE2WhcNMzAwMzE3MTMyOTE2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo4H9MIH6MAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFDuXcVFFi3iOBq6PPJkvLtlvNsvdMIHKBgNVHSMEgcIwgb+AFDuXcVFFi3iOBq6PPJkvLtlvNsvdoYGbpIGYMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnKCCQDCcRaDGAgAVzANBgkqhkiG9w0BAQUFAAOBgQDDdZa3zWDWN2E3NH1xNtVGSePyQN5rNPoyb62QvyoeUJuP+Ez04MY7J+8W3JmXhkEZ4EW9hSgZyE/9ntE8gIQMcvU8jPaLScm7pWeptA4jY6vyQWFLTJ7H24hEDl7Aftm7bJrISMllSfw14FVO25ijE4IHbVh8aZu8QPlD/Khfjg==</CA>
+          <ServerID>eduroam02.unilab.edu.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>UNILAB - Universidade da Integração Internacional da Lusofonia Afro-Brasileira</DisplayName>
+      <ProviderLocation>
+        <Longitude>-38.72478899999999</Longitude>
+        <Latitude>-4.222818</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-38.72478899999999</Longitude>
+        <Latitude>-4.222818</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>disir@unilab.edu.br</EmailAddress>
+        <WebAddress>http://dti.unilab.edu.br/</WebAddress>
+        <Phone>+55 85 33326138</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

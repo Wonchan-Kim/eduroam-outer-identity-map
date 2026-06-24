@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="student.concordia.ab.ca" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIID4TCCAskCFCc09pNYVtrJd1AXz9QVn+VhDtOMMA0GCSqGSIb3DQEBCwUAMIGsMQswCQYDVQQGEwJDQTEQMA4GA1UECBMHQWxiZXJ0YTERMA8GA1UEBxMIRWRtb250b24xMDAuBgNVBAoTJ0NvbmNvcmRpYSBVbml2ZXJzaXR5IENvbGxlZ2Ugb2YgQWxiZXJ0YTEnMCUGCSqGSIb3DQEJARYYaGVscGRlc2tAY29uY29yZGlhLmFiLmNhMR0wGwYDVQQDExRodW5rLmNvbmNvcmRpYS5hYi5jYTAeFw0yMjExMDkxODQyNDZaFw0zMjExMDYxODQyNDZaMIGsMQswCQYDVQQGEwJDQTEQMA4GA1UECBMHQWxiZXJ0YTERMA8GA1UEBxMIRWRtb250b24xMDAuBgNVBAoTJ0NvbmNvcmRpYSBVbml2ZXJzaXR5IENvbGxlZ2Ugb2YgQWxiZXJ0YTEnMCUGCSqGSIb3DQEJARYYaGVscGRlc2tAY29uY29yZGlhLmFiLmNhMR0wGwYDVQQDExRodW5rLmNvbmNvcmRpYS5hYi5jYTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANHHscSzIFZWIUwP2aYm0NYUhqVDY3AWQ5QzW3UzPNRlgHIxvc+L7+2YLdgeLWppDV1CKfHSF8jLdox7IhdO4MTxMMUQdIqBnMrYvq9QbuOOsQjGwfXRmXMoG2RhzLh4VRaxnaNoe+twSfru9FGcuswEI0AfNTpoE0cJPXi01GmVpxv55EoU9mz44U+6DS6LyJGV05POa9DMORRADT3kVc2awmxOo2A28WM+HDogwEJssJbhkMg6/xzI+eWhcT2kWjCyI7b+X9NideBWqGobXAdAIvd4VsbKGOq0KDejzrmAgtGU88sMp0ib9h4ipJR+A4e9SzEPgyNQk8HAqfLsECMCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAGFifWiTu1i2lzZhqQmt2NbdAzTocQy0bwSellZxqduIokpeBYeCrEppQjT1glJpK/YsSEpmgMogZ3Tk7Jv1cfPkD2kqCUGe/dno9R4mHLQYWrD3ZzIR7ppwcw6hyGlktHDjFUVuJE9U53pFUPh5Hq1+R/12d/ywNuDh0qzEkobfMo264hvHqMgacO/hLBMRq72A7qOrs0cUC5A+TG8FiAzwPvgqsUt7jRwk7NXMUBsoBNodEubcW7JaquwHmwG2qLciK6kYGvOyfNX/DSU22HgBMbRUKdU7X+xvlR5vW6aV6rpRT5sq+Yss8++HxWvSWz9qIYMlFBZY2OFGO2JYeSw==</CA>
+          <ServerID>hunk.concordia.ab.ca</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous984232@student.concordia.ab.ca</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Concordia University of Edmonton - CUE Students</DisplayName>
+      <ProviderLocation>
+        <Longitude>-113.44570398330686</Longitude>
+        <Latitude>53.560321891670554</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>helpdesk@concordia.ab.ca</EmailAddress>
+        <WebAddress>http://helpdesk.concordia.ab.ca/</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

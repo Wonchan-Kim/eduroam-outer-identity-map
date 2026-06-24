@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="hacettepe.edu.tr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFSjCCBDKgAwIBAgIUfdChxRsHIw0T3nnYO+hrk09RTNAwDQYJKoZIhvcNAQELBQAwgawxCzAJBgNVBAYTAlRSMRIwEAYDVQQIDAlIQUNFVFRFUEUxEjAQBgNVBAcMCUhBQ0VUVEVQRTEdMBsGA1UECgwUSEFDRVRURVBFIFVOSVZFUlNJVFkxJDAiBgkqhkiG9w0BCQEWFWJpZGJAaGFjZXR0ZXBlLmVkdS50cjEwMC4GA1UEAwwnSGFjZXR0ZXBlIEVkdXJvYW0gQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTIzMDUyMjEyMjg0N1oXDTI4MDQyNTEyMjg0N1owgawxCzAJBgNVBAYTAlRSMRIwEAYDVQQIDAlIQUNFVFRFUEUxEjAQBgNVBAcMCUhBQ0VUVEVQRTEdMBsGA1UECgwUSEFDRVRURVBFIFVOSVZFUlNJVFkxJDAiBgkqhkiG9w0BCQEWFWJpZGJAaGFjZXR0ZXBlLmVkdS50cjEwMC4GA1UEAwwnSGFjZXR0ZXBlIEVkdXJvYW0gQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArqPyZbXMb/cBt0g5pP90hP0Z3IujkKy6bx5kyH8AxqYBM+1NVEQd74Uwn96MHDjE23UGOE1rImZWQHhSctxbT81LN6TaNV+xoIJ1JlRUEM74oIWbItXYy0YFl+OgKIrKAuhcii3Jm7j4bBtvaIMox40eCVhTlT6fiyX0nCuUBjhSuV4deW2HuEI4xjnkdjQj7QZ4/VAeUVbSj348hNUpqlmktjzpTSPWqKaIgorEYktqC9jcBuKtaKwEWBeGu2x2O3BDlVqMqql+7r9/yjgiBc97QB2yUP5TFlFj6yMvxAp8kCOThqOuIxr5RSN+ZXvJEAN69o9MJ+KliuH0p7Xy/QIDAQABo4IBYDCCAVwwHQYDVR0OBBYEFJgInTmzdUxLxVqhzt8/csgRMEtPMIHsBgNVHSMEgeQwgeGAFJgInTmzdUxLxVqhzt8/csgRMEtPoYGypIGvMIGsMQswCQYDVQQGEwJUUjESMBAGA1UECAwJSEFDRVRURVBFMRIwEAYDVQQHDAlIQUNFVFRFUEUxHTAbBgNVBAoMFEhBQ0VUVEVQRSBVTklWRVJTSVRZMSQwIgYJKoZIhvcNAQkBFhViaWRiQGhhY2V0dGVwZS5lZHUudHIxMDAuBgNVBAMMJ0hhY2V0dGVwZSBFZHVyb2FtIENlcnRpZmljYXRlIEF1dGhvcml0eYIUfdChxRsHIw0T3nnYO+hrk09RTNAwDwYDVR0TAQH/BAUwAwEB/zA7BgNVHR8ENDAyMDCgLqAshipodHRwOi8vd3d3LmhhY2V0dGVwZS5lZHUudHIvZXhhbXBsZV9jYS5jcmwwDQYJKoZIhvcNAQELBQADggEBAAuzIqRTzIZLaUXZSW2MXuabNBLUPjKNrlnS4PHF6BCMGuuFFrSkI7MAUV/BpI32sAaPp8jVeXUeDWu6O1RiMdmW8vt3V89kf+XXDjx0IaFWcgMbHVPa32BZMIsoE2J+VgSdsTMoNmWh0iXvgdvnj75Cig9BVQyvHuPMTxDdkLoGofO2T3x/RSkxcd//9S7HK5PKTMwikgj2GecanO6dgU+9iGvlaw8u4K72IKi6Z2QSzFvjfRDb+mGvtjXMzcVXI8fYZPkCwAqXE97MH5Mg0giyw22WuoufaWulNrB32X+t53S48zjskpdX9OgeT8fbLkkbo1ympg9O8o+ttzVmRnQ=</CA>
+          <ServerID>nps.hacettepe.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>hacettepe.edu.tr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Hacettepe University</DisplayName>
+      <Description>Hacettepe Eduroam</Description>
+      <ProviderLocation>
+        <Longitude>34.9249653</Longitude>
+        <Latitude>38.9597594</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="aichi-toho.ac.jp" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEJDCCAwygAwIBAgIJAK+ELaBT3S3vMA0GCSqGSIb3DQEBCwUAMGkxCzAJBgNVBAYTAkpQMQ4wDAYDVQQIEwVhaWNoaTEPMA0GA1UEBxMGbmFnb3lhMRkwFwYDVQQKExBhaWNoaS10b2hvLmFjLmpwMR4wHAYDVQQDExVhaWNoaS10b2hvLXVuaXZlcnNpdHkwHhcNMTgwMjI4MDY0NTAwWhcNMjMwMjI4MDY0NTAwWjBpMQswCQYDVQQGEwJKUDEOMAwGA1UECBMFYWljaGkxDzANBgNVBAcTBm5hZ295YTEZMBcGA1UEChMQYWljaGktdG9oby5hYy5qcDEeMBwGA1UEAxMVYWljaGktdG9oby11bml2ZXJzaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApPyHGIhrF0TTrL1Z91lX3CtxI10ntw4LBdEImEFoirAiM5Zo1xtyaurpC8+WuqQjy402fwEOZKOVlNx2oJxA+Q3SUTa+eXc5YUuH8bjAijkgHzhg2d5DX2VHYnAejwTwEcCvW3WkU8lGSCResFPA2nhYpwRA3k7LKyQZCMSDR39+W4Zs2D1ZXPqWBvGsI+f0hw4mdoY9DQfk06ve14RjOFaO67IGTdTyhvqa4+5DSz6LXAbIRTVqOoZGVoMpA0Bh3pbwmFfJCodT255K/te57ou6reXIWe8KDOYPtJdJ0tOdU6ZsqBbqfv264ewbd+orYy9QLlGFxoHQ36muSJYSgwIDAQABo4HOMIHLMB0GA1UdDgQWBBSg/pZ6YVNEiP4w2Q0YLxwEfLYJLzCBmwYDVR0jBIGTMIGQgBSg/pZ6YVNEiP4w2Q0YLxwEfLYJL6FtpGswaTELMAkGA1UEBhMCSlAxDjAMBgNVBAgTBWFpY2hpMQ8wDQYDVQQHEwZuYWdveWExGTAXBgNVBAoTEGFpY2hpLXRvaG8uYWMuanAxHjAcBgNVBAMTFWFpY2hpLXRvaG8tdW5pdmVyc2l0eYIJAK+ELaBT3S3vMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBACboDBB3UyqXTl34cJN5MdCBC/8aAhMywr+qIDEDoFePd54L1J54vTCqT9wghsBdgh/JhuuupgolKQcPRLV5n1vZKva0brsNch5MdufaqaI730TLFnA5rHKYIJ/DbVeDdnhs00DdzyI6qWTNlP2HEVrGYwMQ4lpx4PJ+T8LF2sz0I99ysOfh0EjYEBn5Uf4s/H2tAjuilGg/s7gUP8oVyNaJcBUiShmUxaI30UEL9ka37QHI3a48FTZjgpPRpgvXwmzO2WkD5f+WzYRcCKmR1HHlFr0iZgIevU/AQoBN5Jpg/StfvSAjrsn91c9P70NW+FHK5F1gVed9/sKqA4u02AQ=</CA>
+          <ServerID>aichi-toho-university</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>aichi-toho.ac.jp</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Aichi Toho University</DisplayName>
+      <ProviderLocation>
+        <Longitude>136.9870028</Longitude>
+        <Latitude>35.1700947</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

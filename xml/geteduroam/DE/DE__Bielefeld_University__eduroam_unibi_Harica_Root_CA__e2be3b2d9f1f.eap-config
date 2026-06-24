@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="uni-bielefeld.de" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFpDCCA4ygAwIBAgIQOcqTHO9D88aOk8f0ZIk4fjANBgkqhkiG9w0BAQsFADBsMQswCQYDVQQGEwJHUjE3MDUGA1UECgwuSGVsbGVuaWMgQWNhZGVtaWMgYW5kIFJlc2VhcmNoIEluc3RpdHV0aW9ucyBDQTEkMCIGA1UEAwwbSEFSSUNBIFRMUyBSU0EgUm9vdCBDQSAyMDIxMB4XDTIxMDIxOTEwNTUzOFoXDTQ1MDIxMzEwNTUzN1owbDELMAkGA1UEBhMCR1IxNzA1BgNVBAoMLkhlbGxlbmljIEFjYWRlbWljIGFuZCBSZXNlYXJjaCBJbnN0aXR1dGlvbnMgQ0ExJDAiBgNVBAMMG0hBUklDQSBUTFMgUlNBIFJvb3QgQ0EgMjAyMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAIvC569lmwVnlskNJLnQDmT8zuIkGCyEf3dRywQRNrhe7Wlxp57kJQmXZ8FHws+RFjZiPTgE4VGC/6zStGndLuwRo0Xua2s7TL+MjaQenRG56Tj5eg4MmOIjHdFOY9TnuEFE+2uva9of08WRiFukiZLRgeaMOVig1mlDqa2YUlhu2wr7a89o+uOkXjpFc5gH6l8Cct4MpbOfrqkdtx2z/IpZ525yZa31MJQjB/OCFks1mJxTuy/K5FrZx40d/JiZ+yykgmvwKh+OC19xXFyuQnspiYHLA6OZyoieC0AJQTPb5lh6/a6ZcMBaD9YThnEvdmn8kN3bLW7R8pv1GmuebxWMevBLKKAiOIAkbDakO/IwkfN4E8/BPzWr8R0RI7VDIp4BkrcYAuUR0YLbFQDMYTfBKnya4dC6s1BG7oKsnTH4+yPiAwBIcKMJJnkVU2DzOFytOOqBAGMUuTNe3QvboEUHGjMJ+E20pwKmafTCWQWIZYVWrkvL4N48fS0ayOn7H6NhStYqE613TBoYm5EPWNgGVMWX+Ko/IIqmhaZ39qb8HOLubpQzKoNQhArlT4b4UEV4AIHrW2jjJo3Me1xR9BQsQL4aYB16cmEdH2MtiKrOokWQCPxrvrNQKlr9qEgYRtaQQJKQCoReaDH46+0N0x3GfZkYVVYnZS6NRcUk7M7jAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFApII6ZgpJIKM+qTW8VX6iVNvRLuMA4GA1UdDwEB/wQEAwIBhjANBgkqhkiG9w0BAQsFAAOCAgEAPpBIqm5iFSVmewzVjIuJndftTgfvnNAUX15QvWiWkKQUEapobQk1OUAJ2vQJLDSle1mESSmXdMgHHkdt8s4cUCbjnj1AUz/3f5Z2EMVGpdAgS1D0NTsY9FVqQRtHBmg8uwkIYtlfVUKqrFOFrJVWNlar5AWMxajaH6NpvVMPxP/cyuN+8kyIhkdGGvMA9YCRotxDQpSbIPDRzbLrLFPCU3hKTwSUQZqPJzLB5UkZv/HywouoCjkxKLR9YjYsTewfM7Z+d21+UPCfDtcRj88YxeMn/ibvBZ3PzzfF0HvaO7AWhAw6k9a+F9sPPg4ZeAnHqQJyIkv3N3a6dcSFA1pj1bF1BcK5vZStjBWZp5N99sXzqnTPBIWUmAD04vnKJGW/4GKvyMX6ssmeVkjaef2WdhW+o45WxLM0/L5H9MG0qPzVMIho7suuyWPEdr6sOBjhXlzPrjoiUevRi7PzKzMHVIf6tLITe7pTBGIBnfHAT+7hOtSLIBD6Alfm78ELt5BGnBkpjNxvoEppaZS3JGWg/6w/zgH7IS79aPib8qXPMThcFarmlwDB31qlpzmq6YR/PFGoOtmUW4y/Twhx5duoXNTSpv4Ao8YWxw/ogM4cKGR0GQjTQuPOAF1/sdwTsOEFy9EgqoZ0njnnkf3/W9b3raYvAwtt41dU63ZTGI0RmLo=</CA>
+          <ServerID>radius-eduroam.uni-bielefeld.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>bitsuser@uni-bielefeld.de</OuterIdentity>
+          <InnerIdentitySuffix>uni-bielefeld.de</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Bielefeld University - eduroam unibi Harica Root CA</DisplayName>
+      <Description>Eduroam mit Harica Root-Zertifikat</Description>
+      <ProviderLocation>
+        <Longitude>8.497073799999953</Longitude>
+        <Latitude>52.0391734</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>8.507938200000012</Longitude>
+        <Latitude>52.0303012</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>bits@uni-bielefeld.de</EmailAddress>
+        <Phone>+49 521 106-12777</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

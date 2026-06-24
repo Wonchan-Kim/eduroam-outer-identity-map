@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="uema.br" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIC+jCCAmOgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMTIwNzI1MTgxOTM2WhcNMjIwNzIzMTgxOTM2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo1AwTjAdBgNVHQ4EFgQUO5dxUUWLeI4Gro88mS8u2W82y90wHwYDVR0jBBgwFoAUO5dxUUWLeI4Gro88mS8u2W82y90wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCiUzlSNgNeOYwMQXtUAcpre0wkbaQIj3LVoKnOFNOVBEQ13vLLa0jHH2Rwg4N/XDEFcDBHzDxByPb5FDPLFJjPJPOCJL0ZjrLYbLqMFx0P4cEU51CfNRNOOtdfl0tMW4Ye2QNR86gd7EMpqasvhfR9ab0okiCdedAo8l5s8gtHiQ==</CA>
+          <ServerID>eduroamng.uema.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIC+jCCAmOgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMTIwNzI1MTgxOTM2WhcNMjIwNzIzMTgxOTM2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo1AwTjAdBgNVHQ4EFgQUO5dxUUWLeI4Gro88mS8u2W82y90wHwYDVR0jBBgwFoAUO5dxUUWLeI4Gro88mS8u2W82y90wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCiUzlSNgNeOYwMQXtUAcpre0wkbaQIj3LVoKnOFNOVBEQ13vLLa0jHH2Rwg4N/XDEFcDBHzDxByPb5FDPLFJjPJPOCJL0ZjrLYbLqMFx0P4cEU51CfNRNOOtdfl0tMW4Ye2QNR86gd7EMpqasvhfR9ab0okiCdedAo8l5s8gtHiQ==</CA>
+          <ServerID>eduroamng.uema.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIC+jCCAmOgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMTIwNzI1MTgxOTM2WhcNMjIwNzIzMTgxOTM2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo1AwTjAdBgNVHQ4EFgQUO5dxUUWLeI4Gro88mS8u2W82y90wHwYDVR0jBBgwFoAUO5dxUUWLeI4Gro88mS8u2W82y90wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCiUzlSNgNeOYwMQXtUAcpre0wkbaQIj3LVoKnOFNOVBEQ13vLLa0jHH2Rwg4N/XDEFcDBHzDxByPb5FDPLFJjPJPOCJL0ZjrLYbLqMFx0P4cEU51CfNRNOOtdfl0tMW4Ye2QNR86gd7EMpqasvhfR9ab0okiCdedAo8l5s8gtHiQ==</CA>
+          <ServerID>eduroamng.uema.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Universidade Estadual do Maranhão - UEMA</DisplayName>
+      <ProviderLocation>
+        <Longitude>-44.20829772949219</Longitude>
+        <Latitude>-2.57800427733423</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <Phone>2016-8200</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

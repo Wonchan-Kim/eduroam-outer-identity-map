@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="carleton.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE7TCCA9WgAwIBAgIJAISlP0ArkJ2JMA0GCSqGSIb3DQEBBQUAMIGWMQswCQYDVQQGEwJVUzESMBAGA1UECBMJTWlubmVzb3RhMRMwEQYDVQQHEwpOb3J0aGZpZWxkMRkwFwYDVQQKExBDYXJsZXRvbiBDb2xsZWdlMSAwHgYJKoZIhvcNAQkBFhFyb290QGNhcmxldG9uLmVkdTEhMB8GA1UEAxMYQ2FybGV0b24gQ29sbGVnZSBSb290IENBMB4XDTE3MDkwMTIwNTAzMloXDTI3MDgzMDIwNTAzMlowgZYxCzAJBgNVBAYTAlVTMRIwEAYDVQQIEwlNaW5uZXNvdGExEzARBgNVBAcTCk5vcnRoZmllbGQxGTAXBgNVBAoTEENhcmxldG9uIENvbGxlZ2UxIDAeBgkqhkiG9w0BCQEWEXJvb3RAY2FybGV0b24uZWR1MSEwHwYDVQQDExhDYXJsZXRvbiBDb2xsZWdlIFJvb3QgQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDVUS6ozd1gqhwH9qf+FsiOT1coMMyQpmsHF4yNYpemECRb0yh3WLDPMp405EVFoBF0IzzB5N1EOqpYbskW7KMd/nLi58DD7eAPsfGumqUJ16vV1uRSatR4bKNCnR8fTIu0DFcpjfCxUjrd2svcogcfT3+sZ8VZqf8Nj+yCK0uiu5j+Q0wg1Tk08BL+DBxDyLzdoBGEjN+ZQhnfhqofJ+pNoz+WfogJLPLpLSWG2X8pIxB9A3v+x6fxSkcahak+nGIt0bSELtuTqku/L4XLPIFMyXzft5ydTQFbIbT3zTWBfnrMMnUUXSaXONurIuX5T5koTA28aEfPx04F/lbOXEP9AgMBAAGjggE6MIIBNjAdBgNVHQ4EFgQUZgAvPA7xHbz457hpxt5sTSAVfLQwgcsGA1UdIwSBwzCBwIAUZgAvPA7xHbz457hpxt5sTSAVfLShgZykgZkwgZYxCzAJBgNVBAYTAlVTMRIwEAYDVQQIEwlNaW5uZXNvdGExEzARBgNVBAcTCk5vcnRoZmllbGQxGTAXBgNVBAoTEENhcmxldG9uIENvbGxlZ2UxIDAeBgkqhkiG9w0BCQEWEXJvb3RAY2FybGV0b24uZWR1MSEwHwYDVQQDExhDYXJsZXRvbiBDb2xsZWdlIFJvb3QgQ0GCCQCEpT9AK5CdiTAPBgNVHRMBAf8EBTADAQH/MDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly93d3cuZXhhbXBsZS5vcmcvZXhhbXBsZV9jYS5jcmwwDQYJKoZIhvcNAQEFBQADggEBAK3YwdNs26z/TVpjBFHkW8YbLxAwao2kPDY11BBgt+1ubEuSaFJM3RXB7pS+x504lXvr6ppus7X1QNMTt85wjdJBLJfwtuDC6EPkHDsaWW3KaZtyFS2VKsgSxqSs97UiZGXNSZOcRN5YdwRfD8O1JRjnoheoN47CdeaYXzQZZvr5lZq90VVkmvoqVFwxXa18nrG/r3UJG7jti6R48i6wspGCxqfXSY8+5uM1jKI124MNa51yiqlok6ehGz1WEUQEiWm6ese3skBEDEivEyya0RUzu2UYzBKygiJInkWMO5k+BlOnkthoJCt6xWyr33Rj1F4dggT00tjRdd8iHDqD3Bk=</CA>
+          <ServerID>eduroam.carleton.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Carleton College - Carleton students, faculty, staff</DisplayName>
+      <Description>Please use your full email address, e.g. fschiller@carleton.edu, when asked for your username.</Description>
+      <ProviderLocation>
+        <Longitude>-93.15560629999999</Longitude>
+        <Latitude>44.461333</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@carleton.edu</EmailAddress>
+        <WebAddress>https://wiki.carleton.edu/x/J4O6</WebAddress>
+        <Phone>+1 507 222 5999</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

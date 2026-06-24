@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="ruet.ac.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE2TCCA8GgAwIBAgIUOvwBCm21vdL0PI7d7VbgglU5rKgwDQYJKoZIhvcNAQELBQAwgYgxCzAJBgNVBAYTAkJEMREwDwYDVQQIDAhSYWpzaGFoaTERMA8GA1UEBwwIUmFqc2hhaGkxDTALBgNVBAoMBFJVRVQxHzAdBgkqhkiG9w0BCQEWEG5vY0BiZHJlbi5uZXQuYmQxIzAhBgNVBAMMGlJVRVQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTIzMTAxMDA5MTU0MFoXDTI2MTAwOTA5MTU0MFowgYgxCzAJBgNVBAYTAkJEMREwDwYDVQQIDAhSYWpzaGFoaTERMA8GA1UEBwwIUmFqc2hhaGkxDTALBgNVBAoMBFJVRVQxHzAdBgkqhkiG9w0BCQEWEG5vY0BiZHJlbi5uZXQuYmQxIzAhBgNVBAMMGlJVRVQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6Q5evacAI+U4mofq/bndeNsFH+CJhK7KxkEtBkeTxQ55fLk8+pSTLdjaMqzCjTl09hIlgztQ8FRhvlUv0FY+p0jra4MNqb0JRPzNxX3LnS7L2dy104EtIXf4iRkfXhH4h320ZSJriA1qQfCwE61d4TF8Z01Rc3u9/DQoDEvbKrUIeNeicTFaD/K1Jcb97BNH8IqBuq3Hs9VRURjxu6Dh2Urm/+wdMFHsQHVpfwB2l8o3nz+jd9JIM1bP+vqrRvBCIZCcXKMLDaxGjQ4FP63J0p0iSJ/QpgZyNUgmMFfHzP+I81uuuNupmAQYC5KgPp66lyjc5qEOye+ebkWCH8E19wIDAQABo4IBNzCCATMwHQYDVR0OBBYEFGgSzOygWCw5v8Z8hGah/8JwxuvpMIHIBgNVHSMEgcAwgb2AFGgSzOygWCw5v8Z8hGah/8JwxuvpoYGOpIGLMIGIMQswCQYDVQQGEwJCRDERMA8GA1UECAwIUmFqc2hhaGkxETAPBgNVBAcMCFJhanNoYWhpMQ0wCwYDVQQKDARSVUVUMR8wHQYJKoZIhvcNAQkBFhBub2NAYmRyZW4ubmV0LmJkMSMwIQYDVQQDDBpSVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUOvwBCm21vdL0PI7d7VbgglU5rKgwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBZluBO+bC86NTh3zRybITQhPLkzY7s/cF8ogMwpRF7dtnTkiuopcAjticHuQtM6o+tiOT4a0EvJ+gVlR+MsQiXH7Xbuw4R+hNsOiMS8IJcmOuHIXeBG1J1RM3/SGrqRjnk9+7DA4BN2yS3d1JurYTAw28vsJniTWHuH4ms2Fqz70PXgPsH63Rj46B7OT/6PtHtd11GubZMlZ0FBrA56znlEmGX48dGmkCPXH40MLOIT8ZzCXN9ma86BFaJmhRpRpvgTzDhPi/NxTZAZ0+9IFM0vOHdPIfTVTFejmA0yx8yFmyG4xCARiUg8ocp3cdTThUw+PVK/Xddb41km8oCGILm</CA>
+          <ServerID>irs.ruet.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@ruet.ac.bd</OuterIdentity>
+          <InnerIdentitySuffix>ruet.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE2TCCA8GgAwIBAgIUOvwBCm21vdL0PI7d7VbgglU5rKgwDQYJKoZIhvcNAQELBQAwgYgxCzAJBgNVBAYTAkJEMREwDwYDVQQIDAhSYWpzaGFoaTERMA8GA1UEBwwIUmFqc2hhaGkxDTALBgNVBAoMBFJVRVQxHzAdBgkqhkiG9w0BCQEWEG5vY0BiZHJlbi5uZXQuYmQxIzAhBgNVBAMMGlJVRVQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTIzMTAxMDA5MTU0MFoXDTI2MTAwOTA5MTU0MFowgYgxCzAJBgNVBAYTAkJEMREwDwYDVQQIDAhSYWpzaGFoaTERMA8GA1UEBwwIUmFqc2hhaGkxDTALBgNVBAoMBFJVRVQxHzAdBgkqhkiG9w0BCQEWEG5vY0BiZHJlbi5uZXQuYmQxIzAhBgNVBAMMGlJVRVQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6Q5evacAI+U4mofq/bndeNsFH+CJhK7KxkEtBkeTxQ55fLk8+pSTLdjaMqzCjTl09hIlgztQ8FRhvlUv0FY+p0jra4MNqb0JRPzNxX3LnS7L2dy104EtIXf4iRkfXhH4h320ZSJriA1qQfCwE61d4TF8Z01Rc3u9/DQoDEvbKrUIeNeicTFaD/K1Jcb97BNH8IqBuq3Hs9VRURjxu6Dh2Urm/+wdMFHsQHVpfwB2l8o3nz+jd9JIM1bP+vqrRvBCIZCcXKMLDaxGjQ4FP63J0p0iSJ/QpgZyNUgmMFfHzP+I81uuuNupmAQYC5KgPp66lyjc5qEOye+ebkWCH8E19wIDAQABo4IBNzCCATMwHQYDVR0OBBYEFGgSzOygWCw5v8Z8hGah/8JwxuvpMIHIBgNVHSMEgcAwgb2AFGgSzOygWCw5v8Z8hGah/8JwxuvpoYGOpIGLMIGIMQswCQYDVQQGEwJCRDERMA8GA1UECAwIUmFqc2hhaGkxETAPBgNVBAcMCFJhanNoYWhpMQ0wCwYDVQQKDARSVUVUMR8wHQYJKoZIhvcNAQkBFhBub2NAYmRyZW4ubmV0LmJkMSMwIQYDVQQDDBpSVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUOvwBCm21vdL0PI7d7VbgglU5rKgwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBZluBO+bC86NTh3zRybITQhPLkzY7s/cF8ogMwpRF7dtnTkiuopcAjticHuQtM6o+tiOT4a0EvJ+gVlR+MsQiXH7Xbuw4R+hNsOiMS8IJcmOuHIXeBG1J1RM3/SGrqRjnk9+7DA4BN2yS3d1JurYTAw28vsJniTWHuH4ms2Fqz70PXgPsH63Rj46B7OT/6PtHtd11GubZMlZ0FBrA56znlEmGX48dGmkCPXH40MLOIT8ZzCXN9ma86BFaJmhRpRpvgTzDhPi/NxTZAZ0+9IFM0vOHdPIfTVTFejmA0yx8yFmyG4xCARiUg8ocp3cdTThUw+PVK/Xddb41km8oCGILm</CA>
+          <ServerID>irs.ruet.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@ruet.ac.bd</OuterIdentity>
+          <InnerIdentitySuffix>ruet.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Rajshahi University of Engineering and Technology (RUET)</DisplayName>
+      <ProviderLocation>
+        <Longitude>88.62657285871921</Longitude>
+        <Latitude>24.3639347</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>ashif.amin@ictcell.ruet.ac.bd</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

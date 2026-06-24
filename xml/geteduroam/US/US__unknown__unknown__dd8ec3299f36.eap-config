@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="stolaf.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDTzCCAjegAwIBAgIJAI/IC36zf2GQMA0GCSqGSIb3DQEBCwUAMB4xHDAaBgNVBAMME1N0LiBPbGFmIENvbGxlZ2UgQ0EwIBcNMjAxMDI5MjAwNDQ2WhgPMjEyMDEwMDUyMDA0NDZaMB4xHDAaBgNVBAMME1N0LiBPbGFmIENvbGxlZ2UgQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDrzJq+Nc4kf8LoOAQfQHW6aunujHqCbY5RMXJVQ21KVocUagox7iHffdxTgil2f5BySX4vnVeWgvAMYG2AYKidIlOinoF56T2qxQhaD/n8rufEV31BK+aiUR3TwkrvXWxMJUImPUTwAsU7pR8iVHVO9Dv4cyKogfQwNUpyzN/hyPcF3+iAUWyASgcZY6ulKTssQRzqcK4JxwWNPShZ4zF8dlfVWVu0GiBCs5ZaKOBaJhZqzk4wc4ogpH2uhUbVI2qdZ2C6h/vcHKM/jRF2EeQL1vJfhLV9bg7gq+MOBPjW+NsotV3YIfqUcge5CYyqGC5jAH2m+5zHPIB33licUGItAgMBAAGjgY0wgYowHQYDVR0OBBYEFO6GunAodn7wnPqnZrVWMPkPJViJME4GA1UdIwRHMEWAFO6GunAodn7wnPqnZrVWMPkPJViJoSKkIDAeMRwwGgYDVQQDDBNTdC4gT2xhZiBDb2xsZWdlIENBggkAj8gLfrN/YZAwDAYDVR0TBAUwAwEB/zALBgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQELBQADggEBAIXQOFmWO629frVoB9DeLDRjLWk+olU5MDGmwlLyt00FMT+GZaqBooGesnbimfZ1hJ8Yr4jDsvbgkoAOQXXHxhTvzdc8VEzNBGzou8rGCF2s2oQo9Q+fc4mrFvOjeSR2G9+gefqVhsBHmaSLKnDbc6QvSN/kuDZVEFjWOcmLZUcWiXCWUuNeGAlp9RJmGEkR/nEvaxgf3tJAyGC21a83X8dpwebBUJ+Mo0XOl9DU4d5wGQ2I/6sKB3+ccSyKykOW88saPDwD6Hup/aK0iHvyapPwuxzQUL1bMxZQRre85Q8A/sfCvN0UVlOchbZA71n0LxcvP3mS9LpV5iYq/7J6TRs=</CA>
+          <ServerID>radius.stolaf.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@stolaf.edu</OuterIdentity>
+          <InnerIdentitySuffix>stolaf.edu</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>St. Olaf College</DisplayName>
+      <Description>New eduroam config 2021-06</Description>
+      <ProviderLocation>
+        <Longitude>-93.18241794195558</Longitude>
+        <Latitude>44.46182079018971</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@stolaf.edu</EmailAddress>
+        <WebAddress>https://go.stolaf.edu/wireless</WebAddress>
+        <Phone>507-786-3830</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

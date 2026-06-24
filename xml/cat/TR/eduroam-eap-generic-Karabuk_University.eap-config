@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="karabuk.edu.tr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE9zCCA9+gAwIBAgIJAKwNKzhxfglgMA0GCSqGSIb3DQEBBQUAMIGtMQswCQYDVQQGEwJUUjEQMA4GA1UECBMHS0FSQUJVSzEPMA0GA1UEBxMGTUVSS0VaMRswGQYDVQQKExJLQVJBQlVLIFVOSVZFUlNJVFkxIzAhBgkqhkiG9w0BCQEWFGFidXNlQGthcmFidWsuZWR1LnRyMTkwNwYDVQQDEzBLQVJBQlVLIFVOSVZFUlNJVFkgZWR1cm9hbSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMTMwOTI0MTIwMzU4WhcNMTQwOTI0MTIwMzU4WjCBrTELMAkGA1UEBhMCVFIxEDAOBgNVBAgTB0tBUkFCVUsxDzANBgNVBAcTBk1FUktFWjEbMBkGA1UEChMSS0FSQUJVSyBVTklWRVJTSVRZMSMwIQYJKoZIhvcNAQkBFhRhYnVzZUBrYXJhYnVrLmVkdS50cjE5MDcGA1UEAxMwS0FSQUJVSyBVTklWRVJTSVRZIGVkdXJvYW0gQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqxo7HnM7pARjT6grg06YariFHScLm6ehNzipEcMDDRu4vNrWlWD1R4FVXUPIOIyzMqpsxOiDAawVpcsI2vXtcXKC7dxjPPauqZJd5jeCJKxEis3w5XaiQDfPfL9o2ZyIqUXcc7AnblzyXBkQfhASOSHlNlWaDxMX1SYkJIgYQ5+lO8FYnng0LPTZYjPgwb5EzwES5KKlm5Zude8epna9aJlXZ4Ovqb+ZdD1+yLov1RJqiCQ9ednNlVi439Fs1u8a/f/OvTcqdQCrPo1WT5yKcD5PTZCK7Ry78c42NYKqkGDokVPJFS8IWdHd68cGZLWOYh8uhlUuyM4Uc7qTx0wP3QIDAQABo4IBFjCCARIwHQYDVR0OBBYEFHx3xbw6pNRwpqAEAYbORyBEMHkVMIHiBgNVHSMEgdowgdeAFHx3xbw6pNRwpqAEAYbORyBEMHkVoYGzpIGwMIGtMQswCQYDVQQGEwJUUjEQMA4GA1UECBMHS0FSQUJVSzEPMA0GA1UEBxMGTUVSS0VaMRswGQYDVQQKExJLQVJBQlVLIFVOSVZFUlNJVFkxIzAhBgkqhkiG9w0BCQEWFGFidXNlQGthcmFidWsuZWR1LnRyMTkwNwYDVQQDEzBLQVJBQlVLIFVOSVZFUlNJVFkgZWR1cm9hbSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHmCCQCsDSs4cX4JYDAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4IBAQBwaH7BqhIVFeogCqwq49L25gu4WGvijYxY3qT2KNrPna/h2+5psuClkLojS8a7Qq6rN38ugB0wRA6lgq2p7UTXrIJ8wymda9rLqtzuqxLNkcwV2nu+UiD7KQWv8VaED0VDwbHjyr3czrUih7YwnKGEBwVcNG1aCEbrWpSXElAP+SD4D1iJpW4+Iz1FGFOZh9fnP+oCcJtfxlCVnqII1zrKJssG2bJVM4+VMRpGY+t1Ls03gsH+PCnTVknQEmb/wD9QSmz1JNJVpck0rKNJbTREiPDycBqx4rsa2V/nZA23Bc8vmXzDNBAYnqga4E/u8D9MIDcksu2sSXJXDXDnDcxh</CA>
+          <ServerID>KARABUK UNIVERSITY eduroam Radius Server Certificate</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>karabuk.edu.tr</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Karabük University</DisplayName>
+      <Description>karabuk.edu.tr kullanıcıları için</Description>
+      <ProviderLocation>
+        <Longitude>32.65837956472413</Longitude>
+        <Latitude>41.2072548</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>sistemnetwork@karabuk.edu.tr</EmailAddress>
+        <Phone>03704187878</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

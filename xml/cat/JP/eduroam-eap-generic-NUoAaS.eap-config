@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="ad.nuas.ac.jp" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDdzCCAl+gAwIBAgIBADANBgkqhkiG9w0BAQsFADBdMQswCQYDVQQGEwJKUDElMCMGA1UEChMcU0VDT00gVHJ1c3QgU3lzdGVtcyBDTy4sTFRELjEnMCUGA1UECxMeU2VjdXJpdHkgQ29tbXVuaWNhdGlvbiBSb290Q0EyMB4XDTA5MDUyOTA1MDAzOVoXDTI5MDUyOTA1MDAzOVowXTELMAkGA1UEBhMCSlAxJTAjBgNVBAoTHFNFQ09NIFRydXN0IFN5c3RlbXMgQ08uLExURC4xJzAlBgNVBAsTHlNlY3VyaXR5IENvbW11bmljYXRpb24gUm9vdENBMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANAVOVKxUrO6xVmCxF1SrjpDZYBLx/KWvNs2l9amZIyoXvDjChz335c9S672XewhtUGrzbl+dp+++T42NKA7wfYxEUV0kz1XgMX5iZnK5atq1LXaQZAQwdbWQonCv/Q4EpVMVAX3NuRFg3sUZdbcDE3R3n4MqzvEFb46VqZab3ZpUql6ucjrappdUtAtCms1FgkQhNBqyjoGADdH5H5XTz+L62e4iKrFvlNVspHEfbmwhRkGeC7bYRr6hfVKkaHnFtWOojnflLhwHyg/i/xAXmODPIMqGplrz95Zajv8bxbXH/1KEOtOghY6rCcMU/Gt1SSwawNQwS08Ft1ENCcadfsCAwEAAaNCMEAwHQYDVR0OBBYEFAqFqXdlBZh8QIH4D5csOPEK7DzPMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBMOqNErLlFsceTfsgLCkLfZOoc7llsCLqJX2rKSpWeeo8HxdpFcoJxDjrSzG+ntKEju/Ykn8sX/oymzsLS28yN/HH8AynBbF0zX2S2ZTuJbxh2ePXcokgfGT+Ok+vx+hfuzU7jBBJV1uXk3fs+BXziHV7Gp7yXT2g69ekuCkO2r1dcYmh8t/2jioSgrGK+KwmHNPBqAbubKVY8/gA3zyNs8U6qtnRGEmyR7jTV7JqR50S+kDFy1UkC9gLl9B/rfNmWVan/7Ir5mUf/NVoCqgTLiluHcSmRvaS0eg29mvVXIwAHIRc/SjnRBUkLp7Y3gaVdjKozXoEofKd9J+sAro03</CA>
+          <CA format="X.509" encoding="base64">MIIEkzCCA3ugAwIBAgIEIrmwzDANBgkqhkiG9w0BAQsFADBdMQswCQYDVQQGEwJKUDElMCMGA1UEChMcU0VDT00gVHJ1c3QgU3lzdGVtcyBDTy4sTFRELjEnMCUGA1UECxMeU2VjdXJpdHkgQ29tbXVuaWNhdGlvbiBSb290Q0EyMB4XDTE0MTIyNTA1Mjk0MloXDTI0MTIyNTA1Mjk0MlowbTELMAkGA1UEBhMCSlAxEDAOBgNVBAcTB0FjYWRlbWUxKjAoBgNVBAoTIU5hdGlvbmFsIEluc3RpdHV0ZSBvZiBJbmZvcm1hdGljczEgMB4GA1UEAxMXTklJIE9wZW4gRG9tYWluIENBIC0gRzQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCV2wkvLK3RtMtlX6QomnG9ynoP9eUUTjOAZgQfBxFG4IncdSDW56NweX6Yt6Xe3QePRucSMn8JjsauhnMXWdxTgJtIkKpcBQaG5F37n9C1kfliVWb3DQLZOgOVO9aGbvOiI1e+pIPomzFqx+sUGPewPcItHPq56OoSzghJH1l3lKWpK/+wGCAsuwm+7yWS3vJrtILfv7jvOyJ38FOzqlZtwV5u5ROnYZfox/CXn2xyhMlDlgd1B/TyldwDTCyAvsjp6QGRGcYX/aCRKjALRU6SMUwqczy7JOkfdXE0ItCidGJDwzEcDlRgkyV6A8v5MA/AoaRxQ7yJ1TGv7eauNKOnAgMBAAGjggFJMIIBRTAdBgNVHQ4EFgQUGQtvOR8xAzRf5NJAHzfmjediOXwwHwYDVR0jBBgwFoAUCoWpd2UFmHxAgfgPlyw48QrsPM8wEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMCAQYwSQYDVR0fBEIwQDA+oDygOoY4aHR0cDovL3JlcG9zaXRvcnkuc2Vjb210cnVzdC5uZXQvU0MtUm9vdDIvU0NSb290MkNSTC5jcmwwUgYDVR0gBEswSTBHBgoqgwiMmxtkhwUEMDkwNwYIKwYBBQUHAgEWK2h0dHBzOi8vcmVwb3NpdG9yeS5zZWNvbXRydXN0Lm5ldC9TQy1Sb290Mi8wQAYIKwYBBQUHAQEENDAyMDAGCCsGAQUFBzABhiRodHRwOi8vc2Nyb290Y2EyLm9jc3Auc2Vjb210cnVzdC5uZXQwDQYJKoZIhvcNAQELBQADggEBACL2igUKg5tpVD93jHPJt/97697ApT4O2t+0x0O+By+6FQSgc/oFbL4lB3C1by/V+ZdGrQ+S1XqWTx23xeJZtkNb3mohSkAXSWRlAFhVgvL77x0VxWKp9HXuTmJhWzAdn6ZqFdZleaZMdIJoe46a1RlA+JXwNjF7HCa/c3blNhX1NtSeCiWLTck4GjUy7yjJIkPPhO3z3ij2Nm1niU/zT3ssJweOO1ubQKMM5M8eaOPzdQzL98RB+pvR5ZNz7ew8Yw28lzoK0db88Q6X2Noe23XFjC0zLnZGXw4ugvmKTM++uOqys+O/ngGEIQqrYjYkFnOJYv+d1VxQonKeZkrnCJg=</CA>
+          <ServerID>wish1x.ad.nuas.ac.jp</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Nagoya University of Arts and Sciences</DisplayName>
+      <ProviderLocation>
+        <Longitude>136.9054763414897</Longitude>
+        <Latitude>35.184359360648486</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>137.04166837502274</Longitude>
+        <Latitude>35.15817560364215</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

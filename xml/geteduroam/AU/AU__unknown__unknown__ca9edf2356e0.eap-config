@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="canberra.edu.au" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdWrJWZHHSjANBgkqhkiG9w0BAQUFADBhMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBDQTAeFw0wNjExMTAwMDAwMDBaFw0zMTExMTAwMDAwMDBaMGExCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5jb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4jvhEXLeqKTTo1eqUKKPC3eQyaKl7hLOllsBCSDMAZOnTjC3U/dDxGkAV53ijSLdhwZAAIEJzs4bg7/fzTtxRuLWZscFs3YnFo97nh6Vfe63SKMI2tavegw5BmV/Sl0fvBf4q77uKNd0f3p4mVmFaG5cIzJLv07A6Fpt43C/dxC//AH2hdmoRBBYMql1GNXRor5H4idq9Joz+EkIYIvUX7Q6hL+hqkpMfT7PT19sdl6gSzeRntwi5m3OFBqOasv+zbMUZBfHWymeMr/y7vrTC0LUq7dBMtoM1O/4gdW7jVg/tRvoSSiicNoxBN33shbyTApOB6jtSj1etX+jkMOvJwIDAQABo2MwYTAOBgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUA95QNVbRTLtm8KPiGxvDl7I90VUwHwYDVR0jBBgwFoAUA95QNVbRTLtm8KPiGxvDl7I90VUwDQYJKoZIhvcNAQEFBQADggEBAMucN6pIExIK+t1EnE9SsPTfrgT1eXkIoyQY/EsrhMAtudXH/vTBH1jLuG2cenTnmCmrEbXjcKChzUyImZOMkXDiqw8cvpOp/2PV5Adg06O/nVsJ8dWO41P0jmP6P6fbtGbfYmbW0W5BjfIttep3Sp+dWOIrWcBAI+0tKIJFPnlUkiaY4IBIqDfv8NZ5YBberOgOzW6sRBc4L0na4UU+Krk2U886UAb3LujEV0lsYSEY1QSteDwsOoBrp+uvFRTp2InBuThs4pFsiv9kuXclVzDAGySj4dzp30d8tbQkCAUw7C29C79Fv1C5qfPrmAESrciIxpg0X40KPMbp1ZWVbd4=</CA>
+          <ServerID>auth.canberra.edu.au</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>canberra.edu.au</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdWrJWZHHSjANBgkqhkiG9w0BAQUFADBhMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBDQTAeFw0wNjExMTAwMDAwMDBaFw0zMTExMTAwMDAwMDBaMGExCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5jb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4jvhEXLeqKTTo1eqUKKPC3eQyaKl7hLOllsBCSDMAZOnTjC3U/dDxGkAV53ijSLdhwZAAIEJzs4bg7/fzTtxRuLWZscFs3YnFo97nh6Vfe63SKMI2tavegw5BmV/Sl0fvBf4q77uKNd0f3p4mVmFaG5cIzJLv07A6Fpt43C/dxC//AH2hdmoRBBYMql1GNXRor5H4idq9Joz+EkIYIvUX7Q6hL+hqkpMfT7PT19sdl6gSzeRntwi5m3OFBqOasv+zbMUZBfHWymeMr/y7vrTC0LUq7dBMtoM1O/4gdW7jVg/tRvoSSiicNoxBN33shbyTApOB6jtSj1etX+jkMOvJwIDAQABo2MwYTAOBgNVHQ8BAf8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUA95QNVbRTLtm8KPiGxvDl7I90VUwHwYDVR0jBBgwFoAUA95QNVbRTLtm8KPiGxvDl7I90VUwDQYJKoZIhvcNAQEFBQADggEBAMucN6pIExIK+t1EnE9SsPTfrgT1eXkIoyQY/EsrhMAtudXH/vTBH1jLuG2cenTnmCmrEbXjcKChzUyImZOMkXDiqw8cvpOp/2PV5Adg06O/nVsJ8dWO41P0jmP6P6fbtGbfYmbW0W5BjfIttep3Sp+dWOIrWcBAI+0tKIJFPnlUkiaY4IBIqDfv8NZ5YBberOgOzW6sRBc4L0na4UU+Krk2U886UAb3LujEV0lsYSEY1QSteDwsOoBrp+uvFRTp2InBuThs4pFsiv9kuXclVzDAGySj4dzp30d8tbQkCAUw7C29C79Fv1C5qfPrmAESrciIxpg0X40KPMbp1ZWVbd4=</CA>
+          <ServerID>auth.canberra.edu.au</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>canberra.edu.au</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of Canberra</DisplayName>
+      <Description>Profile for University of Canberra</Description>
+      <ProviderLocation>
+        <Longitude>149.08450971975765</Longitude>
+        <Latitude>-35.2365904</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>servicedesk@canberra.edu.au</EmailAddress>
+        <WebAddress>https://www.canberra.edu.au/about-uc/contacts</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

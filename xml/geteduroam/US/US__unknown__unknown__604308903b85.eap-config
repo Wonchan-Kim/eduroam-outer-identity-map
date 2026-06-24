@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="hampshire.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>lelantos.hampshire.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>hampshire.edu</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Hampshire College</DisplayName>
+      <Description>Hampshire</Description>
+      <ProviderLocation>
+        <Longitude>-72.5328326</Longitude>
+        <Latitude>42.326348</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@hampshire.edu</EmailAddress>
+        <WebAddress>https://www.hampshire.edu/it/connecting-to-eduroam-at-hampshire</WebAddress>
+        <Phone>4135595418</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

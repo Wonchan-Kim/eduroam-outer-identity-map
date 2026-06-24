@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="nstu.edu.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFDzCCA/egAwIBAgIUA/mts/ZTT51xeRIfNdGGboHgYGowDQYJKoZIhvcNAQELBQAwgZoxCzAJBgNVBAYTAkJEMREwDwYDVQQIDAhOb2FraGFsaTERMA8GA1UEBwwITm9ha2hhbGkxDTALBgNVBAoMBE5TVFUxMTAvBgkqhkiG9w0BCQEWIm1ha3N1ZHVsLmljdGNlbGxAYWRtaW4ubnN0dS5lZHUuYmQxIzAhBgNVBAMMGk5TVFUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTIzMTIxOTA5NTUyN1oXDTI2MTIxODA5NTUyN1owgZoxCzAJBgNVBAYTAkJEMREwDwYDVQQIDAhOb2FraGFsaTERMA8GA1UEBwwITm9ha2hhbGkxDTALBgNVBAoMBE5TVFUxMTAvBgkqhkiG9w0BCQEWIm1ha3N1ZHVsLmljdGNlbGxAYWRtaW4ubnN0dS5lZHUuYmQxIzAhBgNVBAMMGk5TVFUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA10VP6zArWozKSa38603fC3pFOxfXCd5QQxULD3/7sQWBoPOej3/qWVDkSFSworL9QUqu05/QjtfcLAV4x8RagdguV7xD+1OQc+8uVWryIg0PG+hyp0bCNe5n+Dmy7fpFYTS7YF6wSFhDzkpmeRHH6IDcncrUbUbRHpNJdO5h4QZ6rCxzp1Nzc7+59g9HlUjIqybQux2tR+IiqCvLBXI+amSjgGJKCnuhqt8PFWF/OBiWtV3KEyxatHIV6dc8WciIGH1HvsTYy84eOHsXv4rxOsR3oTQawJhlD7Jb8X/9PBFzrmFY6/YV6YYtcw7U8sB7+LL7NskQPnj6EjkO9C4WzQIDAQABo4IBSTCCAUUwHQYDVR0OBBYEFEy69Bcc6cMBwz5kUwFRMzPJ+mTFMIHaBgNVHSMEgdIwgc+AFEy69Bcc6cMBwz5kUwFRMzPJ+mTFoYGgpIGdMIGaMQswCQYDVQQGEwJCRDERMA8GA1UECAwITm9ha2hhbGkxETAPBgNVBAcMCE5vYWtoYWxpMQ0wCwYDVQQKDAROU1RVMTEwLwYJKoZIhvcNAQkBFiJtYWtzdWR1bC5pY3RjZWxsQGFkbWluLm5zdHUuZWR1LmJkMSMwIQYDVQQDDBpOU1RVIENlcnRpZmljYXRlIEF1dGhvcml0eYIUA/mts/ZTT51xeRIfNdGGboHgYGowDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCb5AKbDaeuRytsQKabT8mNuNIT/3Ofe4cwvpfMBti3vOKMp0r4zVN2NTDGPDRSNPFToEzCsYfFE0e+bPPoEF3BN7BG9g+SFL/GwnfADGNWTwGg2eWTbxVnB+MVO0X5hIcAnhbVbe9AyxN+x//1ZSqgKTZu9raqITDxeLgbaCNiPLVT7zw4dv6y/2fzWiEKzlREbvD9awkvqT907lqiUV/aM0EIfz7SECe4XkD/ocIRW0CgJEW0wyuln6pWfBmnAVzOT0BIOTB7g0UiZYd4bHo2CEYEJ6+8MHYZz5L8CsRuH35flzDeRZEmAJ/9K73c2nmH/XP8gO1VbPJiZx+Bxbt9</CA>
+          <ServerID>irs.nstu.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@nstu.edu.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFDzCCA/egAwIBAgIUA/mts/ZTT51xeRIfNdGGboHgYGowDQYJKoZIhvcNAQELBQAwgZoxCzAJBgNVBAYTAkJEMREwDwYDVQQIDAhOb2FraGFsaTERMA8GA1UEBwwITm9ha2hhbGkxDTALBgNVBAoMBE5TVFUxMTAvBgkqhkiG9w0BCQEWIm1ha3N1ZHVsLmljdGNlbGxAYWRtaW4ubnN0dS5lZHUuYmQxIzAhBgNVBAMMGk5TVFUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTIzMTIxOTA5NTUyN1oXDTI2MTIxODA5NTUyN1owgZoxCzAJBgNVBAYTAkJEMREwDwYDVQQIDAhOb2FraGFsaTERMA8GA1UEBwwITm9ha2hhbGkxDTALBgNVBAoMBE5TVFUxMTAvBgkqhkiG9w0BCQEWIm1ha3N1ZHVsLmljdGNlbGxAYWRtaW4ubnN0dS5lZHUuYmQxIzAhBgNVBAMMGk5TVFUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA10VP6zArWozKSa38603fC3pFOxfXCd5QQxULD3/7sQWBoPOej3/qWVDkSFSworL9QUqu05/QjtfcLAV4x8RagdguV7xD+1OQc+8uVWryIg0PG+hyp0bCNe5n+Dmy7fpFYTS7YF6wSFhDzkpmeRHH6IDcncrUbUbRHpNJdO5h4QZ6rCxzp1Nzc7+59g9HlUjIqybQux2tR+IiqCvLBXI+amSjgGJKCnuhqt8PFWF/OBiWtV3KEyxatHIV6dc8WciIGH1HvsTYy84eOHsXv4rxOsR3oTQawJhlD7Jb8X/9PBFzrmFY6/YV6YYtcw7U8sB7+LL7NskQPnj6EjkO9C4WzQIDAQABo4IBSTCCAUUwHQYDVR0OBBYEFEy69Bcc6cMBwz5kUwFRMzPJ+mTFMIHaBgNVHSMEgdIwgc+AFEy69Bcc6cMBwz5kUwFRMzPJ+mTFoYGgpIGdMIGaMQswCQYDVQQGEwJCRDERMA8GA1UECAwITm9ha2hhbGkxETAPBgNVBAcMCE5vYWtoYWxpMQ0wCwYDVQQKDAROU1RVMTEwLwYJKoZIhvcNAQkBFiJtYWtzdWR1bC5pY3RjZWxsQGFkbWluLm5zdHUuZWR1LmJkMSMwIQYDVQQDDBpOU1RVIENlcnRpZmljYXRlIEF1dGhvcml0eYIUA/mts/ZTT51xeRIfNdGGboHgYGowDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCb5AKbDaeuRytsQKabT8mNuNIT/3Ofe4cwvpfMBti3vOKMp0r4zVN2NTDGPDRSNPFToEzCsYfFE0e+bPPoEF3BN7BG9g+SFL/GwnfADGNWTwGg2eWTbxVnB+MVO0X5hIcAnhbVbe9AyxN+x//1ZSqgKTZu9raqITDxeLgbaCNiPLVT7zw4dv6y/2fzWiEKzlREbvD9awkvqT907lqiUV/aM0EIfz7SECe4XkD/ocIRW0CgJEW0wyuln6pWfBmnAVzOT0BIOTB7g0UiZYd4bHo2CEYEJ6+8MHYZz5L8CsRuH35flzDeRZEmAJ/9K73c2nmH/XP8gO1VbPJiZx+Bxbt9</CA>
+          <ServerID>irs.nstu.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@nstu.edu.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Noakhali Science and Technology University (NSTU)</DisplayName>
+      <ProviderLocation>
+        <Longitude>91.10080948639057</Longitude>
+        <Latitude>22.791843749999998</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>maksudul.ictcell@admin.nstu.edu.bd</EmailAddress>
+        <Phone>+880 1817-143508</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="buft.edu.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE2TCCA8GgAwIBAgIUSKVtPiqE1bjDiTZTtr4JuuX2KhIwDQYJKoZIhvcNAQELBQAwgYgxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDTALBgNVBAoMBEJVRlQxJTAjBgkqhkiG9w0BCQEWFnNpZGRoYXJ0aGFAYnVmdC5lZHUuYmQxIzAhBgNVBAMMGkJVRlQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTI0MDkwODEwMjkzMVoXDTMwMDYwNDEwMjkzMVowgYgxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDTALBgNVBAoMBEJVRlQxJTAjBgkqhkiG9w0BCQEWFnNpZGRoYXJ0aGFAYnVmdC5lZHUuYmQxIzAhBgNVBAMMGkJVRlQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8tgz0V5vBwW1TGidudIUMckmZWAyaBWEJx1wOpexfD9AzIEkrHylBbXLlzDosKT5K+Wz9f6jaPJeKpKzyQtd3Hpgfo6EcvYuVg21TResZME2pXGhpbrZuTuajz/cthD6eRwC/W6Yoayv46cjCK0n+9F4OjUXy1aJw1PUnmNkntO3E49AhVNxspJO1zwasQwa6F2SBqKZYyjFkjWhmma605qUBCOGi+M7VK6KNPNIX5//VofYoKxxjuAMbVpL+5pEt+n4HndOcM8vB4ZypffvjBtdFkV2giNzl/AH2LZDE1PmDx1CYLQc7jY2cAGq6ZTfLhvYAFgz3tP+LY4/NhbbpwIDAQABo4IBNzCCATMwHQYDVR0OBBYEFGz3ReJycUZ6FFSKa1hcdyd2IKaxMIHIBgNVHSMEgcAwgb2AFGz3ReJycUZ6FFSKa1hcdyd2IKaxoYGOpIGLMIGIMQswCQYDVQQGEwJCRDEOMAwGA1UECAwFRGhha2ExDjAMBgNVBAcMBURoYWthMQ0wCwYDVQQKDARCVUZUMSUwIwYJKoZIhvcNAQkBFhZzaWRkaGFydGhhQGJ1ZnQuZWR1LmJkMSMwIQYDVQQDDBpCVUZUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUSKVtPiqE1bjDiTZTtr4JuuX2KhIwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQDmTw6ewMVoAFdRiHf1GTCsHrCJUiS5mtYoH7AVdTQd2w2/BUztqgK+K1ErYFkfv6x4vNN0ElrKoe/rZpf92doTob40BPEM/tKiS8CqYewFbjCBVZVAIfkzwCaE46UuydNMIqzMdHPxabFBuJdHsMsKwFr8oCDhl0JIV9GbQKl83erF6SDK283s+7RkWz7Ta9IYAsw23EKH6Y9j3ujWg9C8s/NZo5VPOisFbSIx6efSpDLNEUYIwjmMTmRVuCxmoHki5N9Gm2BmgA1k0bw+iAPW08XO44cYKuL9iHuQ/NrFiYMBpIb9ZkiGoNf16oyXuy9rNHiQ/3pWwTNaDDkd4Ef+</CA>
+          <ServerID>irs.buft.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@buft.edu.bd</OuterIdentity>
+          <InnerIdentitySuffix>buft.edu.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE2TCCA8GgAwIBAgIUSKVtPiqE1bjDiTZTtr4JuuX2KhIwDQYJKoZIhvcNAQELBQAwgYgxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDTALBgNVBAoMBEJVRlQxJTAjBgkqhkiG9w0BCQEWFnNpZGRoYXJ0aGFAYnVmdC5lZHUuYmQxIzAhBgNVBAMMGkJVRlQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTI0MDkwODEwMjkzMVoXDTMwMDYwNDEwMjkzMVowgYgxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDTALBgNVBAoMBEJVRlQxJTAjBgkqhkiG9w0BCQEWFnNpZGRoYXJ0aGFAYnVmdC5lZHUuYmQxIzAhBgNVBAMMGkJVRlQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8tgz0V5vBwW1TGidudIUMckmZWAyaBWEJx1wOpexfD9AzIEkrHylBbXLlzDosKT5K+Wz9f6jaPJeKpKzyQtd3Hpgfo6EcvYuVg21TResZME2pXGhpbrZuTuajz/cthD6eRwC/W6Yoayv46cjCK0n+9F4OjUXy1aJw1PUnmNkntO3E49AhVNxspJO1zwasQwa6F2SBqKZYyjFkjWhmma605qUBCOGi+M7VK6KNPNIX5//VofYoKxxjuAMbVpL+5pEt+n4HndOcM8vB4ZypffvjBtdFkV2giNzl/AH2LZDE1PmDx1CYLQc7jY2cAGq6ZTfLhvYAFgz3tP+LY4/NhbbpwIDAQABo4IBNzCCATMwHQYDVR0OBBYEFGz3ReJycUZ6FFSKa1hcdyd2IKaxMIHIBgNVHSMEgcAwgb2AFGz3ReJycUZ6FFSKa1hcdyd2IKaxoYGOpIGLMIGIMQswCQYDVQQGEwJCRDEOMAwGA1UECAwFRGhha2ExDjAMBgNVBAcMBURoYWthMQ0wCwYDVQQKDARCVUZUMSUwIwYJKoZIhvcNAQkBFhZzaWRkaGFydGhhQGJ1ZnQuZWR1LmJkMSMwIQYDVQQDDBpCVUZUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUSKVtPiqE1bjDiTZTtr4JuuX2KhIwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQDmTw6ewMVoAFdRiHf1GTCsHrCJUiS5mtYoH7AVdTQd2w2/BUztqgK+K1ErYFkfv6x4vNN0ElrKoe/rZpf92doTob40BPEM/tKiS8CqYewFbjCBVZVAIfkzwCaE46UuydNMIqzMdHPxabFBuJdHsMsKwFr8oCDhl0JIV9GbQKl83erF6SDK283s+7RkWz7Ta9IYAsw23EKH6Y9j3ujWg9C8s/NZo5VPOisFbSIx6efSpDLNEUYIwjmMTmRVuCxmoHki5N9Gm2BmgA1k0bw+iAPW08XO44cYKuL9iHuQ/NrFiYMBpIb9ZkiGoNf16oyXuy9rNHiQ/3pWwTNaDDkd4Ef+</CA>
+          <ServerID>irs.buft.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@buft.edu.bd</OuterIdentity>
+          <InnerIdentitySuffix>buft.edu.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>BGMEA University of Fashion and Technology (BUFT)</DisplayName>
+      <Helpdesk>
+        <EmailAddress>noc@bdren.net.bd</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="hawaii.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFTTCCBDWgAwIBAgIJAP0kF9PiB9lnMA0GCSqGSIb3DQEBCwUAMIG3MQswCQYDVQQGEwJVUzEPMA0GA1UECAwGSGF3YWlpMREwDwYDVQQHDAhIb25vbHVsdTExMC8GA1UECgwoVW5pdmVyc2l0eSBvZiBIYXdhaWkgTmV0d29yayBFbmdpbmVlcmluZzEeMBwGCSqGSIb3DQEJARYPaGVscEBoYXdhaWkuZWR1MTEwLwYDVQQDDChVbml2ZXJzaXR5IG9mIEhhd2FpaSBOZXR3b3JrIEVuZ2luZWVyaW5nMCAXDTIxMDYyMzA0MjMyMFoYDzIxMjEwNTMwMDQyMzIwWjCBtzELMAkGA1UEBhMCVVMxDzANBgNVBAgMBkhhd2FpaTERMA8GA1UEBwwISG9ub2x1bHUxMTAvBgNVBAoMKFVuaXZlcnNpdHkgb2YgSGF3YWlpIE5ldHdvcmsgRW5naW5lZXJpbmcxHjAcBgkqhkiG9w0BCQEWD2hlbHBAaGF3YWlpLmVkdTExMC8GA1UEAwwoVW5pdmVyc2l0eSBvZiBIYXdhaWkgTmV0d29yayBFbmdpbmVlcmluZzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALwWWPTUFdBA7r5Jg4B+DOyrdkTU+R5XNXACzPnCJi5fLDCi2qKB4Aoz1Paw0kRLr2LCxQgwHuLew5lmIDt42fSlD+R9MPaVb3Net+QrDFoJaXCebEIup5nck5tX3DLV1sYzHFkz4AFBJP5VvkwzlgJVNnM+6Z/mYK5gxk/3A1/Eo7q229mSufVuMD5rEW+7CMkB4RbQNq80WohK4KjK77ogZhiFiFQ7J1Fi8CT6as4X50LbT1JKwBQ1G6yH6L+yBLy/RLcIK5IUyIvEJFxL3Ct8pxSdp3GFNe3tZoJwJ8Llh2UFTfwKN8LipICKNO0Wcs5p2XgeVI8xywT7qjOnJhUCAwEAAaOCAVYwggFSMB0GA1UdDgQWBBSbv4MXLYH12Kr2v8ruTqWjDGbDCTCB7AYDVR0jBIHkMIHhgBSbv4MXLYH12Kr2v8ruTqWjDGbDCaGBvaSBujCBtzELMAkGA1UEBhMCVVMxDzANBgNVBAgMBkhhd2FpaTERMA8GA1UEBwwISG9ub2x1bHUxMTAvBgNVBAoMKFVuaXZlcnNpdHkgb2YgSGF3YWlpIE5ldHdvcmsgRW5naW5lZXJpbmcxHjAcBgkqhkiG9w0BCQEWD2hlbHBAaGF3YWlpLmVkdTExMC8GA1UEAwwoVW5pdmVyc2l0eSBvZiBIYXdhaWkgTmV0d29yayBFbmdpbmVlcmluZ4IJAP0kF9PiB9lnMA8GA1UdEwEB/wQFMAMBAf8wMQYDVR0fBCowKDAmoCSgIoYgaHR0cDovL25ldC5pdHMuaGF3YWlpLmVkdS9jYS5jcmwwDQYJKoZIhvcNAQELBQADggEBAFG048GVth13BwIQ1HvfSGz7t2ScnevfmAhoXDnh4YeYOTKaUeCOeJfT2W9RZ+N5e5F5OtgG54kF8YUgRn5BgboIjwrwDRkpRKtMgSVbnZd4VsjrJM6Gu0+g5tyE08qmVx03H0zSH3knLrJeyVWthcvZYZYOWQLdApvbpxAAuYlxzoaWy5bunCOfxgnCCwLSu5Xa7QTPjMHBwSwXJhNQnD7OcN6FjS1cx6yInaxxBwBYQILwneu+4+eREOfRnajr+vRhI000NRdU692fwc6pHCeTtP70+pNBpTUKuGVwSuAsXf0lKXMCvCa1yp3jtz/SHv/gUPhcwUk1aYfhbZekojs=</CA>
+          <ServerID>eduroam.its.hawaii.edu</ServerID>
+          <ServerID>rad31.its.hawaii.edu</ServerID>
+          <ServerID>rad32.its.hawaii.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>hawaii.edu</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of Hawaii</DisplayName>
+      <Description>University of Hawaii eduroam Profile</Description>
+      <ProviderLocation>
+        <Longitude>-157.81639907976145</Longitude>
+        <Latitude>21.29897615</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>help@hawaii.edu</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

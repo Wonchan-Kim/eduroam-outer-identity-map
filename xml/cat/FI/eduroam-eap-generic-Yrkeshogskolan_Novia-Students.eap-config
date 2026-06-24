@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="edu.novia.fi" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>loge.novia.fi</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@edu.novia.fi</OuterIdentity>
+          <InnerIdentitySuffix>edu.novia.fi</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Yrkeshögskolan Novia - Students</DisplayName>
+      <Description>eduroam profile for students - use firstname.lastname@edu.novia.fi or username@edu.novia.fi</Description>
+      <ProviderLocation>
+        <Longitude>21.594969300000002</Longitude>
+        <Latitude>63.1057249</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>22.227116799999976</Longitude>
+        <Latitude>60.4395746</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>22.28038969449699</Longitude>
+        <Latitude>60.45321682846648</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>22.70751999999993</Longitude>
+        <Latitude>63.674029</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>23.450618200000008</Longitude>
+        <Latitude>59.9759369</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@novia.fi</EmailAddress>
+        <WebAddress>https://intra.novia.fi/eduroam</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

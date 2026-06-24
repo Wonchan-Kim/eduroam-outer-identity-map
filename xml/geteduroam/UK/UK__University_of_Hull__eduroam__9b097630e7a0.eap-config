@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="hull.ac.uk" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDSzCCAjOgAwIBAgIQeTaVAWGlEr5F2uiriyq/OTANBgkqhkiG9w0BAQsFADA4MTYwNAYDVQQDEy1Vbml2ZXJzaXR5IG9mIEh1bGwgUm9vdCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMTYwNzE0MTI1ODI1WhcNNDYwNzE0MTMwODI0WjA4MTYwNAYDVQQDEy1Vbml2ZXJzaXR5IG9mIEh1bGwgUm9vdCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQChq6q3jg3a+W7NOysp/d7bZUKHKEX2dmkX1BApOzH9YhOLEmzP+L8qmgzDGAr8NPiZtrmTd2OUwrrQTfO/W+rz1yRGLh7DXQMNBo6xHnBamHGQU6Um0UjC2TQLsHxyIWN8pgacKWrxwbq4SL/BBof+7vA46PRJyyrg8nPMdjeSQqQJV+ANN+FdUUdFHR572JbliQfHPAeGwm/QsniORRL4lfYNRhZRnSGxSMdTabimQw61eOBmMXygcMGc9yLc60jvek0GFFfo6Z9Hs34Cz5m0wtHvYamsiFiPlqWO+T5+5vP7ORG0eqFv+Yq68ypwTC6opYssJ7nQQlHP4w/ecpNjAgMBAAGjUTBPMAsGA1UdDwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQFH5TWyzs2vC31ljIO5lxYIo6WGDAQBgkrBgEEAYI3FQEEAwIBADANBgkqhkiG9w0BAQsFAAOCAQEAfXy7EoVRCn43Y1kzaPeZh8UoKQd/iGdarUydMQfjOegbMijGdLgBfXvn+JjWGefw/k3TU9sfe+SeFLNIRrO/odY3Y5awOks6xbhKetLRpRqVurfNM2oyMeJWqMIb7eUIDLzVb/vIkcd+Fa8CaTyAbDdHNv+y+luEHe6gwSYEkPEwiJ0W06qyS8vNHDDvYQqbwjctcIJzB2CaxphRZeMwJxisycSBy9x7kMO+IDpPcZX6RjyR+6bhF37oK++IrzbQDpDjryydX0K51IA/3T23eRUCIet34mxAEo8Vm4l+WzwjJyVBIS8Ml8pqLJrUOBtTSd7RBEtpE7fQSUuBgb5c1w==</CA>
+          <CA format="X.509" encoding="base64">MIIE9TCCA92gAwIBAgITNgAAAAbdGcts+0e6sAAAAAAABjANBgkqhkiG9w0BAQsFADA4MTYwNAYDVQQDEy1Vbml2ZXJzaXR5IG9mIEh1bGwgUm9vdCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMTYwNzE1MTMxODAzWhcNMzEwNzE1MTMyODAzWjCBkjESMBAGCgmSJomT8ixkARkWAnVrMRIwEAYKCZImiZPyLGQBGRYCYWMxFDASBgoJkiaJk/IsZAEZFgRodWxsMRQwEgYKCZImiZPyLGQBGRYEYWRpcjE8MDoGA1UEAxMzVW5pdmVyc2l0eSBvZiBIdWxsIEVudGVycHJpc2UgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn5RKj62oOiBZCstPaSn2Y3rw8U4xShsPxkKRgOMDfKKE3RLjzkBE9UYRRuI6oyDBBALp2dDd4S52GkG7Q5NA6EX27HdoXyemB5tn8JsVbuYxivOglZ6yHO5tCefcGDi6KxCCHEaKuMz4Xlm6qcrA8R+zl8qgEVplyya1NY+0e3mwSI6p74xeQWEirexb2iNunf3UBROxdtVnQnQV5Y9xaJvtq1jKFxgo7TCpY2cA8LyYWNbZMdOryKItIXA5ddUfBJ8kvV3vpZOc80TQFi0LDoeF2g0zSPS3Oo/8JGsVphri8TPCwAqkD8IjcQ7xrb0BK4WiwucQ/WJtFlUsTSgkMQIDAQABo4IBmzCCAZcwEAYJKwYBBAGCNxUBBAMCAQIwIwYJKwYBBAGCNxUCBBYEFHNGXXzqgm4NH3xQeMqunxFA8I4CMB0GA1UdDgQWBBSbAIFTzySflqc9lrBnJBsIBwbHmDAZBgkrBgEEAYI3FAIEDB4KAFMAdQBiAEMAQTALBgNVHQ8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAfBgNVHSMEGDAWgBQFH5TWyzs2vC31ljIO5lxYIo6WGDBmBgNVHR8EXzBdMFugWaBXhlVodHRwOi8vcGtpLmh1bGwuYWMudWsvcGtpL1VuaXZlcnNpdHklMjBvZiUyMEh1bGwlMjBSb290JTIwQ2VydGlmaWNhdGUlMjBBdXRob3JpdHkuY3JsMH0GCCsGAQUFBwEBBHEwbzBtBggrBgEFBQcwAYZhaHR0cDovL3BraS5odWxsLmFjLnVrL3BraS9VT0gtQ1MtUk9PVF9Vbml2ZXJzaXR5JTIwb2YlMjBIdWxsJTIwUm9vdCUyMENlcnRpZmljYXRlJTIwQXV0aG9yaXR5LmNydDANBgkqhkiG9w0BAQsFAAOCAQEATyWNLB1f4IyypoxVMq+Lgq0nkvl4p9zZyx2r14q428nPNe/xgHi6fXR+Uv9lq7X26HDYzpSXu76UDEuNZManpgb+N4Jr95SeZfAg7Cdr27NLT5Z7NIS8nKRQy21X7gX0n0BKmB4ed4aV0OuQNfqvPrwV8GaYEHTJbULOINCXHooGQd5eu11gratC3HHnI3wQuotqvhXnHyDvyWAMQ9CdzqJ7Ta3nvm2FM++sa6C40Pod6pJKjXWBtwPO6a1ZAB7ShlHFOqFX9SoxQh/gcYTyFBtVSzl/PYELp2clCvzIH+hjEQNgwqYx0VQi7DjEnMdFQtd36IiiUWDauSvwuC5Yrw==</CA>
+          <ServerID>eduroam</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@hull.ac.uk</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDSzCCAjOgAwIBAgIQeTaVAWGlEr5F2uiriyq/OTANBgkqhkiG9w0BAQsFADA4MTYwNAYDVQQDEy1Vbml2ZXJzaXR5IG9mIEh1bGwgUm9vdCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMTYwNzE0MTI1ODI1WhcNNDYwNzE0MTMwODI0WjA4MTYwNAYDVQQDEy1Vbml2ZXJzaXR5IG9mIEh1bGwgUm9vdCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQChq6q3jg3a+W7NOysp/d7bZUKHKEX2dmkX1BApOzH9YhOLEmzP+L8qmgzDGAr8NPiZtrmTd2OUwrrQTfO/W+rz1yRGLh7DXQMNBo6xHnBamHGQU6Um0UjC2TQLsHxyIWN8pgacKWrxwbq4SL/BBof+7vA46PRJyyrg8nPMdjeSQqQJV+ANN+FdUUdFHR572JbliQfHPAeGwm/QsniORRL4lfYNRhZRnSGxSMdTabimQw61eOBmMXygcMGc9yLc60jvek0GFFfo6Z9Hs34Cz5m0wtHvYamsiFiPlqWO+T5+5vP7ORG0eqFv+Yq68ypwTC6opYssJ7nQQlHP4w/ecpNjAgMBAAGjUTBPMAsGA1UdDwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQFH5TWyzs2vC31ljIO5lxYIo6WGDAQBgkrBgEEAYI3FQEEAwIBADANBgkqhkiG9w0BAQsFAAOCAQEAfXy7EoVRCn43Y1kzaPeZh8UoKQd/iGdarUydMQfjOegbMijGdLgBfXvn+JjWGefw/k3TU9sfe+SeFLNIRrO/odY3Y5awOks6xbhKetLRpRqVurfNM2oyMeJWqMIb7eUIDLzVb/vIkcd+Fa8CaTyAbDdHNv+y+luEHe6gwSYEkPEwiJ0W06qyS8vNHDDvYQqbwjctcIJzB2CaxphRZeMwJxisycSBy9x7kMO+IDpPcZX6RjyR+6bhF37oK++IrzbQDpDjryydX0K51IA/3T23eRUCIet34mxAEo8Vm4l+WzwjJyVBIS8Ml8pqLJrUOBtTSd7RBEtpE7fQSUuBgb5c1w==</CA>
+          <CA format="X.509" encoding="base64">MIIE9TCCA92gAwIBAgITNgAAAAbdGcts+0e6sAAAAAAABjANBgkqhkiG9w0BAQsFADA4MTYwNAYDVQQDEy1Vbml2ZXJzaXR5IG9mIEh1bGwgUm9vdCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMTYwNzE1MTMxODAzWhcNMzEwNzE1MTMyODAzWjCBkjESMBAGCgmSJomT8ixkARkWAnVrMRIwEAYKCZImiZPyLGQBGRYCYWMxFDASBgoJkiaJk/IsZAEZFgRodWxsMRQwEgYKCZImiZPyLGQBGRYEYWRpcjE8MDoGA1UEAxMzVW5pdmVyc2l0eSBvZiBIdWxsIEVudGVycHJpc2UgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn5RKj62oOiBZCstPaSn2Y3rw8U4xShsPxkKRgOMDfKKE3RLjzkBE9UYRRuI6oyDBBALp2dDd4S52GkG7Q5NA6EX27HdoXyemB5tn8JsVbuYxivOglZ6yHO5tCefcGDi6KxCCHEaKuMz4Xlm6qcrA8R+zl8qgEVplyya1NY+0e3mwSI6p74xeQWEirexb2iNunf3UBROxdtVnQnQV5Y9xaJvtq1jKFxgo7TCpY2cA8LyYWNbZMdOryKItIXA5ddUfBJ8kvV3vpZOc80TQFi0LDoeF2g0zSPS3Oo/8JGsVphri8TPCwAqkD8IjcQ7xrb0BK4WiwucQ/WJtFlUsTSgkMQIDAQABo4IBmzCCAZcwEAYJKwYBBAGCNxUBBAMCAQIwIwYJKwYBBAGCNxUCBBYEFHNGXXzqgm4NH3xQeMqunxFA8I4CMB0GA1UdDgQWBBSbAIFTzySflqc9lrBnJBsIBwbHmDAZBgkrBgEEAYI3FAIEDB4KAFMAdQBiAEMAQTALBgNVHQ8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAfBgNVHSMEGDAWgBQFH5TWyzs2vC31ljIO5lxYIo6WGDBmBgNVHR8EXzBdMFugWaBXhlVodHRwOi8vcGtpLmh1bGwuYWMudWsvcGtpL1VuaXZlcnNpdHklMjBvZiUyMEh1bGwlMjBSb290JTIwQ2VydGlmaWNhdGUlMjBBdXRob3JpdHkuY3JsMH0GCCsGAQUFBwEBBHEwbzBtBggrBgEFBQcwAYZhaHR0cDovL3BraS5odWxsLmFjLnVrL3BraS9VT0gtQ1MtUk9PVF9Vbml2ZXJzaXR5JTIwb2YlMjBIdWxsJTIwUm9vdCUyMENlcnRpZmljYXRlJTIwQXV0aG9yaXR5LmNydDANBgkqhkiG9w0BAQsFAAOCAQEATyWNLB1f4IyypoxVMq+Lgq0nkvl4p9zZyx2r14q428nPNe/xgHi6fXR+Uv9lq7X26HDYzpSXu76UDEuNZManpgb+N4Jr95SeZfAg7Cdr27NLT5Z7NIS8nKRQy21X7gX0n0BKmB4ed4aV0OuQNfqvPrwV8GaYEHTJbULOINCXHooGQd5eu11gratC3HHnI3wQuotqvhXnHyDvyWAMQ9CdzqJ7Ta3nvm2FM++sa6C40Pod6pJKjXWBtwPO6a1ZAB7ShlHFOqFX9SoxQh/gcYTyFBtVSzl/PYELp2clCvzIH+hjEQNgwqYx0VQi7DjEnMdFQtd36IiiUWDauSvwuC5Yrw==</CA>
+          <ServerID>eduroam</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@hull.ac.uk</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of Hull - eduroam</DisplayName>
+      <ProviderLocation>
+        <Longitude>-0.36838262289279555</Longitude>
+        <Latitude>53.76982072090622</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <WebAddress>https://support.hull.ac.uk</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

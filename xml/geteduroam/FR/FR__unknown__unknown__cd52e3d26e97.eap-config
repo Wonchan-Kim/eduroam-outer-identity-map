@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="inp-toulouse.fr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIERDCCAyygAwIBAgIUHL5fYyS0LfXiLx/5UyqykilDE3MwDQYJKoZIhvcNAQELBQAwgaoxCzAJBgNVBAYTAkZSMRIwEAYDVQQIDAlPQ0NJVEFOSUUxETAPBgNVBAcMCFRPVUxPVVNFMS4wLAYDVQQKDCVyb290Q0EuZWR1cm9hbS5pbnB0IFNpZ25pbmcgQXV0aG9yaXR5MRwwGgYDVQQDDBNyb290Q0EuZWR1cm9hbS5pbnB0MSYwJAYJKoZIhvcNAQkBFhdlZHVyb2FtQGlucC10b3Vsb3VzZS5mcjAeFw0yNDAxMDgxMjQzMzRaFw0zNDAxMDUxMjQzMzRaMIGqMQswCQYDVQQGEwJGUjESMBAGA1UECAwJT0NDSVRBTklFMREwDwYDVQQHDAhUT1VMT1VTRTEuMCwGA1UECgwlcm9vdENBLmVkdXJvYW0uaW5wdCBTaWduaW5nIEF1dGhvcml0eTEcMBoGA1UEAwwTcm9vdENBLmVkdXJvYW0uaW5wdDEmMCQGCSqGSIb3DQEJARYXZWR1cm9hbUBpbnAtdG91bG91c2UuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC750YKgTsQHiVpENe8pDg5G0ED0AeEzkmz4jDNOY29wKxHSBXOURyeO4uvcEmvfP5KP3Dli0ND/MLjM3C/E9xcfqr3R4OxEgI+nhOpHCRQfhMlPdaHgO83jZoJyl2Xn490hHkhV9jrV9n75GtRvjwuQUF4EFt9CA68Fw6tDGv69Hmjgbno9oDudZDhWeSiEG3WQFrI0TV2FgOGwdQ/DgJQpl8wuvcM7mQaPSt2lLucsVLKi2TSia9PPFQYIxWGXE5TilauNzaFzft/SWED45BGclsqmvVBDRASQSPPnt3BeYTahiXFjxC5/SWkw6eiu3tmZ/5DFMd4kgTmZ+XICJ5RAgMBAAGjYDBeMB0GA1UdDgQWBBR0+ki7D2wWwQiGaLPdAhEeFhXZXzAfBgNVHSMEGDAWgBR0+ki7D2wWwQiGaLPdAhEeFhXZXzAPBgNVHRMBAf8EBTADAQH/MAsGA1UdDwQEAwIBhjANBgkqhkiG9w0BAQsFAAOCAQEAWLltROhghO1fSnOGVZmWedjcCzBgft27wya/OdLsj++zEQjYjg9ocZyIfb6WYWvuJURUQlkFaM5MIUoDIg3QnmpLLiUgWVpzzcEz47yXg1ye6aPYuQIz63bHiQUWxjwQ4fbUFxZZnIG8Akh6CUyDWQxdZlki1oti3Kczn3CTxhz+oAZaQfnSE0/jnGrTuHbE5V0HdWHWCk8OCXcjjANIr6/l746lMlD2DAI4PNvyEmxKInyMvOym9BbubKmXYKATYiALOc3p0RBL6WyV/cL4BoBvzy/cLRifIw6zXsdZbPrifiwIeG7Qm8SwSxk+zGIOOtmQr+TQ2npjv1hunrKtXA==</CA>
+          <ServerID>eduroam.inp-toulouse.fr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@inp-toulouse.fr</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Institut National Polytechnique de Toulouse</DisplayName>
+      <ProviderLocation>
+        <Longitude>1.5039900745239265</Longitude>
+        <Latitude>43.555462408686275</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/gif" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <WebAddress>dsi-support.inp-toulouse.fr</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

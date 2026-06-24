@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="stockton.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE6TCCAtGgAwIBAgIQUR59VTc7g5NBg37F0C9blTANBgkqhkiG9w0BAQUFADAcMRowGAYDVQQDExFhdXRoMS5hYy5zdG9ja3RvbjAeFw0xMzA0MTcxMzAzNTRaFw0zMzA0MTcxMzAzNTRaMBwxGjAYBgNVBAMTEWF1dGgxLmFjLnN0b2NrdG9uMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArwNHHcsAAdojbsIBl1gS2G9Vrlhe03kN8NaqS2n80+ZGA09yZl2iZklL6cpc6DDBM8r8nyuPXxfKLk3S6shGkQxyJ2fAOD5cRC9/ch4d/VhHDnUAvUub1ln5c4ctAXmYA+wBTOHZQBhkB75LnM0Pq2Pp5bNtWb3GoONNOCkqowkQCIdczRIeyqSxVC4ofOwGlHJAVDyWY0o4aVw+gkJkJaAthToPoTPIfpQ0fPkiOJ3JHvl93kG3/zf9iUMdvD/Ho8rSu0GK7HzFkrrYTg0hvNGQZhcrDgGTnMX1gYUAsiLnN0GQTKQf6JialdM7hxOcyN9YjH5+XOMW7ltUDr6usLNhpxNU+FNKA9AJFtndFgMqka450nSq/9zjP14AGyzcL4Uao2F9R+SgYJYYaSdmsBQmM34ULELDbaW4vUA0WJJmrc/p072CKfm8LmBxFchOPTqps4VNLu7HeqW36cKiXh1dxs0RU2gmkyDelwOabiaYtdOhamByWndiPUqigUrHj/UzFChKOjm4h8tI6LsP0Ya+rFbKM4lRdfK+p6aSeFDqx+Id8nTvlLTOAX7m9WS7Uzay1MYo/jRyUlQXNjtitoTulC93nhbJqbtBgv8U3e7553gqJKY2MoCXDh72ZklhkPjmkwiqvUBl31lkvhaCOI2MkI3d54om0SC2Cq9DVUkCAwEAAaMnMCUwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDgYDVR0PBAcDBQCwAAAAMA0GCSqGSIb3DQEBBQUAA4ICAQATgMORjmGouGBmnGPG9DXFl/UrFSJDcddwH2N5dKABymyBFl50tOSZay5yzN5NdvxPgqWtNW0HAjbHHi6Cr8/OctX1iW7xthYAVJrbtVXtaZBB0vmt8q8i8aC4SrxK6RSCoW/6XHTmk8bMAsaU6Uh6RUCH6uQ1DvV7S4qD6mDDc+VFcy2gVq1NnZf1QEmPlocHo7mD0Rnfs2K88TCuX9tzdRDB3bUIN8uRFSiWJd4G7IBWNvKHO3qwwyjHBiwKt4zDDzwQyS0Go5WESrac7SYnL3pUDrSMaFbhDHE5XYwJofBt+tslysqV3AxwLn871NGfkYEfVGS8/mx1+5aU/TtfQo5VxXX7tLLoTFM2wy2A1A4Zk20SA4i3bvaMtikdAXv6ythkNMAP8VxXdoJJGc0RnlIofByMBwB0qwWLYMX5VJ3leLJ0QXxftIvfd7/SBzveI7SzAIqJXPTIpCeWpNlNVQytcc+kjgTlnnKb31qg4tHDcWENESN9YOX/kXx3vjvnPcKqEBOuqMPgbGg6e9VKnRllopg4yrKuRg5FFNj+QAP6pZozMmaKVglqr/FNhCHuI0F2jqIRSM4kCOS+no0YcTs+cU9qsg+ld71G2A7JyDX9SPQ3hR9oDf9AI8ALyYwQB7jZdrx8zUIhrQC3lknvJEjsduwivMDoAYNKrJgI/w==</CA>
+          <ServerID>auth1.ac.stockton</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Stockton University</DisplayName>
+      <ProviderLocation>
+        <Longitude>-74.53119019999997</Longitude>
+        <Latitude>39.492033</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>helpdesk@stockton.edu</EmailAddress>
+        <WebAddress>https://stockton.edu/information-technology/</WebAddress>
+        <Phone>609-652-4309</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

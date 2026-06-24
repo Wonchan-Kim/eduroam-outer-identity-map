@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="bethel.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>ise-betun-bsp-1.net.its.bethel.edu</ServerID>
+          <ServerID>ise-betun-bsp-2.net.its.bethel.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@bethel.edu</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Bethel University - Bethel Users</DisplayName>
+      <ProviderLocation>
+        <Longitude>-117.06600679999997</Longitude>
+        <Latitude>32.7654267</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-93.16044730244141</Longitude>
+        <Latitude>45.05773839022376</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@bethel.edu</EmailAddress>
+        <Phone>+1 651 638 6500</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

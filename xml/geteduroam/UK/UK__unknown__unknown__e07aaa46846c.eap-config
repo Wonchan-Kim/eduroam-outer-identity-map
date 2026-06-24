@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="manchester.ac.uk" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFxjCCA66gAwIBAgIQIru75DtjD5lMweAIxadvKTANBgkqhkiG9w0BAQsFADB0MRIwEAYKCZImiZPyLGQBGRYCdWsxEjAQBgoJkiaJk/IsZAEZFgJhYzETMBEGCgmSJomT8ixkARkWA21hbjE1MDMGA1UEAxMsVGhlIFVuaXZlcnNpdHkgb2YgTWFuY2hlc3RlciBPZmZsaW5lIFJvb3QgQ0EwHhcNMTcxMDEyMTAxNDMxWhcNMzcxMDEyMTAyNDI5WjB0MRIwEAYKCZImiZPyLGQBGRYCdWsxEjAQBgoJkiaJk/IsZAEZFgJhYzETMBEGCgmSJomT8ixkARkWA21hbjE1MDMGA1UEAxMsVGhlIFVuaXZlcnNpdHkgb2YgTWFuY2hlc3RlciBPZmZsaW5lIFJvb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDJSfAn6/Sbc062SdK+JVMKH5TZZ9oL5YLljhM4LVgrjiwHhSulAenApp6l3gy9kimnok5IWjURl7kO6+SDNo+/VLC/wBpKo2QsT3XMFM17K6ea66b/Zr+iuLO2DE5IJGeUN8rw3UEciN6jXGxI71/jEukx0q+ZUSCUlkL7RXTUFjbab7DrqZw3yqVZnygRpc5THwMErJ4Xn3QOmVl1cFk60xn9TFgFtMopCvdhZXicuwd/+1lxlW6/qI4XtkYzz2Z6DAsRT46SFxr6SNkWXQqIHkSxklDGdmH+TQZAUuVeWD/e5vyASOJvCyXA4lhXQOU2K2ajp2Na1R/5iLQu57aT/BDUVfyujqihEfGu3UEQqdqcEZSl+hfNtbvHfbLN51iErugLCDrchVHWjXtC1jmZJrT2TnYJ+lFxls7uAu8jIBNdGzIzUMx78jLmd4IQ8Ze6giwkfvqV7X3X007Q02iGHd5ETAbx5LGfhpsYSJrHLu3RCzHyfTpgpDjJZVv9KCYOE7KlBH0OTerfK7QKToycLNWPMg1hHiIcSuLsk+qFiGbiyqw7C6vPCuv+4ZsqRvpH0AAxUev5O2K/11fn85y5DI/n5F+KKF84WztvESENKv4ixFqzg4+0FI/Zp166HidVbi1X66fn4moeRTSqus3C0xLBa6BufMV0pOfM4xNfnQIDAQABo1QwUjALBgNVHQ8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUD8IMEslH2cPG+tPr6vtxQ3ayZNYwEAYJKwYBBAGCNxUBBAMCAQAwDQYJKoZIhvcNAQELBQADggIBAK1LD14qVzvhbvm3qph5tXOu6S1LB/YOUOHh7kn40nhrG27I5L7vsKTLh9HP9rbRV1TCzVEUj3iQl7dOwf9TePFE7gtd2iZ7pXT+3Knqn95pHwiqc4Ik/IBVbWIRMTRDiTlySR3z7M/OBNXnro9TzWl5gFK6c08eyUFq1hR62XUy5FTWeNhtl1MlCtRPUvgzDjg+G3mp0c/F7ZqD+xp3VFmPpcC4VFzgm56BB8hwtyGjgJHVKUIyW1/QNuUlK6xAKEdQnANvbURjYjTp2yoNQ0q9o7We2aVm//nLpgofQMjYz/zuX6nWmh1BV8F7VsPFc6lCYKoOE/nyT+ukel8tuhgDgfXzZpQNBkrkcZ91xBofUCw2L+FCw1B/H550F81LvoXjVFdQR8TUNWt+GGFM3Aluwox1bygTgWHs/xKsar2ntbTO1Ubk31kp9ayMrqnIwamFLmWuRuoWyIMr14llwK0oa6A+SpMiItb5YIfJ9tHsemrp0qkwXA/bBjBk9FXzv4iRaw8MTMe2eVxmbyqXJXQjpeIWDmKuNajtYXRgMacYhPOb0oNpQLY29ffdE5NJ7VsVCsnwnHlicI25OHsJdrJpHGDI4r7G2lXo1OjYdLB+YpdfJTwOkZyO2rvP4DDnTCF4+NDMPRxWB4uddx3U1/hQOK4C0MTuuXdQ2PFnNUXX</CA>
+          <ServerID>lily.its.manchester.ac.uk</ServerID>
+          <ServerID>radius.its.manchester.ac.uk</ServerID>
+          <ServerID>willow.its.manchester.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@manchester.ac.uk</OuterIdentity>
+          <InnerIdentitySuffix>manchester.ac.uk</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFxjCCA66gAwIBAgIQIru75DtjD5lMweAIxadvKTANBgkqhkiG9w0BAQsFADB0MRIwEAYKCZImiZPyLGQBGRYCdWsxEjAQBgoJkiaJk/IsZAEZFgJhYzETMBEGCgmSJomT8ixkARkWA21hbjE1MDMGA1UEAxMsVGhlIFVuaXZlcnNpdHkgb2YgTWFuY2hlc3RlciBPZmZsaW5lIFJvb3QgQ0EwHhcNMTcxMDEyMTAxNDMxWhcNMzcxMDEyMTAyNDI5WjB0MRIwEAYKCZImiZPyLGQBGRYCdWsxEjAQBgoJkiaJk/IsZAEZFgJhYzETMBEGCgmSJomT8ixkARkWA21hbjE1MDMGA1UEAxMsVGhlIFVuaXZlcnNpdHkgb2YgTWFuY2hlc3RlciBPZmZsaW5lIFJvb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDJSfAn6/Sbc062SdK+JVMKH5TZZ9oL5YLljhM4LVgrjiwHhSulAenApp6l3gy9kimnok5IWjURl7kO6+SDNo+/VLC/wBpKo2QsT3XMFM17K6ea66b/Zr+iuLO2DE5IJGeUN8rw3UEciN6jXGxI71/jEukx0q+ZUSCUlkL7RXTUFjbab7DrqZw3yqVZnygRpc5THwMErJ4Xn3QOmVl1cFk60xn9TFgFtMopCvdhZXicuwd/+1lxlW6/qI4XtkYzz2Z6DAsRT46SFxr6SNkWXQqIHkSxklDGdmH+TQZAUuVeWD/e5vyASOJvCyXA4lhXQOU2K2ajp2Na1R/5iLQu57aT/BDUVfyujqihEfGu3UEQqdqcEZSl+hfNtbvHfbLN51iErugLCDrchVHWjXtC1jmZJrT2TnYJ+lFxls7uAu8jIBNdGzIzUMx78jLmd4IQ8Ze6giwkfvqV7X3X007Q02iGHd5ETAbx5LGfhpsYSJrHLu3RCzHyfTpgpDjJZVv9KCYOE7KlBH0OTerfK7QKToycLNWPMg1hHiIcSuLsk+qFiGbiyqw7C6vPCuv+4ZsqRvpH0AAxUev5O2K/11fn85y5DI/n5F+KKF84WztvESENKv4ixFqzg4+0FI/Zp166HidVbi1X66fn4moeRTSqus3C0xLBa6BufMV0pOfM4xNfnQIDAQABo1QwUjALBgNVHQ8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBATAdBgNVHQ4EFgQUD8IMEslH2cPG+tPr6vtxQ3ayZNYwEAYJKwYBBAGCNxUBBAMCAQAwDQYJKoZIhvcNAQELBQADggIBAK1LD14qVzvhbvm3qph5tXOu6S1LB/YOUOHh7kn40nhrG27I5L7vsKTLh9HP9rbRV1TCzVEUj3iQl7dOwf9TePFE7gtd2iZ7pXT+3Knqn95pHwiqc4Ik/IBVbWIRMTRDiTlySR3z7M/OBNXnro9TzWl5gFK6c08eyUFq1hR62XUy5FTWeNhtl1MlCtRPUvgzDjg+G3mp0c/F7ZqD+xp3VFmPpcC4VFzgm56BB8hwtyGjgJHVKUIyW1/QNuUlK6xAKEdQnANvbURjYjTp2yoNQ0q9o7We2aVm//nLpgofQMjYz/zuX6nWmh1BV8F7VsPFc6lCYKoOE/nyT+ukel8tuhgDgfXzZpQNBkrkcZ91xBofUCw2L+FCw1B/H550F81LvoXjVFdQR8TUNWt+GGFM3Aluwox1bygTgWHs/xKsar2ntbTO1Ubk31kp9ayMrqnIwamFLmWuRuoWyIMr14llwK0oa6A+SpMiItb5YIfJ9tHsemrp0qkwXA/bBjBk9FXzv4iRaw8MTMe2eVxmbyqXJXQjpeIWDmKuNajtYXRgMacYhPOb0oNpQLY29ffdE5NJ7VsVCsnwnHlicI25OHsJdrJpHGDI4r7G2lXo1OjYdLB+YpdfJTwOkZyO2rvP4DDnTCF4+NDMPRxWB4uddx3U1/hQOK4C0MTuuXdQ2PFnNUXX</CA>
+          <ServerID>lily.its.manchester.ac.uk</ServerID>
+          <ServerID>radius.its.manchester.ac.uk</ServerID>
+          <ServerID>willow.its.manchester.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@manchester.ac.uk</OuterIdentity>
+          <InnerIdentitySuffix>manchester.ac.uk</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>The University of Manchester - manchester.ac.uk</DisplayName>
+      <Description>University of Manchester</Description>
+      <ProviderLocation>
+        <Longitude>-2.233938347766866</Longitude>
+        <Latitude>53.4668113565735</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/gif" encoding="base64">R0lGODlhngAzAKUAAGYAmbF9y+7j9P///4Etq/Tt+M+v3+fX7/r3/Ne95Y5DtHQXosWf2aZrxJpXvODL6ryP0ufBme61Pv/MM5pFds+LU6ZVbvrFNsWAWeesQ7FkZ9eXTbxyYIEkh3QSkPS9OuCiSI42fsWPmZpPmf///////////////////////////////////////////////////////////////////////////////////////////////////////////////yH+FUNyZWF0ZWQgd2l0aCBUaGUgR0lNUAAh+QQBCgA/ACwAAAAAngAzAAAG/kCAcEgsGo/IpHLJbDqf0Kh0Sq1ar9isdsvter/gsHhMLpvP6LR6zW673/C4fE6v2+/4vH7P7/uRCg6CC39GCgpaAQIDjARJBYwCAUUGAwdFAQiMCUcHjJaIAAsGCAUPDAcIAgwECouMCAZEBpCRERITubq7FFIKnp/BjAy0sAcHiweTV5UDnEcBjLJFC5oDjkQLrwxHCwPLAA0ICA3ZCZZClQVIi9MAFRMSFPPzFhe9Uw2MgvwOq0KeLgkhsEgAoSoMPh0sAowbJgSenhFJxQgckQEOhCgYgCBUkXNCEgo04skhAAwTMhipgE/DhgwbOHQAwAGDzZs3KThgZMSB/kOR2TSZnIIK0lAhOx8MOAqggIGdCBYCZKC0oxGMQowiqRYSXaelQ1CqLOLBAwAJHyxQsICLwoQNNj+8tZkBxM4BR7ABnThAgBVUEAas+5hg75CdjiBBYMhAG0dsQ7BGGyC1SCjDDMEKEYuEwwQLRDJYADEkwwR8HjLcVYIZQDMrBg5U+0aEAMbWDwQGHjzkALfZBi9mPDeStVeSmk+mLFJh8wQORDqoLX16iE6eRIa29vTAygFOlfwOYeAXs+1yojShn6pRU3GsJZskFNCv3yKTKOXR4zDW8/MkpuGD1D78iJPdcQDYhlUVviW4zxAITLITb65RSNxEJunjTGQZ/mnFRELChIjfLrqMdVYuGYRwRIBE3BXigSM5UECEVzQIwDnPZDIgXkLMFuIAHtkoxGSLAYDVffIhyNeIJgLQgYkewJPLBmaFVt1h2A0hXlcQUTRAkVb8A8BdiTm02pAI1OdARL0ddc4A5cCnJBKt9ZYcZ0RoUEQIpk3wwUzUCThmlkKsB8BeBADjDhVfajnAU9fsOEQBEg0x2UFCDnFOR1iBWNkRdQJ053JMcHABqUKwiCWPdCL4ZqVSLAhANBBVyggiO3lEhIeZ9riIJhkpyNQQDcgSKgDxOdfkECGoSEQIuVgp6JlFEEBIa69WIWtTD0aGVW6tDtZrj7Vk5BpH/roOoQACjhybrHLLCnEBCIBSJ22LhA7xQEZ1ZusLnAduKQojDdg2rIO0CVAcEevKuqm5xELUlcBLhjXBBVUO8RIGEmTswQVNmgbaqhAPyeM5FJtsCWTyQRILNtWAw0AtAixSACu1UQXLqxZhWTID7jHg0yIJEEDAzJtYFMCbsYhQwakklqiBnxxQgMEHHQtBgZQfYNDB0bX8+M2bluBMRAO17OtEfQvpqiY/Ui3wtiDpqvtpAwzkzUADB8ndj66B9DMCPYQTPlMHGtw0shAdFO6B33PTreanogjCciGYZ56HTEN4kDgGzgrhOQacG2FBvZrvscGVIXRNgQYSkAZA8QgXfCDXBaELAa2gqd+R2qn4XKCn6BdA9wF0AEz9AREetNW7HqKh1Itbi5+FwdZE4FLvBqvz/rwd0jsZD6DUl0XE6oBqAIJb3n9PR/jJT8nB8UfYznjH7LufB/wAUAA1vUaY2sgkoKL86e8O8GsdS0BwMUF9bANCqADyDHjAOoTvY80RgvKyJwEhWCAlGcgALiSQwQrOIXxuQR08NEYlreFkdRsYngnlgMIrRXB5HuAeszBABArOMA4oGWDWZie85kkAJ2npoQ1/6AY+lSgEOfxACJOIkqgJyodMzKIWt8jFLnrxi2AMoxjHSMYymvEIQQAAOw==</ProviderLogo>
+      <Helpdesk>
+        <WebAddress>http://www.itservices.manchester.ac.uk/contacts</WebAddress>
+        <Phone>0161 306 5544</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

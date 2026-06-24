@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="tu-braunschweig.de" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDwzCCAqugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwHhcNMDgxMDAxMTA0MDE0WhcNMzMxMDAxMjM1OTU5WjCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqX9obX+hzkeXaXPSi5kfl82hVYAUdAqSzm1nzHoqvNK38DcLZSBnuaY/JIPwhqgcZ7bBcrGXHX+0CfHt8LRvWurmAwhiCFoT6ZrAIxlQjgeTNuUk/9k9uN0goOA/FvudocP05l03Sx5iRUKrERLMjfTlH6VJi1hKTXrcxlkIF+3anHqP1wvzpesVsqXFP6st4vGCvx9702cu+fjOlbpSD8DT6IavqjnKgP6TeMFvvhk1qlVtDRKgQFRzlAVfFmPHmBiiRqiDFt1MmUUOyCxGVWOHAD3bZwI18gfNycJ5v/hqO2V81xrJvNHy+SE/iWjnX2J14np+GPgNeGYtEotXHAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBS/WSA2AHmgoCJrjNXyYdK4LMuCSjANBgkqhkiG9w0BAQsFAAOCAQEAMQOiYQsfdOhyNsZt+U2e+iKo4YFWz827n+qrkRk4r6p8FU3ztqONpfSO9kSpp+ghla0+AGIWiPACuvxhI+YzmzB6azZie60EI4RYZeLbK4rnJVM3YlNfvNoBYimipidx5joifsFvHZVwIEoHNN/q/xWA5brXethbdXwFeilHfkCoMRN3zUA7tFFHei4R40cR3p1m0IvVVGb6g1XqfMIpiRvpb7PO4gWEyS8+eIVibslfwXhjdFjASBgMmTnrpMwatXlajRWc2BQN9noHV8cigwUtPJslJj0Ys6lDfMjIq2SPDqO/nBudMNva0Bkuqjzx+zOAduTNrRlPBSeOE6Fuwg==</CA>
+          <ServerID>netauth.rz.tu-bs.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@tu-braunschweig.de</OuterIdentity>
+          <InnerIdentitySuffix>tu-braunschweig.de</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDwzCCAqugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwHhcNMDgxMDAxMTA0MDE0WhcNMzMxMDAxMjM1OTU5WjCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqX9obX+hzkeXaXPSi5kfl82hVYAUdAqSzm1nzHoqvNK38DcLZSBnuaY/JIPwhqgcZ7bBcrGXHX+0CfHt8LRvWurmAwhiCFoT6ZrAIxlQjgeTNuUk/9k9uN0goOA/FvudocP05l03Sx5iRUKrERLMjfTlH6VJi1hKTXrcxlkIF+3anHqP1wvzpesVsqXFP6st4vGCvx9702cu+fjOlbpSD8DT6IavqjnKgP6TeMFvvhk1qlVtDRKgQFRzlAVfFmPHmBiiRqiDFt1MmUUOyCxGVWOHAD3bZwI18gfNycJ5v/hqO2V81xrJvNHy+SE/iWjnX2J14np+GPgNeGYtEotXHAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBS/WSA2AHmgoCJrjNXyYdK4LMuCSjANBgkqhkiG9w0BAQsFAAOCAQEAMQOiYQsfdOhyNsZt+U2e+iKo4YFWz827n+qrkRk4r6p8FU3ztqONpfSO9kSpp+ghla0+AGIWiPACuvxhI+YzmzB6azZie60EI4RYZeLbK4rnJVM3YlNfvNoBYimipidx5joifsFvHZVwIEoHNN/q/xWA5brXethbdXwFeilHfkCoMRN3zUA7tFFHei4R40cR3p1m0IvVVGb6g1XqfMIpiRvpb7PO4gWEyS8+eIVibslfwXhjdFjASBgMmTnrpMwatXlajRWc2BQN9noHV8cigwUtPJslJj0Ys6lDfMjIq2SPDqO/nBudMNva0Bkuqjzx+zOAduTNrRlPBSeOE6Fuwg==</CA>
+          <ServerID>netauth.rz.tu-bs.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@tu-braunschweig.de</OuterIdentity>
+          <InnerIdentitySuffix>tu-braunschweig.de</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>13</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDwzCCAqugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwHhcNMDgxMDAxMTA0MDE0WhcNMzMxMDAxMjM1OTU5WjCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqX9obX+hzkeXaXPSi5kfl82hVYAUdAqSzm1nzHoqvNK38DcLZSBnuaY/JIPwhqgcZ7bBcrGXHX+0CfHt8LRvWurmAwhiCFoT6ZrAIxlQjgeTNuUk/9k9uN0goOA/FvudocP05l03Sx5iRUKrERLMjfTlH6VJi1hKTXrcxlkIF+3anHqP1wvzpesVsqXFP6st4vGCvx9702cu+fjOlbpSD8DT6IavqjnKgP6TeMFvvhk1qlVtDRKgQFRzlAVfFmPHmBiiRqiDFt1MmUUOyCxGVWOHAD3bZwI18gfNycJ5v/hqO2V81xrJvNHy+SE/iWjnX2J14np+GPgNeGYtEotXHAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBS/WSA2AHmgoCJrjNXyYdK4LMuCSjANBgkqhkiG9w0BAQsFAAOCAQEAMQOiYQsfdOhyNsZt+U2e+iKo4YFWz827n+qrkRk4r6p8FU3ztqONpfSO9kSpp+ghla0+AGIWiPACuvxhI+YzmzB6azZie60EI4RYZeLbK4rnJVM3YlNfvNoBYimipidx5joifsFvHZVwIEoHNN/q/xWA5brXethbdXwFeilHfkCoMRN3zUA7tFFHei4R40cR3p1m0IvVVGb6g1XqfMIpiRvpb7PO4gWEyS8+eIVibslfwXhjdFjASBgMmTnrpMwatXlajRWc2BQN9noHV8cigwUtPJslJj0Ys6lDfMjIq2SPDqO/nBudMNva0Bkuqjzx+zOAduTNrRlPBSeOE6Fuwg==</CA>
+          <ServerID>netauth.rz.tu-bs.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>tu-braunschweig.de</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Technische Universität Braunschweig</DisplayName>
+      <ProviderLocation>
+        <Longitude>10.5297217</Longitude>
+        <Latitude>52.2735727</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/gif" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>it-service-desk@tu-braunschweig.de</EmailAddress>
+        <WebAddress>https://www.tu-braunschweig.de/it/it-service-desk</WebAddress>
+        <Phone>(+49) 531 / 391-55555</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

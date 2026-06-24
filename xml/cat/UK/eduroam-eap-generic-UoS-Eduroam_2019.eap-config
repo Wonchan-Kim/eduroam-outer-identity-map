@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="strath.ac.uk" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFNDCCBBygAwIBAgIJALRDabi3dow7MA0GCSqGSIb3DQEBCwUAMIGlMQswCQYDVQQGEwJVSzERMA8GA1UECBMIU2NvdGxhbmQxJjAkBgNVBAoTHVRoZSBVbml2ZXJzaXR5IE9mIFN0cmF0aGNseWRlMR0wGwYDVQQLExRJbmZvcm1hdGlvbiBTZXJ2aWNlczE8MDoGA1UEAxMzVW5pdmVyc2l0eSBPZiBTdHJhdGhjbHlkZSBOZXR3b3JrIFN1cHBvcnQgUm9vdCBDQSAxMB4XDTE2MDExMjE1MjAwNloXDTQ2MDEwNDE1MjAwNlowgaUxCzAJBgNVBAYTAlVLMREwDwYDVQQIEwhTY290bGFuZDEmMCQGA1UEChMdVGhlIFVuaXZlcnNpdHkgT2YgU3RyYXRoY2x5ZGUxHTAbBgNVBAsTFEluZm9ybWF0aW9uIFNlcnZpY2VzMTwwOgYDVQQDEzNVbml2ZXJzaXR5IE9mIFN0cmF0aGNseWRlIE5ldHdvcmsgU3VwcG9ydCBSb290IENBIDEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC86Rspx4zsQR32lsRWb70dywlzu3DRhWU6bl4uzxAxpdgCT2UEz/JxIRKKXF7ZJFjWGD3BrNYC2lxluogdyVSahKKbO2/KINtfyeFBCTl7ttKBmQJ1TDF8qIhjAba/ILkZVli4k3OB3NfPEbYGefoWAyDNA7h2FPhu3XOjLNGaGoJ/lIcB5xPDlL387czOin0CRMSkTAtkHxdMFs97f8QGigZOBDXtIk5SM2PT3pPuXkTtXhfjzXpQrhm9FLREHAse0NBwym2UPrvKL6r3IJnuoZL6ARSe/Q/92102gLQWkMtQrixH5bRuqVsC/TPF+dGIKG94eehsNbNAMSNjlvBLAgMBAAGjggFjMIIBXzAdBgNVHQ4EFgQUWCtBZZGThxiZZmvuEIXhhka2bSUwgdoGA1UdIwSB0jCBz4AUWCtBZZGThxiZZmvuEIXhhka2bSWhgaukgagwgaUxCzAJBgNVBAYTAlVLMREwDwYDVQQIEwhTY290bGFuZDEmMCQGA1UEChMdVGhlIFVuaXZlcnNpdHkgT2YgU3RyYXRoY2x5ZGUxHTAbBgNVBAsTFEluZm9ybWF0aW9uIFNlcnZpY2VzMTwwOgYDVQQDEzNVbml2ZXJzaXR5IE9mIFN0cmF0aGNseWRlIE5ldHdvcmsgU3VwcG9ydCBSb290IENBIDGCCQC0Q2m4t3aMOzAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBhjBABgNVHR8EOTA3MDWgM6Axhi9odHRwOi8vY2Euc3RyYXRoLmFjLnVrL2NybC9zdHJhdGhOZXRSb290Q0ExLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAT1art3d95yB2mZsAQs8K2+xPSfvpmdSEXeLvqDH9LPSC7pdwlbvcp7qQdSao6hDZ2/aYhhH2W3xVVc6diz5runeeQ5WYoVnpfF5H9wrSSz67IehCKPNwt1SGdY118DRFnbGFDHD/QVMkOaO0krBQ2HcZ6gHf+XK9ZQehJ0BzaCxW0uP7+zhDH2bTM1APYNyq70r4ihVRMdjjA3DqvHnc5nKciidn4sdDYODSDoHG8o/0cVXXBY6BTCp6Ldx65HxY+IJ4+UIB3lp80Jqg1V8RPWzqXFj5P7+lygRM1xXxzu1VTHUJ2fPxhl7XJm1ASl7ZXpyG90uG63M1wqHZD/d0/Q==</CA>
+          <ServerID>eduroam.strath.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@strath.ac.uk</OuterIdentity>
+          <InnerIdentitySuffix>strath.ac.uk</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of Strathclyde - Eduroam 2019</DisplayName>
+      <Description>Uni Strathclyde eduroam service (2019)</Description>
+      <ProviderLocation>
+        <Longitude>-4.244669746826162</Longitude>
+        <Latitude>55.86137591294314</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@strath.ac.uk</EmailAddress>
+        <WebAddress>https://www.strath.ac.uk/professionalservices/it/wifi/</WebAddress>
+        <Phone>0141 548 4444</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

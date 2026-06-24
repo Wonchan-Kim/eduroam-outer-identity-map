@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="green.edu.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE0DCCA7igAwIBAgIUCRMer64Rh1OYCdsP1KTGyq+JHgEwDQYJKoZIhvcNAQELBQAwgYUxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDDAKBgNVBAoMA0dVQjEkMCIGCSqGSIb3DQEJARYVanlvdGkuaXRAZ3JlZW4uZWR1LmJkMSIwIAYDVQQDDBlHVUIgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTI0MTIxNTA5MzM1MVoXDTMwMDkxMDA5MzM1MVowgYUxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDDAKBgNVBAoMA0dVQjEkMCIGCSqGSIb3DQEJARYVanlvdGkuaXRAZ3JlZW4uZWR1LmJkMSIwIAYDVQQDDBlHVUIgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArQmsiy6Nnh8XZ7WK6/stmsaVX9s5Aa/K883SMoVuEYvkyV2hHnZjIhdjnz008Zz36jtRHwpZ9PGJG4ea5Uihu5npa56xhLhNOlsT33zy3Zr262XfAH3QNY/Qp8PHoy72lwU53Q2AYzE/8kOKhpZjlEPOk+OhLqMF+hqBN8OlQc4e/rF8L1IPjk0eG82SjtRXdTMFhyHEGClwf/XjZNXEoMX1NNUsBeX3qvZy6ombxc2O/hhqqg1Wonako0Q1eE653Ox06W12o78Hm6OY7dcU3ZhuvzanYSKBtj2A1rb/ap0qNyxgINNFVKNIsZL0qDI8jeaY8w+TX0MIbFVUu9GfkQIDAQABo4IBNDCCATAwHQYDVR0OBBYEFELbH4v2hnu0F1JK0rK+c/a5kU/vMIHFBgNVHSMEgb0wgbqAFELbH4v2hnu0F1JK0rK+c/a5kU/voYGLpIGIMIGFMQswCQYDVQQGEwJCRDEOMAwGA1UECAwFRGhha2ExDjAMBgNVBAcMBURoYWthMQwwCgYDVQQKDANHVUIxJDAiBgkqhkiG9w0BCQEWFWp5b3RpLml0QGdyZWVuLmVkdS5iZDEiMCAGA1UEAwwZR1VCIENlcnRpZmljYXRlIEF1dGhvcml0eYIUCRMer64Rh1OYCdsP1KTGyq+JHgEwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQA+55U+Zd65mRf6bbr3wQW52QEM+fuDYWsCD6yysFHYjo1mGSH1IJccxsojKIE/oUZCyXRt0lZKWSVHVniLLaTSIV5uwFC9829hjn7yRvvYKj7AXHLngkkoDTJfBjMDZoaS9dlbt4omX1KevdC+jFXKdC7C9r0+dX06ebmXluur+gSmsf2JxDRn5ja3i1L69xCglZP9NDGWClYrzAC6Lw+LqfSPXjjoQx/xwYAfsZi+aOC3DPExtGqLQmsdewBhQoM/kl2jUD5emZdVQcCEaf3ytzGeVeBrJfFiHfK/iGxh3k0Tk8Fkg9z0L5OJ8ljNLx6PL4qUIsTktx8vKb6aQr+w</CA>
+          <ServerID>irs.green.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@green.edu.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE0DCCA7igAwIBAgIUCRMer64Rh1OYCdsP1KTGyq+JHgEwDQYJKoZIhvcNAQELBQAwgYUxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDDAKBgNVBAoMA0dVQjEkMCIGCSqGSIb3DQEJARYVanlvdGkuaXRAZ3JlZW4uZWR1LmJkMSIwIAYDVQQDDBlHVUIgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTI0MTIxNTA5MzM1MVoXDTMwMDkxMDA5MzM1MVowgYUxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDDAKBgNVBAoMA0dVQjEkMCIGCSqGSIb3DQEJARYVanlvdGkuaXRAZ3JlZW4uZWR1LmJkMSIwIAYDVQQDDBlHVUIgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArQmsiy6Nnh8XZ7WK6/stmsaVX9s5Aa/K883SMoVuEYvkyV2hHnZjIhdjnz008Zz36jtRHwpZ9PGJG4ea5Uihu5npa56xhLhNOlsT33zy3Zr262XfAH3QNY/Qp8PHoy72lwU53Q2AYzE/8kOKhpZjlEPOk+OhLqMF+hqBN8OlQc4e/rF8L1IPjk0eG82SjtRXdTMFhyHEGClwf/XjZNXEoMX1NNUsBeX3qvZy6ombxc2O/hhqqg1Wonako0Q1eE653Ox06W12o78Hm6OY7dcU3ZhuvzanYSKBtj2A1rb/ap0qNyxgINNFVKNIsZL0qDI8jeaY8w+TX0MIbFVUu9GfkQIDAQABo4IBNDCCATAwHQYDVR0OBBYEFELbH4v2hnu0F1JK0rK+c/a5kU/vMIHFBgNVHSMEgb0wgbqAFELbH4v2hnu0F1JK0rK+c/a5kU/voYGLpIGIMIGFMQswCQYDVQQGEwJCRDEOMAwGA1UECAwFRGhha2ExDjAMBgNVBAcMBURoYWthMQwwCgYDVQQKDANHVUIxJDAiBgkqhkiG9w0BCQEWFWp5b3RpLml0QGdyZWVuLmVkdS5iZDEiMCAGA1UEAwwZR1VCIENlcnRpZmljYXRlIEF1dGhvcml0eYIUCRMer64Rh1OYCdsP1KTGyq+JHgEwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQA+55U+Zd65mRf6bbr3wQW52QEM+fuDYWsCD6yysFHYjo1mGSH1IJccxsojKIE/oUZCyXRt0lZKWSVHVniLLaTSIV5uwFC9829hjn7yRvvYKj7AXHLngkkoDTJfBjMDZoaS9dlbt4omX1KevdC+jFXKdC7C9r0+dX06ebmXluur+gSmsf2JxDRn5ja3i1L69xCglZP9NDGWClYrzAC6Lw+LqfSPXjjoQx/xwYAfsZi+aOC3DPExtGqLQmsdewBhQoM/kl2jUD5emZdVQcCEaf3ytzGeVeBrJfFiHfK/iGxh3k0Tk8Fkg9z0L5OJ8ljNLx6PL4qUIsTktx8vKb6aQr+w</CA>
+          <ServerID>irs.green.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@green.edu.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Green University of Bangladesh (GUB)</DisplayName>
+      <ProviderLocation>
+        <Longitude>90.57213684983839</Longitude>
+        <Latitude>23.8296156</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>noc@bdren.net.bd</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

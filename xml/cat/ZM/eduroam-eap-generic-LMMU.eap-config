@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="lmmu.ac.zm" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE5DCCA8ygAwIBAgIUFhk0/yjaZe8hB4WfcstOQrULltEwDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAlpNMQ8wDQYDVQQIDAZMdXNha2ExDzANBgNVBAcMBkx1c2FrYTENMAsGA1UECgwETE1NVTEfMB0GCSqGSIb3DQEJARYQYWRtaW5AbG1tdS5hYy56bTEsMCoGA1UEAwwjTE1NVSBXaXJlbGVzcyBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjUwNTEzMDk1NTA0WhcNMjgwNTEyMDk1NTA0WjCBjTELMAkGA1UEBhMCWk0xDzANBgNVBAgMBkx1c2FrYTEPMA0GA1UEBwwGTHVzYWthMQ0wCwYDVQQKDARMTU1VMR8wHQYJKoZIhvcNAQkBFhBhZG1pbkBsbW11LmFjLnptMSwwKgYDVQQDDCNMTU1VIFdpcmVsZXNzIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKpvGkW3HakJ5ybI6P902fa4oChab0yfmvgs+NZN3Pa13pHKQU6wNxhBTs9eNd7Atrs2XKwvZ+YojYbLL52JkYqitLtoKsUKCUQOUVbNIYF4Cr0saCSw/zexkl7IXqD7YKhY/KO4XrzQojoMxb90IKNsIHb+mqWoNpEWBuoQnPhxCOececO1DuMcpBH1rQNRMfDXhxWj4/Rkq+6Ju3XG6VFL89R9e7actsYNmk5rxgE9ZJRsCO43d7IXCK6eZJM5L033WSKIgLaPHThLCobfokZYxB5gIBAloGVJziOZ/3F92CrbjeElSziDcw/P5AHGaiYocC0aGy7/Ffin+Lj6H00CAwEAAaOCATgwggE0MB0GA1UdDgQWBBR18h2FsU305hnpRkboweMkAVVQIjCBzQYDVR0jBIHFMIHCgBR18h2FsU305hnpRkboweMkAVVQIqGBk6SBkDCBjTELMAkGA1UEBhMCWk0xDzANBgNVBAgMBkx1c2FrYTEPMA0GA1UEBwwGTHVzYWthMQ0wCwYDVQQKDARMTU1VMR8wHQYJKoZIhvcNAQkBFhBhZG1pbkBsbW11LmFjLnptMSwwKgYDVQQDDCNMTU1VIFdpcmVsZXNzIENlcnRpZmljYXRlIEF1dGhvcml0eYIUFhk0/yjaZe8hB4WfcstOQrULltEwDwYDVR0TAQH/BAUwAwEB/zAyBgNVHR8EKzApMCegJaAjhiFodHRwOi8vd3d3LmxtbXUuYWMuem0vbG1tdV9jYS5jcmwwDQYJKoZIhvcNAQELBQADggEBABIRx3muPf8N46cGYllJdiES3N/gZXEqKuIqikwRB/87ughyeH01NLm5R5vzkcK6SStwV5tgICeLUEk8ZACz2RiZaotg8FG5m22cQXpEhj9xLlOj9HS7mK4612k1ha4CVzxdeITmq1OJh6uwnGXff/wscGaq/DN4MCzAiQ+/gS9OfHaZ3Moe9/ystyy6U/MKHrssHsUd115UXDNUWzYJeKwnIoEuCFSe7X9+CEd4qmcBeZ5bp9Vq+xzNfssrDQDfMWm8BRcpYh1ILMg3c9ZQY8jwAY9xthl/y3vW/QJusgTABaav5FA9C+n/JvrnUq79g5PB0Z9Ybnzr83CEhKdApgg=</CA>
+          <ServerID>eduru.lmmu.ac.zm</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>lmmu.ac.zm</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Levy Mwanawasa Medical University</DisplayName>
+      <Description>Levy Mwanawasa Medical University</Description>
+      <ProviderLocation>
+        <Longitude>28.35322323698032</Longitude>
+        <Latitude>-15.386519399538244</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/jpeg" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>ict.lmmu@lmmu.ac.zm</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

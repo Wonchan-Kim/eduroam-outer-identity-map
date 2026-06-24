@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="unap.cl" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDhzCCAm+gAwIBAgIQH+b5YbrfOLVH6RRN6pVV+zANBgkqhkiG9w0BAQsFADBKMRIwEAYKCZImiZPyLGQBGRYCY2wxFDASBgoJkiaJk/IsZAEZFgR1bmFwMR4wHAYDVQQDExV1bmFwLURDLVVOQVAtSVFRLUNBLTEwHhcNMjIwODE2MTkxMDIwWhcNNDcwODE2MTkyMDE4WjBKMRIwEAYKCZImiZPyLGQBGRYCY2wxFDASBgoJkiaJk/IsZAEZFgR1bmFwMR4wHAYDVQQDExV1bmFwLURDLVVOQVAtSVFRLUNBLTEwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCnb1cTSroH+RbHtYPFdAV4ZaL9VJnXwZfuEaY18gVlmbRh3fbCAW+YeIAqpxHebY7RlpDljG3dRO7SSXEO60Zsso5wS9M5pE36luSohA50aRuDIRs6gRMe+GBU5Xzg0GtmhS19qHnt3+95D+IBIRGOhuFhkdFxkUmCEU5P1FPWLeCSaeB/Wa8MWVboplCexU7iIcd4gDYDM6bOSQmG/i4vSZx7pji1Y40JJbFtLZpZYBKe76q2ztba/hpn/JkVDnLAXI6FeQrg8JDRuC+LjBvVqGBqfxbj9/nw3tIxPJtK8RDEDm0fxu/F0qnCP40zKrseb5+PUD6qYmwaSHhveDyJAgMBAAGjaTBnMBMGCSsGAQQBgjcUAgQGHgQAQwBBMA4GA1UdDwEB/wQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBSDzPnd5uF0r6ux0ZVfj1GcE7wOuzAQBgkrBgEEAYI3FQEEAwIBADANBgkqhkiG9w0BAQsFAAOCAQEAK9IujKNGwCUeiNy8unOakaV6zGRDIKpqsqpGbFwNi1scn2n+BWztsBBItA4xPiXIqdbdjozetp6YIzr4OLgBeOtJ6QZ2EKtxb24+Ab7BEIaGyHye/965n9BVfHPe+HZnYbRm7cs5IxMIEwHVnkQ29m3b52VZ0bXolJKGU6eN0a79DbcxT+39PiXOC+kSlSi5ksFtnXtp9Fw3eeyLTCE8KRdMyi96f2a6I+q7Yu7/4dWWilOuPeDjUpMiET7NL3AuoknRWUXKJL5UG2oOAQq+fX5p6V5aUJmj1kj0+lFLh3TC8wCjYT9OOj/4N5BbiLWkKFfUlFYuvPVj4UBijA82Hw==</CA>
+          <ServerID>nps-iqq.unap.cl</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>unap.cl</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Universidad Arturo Prat - Funcionarios UNAP</DisplayName>
+      <Description>Perfil EDUROAM para el uso de los funcionarios y los academicos de la Universidad Arturo Prat</Description>
+      <ProviderLocation>
+        <Longitude>-69.53161239624023</Longitude>
+        <Latitude>-20.441784209635614</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-70.13008832931519</Longitude>
+        <Latitude>-20.271336108204395</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-70.13613402843474</Longitude>
+        <Latitude>-20.247469732049737</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-70.1407742500305</Longitude>
+        <Latitude>-20.244039593394618</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-70.15167474746703</Longitude>
+        <Latitude>-20.217005708857428</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-70.15258669853209</Longitude>
+        <Latitude>-20.221862106305082</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-70.1548166</Longitude>
+        <Latitude>-20.21619</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-70.1548247</Longitude>
+        <Latitude>-20.2161916</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

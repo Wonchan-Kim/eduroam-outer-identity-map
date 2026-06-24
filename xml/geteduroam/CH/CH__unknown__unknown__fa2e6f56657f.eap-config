@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="undefined" namespace="urn:undefined">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEoTCCA4mgAwIBAgIJAIBxDgXbBkDoMA0GCSqGSIb3DQEBBQUAMIGRMQswCQYDVQQGEwJDSDEPMA0GA1UECBMGVGljaW5vMQ4wDAYDVQQHEwVNYW5ubzEbMBkGA1UEChMSVEktRURVIChVU0ktU1VQU0kpMR0wGwYJKoZIhvcNAQkBFg5oZWxwQHRpLWVkdS5jaDElMCMGA1UEAxMcVEktRURVIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0xMjAxMTgxNTUzMjBaFw0xMjAzMTgxNTUzMjBaMIGRMQswCQYDVQQGEwJDSDEPMA0GA1UECBMGVGljaW5vMQ4wDAYDVQQHEwVNYW5ubzEbMBkGA1UEChMSVEktRURVIChVU0ktU1VQU0kpMR0wGwYJKoZIhvcNAQkBFg5oZWxwQHRpLWVkdS5jaDElMCMGA1UEAxMcVEktRURVIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAK0b61l5LTwHBDxzqF7AUJm0gnSTZm0yJNozim3zRjjf1xeAUpEaqpHiP6VwjQz27z/J0l9kVHcrTPaAtP4LYVRn8I6g373QX7/4Lf+XhdG+znHbK16C9VM21gYMw6Mdcdhd7+RRNC59K0N8lV7GLH8ugpbOHUTP6qXi6k0AewlwyuFTRa1ngigA4SSKK/oQuiwia5cTErihu22fWq6UwYLFxEkoAtCcYaVL8lSYo5U4dfEemkBJYWvwiJWSqwtopUFpMLULteS0LPvbljzDZQicAzUcl9R3u2+pFWsyNQtnSA1rreLMwd6oyjc6Hs+B5m4wH92PJeQZVOx4U3TodLMCAwEAAaOB+TCB9jAdBgNVHQ4EFgQUl4NASsiktkCtBkFmdNHgjgYPM/gwgcYGA1UdIwSBvjCBu4AUl4NASsiktkCtBkFmdNHgjgYPM/ihgZekgZQwgZExCzAJBgNVBAYTAkNIMQ8wDQYDVQQIEwZUaWNpbm8xDjAMBgNVBAcTBU1hbm5vMRswGQYDVQQKExJUSS1FRFUgKFVTSS1TVVBTSSkxHTAbBgkqhkiG9w0BCQEWDmhlbHBAdGktZWR1LmNoMSUwIwYDVQQDExxUSS1FRFUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5ggkAgHEOBdsGQOgwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAQEADjuvwKrA3ZVklOBkZclQ9WSQk4ogitnBZ/siqwDK0M0WJcpLpFou7A67moajRKqu1I2E1kFhjcggyqjywwvhjkOyDSxNDiKhizbXfjFjKi2E70Ha93IPJ5pSv4Zv6oGI12rKlbS3vMWIBokJanQY66V6jDTE+53pstWBc6CqxbwLKGO3HXOEgIOpkTkSv3YZpnZ9aTC1tmA+fUUTPIRbQjm34BkFApJHDMBZMzJktgLf6OxnSkf5F9WxD5lyfrVwiRHth5AZv6dyB6AfeGEdZ5WT8H0KHhWhdhs68T6tETYEyiukZkDxUujGfAOVK7HwgQ0zEkNO0wBmUuNmFPRYzw==</CA>
+          <ServerID>eduroam.ti-edu.ch</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEoTCCA4mgAwIBAgIJAIBxDgXbBkDoMA0GCSqGSIb3DQEBBQUAMIGRMQswCQYDVQQGEwJDSDEPMA0GA1UECBMGVGljaW5vMQ4wDAYDVQQHEwVNYW5ubzEbMBkGA1UEChMSVEktRURVIChVU0ktU1VQU0kpMR0wGwYJKoZIhvcNAQkBFg5oZWxwQHRpLWVkdS5jaDElMCMGA1UEAxMcVEktRURVIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0xMjAxMTgxNTUzMjBaFw0xMjAzMTgxNTUzMjBaMIGRMQswCQYDVQQGEwJDSDEPMA0GA1UECBMGVGljaW5vMQ4wDAYDVQQHEwVNYW5ubzEbMBkGA1UEChMSVEktRURVIChVU0ktU1VQU0kpMR0wGwYJKoZIhvcNAQkBFg5oZWxwQHRpLWVkdS5jaDElMCMGA1UEAxMcVEktRURVIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAK0b61l5LTwHBDxzqF7AUJm0gnSTZm0yJNozim3zRjjf1xeAUpEaqpHiP6VwjQz27z/J0l9kVHcrTPaAtP4LYVRn8I6g373QX7/4Lf+XhdG+znHbK16C9VM21gYMw6Mdcdhd7+RRNC59K0N8lV7GLH8ugpbOHUTP6qXi6k0AewlwyuFTRa1ngigA4SSKK/oQuiwia5cTErihu22fWq6UwYLFxEkoAtCcYaVL8lSYo5U4dfEemkBJYWvwiJWSqwtopUFpMLULteS0LPvbljzDZQicAzUcl9R3u2+pFWsyNQtnSA1rreLMwd6oyjc6Hs+B5m4wH92PJeQZVOx4U3TodLMCAwEAAaOB+TCB9jAdBgNVHQ4EFgQUl4NASsiktkCtBkFmdNHgjgYPM/gwgcYGA1UdIwSBvjCBu4AUl4NASsiktkCtBkFmdNHgjgYPM/ihgZekgZQwgZExCzAJBgNVBAYTAkNIMQ8wDQYDVQQIEwZUaWNpbm8xDjAMBgNVBAcTBU1hbm5vMRswGQYDVQQKExJUSS1FRFUgKFVTSS1TVVBTSSkxHTAbBgkqhkiG9w0BCQEWDmhlbHBAdGktZWR1LmNoMSUwIwYDVQQDExxUSS1FRFUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5ggkAgHEOBdsGQOgwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAQEADjuvwKrA3ZVklOBkZclQ9WSQk4ogitnBZ/siqwDK0M0WJcpLpFou7A67moajRKqu1I2E1kFhjcggyqjywwvhjkOyDSxNDiKhizbXfjFjKi2E70Ha93IPJ5pSv4Zv6oGI12rKlbS3vMWIBokJanQY66V6jDTE+53pstWBc6CqxbwLKGO3HXOEgIOpkTkSv3YZpnZ9aTC1tmA+fUUTPIRbQjm34BkFApJHDMBZMzJktgLf6OxnSkf5F9WxD5lyfrVwiRHth5AZv6dyB6AfeGEdZ5WT8H0KHhWhdhs68T6tETYEyiukZkDxUujGfAOVK7HwgQ0zEkNO0wBmUuNmFPRYzw==</CA>
+          <ServerID>eduroam.ti-edu.ch</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Università delle Svizzera Italiana</DisplayName>
+      <Description>Eduroam Università della Svizzera Italiana</Description>
+      <ProviderLocation>
+        <Longitude>8.958297200000061</Longitude>
+        <Latitude>46.01103120000001</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>help@ti-edu.ch</EmailAddress>
+        <WebAddress>www.ti-edu.ch</WebAddress>
+        <Phone>+41586666651</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

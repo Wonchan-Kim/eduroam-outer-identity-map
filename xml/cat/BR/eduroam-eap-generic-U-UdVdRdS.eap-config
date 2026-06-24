@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="unisinos.br" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIC+jCCAmOgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMTIwNzI1MTgxOTM2WhcNMjIwNzIzMTgxOTM2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo1AwTjAdBgNVHQ4EFgQUO5dxUUWLeI4Gro88mS8u2W82y90wHwYDVR0jBBgwFoAUO5dxUUWLeI4Gro88mS8u2W82y90wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCiUzlSNgNeOYwMQXtUAcpre0wkbaQIj3LVoKnOFNOVBEQ13vLLa0jHH2Rwg4N/XDEFcDBHzDxByPb5FDPLFJjPJPOCJL0ZjrLYbLqMFx0P4cEU51CfNRNOOtdfl0tMW4Ye2QNR86gd7EMpqasvhfR9ab0okiCdedAo8l5s8gtHiQ==</CA>
+          <ServerID>eduroam.asav.org.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>UNISINOS - Universidade do Vale do Rio dos Sinos</DisplayName>
+      <Description>Default - PEAP-MSCHAP2</Description>
+      <ProviderLocation>
+        <Longitude>-51.15346750000003</Longitude>
+        <Latitude>-29.7959432</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-51.17505253491822</Longitude>
+        <Latitude>-30.027269668145287</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/gif" encoding="base64">R0lGODlhlgAmAMQAAMrS3L7H1b3G1LC7za+6zKOvxaKuxZakvpWjvZSivYeWtYiXtXqLrnmKrWx/pmx+pV9znl5ynVFnllBmlkRbjkNajjZPhjVOhilDfyhCfhs3dxo2dg4rbwEgZwAfZ9je5CH5BAEHAB8ALAAAAACWACYAAAX/4CeOZGmWQHNxXuthTHHOdG3feK7vvNm4Lo6sRywaj8idA+gaJJ/QqLQGYLYk06x2SyxYPQ6ueEweIb7Dsnr9XFrT7Lhc52YG5vg8DWPV6P9/CRRMGhJ3gIhrAhNWFk6JkGUELExhkZdiAJRAFJieOxehohcRMxJfhzMCD6MoKqEiAhGiCSWroaUfCaMKJIsaLRoTCQadH4uiuQQVoRUAJcuhBCYAD3wtGA3PJouUGBEJCQ8fXxYzmy5YNxYuJ4MeJMAeHNMlfOYiDC6WH5MtFhTktSBBCd8HL/9MDGgB54MCFhwkOJAAsReJh/MAbjJX7gRCJgtwnBloIgDJfC4w/2wbscCDwQ/yLGma9+jgOxIQEo5gd8XEIDg5X6wUcI2fAIgkCrDj2OhEHSA1bbQ7cfIgpxImX/K01NKlwpcjXz61OGJJmgTBVooAIK/WB31eSxSAQK6piadTceQtUdXLJrok4opwY8kNBwE2EIqd56LeYA9p5JG9GOzxPLWB7ZbgyUTH3sxJwbzzMFnwB8Iius5zO0MxiSUHKHFYaVbESHgnqrRA8NaFBgNUNZPgDMRzVdAjvIS5Rm+EadQirv0D7lHn4wIDvJWFbPnCnhaW0FlAnJnJy51fjOM20RfMhwCUNGx7Dp6E9BYTyIemL0O1utof8OTdDBfoNMB9HkywUv9HJhD3WQ0PitCeJR/hQ597r6HDwTj7LTZEUKSdxl2ALQx4QoHPacghg5ull0OEdYXGD1we0HUhPxkCoVJy1omYBmcGACggDSieJyIQWLA4nIt6HeecHzzieEoLCtw4QwCj1cgjf/G0ENGIQZloQgb1lZQlXj2iZ4V6mEn4knL2ALEYhjOoxsGWHpKQXQsddDDEbTS4wFudvimpZmc5yNPQB1UYIwKcJWz0WpltijDleq5t19BtI35ACWskoDWPDQ6ad0Kp690wJY6pecCAjAq5MCeF6pQQFJRWcVlCHWl0lcEJZHoQ0kEclvCOQDqegKCTNJjUAnUiGMDBnbCa0NXSrI++oB+jlLyara7GMkTClAqOAAAjHtTqxXgk+OMBAst6AG20htqgGgYTTMAHB1FZxeoIOWFrKTYPFEwJYN/mqWynlm0QwQMRbFDmCO9cUHAElIRxKRDNieAuEwjnUECWEaUywgAWDHuCBCEvYEHKJAQAAbIUNISyBS07cqXOWEkgUCEmjyCzQBH9+UWJE6D4xaCfxBxH0DVADdPRVFfW9NUiVU0101h3bYrWVtTq9dgmxHs0BmSnvTLY6artdgkIIEsI12/XjYAEnFkgAd11ex0CADs=</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>g_rede@asav.org.br</EmailAddress>
+        <Phone>55 51 3590-8386</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="hau.ac.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE1jCCA76gAwIBAgIUYXrFM7avxGCgJrlAyHSMR0omdv0wDQYJKoZIhvcNAQELBQAwgYcxCzAJBgNVBAYTAkJEMREwDwYDVQQIDAhIYWJpZ2FuajERMA8GA1UEBwwISGFiaWdhbmoxDDAKBgNVBAoMA0hBVTEgMB4GCSqGSIb3DQEJARYRaWN0Y2VsbEBoYXUuYWMuYmQxIjAgBgNVBAMMGUhBVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjYwMjE5MDgxNDA3WhcNMzExMTE1MDgxNDA3WjCBhzELMAkGA1UEBhMCQkQxETAPBgNVBAgMCEhhYmlnYW5qMREwDwYDVQQHDAhIYWJpZ2FuajEMMAoGA1UECgwDSEFVMSAwHgYJKoZIhvcNAQkBFhFpY3RjZWxsQGhhdS5hYy5iZDEiMCAGA1UEAwwZSEFVIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOB3wHeup/BaXIqjuOj8sdgkMirEghPLAv1HfsoPPRlQj2AW/gu3fHttfb74r/7sJdQKmLcMRuv2WWdpLMpGWoFmfnTS0qjMVf0GO2T7NfNmE1ISCRtpGYo2Xho3Me70f8XwIXsuXuJcpdqn57SKvnyjnoIS6SWLJ6Ysa35baCkXoZjwuIhHExM5FH7pCUDiLwu86vQZYI30dLpT4PvZQXM5bJn8wmUG/ueBjYi6pYJAk0b9XpSyXGZfjTjILt9V/0LMXsuzGWPvVK/lWWqOy5COPkx6KJ6tbjC7oaxC4n6/wr8vHOE7bd+MRGXt/ANbg+IzXyvMAJnZChcWTXirXTUCAwEAAaOCATYwggEyMB0GA1UdDgQWBBQTE1LygOzklBRH1FNOOGMl6HD7zDCBxwYDVR0jBIG/MIG8gBQTE1LygOzklBRH1FNOOGMl6HD7zKGBjaSBijCBhzELMAkGA1UEBhMCQkQxETAPBgNVBAgMCEhhYmlnYW5qMREwDwYDVQQHDAhIYWJpZ2FuajEMMAoGA1UECgwDSEFVMSAwHgYJKoZIhvcNAQkBFhFpY3RjZWxsQGhhdS5hYy5iZDEiMCAGA1UEAwwZSEFVIENlcnRpZmljYXRlIEF1dGhvcml0eYIUYXrFM7avxGCgJrlAyHSMR0omdv0wDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBLu702OZg+k6NBhPsUujtCx7QhstQYiw1PnG5BAIrDr9QYyt3Wa5ftXEQKEf/YIGGLQA2gTfm+Jj84QagvPTQ3gFjLWqR/GlENtZuhqzCJLL8vywfPjwCBojXe2f7n1QSVwJ1TL3YJUea+fdqYFRz3b2WUprWMpiwp2x4cKuxQE/CAsOdX0HrK5J/BTcBH7U0hdAadVZfkRqz6m8HM4/dUXQyYs206mEcIgNY6jSNYkn9SMARO7Ik/cu0Ic5dGeOCt9mxO+x9E5VoVNPo4BTLtNIIFG01GF4NQ4eqR1AZCsSOd/PoyDPDNHvlWDk/pTXUOCbpBcr4RF/yTGYADEmTQ</CA>
+          <ServerID>irs.hau.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@hau.ac.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE1jCCA76gAwIBAgIUYXrFM7avxGCgJrlAyHSMR0omdv0wDQYJKoZIhvcNAQELBQAwgYcxCzAJBgNVBAYTAkJEMREwDwYDVQQIDAhIYWJpZ2FuajERMA8GA1UEBwwISGFiaWdhbmoxDDAKBgNVBAoMA0hBVTEgMB4GCSqGSIb3DQEJARYRaWN0Y2VsbEBoYXUuYWMuYmQxIjAgBgNVBAMMGUhBVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjYwMjE5MDgxNDA3WhcNMzExMTE1MDgxNDA3WjCBhzELMAkGA1UEBhMCQkQxETAPBgNVBAgMCEhhYmlnYW5qMREwDwYDVQQHDAhIYWJpZ2FuajEMMAoGA1UECgwDSEFVMSAwHgYJKoZIhvcNAQkBFhFpY3RjZWxsQGhhdS5hYy5iZDEiMCAGA1UEAwwZSEFVIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOB3wHeup/BaXIqjuOj8sdgkMirEghPLAv1HfsoPPRlQj2AW/gu3fHttfb74r/7sJdQKmLcMRuv2WWdpLMpGWoFmfnTS0qjMVf0GO2T7NfNmE1ISCRtpGYo2Xho3Me70f8XwIXsuXuJcpdqn57SKvnyjnoIS6SWLJ6Ysa35baCkXoZjwuIhHExM5FH7pCUDiLwu86vQZYI30dLpT4PvZQXM5bJn8wmUG/ueBjYi6pYJAk0b9XpSyXGZfjTjILt9V/0LMXsuzGWPvVK/lWWqOy5COPkx6KJ6tbjC7oaxC4n6/wr8vHOE7bd+MRGXt/ANbg+IzXyvMAJnZChcWTXirXTUCAwEAAaOCATYwggEyMB0GA1UdDgQWBBQTE1LygOzklBRH1FNOOGMl6HD7zDCBxwYDVR0jBIG/MIG8gBQTE1LygOzklBRH1FNOOGMl6HD7zKGBjaSBijCBhzELMAkGA1UEBhMCQkQxETAPBgNVBAgMCEhhYmlnYW5qMREwDwYDVQQHDAhIYWJpZ2FuajEMMAoGA1UECgwDSEFVMSAwHgYJKoZIhvcNAQkBFhFpY3RjZWxsQGhhdS5hYy5iZDEiMCAGA1UEAwwZSEFVIENlcnRpZmljYXRlIEF1dGhvcml0eYIUYXrFM7avxGCgJrlAyHSMR0omdv0wDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBLu702OZg+k6NBhPsUujtCx7QhstQYiw1PnG5BAIrDr9QYyt3Wa5ftXEQKEf/YIGGLQA2gTfm+Jj84QagvPTQ3gFjLWqR/GlENtZuhqzCJLL8vywfPjwCBojXe2f7n1QSVwJ1TL3YJUea+fdqYFRz3b2WUprWMpiwp2x4cKuxQE/CAsOdX0HrK5J/BTcBH7U0hdAadVZfkRqz6m8HM4/dUXQyYs206mEcIgNY6jSNYkn9SMARO7Ik/cu0Ic5dGeOCt9mxO+x9E5VoVNPo4BTLtNIIFG01GF4NQ4eqR1AZCsSOd/PoyDPDNHvlWDk/pTXUOCbpBcr4RF/yTGYADEmTQ</CA>
+          <ServerID>irs.hau.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@hau.ac.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Habiganj Agricultural University (HAU)</DisplayName>
+      <ProviderLocation>
+        <Longitude>91.4140272</Longitude>
+        <Latitude>24.3746027</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

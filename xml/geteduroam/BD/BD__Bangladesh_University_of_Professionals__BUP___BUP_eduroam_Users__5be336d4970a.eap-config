@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="bup.edu.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEwTCCA6mgAwIBAgIUNyVswpGXyvLqHQlJJmzsEgGHwIowDQYJKoZIhvcNAQELBQAwgYAxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDDAKBgNVBAoMA0JVUDEfMB0GCSqGSIb3DQEJARYQYWRtaW5AYnVwLmVkdS5iZDEiMCAGA1UEAwwZQlVQIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yNDEwMjgwNTI0MDRaFw0yNzEwMjgwNTI0MDRaMIGAMQswCQYDVQQGEwJCRDEOMAwGA1UECAwFRGhha2ExDjAMBgNVBAcMBURoYWthMQwwCgYDVQQKDANCVVAxHzAdBgkqhkiG9w0BCQEWEGFkbWluQGJ1cC5lZHUuYmQxIjAgBgNVBAMMGUJVUCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDOC0LyE4lyZpmxHlp/N9h7OkUHI+zj1xDiHGN27831XydOOnt6+RyMls+pwx420Sx2kTNtHRJ9KC4jKY6HIf94oTYHhSfr04D9GmBOnRZ/nImJbIw9ruM71ftKeYCHApfQAEVs4yP9SAFLs9zSbYd7fuNCDRfETlY2Kbdt8W6z5A4GJucYhjeg+oTpTqm8rxG5BKGiwiwZ66cNZfu9J4voJWrv9jeor8KhdxlwmL+gr4a9ZXCRqyslg1gJGrA3ocgK2XWOai+RJhvh1iMVTumWPhP58xvgDRelDcW3Se2cN1XJJsh83pIEyqntHD8lvp8xFeKHvjEFQK6/GoU2kTFBAgMBAAGjggEvMIIBKzAdBgNVHQ4EFgQUpgJ3QhFF3CfuW47wmlidbhmtaUAwgcAGA1UdIwSBuDCBtYAUpgJ3QhFF3CfuW47wmlidbhmtaUChgYakgYMwgYAxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDDAKBgNVBAoMA0JVUDEfMB0GCSqGSIb3DQEJARYQYWRtaW5AYnVwLmVkdS5iZDEiMCAGA1UEAwwZQlVQIENlcnRpZmljYXRlIEF1dGhvcml0eYIUNyVswpGXyvLqHQlJJmzsEgGHwIowDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAU+kNr2RcAFZraBJ6KLgmqWh3DOFiMwz49ia2cLPEqJA+KE29U9ogzA/pmW/gASzCYJD3u1ZuzYoEMJ11sDe9QvC9brijTvU4MuTgqjGGEXtLCQqCXvsyS6rYEQ0jh8isSOF4udPiaY2Yv4g0RSem6r1FMt7PE+UFhOj63ePdoj5RvsMbTA2c+ajKJEyTFpot9qwtlQAw7d0VsulVhfExCEUrJhcfEBjleA6+uHO/NRbF7/A3h4wYKLXKTYCWufJt2GYZ7TScYN/DTzgHrN1wiuzYAlgQYOkeIEGBpGzUUSjYNG90b+AVsjSviN0sOK5UvhPYiRPanRQ8lWIrI6nQe</CA>
+          <ServerID>irs.bup.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@bup.edu.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEwTCCA6mgAwIBAgIUNyVswpGXyvLqHQlJJmzsEgGHwIowDQYJKoZIhvcNAQELBQAwgYAxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDDAKBgNVBAoMA0JVUDEfMB0GCSqGSIb3DQEJARYQYWRtaW5AYnVwLmVkdS5iZDEiMCAGA1UEAwwZQlVQIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yNDEwMjgwNTI0MDRaFw0yNzEwMjgwNTI0MDRaMIGAMQswCQYDVQQGEwJCRDEOMAwGA1UECAwFRGhha2ExDjAMBgNVBAcMBURoYWthMQwwCgYDVQQKDANCVVAxHzAdBgkqhkiG9w0BCQEWEGFkbWluQGJ1cC5lZHUuYmQxIjAgBgNVBAMMGUJVUCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDOC0LyE4lyZpmxHlp/N9h7OkUHI+zj1xDiHGN27831XydOOnt6+RyMls+pwx420Sx2kTNtHRJ9KC4jKY6HIf94oTYHhSfr04D9GmBOnRZ/nImJbIw9ruM71ftKeYCHApfQAEVs4yP9SAFLs9zSbYd7fuNCDRfETlY2Kbdt8W6z5A4GJucYhjeg+oTpTqm8rxG5BKGiwiwZ66cNZfu9J4voJWrv9jeor8KhdxlwmL+gr4a9ZXCRqyslg1gJGrA3ocgK2XWOai+RJhvh1iMVTumWPhP58xvgDRelDcW3Se2cN1XJJsh83pIEyqntHD8lvp8xFeKHvjEFQK6/GoU2kTFBAgMBAAGjggEvMIIBKzAdBgNVHQ4EFgQUpgJ3QhFF3CfuW47wmlidbhmtaUAwgcAGA1UdIwSBuDCBtYAUpgJ3QhFF3CfuW47wmlidbhmtaUChgYakgYMwgYAxCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEOMAwGA1UEBwwFRGhha2ExDDAKBgNVBAoMA0JVUDEfMB0GCSqGSIb3DQEJARYQYWRtaW5AYnVwLmVkdS5iZDEiMCAGA1UEAwwZQlVQIENlcnRpZmljYXRlIEF1dGhvcml0eYIUNyVswpGXyvLqHQlJJmzsEgGHwIowDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAU+kNr2RcAFZraBJ6KLgmqWh3DOFiMwz49ia2cLPEqJA+KE29U9ogzA/pmW/gASzCYJD3u1ZuzYoEMJ11sDe9QvC9brijTvU4MuTgqjGGEXtLCQqCXvsyS6rYEQ0jh8isSOF4udPiaY2Yv4g0RSem6r1FMt7PE+UFhOj63ePdoj5RvsMbTA2c+ajKJEyTFpot9qwtlQAw7d0VsulVhfExCEUrJhcfEBjleA6+uHO/NRbF7/A3h4wYKLXKTYCWufJt2GYZ7TScYN/DTzgHrN1wiuzYAlgQYOkeIEGBpGzUUSjYNG90b+AVsjSviN0sOK5UvhPYiRPanRQ8lWIrI6nQe</CA>
+          <ServerID>irs.bup.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@bup.edu.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Bangladesh University of Professionals (BUP)</DisplayName>
+      <ProviderLocation>
+        <Longitude>90.3575774</Longitude>
+        <Latitude>23.8399925</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>noc@bdren.net.bd</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

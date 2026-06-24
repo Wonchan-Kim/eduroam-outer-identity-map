@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="hochschule-stralsund.de" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIGBDCCA+ygAwIBAgIBATANBgkqhkiG9w0BAQsFADCBkjELMAkGA1UEBhMCREUxRTBDBgNVBAoMPFZlcmVpbiB6dXIgRm9lcmRlcnVuZyBlaW5lcyBEZXV0c2NoZW4gRm9yc2NodW5nc25ldHplcyBlLiBWLjEQMA4GA1UECwwHREZOLVBLSTEqMCgGA1UEAwwhREZOLVZlcmVpbiBDb21tdW5pdHkgUm9vdCBDQSAyMDIyMB4XDTIyMDEyNjE0MDg0MVoXDTQyMDEyMTE0MDg0MVowgZIxCzAJBgNVBAYTAkRFMUUwQwYDVQQKDDxWZXJlaW4genVyIEZvZXJkZXJ1bmcgZWluZXMgRGV1dHNjaGVuIEZvcnNjaHVuZ3NuZXR6ZXMgZS4gVi4xEDAOBgNVBAsMB0RGTi1QS0kxKjAoBgNVBAMMIURGTi1WZXJlaW4gQ29tbXVuaXR5IFJvb3QgQ0EgMjAyMjCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAMF5dV4jPdSCX8uV5h3T9HnSQzfoSK7dw0F7xqa8RvM9sqT8le/CrrgHKx96DXtYLCiqXtRIy7Pt/5oePzJ0K6UkmvFpoW0Fg5MxDKKCE7rvWSvk9U8q3OBYky+X5bz5+OjdLQF6LPBcNfBDrLdO+DM71/F2uDXDjwd0XCCAMTGDz2cwGbtF447MsWdDUu3VdP9YMSYwWBi+Pj2qric6X8J6s7XTKTBnSxSNulAHtOlUjSY9Pgy/YWkn95BUpMT/jVfeKbQrWCpCptfG7KeaM08D11VhaRIfU/LVDCQef57qdkKDh2iBwCWvEXQMqMn18uPGgh50XCuDdlyEoKAlxWc74UQ615Q2iaLghvKCnYq5wzFOaIu9/zLyfKURALE2c7HNY0To6CejbLRKCWF3Kkr6qZy3EtmcYxrFpEIBqJ9QYFDX4k8hk7KIqR2/vYUFS5ZX1GLBpCqaf/YkHAUaj1iqqYc8/l5SHXquwgmQK1zhpB8zwubw5qJWFkZGO0HeExKlJosSRWhMg471mevYVm5WjIMbF7Pl6jXeXyfGTuwbZj7D3CCkNyr52iviwQWHNs1KV9YOtE11H17R/H4dWXt1OuVEHkBUx4Vjde3V3rA5MivbDL/YXpIflBIBMzuXhbzYril4zoPnkVKONvW2JARWxUnWFJ496jroYeGg42TfAgMBAAGjYzBhMB0GA1UdDgQWBBQQ9q+j+vYWkNDqIUESlxH4m6ValDAfBgNVHSMEGDAWgBQQ9q+j+vYWkNDqIUESlxH4m6ValDAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBBjANBgkqhkiG9w0BAQsFAAOCAgEAS+nQQGCAkg1LphkSTZO89y5s4ORNAjc6C9B12l3bJIvzJXZlaDzjXDGDgd/bjXrMwIprxRo/LZSSrwWcHa+HPb+RTEKRzyI4NLUwaJUvTyxA320OugZf+x8qlyj2HHeX46M/s6ocxrU8OX+Qjf1YhkgZQH9fyMSqCucD/BsYrDCCPATg8iU2/VaRHJ5y4ICEzAjxFDyTioKeSneTfhciYMa1COL8okEX0T0keGx+hO9IL7UYoDdqQGpsRMQzv9OgcgJvP8CSqalE/zG84eU11awnxQHB7bz7HV3eTVnyNg0TdFU+SMutiWa80Kf006aj5Q1Nf94kmOjN5yXe7fUniMScwaEv74oZhcWPJhIjLbDdwImBHB6gI5c1t4uEGZj4o0OryzVKGJeA1BvyfF2ryROG2eJN45mEg2mIVLwy6OI/3fKxBsGzLoz/7YrnTSc4W5UtM34LZAZLVua3brTDHu2iiapiXFiEO89xT8m1mcQJwBYH3c7j6OUwTfHKe1EpCoJNMhdRuy7HSDO39gKKI04y/pa/qzBj2f0FlXbzD10nv8u3hBorxoEhqA3tYi3FQQwPuo6m7qOXkfPD13PRUY9/Rv/skpRYcMJ/7jZQk6CYR7Tl9i/ipXT5B01j8HQEejv4B1ir/CqC156QweVbDbJ0Kv1rPCWCgUikjM/huUU=</CA>
+          <ServerID>eduroam.hochschule-stralsund.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>edudfnc@hochschule-stralsund.de</OuterIdentity>
+          <InnerIdentitySuffix>hochschule-stralsund.de</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>eduroam.hochschule-stralsund.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>edudfnc@hochschule-stralsund.de</OuterIdentity>
+          <InnerIdentitySuffix>hochschule-stralsund.de</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of Applied Sciences Stralsund</DisplayName>
+      <ProviderLocation>
+        <Longitude>13.075532000000067</Longitude>
+        <Latitude>54.339059</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>it-support@hochschule-stralsund.de</EmailAddress>
+        <WebAddress>https://e-host.hochschule-stralsund.de</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

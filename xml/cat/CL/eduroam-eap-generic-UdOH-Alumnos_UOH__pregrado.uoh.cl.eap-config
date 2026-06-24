@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="pregrado.uoh.cl" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>eduroam-colchagua.uoh.cl</ServerID>
+          <ServerID>mv-uoh-eduroam.reuna.cl</ServerID>
+          <ServerID>radius-uoh.uoh.cl</ServerID>
+          <ServerID>radius02.uoh.cl</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@pregrado.uoh.cl</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Universidad de O'Higgins - Alumnos UOH (@pregrado.uoh.cl)</DisplayName>
+      <Description>Solo para usuarios con correo pregrado.uoh.cl</Description>
+      <ProviderLocation>
+        <Longitude>-70.74191336032715</Longitude>
+        <Latitude>-34.16475291546974</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>soporte@uoh.cl</EmailAddress>
+        <WebAddress>https://www.uoh.cl/#soporte-dti</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

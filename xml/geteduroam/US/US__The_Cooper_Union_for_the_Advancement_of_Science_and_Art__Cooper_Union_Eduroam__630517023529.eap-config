@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="cooper.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEszCCA5ugAwIBAgIUQQFWXxb85bbjSiyc4MbmHuDDmeswDQYJKoZIhvcNAQELBQAwfTELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAk5ZMQswCQYDVQQHDAJOWTEVMBMGA1UECgwMQ29vcGVyIFVuaW9uMSQwIgYJKoZIhvcNAQkBFhVob3N0bWFzdGVyQGNvb3Blci5lZHUxFzAVBgNVBAMMDlJBRElVUyBSb290IENBMB4XDTI2MDQxNDA0MTI0MloXDTI4MDQwMzA0MTI0MlowfTELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAk5ZMQswCQYDVQQHDAJOWTEVMBMGA1UECgwMQ29vcGVyIFVuaW9uMSQwIgYJKoZIhvcNAQkBFhVob3N0bWFzdGVyQGNvb3Blci5lZHUxFzAVBgNVBAMMDlJBRElVUyBSb290IENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsK1Wx8KDgzxwJRy7gB64h4n29rcmgFK3G9YyUzCEgQT88oH4eBrjLMX6h3MVAKcGA/ihXIXaoQKJjEUJiaHsTUzxxT5jPktJmo9y1EzPStfJUWybz2gzGfXs8JGM1NpTaP2W3YP9pEFcwU2OTWGP4nAH3OkE0XGwwtwQWfb0s7OVEMdipXR4CoI+QBn/Rezf7dnjeTLh7FhYBBAwmcLt7zdTh+A5AmTaon6grFxPx1x7TvPM9Cd7sMj9aRfFalqS7Q6LP20Ew9jT0INrTtKC53hM9yISmxWBkfeuzqfIgbVflchO8GqAcMaWIUpY5PYk2rZJ9zK6yfkf5ome032dhQIDAQABo4IBKTCCASUwHQYDVR0OBBYEFHpVKW6iEEPNTUq8VTkaM73c6ddhMIG7BgNVHSMEgbMwgbCAFHpVKW6iEEPNTUq8VTkaM73c6ddhoYGBpH8wfTELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAk5ZMQswCQYDVQQHDAJOWTEVMBMGA1UECgwMQ29vcGVyIFVuaW9uMSQwIgYJKoZIhvcNAQkBFhVob3N0bWFzdGVyQGNvb3Blci5lZHUxFzAVBgNVBAMMDlJBRElVUyBSb290IENBghRBAVZfFvzltuNKLJzgxuYe4MOZ6zAPBgNVHRMBAf8EBTADAQH/MDUGA1UdHwQuMCwwKqAooCaGJGh0dHA6Ly93d3cuY29vcGVyLmVkdS9leGFtcGxlX2NhLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAEu3wmdl2DdoDTKQpb8BpghQF9KYHx2RtnIXSa/CIcvQlhWLAoDX/XB7vXQ81GbW65YcKwaNoZSdNL+vJTrqDXX0BbaM4RTeoToqdtKiI3ApnRidjKW0P0tiIA0jsMAX8fsGrnw/K16QhJ0jtrBLt1hbiMuIrrtxI9YdiU94bUUXsVcrfBEMY2Ntk7iaySI0IbJoRsInsm+HxWGiN3VAUOvSRbRHe6uMyuZccsNg4ELWOfvc4ma3eMBQgjvxIQ06ASJz7B7aMyH5EZjIdXfBnLlPWHucjQe3qybJmin47L1ZR1rNU5m+aZvoOJLqYs8wG/yFKmeETU0gG5WsdtUdnZQ==</CA>
+          <ServerID>Cooper Union EAP Certificate</ServerID>
+          <ServerID>eduroam.cooper.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>cooper.edu</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>The Cooper Union for the Advancement of Science and Art - Cooper Union Eduroam</DisplayName>
+      <ProviderLocation>
+        <Longitude>-73.9902272</Longitude>
+        <Latitude>40.7285440</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>itsupport@cooper.edu</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

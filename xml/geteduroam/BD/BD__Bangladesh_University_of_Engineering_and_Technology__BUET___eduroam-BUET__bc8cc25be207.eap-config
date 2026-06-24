@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="buet.ac.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE7jCCA9agAwIBAgIUQl6hpHDLwi+yoaH1zRiiuB1n3xUwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEQMA4GA1UEBwwHUGFsYXNoaTENMAsGA1UECgwEQlVFVDEqMCgGCSqGSIb3DQEJARYbYWJ1aGFzYW5AaWN0Y2VsbC5idWV0LmFjLmJkMSMwIQYDVQQDDBpCVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yMzAxMjIwNTI3MDJaFw0yNjAxMjEwNTI3MDJaMIGPMQswCQYDVQQGEwJCRDEOMAwGA1UECAwFRGhha2ExEDAOBgNVBAcMB1BhbGFzaGkxDTALBgNVBAoMBEJVRVQxKjAoBgkqhkiG9w0BCQEWG2FidWhhc2FuQGljdGNlbGwuYnVldC5hYy5iZDEjMCEGA1UEAwwaQlVFVCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCuPsFRKEeum5QcBA7gT1WnBCZSKzU6y9QkV/XM/GFnLmvtaR1FywOMbjN5tQhXYduxKTVG2oVTuuMN0yVOoiQqKCxFoZMw5CrCEClxzR3S/1O0QRpd6CqKElDE33jRoIYxgmXW9k0bZoYKrEdW0ea/PbAfHBVw3xCbc0MFs59ISrhLK2rgxHPOrPnOeVG2KMe0iqGYSqSDZtjq15oDeUAH67OzhiOzBR3UtkFaXMG7PWzjmO1I/jo+ScZDblFbmGTVddwexma6d2fwn1twS304higP5ipXXJGpcbgsgsUpPGMovN0HQoacVGeBq31NxOj1weHBlOV2bMUgevGwZfGZAgMBAAGjggE+MIIBOjAdBgNVHQ4EFgQU/n6dWGIJ+ekM0emaotugt3GmLCswgc8GA1UdIwSBxzCBxIAU/n6dWGIJ+ekM0emaotugt3GmLCuhgZWkgZIwgY8xCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEQMA4GA1UEBwwHUGFsYXNoaTENMAsGA1UECgwEQlVFVDEqMCgGCSqGSIb3DQEJARYbYWJ1aGFzYW5AaWN0Y2VsbC5idWV0LmFjLmJkMSMwIQYDVQQDDBpCVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUQl6hpHDLwi+yoaH1zRiiuB1n3xUwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCUkfFmja+aoe7QfjsZTx5EhHkBI7JLxAc4sN3pv2ye5tL+FmhTwj1deyd4psFBYNenKejOlcUgPKPSUQWowOC0gwRLEo1SfhUtbaTNW4CfH4l0qhXWGMWrEojz2uccsNGqkVkYFioxTpdGT3G7GQq2Tow4Gt5GhYDGbRDsBNYWq0rXiEDw4P6tTOh25FJOt+DhFcvVdIuFD8SkOekSo0P86aPDaYnsrHunS42l7Flth0WBSGvdIk4HVMWHjt1X4JK8edn5XvCyykQyjFjOFcpRjRmBbK3Qp+y5Tgoqz1yLr7O9PO2oSVTOPxT9sDmipD610q8ag6w8svh4FqFo4XC7</CA>
+          <ServerID>irs.buet.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>buet.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE7jCCA9agAwIBAgIUQl6hpHDLwi+yoaH1zRiiuB1n3xUwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEQMA4GA1UEBwwHUGFsYXNoaTENMAsGA1UECgwEQlVFVDEqMCgGCSqGSIb3DQEJARYbYWJ1aGFzYW5AaWN0Y2VsbC5idWV0LmFjLmJkMSMwIQYDVQQDDBpCVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yMzAxMjIwNTI3MDJaFw0yNjAxMjEwNTI3MDJaMIGPMQswCQYDVQQGEwJCRDEOMAwGA1UECAwFRGhha2ExEDAOBgNVBAcMB1BhbGFzaGkxDTALBgNVBAoMBEJVRVQxKjAoBgkqhkiG9w0BCQEWG2FidWhhc2FuQGljdGNlbGwuYnVldC5hYy5iZDEjMCEGA1UEAwwaQlVFVCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCuPsFRKEeum5QcBA7gT1WnBCZSKzU6y9QkV/XM/GFnLmvtaR1FywOMbjN5tQhXYduxKTVG2oVTuuMN0yVOoiQqKCxFoZMw5CrCEClxzR3S/1O0QRpd6CqKElDE33jRoIYxgmXW9k0bZoYKrEdW0ea/PbAfHBVw3xCbc0MFs59ISrhLK2rgxHPOrPnOeVG2KMe0iqGYSqSDZtjq15oDeUAH67OzhiOzBR3UtkFaXMG7PWzjmO1I/jo+ScZDblFbmGTVddwexma6d2fwn1twS304higP5ipXXJGpcbgsgsUpPGMovN0HQoacVGeBq31NxOj1weHBlOV2bMUgevGwZfGZAgMBAAGjggE+MIIBOjAdBgNVHQ4EFgQU/n6dWGIJ+ekM0emaotugt3GmLCswgc8GA1UdIwSBxzCBxIAU/n6dWGIJ+ekM0emaotugt3GmLCuhgZWkgZIwgY8xCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEQMA4GA1UEBwwHUGFsYXNoaTENMAsGA1UECgwEQlVFVDEqMCgGCSqGSIb3DQEJARYbYWJ1aGFzYW5AaWN0Y2VsbC5idWV0LmFjLmJkMSMwIQYDVQQDDBpCVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUQl6hpHDLwi+yoaH1zRiiuB1n3xUwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCUkfFmja+aoe7QfjsZTx5EhHkBI7JLxAc4sN3pv2ye5tL+FmhTwj1deyd4psFBYNenKejOlcUgPKPSUQWowOC0gwRLEo1SfhUtbaTNW4CfH4l0qhXWGMWrEojz2uccsNGqkVkYFioxTpdGT3G7GQq2Tow4Gt5GhYDGbRDsBNYWq0rXiEDw4P6tTOh25FJOt+DhFcvVdIuFD8SkOekSo0P86aPDaYnsrHunS42l7Flth0WBSGvdIk4HVMWHjt1X4JK8edn5XvCyykQyjFjOFcpRjRmBbK3Qp+y5Tgoqz1yLr7O9PO2oSVTOPxT9sDmipD610q8ag6w8svh4FqFo4XC7</CA>
+          <ServerID>irs.buet.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>buet.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>52</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <ServerID>irs.buet.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>buet.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE7jCCA9agAwIBAgIUQl6hpHDLwi+yoaH1zRiiuB1n3xUwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEQMA4GA1UEBwwHUGFsYXNoaTENMAsGA1UECgwEQlVFVDEqMCgGCSqGSIb3DQEJARYbYWJ1aGFzYW5AaWN0Y2VsbC5idWV0LmFjLmJkMSMwIQYDVQQDDBpCVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yMzAxMjIwNTI3MDJaFw0yNjAxMjEwNTI3MDJaMIGPMQswCQYDVQQGEwJCRDEOMAwGA1UECAwFRGhha2ExEDAOBgNVBAcMB1BhbGFzaGkxDTALBgNVBAoMBEJVRVQxKjAoBgkqhkiG9w0BCQEWG2FidWhhc2FuQGljdGNlbGwuYnVldC5hYy5iZDEjMCEGA1UEAwwaQlVFVCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCuPsFRKEeum5QcBA7gT1WnBCZSKzU6y9QkV/XM/GFnLmvtaR1FywOMbjN5tQhXYduxKTVG2oVTuuMN0yVOoiQqKCxFoZMw5CrCEClxzR3S/1O0QRpd6CqKElDE33jRoIYxgmXW9k0bZoYKrEdW0ea/PbAfHBVw3xCbc0MFs59ISrhLK2rgxHPOrPnOeVG2KMe0iqGYSqSDZtjq15oDeUAH67OzhiOzBR3UtkFaXMG7PWzjmO1I/jo+ScZDblFbmGTVddwexma6d2fwn1twS304higP5ipXXJGpcbgsgsUpPGMovN0HQoacVGeBq31NxOj1weHBlOV2bMUgevGwZfGZAgMBAAGjggE+MIIBOjAdBgNVHQ4EFgQU/n6dWGIJ+ekM0emaotugt3GmLCswgc8GA1UdIwSBxzCBxIAU/n6dWGIJ+ekM0emaotugt3GmLCuhgZWkgZIwgY8xCzAJBgNVBAYTAkJEMQ4wDAYDVQQIDAVEaGFrYTEQMA4GA1UEBwwHUGFsYXNoaTENMAsGA1UECgwEQlVFVDEqMCgGCSqGSIb3DQEJARYbYWJ1aGFzYW5AaWN0Y2VsbC5idWV0LmFjLmJkMSMwIQYDVQQDDBpCVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUQl6hpHDLwi+yoaH1zRiiuB1n3xUwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCUkfFmja+aoe7QfjsZTx5EhHkBI7JLxAc4sN3pv2ye5tL+FmhTwj1deyd4psFBYNenKejOlcUgPKPSUQWowOC0gwRLEo1SfhUtbaTNW4CfH4l0qhXWGMWrEojz2uccsNGqkVkYFioxTpdGT3G7GQq2Tow4Gt5GhYDGbRDsBNYWq0rXiEDw4P6tTOh25FJOt+DhFcvVdIuFD8SkOekSo0P86aPDaYnsrHunS42l7Flth0WBSGvdIk4HVMWHjt1X4JK8edn5XvCyykQyjFjOFcpRjRmBbK3Qp+y5Tgoqz1yLr7O9PO2oSVTOPxT9sDmipD610q8ag6w8svh4FqFo4XC7</CA>
+          <ServerID>irs.buet.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>buet.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Bangladesh University of Engineering and Technology (BUET)</DisplayName>
+      <ProviderLocation>
+        <Longitude>90.38898400962353</Longitude>
+        <Latitude>23.72678891193462</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>abuhasan@ictcell.buet.ac.bd</EmailAddress>
+        <WebAddress>https://buet.ac.bd</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

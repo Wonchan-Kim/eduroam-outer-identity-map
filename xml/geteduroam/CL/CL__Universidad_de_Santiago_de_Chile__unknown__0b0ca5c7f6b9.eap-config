@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="usach.cl" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFfTCCA2WgAwIBAgIJAPOkZihud4dZMA0GCSqGSIb3DQEBCwUAMFUxCzAJBgNVBAYTAmNsMQswCQYDVQQIDAJybTEZMBcGA1UEBwwQRXN0YWNpb24gQ2VudHJhbDEOMAwGA1UECgwFVVNBQ0gxDjAMBgNVBAsMBVNFR0lDMB4XDTE3MDIxNTE0NTg1NFoXDTI3MDIxMzE0NTg1NFowVTELMAkGA1UEBhMCY2wxCzAJBgNVBAgMAnJtMRkwFwYDVQQHDBBFc3RhY2lvbiBDZW50cmFsMQ4wDAYDVQQKDAVVU0FDSDEOMAwGA1UECwwFU0VHSUMwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDURmQxU1l2WrBys0y5qvojyJVtQfomc6LtlfBnegaxhv+nl9GhA+hXtwMTwWsVKkAZWyDQP85oaMKKYW7lCMbHFZb6wGWtaRelw+2Wco+u+xzwNfQwmNdoZYbMmd1QOC18+00xw+lPWJABWgKLNZm49C+cE9UghgcNIan6XqrSiPQDnJxHlcBLDSQcWxKw0BIAfjmGJpk08gfKWZN9TzvK1O/JbMRSav6aNkYUhMcZe7RzgRUCoRcoIJDs0oXmXQdOoWP1LZEoJs6NCcya8jl6aACrK2sN9mzdnKmLl7uU5GtNJRZ9igmyTHf/jASN66GHLep2JChxMLQv54E0KsNL9E1EP7DUk2SOuCOWBAHzxouXxkimRSLCrvGNa6M0QP4GejnJaEKEo7fGFVZbeSbkXSvmTxUXZXBcnjCRLRX83czScKbt0E3wR/GdzlPAt5WQJe6JAgyuucQQLHQDteymiGoZf8C/X2ryIlQILJC4zozOq/g6MPAGtV3foIXtkrSV5kKTc/YLSO9MjMGOzqCWmA3dHgZ34I7oBJYyd3CMgzh3PptXQFEdY4P68pB2SnR2jjgmmXixVW3M8whNCj46kfBYr+8rH6JXqQgiYfnUQfwwZ4dqS28Qi3JUBk5OqN1kXE/oa1MxLKZasMo6SxLBxl7v8Oj39AnDy/F+ioBMowIDAQABo1AwTjAdBgNVHQ4EFgQUWObQZ1vFcTBp4GWcZFv+igc9GyMwHwYDVR0jBBgwFoAUWObQZ1vFcTBp4GWcZFv+igc9GyMwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAf7vEDTkJbecIz7BXRCN7yDnTPJJNBMSKBuyzq3S21n3z3u2b91spImx5WY8cLm5xZ7P00KF3hJ11t5zXFSRKWKJLTpVjhEAtCIIVLi1RpYYoY8egJFVWlxpQfVhv8Y7DeTE197/nqO3tMTT1hbH44bf7yesElFEpJQi3cIf+aN8s0vCUp2RFChRekLnWSi9vWtN81+1c/FY5W7gVFicxiTo5T1KJWiUd5FwFgiDtjbyeu1BwffZv778F1oWljklxq35vnpTa08AyLMiDS7ubN8gM1Tyj5b1m+2+7xQZCK2A1AYcvHs39LxVhPPWzSt3aY7/p0SVKzx3PDCNvyPtJ3x7ES4+9tLh0OLiSoe3+weDHHkwu03BPMrHVACDgL7j+7LqKPb2k2u+6RTr18yUEgMaOSl9Y4UwKc1PcJnKcd/3/Mlvb55hguFW8gykjRD7SsnKNziacCySn8n90e57KGR4qyPH/dOZSdvt1n9yWP/8KkJDlG917qidyXIZOqHZVXkRqcoMT/0gpwslFoXQKXyNlKgdW2eiZyVYAjSqAMiYykBRRm2JzeP2tzuMBr83Nqs+iHkJBMw9s0Db/gvEQ8vBSflOaDBWALAPFgIqbHkOADlTBjouo5QDVX+cf7y5XP3i3ZVe235Im4605m+XnojDvV5L4FvXocPVBfToitzM=</CA>
+          <ServerID>eduroam.usach.cl</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Universidad de Santiago de Chile</DisplayName>
+      <Description>USACH</Description>
+      <ProviderLocation>
+        <Longitude>-70.68615203973388</Longitude>
+        <Latitude>-33.4522657111868</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-70.68621706097412</Longitude>
+        <Latitude>-33.45191539046095</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <WebAddress>www.segic.cl</WebAddress>
+        <Phone>+56 227180225</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

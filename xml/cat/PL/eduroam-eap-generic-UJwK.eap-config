@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="uj.edu.pl" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>edus.uoks.uj.edu.pl</ServerID>
+          <ServerID>hermes.uoks.uj.edu.pl</ServerID>
+          <ServerID>tinia.uoks.uj.edu.pl</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Uniwersytet Jagielloński w Krakowie</DisplayName>
+      <ProviderLocation>
+        <Longitude>19.934079200000042</Longitude>
+        <Latitude>50.0609765</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>eduroam@uj.edu.pl</EmailAddress>
+        <Phone>+48126631290</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

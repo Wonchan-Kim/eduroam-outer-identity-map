@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="pvamu.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFIDCCBAigAwIBAgIJAOod4iwLF9F7MA0GCSqGSIb3DQEBCwUAMIGnMQswCQYDVQQGEwJVUzEOMAwGA1UECAwFVGV4YXMxFDASBgNVBAcMC1ByYXJpZSBWaWV3MSMwIQYDVQQKDBpQcmFyaWUgVmlldyBBJk0gVW5pdmVyc2l0eTElMCMGCSqGSIb3DQEJARYWc2VydmVyX2FkbWluQHB2YW11LmVkdTEmMCQGA1UEAwwdUHJhcmllIFZpZXcgQSZNIFVuaXZlcnNpdHkgQ0EwHhcNMTkxMTE2MjAwMDAzWhcNMjIxMTE1MjAwMDAzWjCBpzELMAkGA1UEBhMCVVMxDjAMBgNVBAgMBVRleGFzMRQwEgYDVQQHDAtQcmFyaWUgVmlldzEjMCEGA1UECgwaUHJhcmllIFZpZXcgQSZNIFVuaXZlcnNpdHkxJTAjBgkqhkiG9w0BCQEWFnNlcnZlcl9hZG1pbkBwdmFtdS5lZHUxJjAkBgNVBAMMHVByYXJpZSBWaWV3IEEmTSBVbml2ZXJzaXR5IENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyUZgHh6729LvjSta5hYWhnGTjzkz46i0cMaR9JWdPRmSsZufunCBqZP2xDwBx13TNwdYfYMDm3tyI1GBbiJAvXekxigNmTOEWfgwbeoZp/Epxg9eZhpz6TcSNH3fhYGTP7NKVLtLRnR2mQj0TYL3J4EzYqJBSMQdtvZlAlVwdq+6EZmAyOgAyw2tS2+a2HyZJZx2qLCkLMY5sctwWDSwdjlZEnoxJrlXZDSfo8j1FGPkjcLHigOvOwjKBkuOm0ks5794r0OGLUd1rGsfU5+WCR/owrlmwvjY+R8kkuldvNjsqW2SrQQuQ5Wj/NEFlbQBU3DDVRCLboIn2GkZ3DESEQIDAQABo4IBSzCCAUcwHQYDVR0OBBYEFEmi1BqOtcSNlWVN5OfGL+Y9XQo5MIHcBgNVHSMEgdQwgdGAFEmi1BqOtcSNlWVN5OfGL+Y9XQo5oYGtpIGqMIGnMQswCQYDVQQGEwJVUzEOMAwGA1UECAwFVGV4YXMxFDASBgNVBAcMC1ByYXJpZSBWaWV3MSMwIQYDVQQKDBpQcmFyaWUgVmlldyBBJk0gVW5pdmVyc2l0eTElMCMGCSqGSIb3DQEJARYWc2VydmVyX2FkbWluQHB2YW11LmVkdTEmMCQGA1UEAwwdUHJhcmllIFZpZXcgQSZNIFVuaXZlcnNpdHkgQ0GCCQDqHeIsCxfRezAPBgNVHRMBAf8EBTADAQH/MDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly93d3cuZXhhbXBsZS5vcmcvZXhhbXBsZV9jYS5jcmwwDQYJKoZIhvcNAQELBQADggEBAKNKbWjJ0rQv9B8o50CUDkfUZ6IMq7fTfjCopbToedCQGN2kRUWdBzNFvotqn/A9RnXXdCh6E/R7OcoyL0PPBLhCv7ahe0hfdKCvXz8C1kWWgufiWpg2n3+niUFWSehLCOifpQR7qQh6s6uj5RUKcds32xAqJ/rxVdvNsCX1h0Kmxeb7YLp2/CP0+nKyX0niicSaUbSbNGZI0+0ovGH2104dsKMNAPP1ZXbXkztQ6m1CTYeII6X2GIsU9POWzIm/6Z7zzPkvjeiRQ37LNXvr+w5nRfCjiduiqxGRbSdtSR4cKS5LuUq5AGmc8UrHthfSQVuRE8CNFuadTxGwQB6CMcg=</CA>
+          <ServerID>eduroam.pvamu.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>pvamu.edu</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Prairie View A&amp;M University</DisplayName>
+      <Description/>
+      <ProviderLocation>
+        <Longitude>-95.9907058</Longitude>
+        <Latitude>30.0857916</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@pvamu.edu</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

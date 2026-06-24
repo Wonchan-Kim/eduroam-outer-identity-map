@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="izmirekonomi.edu.tr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>edurad.izmirekonomi.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>izmirekonomi.edu.tr</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>52</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <ServerID>edurad.izmirekonomi.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>izmirekonomi.edu.tr</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>edurad.izmirekonomi.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>izmirekonomi.edu.tr</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>edurad.izmirekonomi.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>izmirekonomi.edu.tr</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>13</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>edurad.izmirekonomi.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>izmirekonomi.edu.tr</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>İzmir Ekonomi Üniversitesi</DisplayName>
+      <ProviderLocation>
+        <Longitude>27.04456597566605</Longitude>
+        <Latitude>38.38805528250265</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/jpeg" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>itsupport@ieu.edu.tr</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

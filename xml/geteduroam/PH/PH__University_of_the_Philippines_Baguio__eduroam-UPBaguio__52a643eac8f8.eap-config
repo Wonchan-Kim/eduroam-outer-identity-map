@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="upb.edu.ph" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEiDCCA3CgAwIBAgIJANSCTa/A25XnMA0GCSqGSIb3DQEBCwUAMHYxCzAJBgNVBAYTAlBIMRQwEgYDVQQIDAtOb3J0aCBMdXpvbjEPMA0GA1UEBwwGQmFndWlvMQwwCgYDVQQKDANVUEIxITAfBgkqhkiG9w0BCQEWEnN1cHBvcnRAdXBiLmVkdS5waDEPMA0GA1UEAwwGVVBCIENBMB4XDTE5MDQyMjA3MjkzNVoXDTI5MDQxOTA3MjkzNVowdjELMAkGA1UEBhMCUEgxFDASBgNVBAgMC05vcnRoIEx1em9uMQ8wDQYDVQQHDAZCYWd1aW8xDDAKBgNVBAoMA1VQQjEhMB8GCSqGSIb3DQEJARYSc3VwcG9ydEB1cGIuZWR1LnBoMQ8wDQYDVQQDDAZVUEIgQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC0sssA0Lz2HecW4dUUhZZ1fYuXK4Skgh/WzjRgtBIKIewysdGG8/jAsN+7N/HhZW6u/iHuu+WvDARt+bRSPo2n7XN3nsD9r3g/MQRsjKtp65gn3qobK3YZUXFABtyW3qP+Kdt/xRC/qXMjDE0cqAm9GkJAGGSHPoSpqB8r1tPqvV1JDyp9j2osKdCG76vVSPO8rS/HfmsVjmUqqXzmPN5TqPvpn6hMZ04ieT3/CJhpU09jkzoZkxD7TrT7WK5d1MEcuKfJoF5P2m+eCpcz84kUchF5g9/lmBHHt1HzZ7RMg1o0iFQRXstL0C9HVJ8JyjRc96FFhjfgLLYu0TcPi3LHAgMBAAGjggEXMIIBEzAdBgNVHQ4EFgQUI1zzO0+fMfpIxFekcCFmYheLOxQwgagGA1UdIwSBoDCBnYAUI1zzO0+fMfpIxFekcCFmYheLOxSheqR4MHYxCzAJBgNVBAYTAlBIMRQwEgYDVQQIDAtOb3J0aCBMdXpvbjEPMA0GA1UEBwwGQmFndWlvMQwwCgYDVQQKDANVUEIxITAfBgkqhkiG9w0BCQEWEnN1cHBvcnRAdXBiLmVkdS5waDEPMA0GA1UEAwwGVVBCIENBggkA1IJNr8DblecwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQBRb+84TOjc1c5Xc3+tZTTZur4cGuFX40SgU4vDwvi8gC3fk9+lSNiV9LX+3aTj9Y+XbOZFOAER7pkMdiJodzgf1P7GU8DLeo63Vr5+L3V8S3puYhiaC+hKqq0YBQPQJC5oY+AtSIoaEK7cv8VQi6bgdmJ6KS4KBONEueAfgpjuEQ1akBioDyKldXc1y3O8gz3JEgdYzlk7wwoyuqX73a6Y1b2gG0x9+uYgwmkshfVmfbRR8JXxQ1l7nJh61GpTD07jQ3nHN6jZW2FP/1grqjo7FGgVtYpLl/+k2BtdI8E0usT7xd0mrVmUZNClzLyA1vTz7p9tQEi2AbTZjtx5yOVo</CA>
+          <ServerID>eduroam.upb.edu.ph</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@upb.edu.ph</OuterIdentity>
+          <InnerIdentitySuffix>upb.edu.ph</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of the Philippines Baguio</DisplayName>
+      <Description>UP Baguio</Description>
+      <ProviderLocation>
+        <Longitude>120.59833260947963</Longitude>
+        <Latitude>16.405685300000002</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>sysnet.upbaguio@up.edu.ph</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="just.edu.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFezCCBGOgAwIBAgIUQBBG/exs6uwtbKmbKqF535wKXfYwDQYJKoZIhvcNAQELBQAwgb4xCzAJBgNVBAYTAkJEMRAwDgYDVQQIDAdKYXNob3JlMRAwDgYDVQQHDAdKYXNob3JlMTwwOgYDVQQKDDNKYXNob3JlIFVuaXZlcnNpdHkgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoSlVTVCkxKDAmBgkqhkiG9w0BCQEWGXJvc3NlbDAyMDMxMTNAanVzdC5lZHUuYmQxIzAhBgNVBAMMGkpVU1QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTI1MDYyMzExMjcxOVoXDTI4MDYyMjExMjcxOVowgb4xCzAJBgNVBAYTAkJEMRAwDgYDVQQIDAdKYXNob3JlMRAwDgYDVQQHDAdKYXNob3JlMTwwOgYDVQQKDDNKYXNob3JlIFVuaXZlcnNpdHkgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoSlVTVCkxKDAmBgkqhkiG9w0BCQEWGXJvc3NlbDAyMDMxMTNAanVzdC5lZHUuYmQxIzAhBgNVBAMMGkpVU1QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu5a0ztPWWVFha2K3Ag6HvHyr3Ty2Yo8fwiHCpVf1ToQqVm2P//A6fB6eENOQlY7Zrsb7dfbXvLWep31A5mJ3sUuY3y8mwTrkcKOdgEpRFMfRtlW6U741GgpCMG6b0Do1M+sQz55C9e36Xq8dItHXwDABiRdF0kuhxHoU4M71rKaDSKdGi94AEOYhB0rPwPlX8YB+GhYq7ttI24qwWXgK9g/7F0ZEfF42QJ/fgz4B2v8+cHAupMiCarp1dNyh7PnWkD+OG/Q+gLsUekaTUX8w5s4yL85vqRVLS2RP3WoN9krqBUAheZoDxk6xZLzSe6mxrqy+WUj0gDZ7CcuLR4UJ1QIDAQABo4IBbTCCAWkwHQYDVR0OBBYEFCFI8px3B91SoZ4S+dr5Tv6nXrQvMIH+BgNVHSMEgfYwgfOAFCFI8px3B91SoZ4S+dr5Tv6nXrQvoYHEpIHBMIG+MQswCQYDVQQGEwJCRDEQMA4GA1UECAwHSmFzaG9yZTEQMA4GA1UEBwwHSmFzaG9yZTE8MDoGA1UECgwzSmFzaG9yZSBVbml2ZXJzaXR5IG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEpVU1QpMSgwJgYJKoZIhvcNAQkBFhlyb3NzZWwwMjAzMTEzQGp1c3QuZWR1LmJkMSMwIQYDVQQDDBpKVVNUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUQBBG/exs6uwtbKmbKqF535wKXfYwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAvzjuUykYHNw4PkiO1E7/uanN4xwGXlnQOFoQY9vYCGfDgqn3QPx57W7hQoDDyqdpRHcR9AScKFP6b4Xglt/twwNAmoaG6Z5xglytZ9C7Uk+ErTUSbXlvhKqZJAndRQyLJMuQCOzNC/ksqT0g9Bgq6hL/CwFHZVA1QZG4Mhshb1qxhmtRWOtxAvR7F8c5pYPYRtvqQXCPW4u0/mPyqG8N9SUQ89vvxwNOo2LmKwvmCvNzGmWpBwb2gHGAs8+Qm9/u/IjVGt+jeSDc3k203Yo6kia2fhQ9Jmkecu/CLkLm2VkIHgNOx5wpBulHjCjjYrAwcHI7OdV/klty0Kiao7zyc</CA>
+          <ServerID>irs.just.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@just.edu.bd</OuterIdentity>
+          <InnerIdentitySuffix>just.edu.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFezCCBGOgAwIBAgIUQBBG/exs6uwtbKmbKqF535wKXfYwDQYJKoZIhvcNAQELBQAwgb4xCzAJBgNVBAYTAkJEMRAwDgYDVQQIDAdKYXNob3JlMRAwDgYDVQQHDAdKYXNob3JlMTwwOgYDVQQKDDNKYXNob3JlIFVuaXZlcnNpdHkgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoSlVTVCkxKDAmBgkqhkiG9w0BCQEWGXJvc3NlbDAyMDMxMTNAanVzdC5lZHUuYmQxIzAhBgNVBAMMGkpVU1QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTI1MDYyMzExMjcxOVoXDTI4MDYyMjExMjcxOVowgb4xCzAJBgNVBAYTAkJEMRAwDgYDVQQIDAdKYXNob3JlMRAwDgYDVQQHDAdKYXNob3JlMTwwOgYDVQQKDDNKYXNob3JlIFVuaXZlcnNpdHkgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoSlVTVCkxKDAmBgkqhkiG9w0BCQEWGXJvc3NlbDAyMDMxMTNAanVzdC5lZHUuYmQxIzAhBgNVBAMMGkpVU1QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu5a0ztPWWVFha2K3Ag6HvHyr3Ty2Yo8fwiHCpVf1ToQqVm2P//A6fB6eENOQlY7Zrsb7dfbXvLWep31A5mJ3sUuY3y8mwTrkcKOdgEpRFMfRtlW6U741GgpCMG6b0Do1M+sQz55C9e36Xq8dItHXwDABiRdF0kuhxHoU4M71rKaDSKdGi94AEOYhB0rPwPlX8YB+GhYq7ttI24qwWXgK9g/7F0ZEfF42QJ/fgz4B2v8+cHAupMiCarp1dNyh7PnWkD+OG/Q+gLsUekaTUX8w5s4yL85vqRVLS2RP3WoN9krqBUAheZoDxk6xZLzSe6mxrqy+WUj0gDZ7CcuLR4UJ1QIDAQABo4IBbTCCAWkwHQYDVR0OBBYEFCFI8px3B91SoZ4S+dr5Tv6nXrQvMIH+BgNVHSMEgfYwgfOAFCFI8px3B91SoZ4S+dr5Tv6nXrQvoYHEpIHBMIG+MQswCQYDVQQGEwJCRDEQMA4GA1UECAwHSmFzaG9yZTEQMA4GA1UEBwwHSmFzaG9yZTE8MDoGA1UECgwzSmFzaG9yZSBVbml2ZXJzaXR5IG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEpVU1QpMSgwJgYJKoZIhvcNAQkBFhlyb3NzZWwwMjAzMTEzQGp1c3QuZWR1LmJkMSMwIQYDVQQDDBpKVVNUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUQBBG/exs6uwtbKmbKqF535wKXfYwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAvzjuUykYHNw4PkiO1E7/uanN4xwGXlnQOFoQY9vYCGfDgqn3QPx57W7hQoDDyqdpRHcR9AScKFP6b4Xglt/twwNAmoaG6Z5xglytZ9C7Uk+ErTUSbXlvhKqZJAndRQyLJMuQCOzNC/ksqT0g9Bgq6hL/CwFHZVA1QZG4Mhshb1qxhmtRWOtxAvR7F8c5pYPYRtvqQXCPW4u0/mPyqG8N9SUQ89vvxwNOo2LmKwvmCvNzGmWpBwb2gHGAs8+Qm9/u/IjVGt+jeSDc3k203Yo6kia2fhQ9Jmkecu/CLkLm2VkIHgNOx5wpBulHjCjjYrAwcHI7OdV/klty0Kiao7zyc</CA>
+          <ServerID>irs.just.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@just.edu.bd</OuterIdentity>
+          <InnerIdentitySuffix>just.edu.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Jashore University of Science and Technology (JUST)</DisplayName>
+      <ProviderLocation>
+        <Longitude>89.12522435188292</Longitude>
+        <Latitude>23.233321286420505</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>noc@bdren.net.bd</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

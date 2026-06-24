@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="econom.zp.ua" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIB1TCCAVqgAwIBAgIIQaW7FZz5dYQwCgYIKoZIzj0EAwMwFDESMBAGA1UEAwwJUkFESVVTIENBMB4XDTIzMTAxMTE4Mjk1MloXDTI4MTAwOTE4Mjk1MlowFDESMBAGA1UEAwwJUkFESVVTIENBMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAErM+53lutt33HfQB+S1Sw8sociNHUgGlzvRlis04gqDqQQ+DrSWgUYoqNdEMVGclYf/Wt8CSA6tq8nCp70DZ57fj/J/0yeTPeorJ8SAJ5SLaS55fNzZVCVxgHOoHf/Mozo3kwdzAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQUxpECPSsmmvFeIS1I4ZB8r8E2hNUwNQYDVR0fBC4wLDAqoCigJoYkaHR0cDovL3JhZGl1cy5lY29ub20uenAudWEvY3JsLzguY3JsMAoGCCqGSM49BAMDA2kAMGYCMQDwSV4Rcsv9iI2UyTQAapJdiQsD5IBL1wzx28MIsqqbdky29lBylVR8mwb+QkWEGrcCMQD5lIEFBqrPhYfBSaLz/pwteVBGNzJkc6Wwg2GYFdlzI/FUulqTwhK6NeQsXqtj/Wg=</CA>
+          <ServerID>radius.econom.zp.ua</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>econom.zp.ua</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Zaporozhye Institute of Economics and Information Technology</DisplayName>
+      <ProviderLocation>
+        <Longitude>31.2718321</Longitude>
+        <Latitude>49.4871968</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

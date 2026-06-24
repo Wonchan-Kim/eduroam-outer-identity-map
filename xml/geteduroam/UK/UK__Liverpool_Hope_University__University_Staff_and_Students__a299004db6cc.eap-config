@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="hope.ac.uk" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFBzCCAu+gAwIBAgIQb89xmwV+fKtOXh+SCjbM+DANBgkqhkiG9w0BAQsFADAWMRQwEgYDVQQDEwtMSFUtUk9PVC1DQTAeFw0yMDA1MDUwOTQ1NDFaFw00MDA1MDUwOTU1NDBaMBYxFDASBgNVBAMTC0xIVS1ST09ULUNBMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAmPpqhGlF4iUKMHLsq+j49zeRMJlpdRFRAlUEbUijG6HcUrCheWeMNTSkQKK4++jhC27gdaoOSdkMaWzqF3fNTH35BnSl3nOxyx9KfRV2pVW7YfPRPq+Pg1LimxkEZSnLdqhLLY/AhQiu7oZTHJQj3Gdu+G+Xcs0s4Rt7BBYm4VAGcwnnNF8YlmNEXI+7JSN8SRgGJh+EqgcMcpgMYXH8zF5cR7IpPB3l9yw3YoxtJ7phFqz5lQXAq/CIT3LelTwQkGOYMnSkMn6GXqc1bKuO9dHvkbmdtnwGyACYPLuCeXslJDxZWeZx9F8n1jt8kEhz4+4G5ANhQP8TNlx1/2JjktjX6P6gRmZxlkrbHR3ZZa8uDms8suIeVaZpUlIER0QA2b4DONbHdqdMgWPSVulvpFyuvsbTKa+gui6tfdCmJXQQlQaGFkh2Rn0HVGd/diyCiBw/SOUIxq3y49O6NAsFsoMskRRtfidyYtxxpZ/GF33+IJmRQIlVQiBhlt74GMQAoEz9gk8NHyH+KnI7qAAjUl+QDdW0NOkrQSYGAfw+KSru0p3nVftDTkRuUe+D53msj6Q+TGWLmyR+63K/MZkXwWc5yk3lNK4O8Qvr/Zybw1vO+IPalFEim1B6rTaywzswq7MWdFhwjSuK3dWW3VkMaJv+MmZwObH2PUdrdZcq9rMCAwEAAaNRME8wCwYDVR0PBAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFP+NvM8ZqtTmrzBh0YOfamLvDCufMBAGCSsGAQQBgjcVAQQDAgEAMA0GCSqGSIb3DQEBCwUAA4ICAQCNT3wnR3iytPWuHm9LKP6bmobwS+vP/gN9vu/wUyBKR8Lm83Yg3OiARADYk8BASOKscTxMUk81zZJvd99SjYmU/4it4hH+RxKDfaze7DWlaPFFCOXsOvSUdBvccTtXIr6cEc2WkucZlAjjMxw7/P6vh0yC19jGjeGDY+ps1Zuu/YxOqStK0Toh1vj9xEMpN+hg/4fu5mwLOVTgM2lE2S9hRZvr/s3KxpV5bBe7DSP5XOPqHsyxd/nN29LefBiCI9gsLbgOQwuze5W8qg0JsMLwx+Vn3D/uXObUZSNXawn92GdVT33qrBb2LoOCQG43zaoChNZO6FApWti/STaDzFWD7KMuyabpGBtJ4TZ1EJ7CRLwfs0gcZdqZP4cRv2Ymi9BtO0Iwehv3e8bkxxFhf/Ohxu0XMNjW1KsqpdmGxMK9XOMF8SOiEwDkW2YKJTiMbVhLVyClKexzjsf5K+JYVF1FcKTZMG+tsQlrHZanNhkkyZJ8C9nb9wV5h6WRnYTmGYR6WnfyCQIaK5WIh28kp0/WXhw/hJhRe/KWwwO+0+g5sXBifXPmZRVtTsBHfczw3TDpDKaYpQojx5luBg0UwmsFoTOfsmQY1LOu/fJCfB05XDOn7cyOKyk7lXyESoy3oXCJdLb+MYO563CUKkfWt/9H8b1vcNpvE4/XL73Z7dManw==</CA>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>eduroam.hope.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Liverpool Hope University</DisplayName>
+      <Description>eduroam for Liverpool Hope University Staff and Students</Description>
+      <ProviderLocation>
+        <Longitude>-2.891935999999987</Longitude>
+        <Latitude>53.3914749</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>itshelp@hope.ac.uk</EmailAddress>
+        <Phone>0151 291 2100</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

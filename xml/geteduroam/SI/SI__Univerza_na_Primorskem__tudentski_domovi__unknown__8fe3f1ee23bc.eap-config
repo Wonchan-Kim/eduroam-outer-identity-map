@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="sd-upr.si" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>orle.arnes.si</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>@sd-upr.si</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Univerza na Primorskem Študentski domovi</DisplayName>
+      <Description>Profil za uporabnike organizacije: Univerza na Primorskem Študentski domovi</Description>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

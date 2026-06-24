@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="uni-pannon.hu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>radius.uni-pannon.hu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@uni-pannon.hu</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Pannon Egyetem</DisplayName>
+      <ProviderLocation>
+        <Longitude>17.908417582511902</Longitude>
+        <Latitude>47.08751045007452</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>halozat@uni-pannon.hu</EmailAddress>
+        <WebAddress>https://informatika.uni-pannon.hu</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

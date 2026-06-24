@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="pstu.ac.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE6zCCA9OgAwIBAgIUSLKWw3wS16NObxMJhLthqjRBIbkwDQYJKoZIhvcNAQELBQAwgY4xCzAJBgNVBAYTAkJEMRMwEQYDVQQIDApQYXR1YWtoYWxpMRMwEQYDVQQHDApQYXR1YWtoYWxpMQ0wCwYDVQQKDARQU1RVMSEwHwYJKoZIhvcNAQkBFhJpY3RjZWxsQHBzdHUuYWMuYmQxIzAhBgNVBAMMGlBTVFUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTI0MDkyNDA2NTYxNVoXDTMwMDYyMDA2NTYxNVowgY4xCzAJBgNVBAYTAkJEMRMwEQYDVQQIDApQYXR1YWtoYWxpMRMwEQYDVQQHDApQYXR1YWtoYWxpMQ0wCwYDVQQKDARQU1RVMSEwHwYJKoZIhvcNAQkBFhJpY3RjZWxsQHBzdHUuYWMuYmQxIzAhBgNVBAMMGlBTVFUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzwPYrWrKgVI8txL7xFzsQJMjObhyO6tnRjGGuLsKZH4WxI7oqj7gG3gi/8zWz2O37TQG9I4I6Fl6RaG+xKWeUWixk46gj7Uu0pHHUucf7FlCSCE9NWWEUWCE801wbVAf37zEOtL5gIBTWY9AAKOXFEtbgaTaulGp+A17gm2wtmexDng9Rx4tvVROGMKSrqA0E7UOTJ85RQ1e1XNvSET2EmJA1qsOTtqcAC1DW1fH9RsPqNtny1ETQB2N+RnwXhPasJeqosYJy8zxBeyHVnXgJzpn7MG5KWKfloaPA6fBHkc8efEpNprgh3nNPxnbSRaghsuuOwgSyg9HYvhq+p1MPwIDAQABo4IBPTCCATkwHQYDVR0OBBYEFEj4wyc6SwjUwUSbLhDVMLiZ5da5MIHOBgNVHSMEgcYwgcOAFEj4wyc6SwjUwUSbLhDVMLiZ5da5oYGUpIGRMIGOMQswCQYDVQQGEwJCRDETMBEGA1UECAwKUGF0dWFraGFsaTETMBEGA1UEBwwKUGF0dWFraGFsaTENMAsGA1UECgwEUFNUVTEhMB8GCSqGSIb3DQEJARYSaWN0Y2VsbEBwc3R1LmFjLmJkMSMwIQYDVQQDDBpQU1RVIENlcnRpZmljYXRlIEF1dGhvcml0eYIUSLKWw3wS16NObxMJhLthqjRBIbkwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCokfj6XLnHO7toXAkS0BDlF7n9rHLs6iLwiuR0Hu1kqWa8wI+n4kX5aItHw1WGnlqtrBQNRxe6Ejj2chAsxY0VAcJXrQW8V87gkp+Mq4C5EHoHGkGkpMSrJiwv4ix89nWIcfRmtW6Yvx8H7ezdspGFTGkLMpHpoUaRfFGBWCtSXF/hkFM3QlUbIFcT2H3ZX1Ld7ocV+pNylBK9mNLiEPxU7tx/14khWAzYOFEYYOUmD1BRz3KJ4oZrbXQicIzipJZczqmfd0hKJP6jclGdHlELTATWq8sx6CUrrKDNHwBixBTBqMCXa76u9JBgr1sH7J9DAM62SnQd8hJMSTFo+Lv1</CA>
+          <ServerID>irs.pstu.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@pstu.ac.bd</OuterIdentity>
+          <InnerIdentitySuffix>pstu.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE6zCCA9OgAwIBAgIUSLKWw3wS16NObxMJhLthqjRBIbkwDQYJKoZIhvcNAQELBQAwgY4xCzAJBgNVBAYTAkJEMRMwEQYDVQQIDApQYXR1YWtoYWxpMRMwEQYDVQQHDApQYXR1YWtoYWxpMQ0wCwYDVQQKDARQU1RVMSEwHwYJKoZIhvcNAQkBFhJpY3RjZWxsQHBzdHUuYWMuYmQxIzAhBgNVBAMMGlBTVFUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTI0MDkyNDA2NTYxNVoXDTMwMDYyMDA2NTYxNVowgY4xCzAJBgNVBAYTAkJEMRMwEQYDVQQIDApQYXR1YWtoYWxpMRMwEQYDVQQHDApQYXR1YWtoYWxpMQ0wCwYDVQQKDARQU1RVMSEwHwYJKoZIhvcNAQkBFhJpY3RjZWxsQHBzdHUuYWMuYmQxIzAhBgNVBAMMGlBTVFUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzwPYrWrKgVI8txL7xFzsQJMjObhyO6tnRjGGuLsKZH4WxI7oqj7gG3gi/8zWz2O37TQG9I4I6Fl6RaG+xKWeUWixk46gj7Uu0pHHUucf7FlCSCE9NWWEUWCE801wbVAf37zEOtL5gIBTWY9AAKOXFEtbgaTaulGp+A17gm2wtmexDng9Rx4tvVROGMKSrqA0E7UOTJ85RQ1e1XNvSET2EmJA1qsOTtqcAC1DW1fH9RsPqNtny1ETQB2N+RnwXhPasJeqosYJy8zxBeyHVnXgJzpn7MG5KWKfloaPA6fBHkc8efEpNprgh3nNPxnbSRaghsuuOwgSyg9HYvhq+p1MPwIDAQABo4IBPTCCATkwHQYDVR0OBBYEFEj4wyc6SwjUwUSbLhDVMLiZ5da5MIHOBgNVHSMEgcYwgcOAFEj4wyc6SwjUwUSbLhDVMLiZ5da5oYGUpIGRMIGOMQswCQYDVQQGEwJCRDETMBEGA1UECAwKUGF0dWFraGFsaTETMBEGA1UEBwwKUGF0dWFraGFsaTENMAsGA1UECgwEUFNUVTEhMB8GCSqGSIb3DQEJARYSaWN0Y2VsbEBwc3R1LmFjLmJkMSMwIQYDVQQDDBpQU1RVIENlcnRpZmljYXRlIEF1dGhvcml0eYIUSLKWw3wS16NObxMJhLthqjRBIbkwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCokfj6XLnHO7toXAkS0BDlF7n9rHLs6iLwiuR0Hu1kqWa8wI+n4kX5aItHw1WGnlqtrBQNRxe6Ejj2chAsxY0VAcJXrQW8V87gkp+Mq4C5EHoHGkGkpMSrJiwv4ix89nWIcfRmtW6Yvx8H7ezdspGFTGkLMpHpoUaRfFGBWCtSXF/hkFM3QlUbIFcT2H3ZX1Ld7ocV+pNylBK9mNLiEPxU7tx/14khWAzYOFEYYOUmD1BRz3KJ4oZrbXQicIzipJZczqmfd0hKJP6jclGdHlELTATWq8sx6CUrrKDNHwBixBTBqMCXa76u9JBgr1sH7J9DAM62SnQd8hJMSTFo+Lv1</CA>
+          <ServerID>irs.pstu.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@pstu.ac.bd</OuterIdentity>
+          <InnerIdentitySuffix>pstu.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Patuakhali Science and Technology University (PSTU)</DisplayName>
+      <ProviderLocation>
+        <Longitude>90.3867987</Longitude>
+        <Latitude>22.4644185</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>noc@bdren.net.bd</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

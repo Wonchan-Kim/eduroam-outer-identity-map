@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="duth.gr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE4TCCA8mgAwIBAgIJAJmuEhxq5AkCMA0GCSqGSIb3DQEBCwUAMIGSMQswCQYDVQQGEwJHUjEPMA0GA1UECAwGVGhyYWNlMQ8wDQYDVQQHDAZYYW50aGkxKDAmBgNVBAoMH0RlbW9jcml0dXMgVW5pdmVyc2l0eSBvZiBUaHJhY2UxGjAYBgkqhkiG9w0BCQEWC25vY0BkdXRoLmdyMRswGQYDVQQDDBJGcmVlUkFESVVTIERVVEggQ0EwHhcNMTkwOTEwMDkxNDI4WhcNMjkwOTA3MDkxNDI4WjCBkjELMAkGA1UEBhMCR1IxDzANBgNVBAgMBlRocmFjZTEPMA0GA1UEBwwGWGFudGhpMSgwJgYDVQQKDB9EZW1vY3JpdHVzIFVuaXZlcnNpdHkgb2YgVGhyYWNlMRowGAYJKoZIhvcNAQkBFgtub2NAZHV0aC5ncjEbMBkGA1UEAwwSRnJlZVJBRElVUyBEVVRIIENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA10tCF1FuDJtRw6yp9O0QeG1jXcwpb2p887IdQnL05w20rUMJkP0ucnwkIVJMTHmT5QMnwdRxCUey7PlCA6ynRif3D7YcTi5it9zvIkd2Yj02sEdyCvuuWy1pv02rcFQ/y2cbbu4C9mit72uVogKkBmsJpW1YWZrRsBGa+z/mvE1pU+6YYy53P0r9WAujiwAup6f36Dpt0SHlQkXLbGxyU/fXi1NihQ188erc1HkJM6MvhOc0S8Qg6E6Elkq6jvYuoA+3luj3ei+TWM+BdnPYPQrONAqo+zCUeCumLuFZjWF/tRJ+7ccFc0ZLEs0ndK8xrvoOiB5oZ3sl9zWBvkWEXwIDAQABo4IBNjCCATIwHQYDVR0OBBYEFDJn6St3lkB89/w3GHUO2gBteM2+MIHHBgNVHSMEgb8wgbyAFDJn6St3lkB89/w3GHUO2gBteM2+oYGYpIGVMIGSMQswCQYDVQQGEwJHUjEPMA0GA1UECAwGVGhyYWNlMQ8wDQYDVQQHDAZYYW50aGkxKDAmBgNVBAoMH0RlbW9jcml0dXMgVW5pdmVyc2l0eSBvZiBUaHJhY2UxGjAYBgkqhkiG9w0BCQEWC25vY0BkdXRoLmdyMRswGQYDVQQDDBJGcmVlUkFESVVTIERVVEggQ0GCCQCZrhIcauQJAjAPBgNVHRMBAf8EBTADAQH/MDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly93d3cuZXhhbXBsZS5vcmcvZXhhbXBsZV9jYS5jcmwwDQYJKoZIhvcNAQELBQADggEBAHC8k5OXFX3nr5Jb6kQBQAjgQ9g0ZiqfTaPZZohKMH1hA3zZvFWuotdEKvQTJ1Bpx6U2iMa+n0+ZwfHMaIiSQUedpIM0feFQw76Gb8OnDuDFY4DhMST6RLRj8ueKJQ1bm1GYJzZWF2kyy2LcBAXqhniGDv2gtmlKdMDCi2N8xdnJVyD9S8AOXB3LTI+Cpe48X+VP5zC+gV5jmXrF05htahbTpJu+/5rPOOowG/uoSSZknsVpG+TwYlmzUd+fxBMpXqE6kAWV8k9eons9ENVXssCaf3XVNB2PnsXBY9JqwSG8fV0su+S+0pIm4uVe/8Lqe97hRcGiFxTVRTe/Wz0l6Rc=</CA>
+          <ServerID>eduroam.duth.gr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@duth.gr</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Democritus University of Thrace - DUTH</DisplayName>
+      <ProviderLocation>
+        <Longitude>24.88937420000002</Longitude>
+        <Latitude>41.1428776</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <WebAddress>https://helpdesk.duth.gr</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

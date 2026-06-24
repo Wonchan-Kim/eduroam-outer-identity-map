@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="vmi.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDzzCCAregAwIBAgIQJNyMUegOz7NGiUir9i7pYTANBgkqhkiG9w0BAQsFADBcMRMwEQYKCZImiZPyLGQBGRYDZWR1MRMwEQYKCZImiZPyLGQBGRYDdm1pMTAwLgYDVQQDEydWaXJnaW5pYSBNaWxpdGFyeSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMTUwOTExMTQ1MDI2WhcNMzUwOTA5MjIwNTQ2WjBcMRMwEQYKCZImiZPyLGQBGRYDZWR1MRMwEQYKCZImiZPyLGQBGRYDdm1pMTAwLgYDVQQDEydWaXJnaW5pYSBNaWxpdGFyeSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCsylaS0lMvvah2pP2B84r70z7w8NTzEW1jc9ZfRSHwDFnVLdiEyFJy9JkK4u1Kr1EL1jrcQAvAAMSjWPL3yc3vNe8lqAudhkmZtC1Uy0qtWH8GlzJSJc1L+ffNuW2obM444guF3aM1Ul6A2oMCvYMoJqGEGZgE1gO4hDX7HDs+7zoLMCPp+hNZFN4qnXZqbT0aR6JuZ/6GUYE4Ocs0rd+ry3rigkBpoYsHBFZ90g7eug8HTB005zzEvzHr/mfHQS1atgtRQCHp/7vgsdxkL4yWnk5qj3zRKORsIijuEOpFlEugN/lZsQjw1Pzv4hzysx3QTEa7n3NgJGz6G27itXrfAgMBAAGjgYwwgYkwEwYJKwYBBAGCNxQCBAYeBABDAEEwCwYDVR0PBAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFPNRikVAyQULeG6+5JKdLvyklL7jMBAGCSsGAQQBgjcVAQQDAgEBMCMGCSsGAQQBgjcVAgQWBBT9abHwY9pkxPgIJCG52NHoDC0Z1TANBgkqhkiG9w0BAQsFAAOCAQEAQhVr2Eo3y7NMWOYm2PgZJjdqN7zn9CURYY8fR9Ap1PBy9xuzNCvpgf07HZ+/Etax4eo/zGW/RaDhLEufGfHdpgTt+BDPJSUZh8Qa1Ri6q7HYr7NOQ5ofFOT5xc7z3S2c/CTvcbJ2YQKiNkSWvQ7kxCMxE3z8usyAMy6h1TDO9Ys72hvZ4HBc8NEGWXJPyQSgTaqgljg6hy4hbrQPhNzgzQeR80uiEFLyeTUlpbVcaVNx/akGcz42ytGfrts7oRjbxWrBigjfnmgVMUkW/5ULSXnQt37IxJYBZ2s9CHhN+2w8lanoLYb42fd2xcMYr7+RP92/sTTxBR7Pa0MvyfGqXQ==</CA>
+          <ServerID>VMI-Wireless</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>vmi.edu</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Virginia Military Institute - VMI</DisplayName>
+      <Description>VMI users for connecting to eduroam</Description>
+      <ProviderLocation>
+        <Longitude>-79.44162368774415</Longitude>
+        <Latitude>37.791436656751586</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>help@vmi.edu</EmailAddress>
+        <Phone>540-464-7643</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

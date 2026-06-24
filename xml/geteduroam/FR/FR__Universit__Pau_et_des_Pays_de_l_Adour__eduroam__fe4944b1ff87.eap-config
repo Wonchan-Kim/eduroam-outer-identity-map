@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="univ-pau.fr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFIDCCBAigAwIBAgIUIiMNXi5pj4B/HSxVs0ALXMsItKAwDQYJKoZIhvcNAQELBQAwga0xCzAJBgNVBAYTAkZSMRIwEAYDVQQIEwlBcXVpdGFpbmUxMjAwBgNVBAoUKVVuaXZlcnNpdMOpIGRlIFBhdSBldCBkZXMgcGF5cyBkZSBsJ0Fkb3VyMR8wHQYDVQQLExZEaXJlY3Rpb24gZHUgTnVtZXJpcXVlMRAwDgYDVQQDEwdDQSBVUFBBMSMwIQYJKoZIhvcNAQkBFhRwbi1pbmZyYUB1bml2LXBhdS5mcjAeFw0yMzEyMDcxNjA4MzNaFw0zMzEyMDQxNjA4MzNaMIGtMQswCQYDVQQGEwJGUjESMBAGA1UECBMJQXF1aXRhaW5lMTIwMAYDVQQKFClVbml2ZXJzaXTDqSBkZSBQYXUgZXQgZGVzIHBheXMgZGUgbCdBZG91cjEfMB0GA1UECxMWRGlyZWN0aW9uIGR1IE51bWVyaXF1ZTEQMA4GA1UEAxMHQ0EgVVBQQTEjMCEGCSqGSIb3DQEJARYUcG4taW5mcmFAdW5pdi1wYXUuZnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDKATGwwXWqJfaadOf/tr5tSx4QO7sydMFLHbAN9YGcB3KXCKXjriI2ddtYeFIqtVM8HcKfAOyXvD6thkH9QxA0IpXtt4JUY6ua8KSSjqw2/0XuQ5VqkMPE7qayUo3lj/B8583YSCCjqhLSOQgBMVFIwexBDRSBbk9il+NUygulpgCJj1WZ09qeYW4tvLGb6ne6OSWcqZ1b/e1Con+G+KAYeHd8TuAPcJZaKBGa/kR3doQuqMdZ2VFnO+GUH7xJ7X0wgfC4w92nuho4pdQI+v3wz4UV2aVFhMHINhgI6MoXQBEAcJ+7stY2iKb3UGbM3Hzo/Ks57HgxsPlnh8ybRHQ/AgMBAAGjggE0MIIBMDAdBgNVHQ4EFgQUHcrgxq+XFrAmM/L9sG6VAwx/TPcwge0GA1UdIwSB5TCB4oAUHcrgxq+XFrAmM/L9sG6VAwx/TPehgbOkgbAwga0xCzAJBgNVBAYTAkZSMRIwEAYDVQQIEwlBcXVpdGFpbmUxMjAwBgNVBAoUKVVuaXZlcnNpdMOpIGRlIFBhdSBldCBkZXMgcGF5cyBkZSBsJ0Fkb3VyMR8wHQYDVQQLExZEaXJlY3Rpb24gZHUgTnVtZXJpcXVlMRAwDgYDVQQDEwdDQSBVUFBBMSMwIQYJKoZIhvcNAQkBFhRwbi1pbmZyYUB1bml2LXBhdS5mcoIUIiMNXi5pj4B/HSxVs0ALXMsItKAwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwDQYJKoZIhvcNAQELBQADggEBAG5ynGrOyx/+l4sD2e9ixGZzBZF6xEb3nyVyDH9XOJDbUW7HaQAUo3CqAeyvpv6BWDi7aweyfNZ9/TTG9d1G+wjNzqzQ4jN4x/IqFB7+uPoAUb/dfshd+hphWb1YY+zzrnm82KsyxF5OfgawQKsPU5auYKdVKs1YCKrSVo29qX4hCfmscJGKJ6s7gOx1nVAo7sbFuk9wfE/CbnjFYtjPOhuh3I5qv8Amezj8ExdAX4gSQZaraa/p1zErbmsmmqboB6KK1/Y7tP6cKuPjmSpQtKplCTgDAoX6fBj61Uyi20W9bXbzgzWNROAE6yoO1UYjCpmC+wTh16ODAfO8M3k9Zqk=</CA>
+          <ServerID>radius.univ-pau.fr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@univ-pau.fr</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Université Pau et des Pays de l'Adour</DisplayName>
+      <Description>eduroam tous usagers</Description>
+      <ProviderLocation>
+        <Longitude>-0.3644704845397655</Longitude>
+        <Latitude>43.315563934726846</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="uisrael.edu.ec" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFiDCCA3CgAwIBAgIUKpXHfxjT7fa1h7ho0aFhC6TdBPkwDQYJKoZIhvcNAQELBQAwGDEWMBQGA1UEAwwNY2EuZWR1cm9hbS5lYzAeFw0yMzA4MDgyMTAxMDNaFw00MzA0MjUyMTAxMDNaMBgxFjAUBgNVBAMMDWNhLmVkdXJvYW0uZWMwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQC3/noCedmzUOdquOic39O30vOt7nY+uPbSarRh5Nt8VXCb8u+kt+mUGewDtx95T+TLEyQu8tW+uZP/KQmDeIIzmPkbyBqZuu3rTaNSgi2r9u6G7wbWspdlH7yyN26yFIYZt6jL/XKGvEQyJtm/JbX+QtG5+eOcLLI9z0j4U26myYtnzxOlgFfG0oGJcHyw9wkqOcGfujNFuwCcXzCfgVeXlsYm4kJdB4O28uCuBzSrikyrXITBy6hQIfyv5d67nddsR0VJTdQDm8ZEE0JqhAErgy4l4uRlzm7CaaqIrQf87t4F7pZC1cBeIxjSspEt0GrP/KAdVgC0bBPUl8TNir84VKx+SxrBme7IRxD1IAIMYGoKhXB3cOqwYHhEFGVEGlof0NbO1op+ZF/fVk6Kg+tuDc1pChrb7nDpS/fBX+YnQ8lMorEnOb4nKdw5tSIsVqFoXWlwoVAKGi25tyZFtrVqrHm+N8w0Ydxt4xscF8jApXhFvZi3od9dkapP8Omw+IMzr9glXNyrXmyv5sttLFwnYlADVtyYhDQz3LziQX0JhxZW9a5iBM2lbgW76WDeWLcLqXVengSnmIxDDxxiAFXrbITZRk1fvIib01fumGKiG/N3n42KRAM7b8VQyCUg5rBy+J5UlISYaLIPFaBhNlCYVmunBWe7nEii+CTYgiTclQIDAQABo4HJMIHGMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFCg+lUYRqqRCQPGhyu9A31aSL3OTMFMGA1UdIwRMMEqAFCg+lUYRqqRCQPGhyu9A31aSL3OToRykGjAYMRYwFAYDVQQDDA1jYS5lZHVyb2FtLmVjghQqlcd/GNPt9rWHuGjRoWELpN0E+TALBgNVHQ8EBAMCAQYwNQYDVR0fBC4wLDAqoCigJoYkaHR0cDovL3d3dy5lZHVyb2FtLmVjL2NhX2VkdXJvYW0uY3JsMA0GCSqGSIb3DQEBCwUAA4ICAQBk90IrLFBT7Vtx6icYJ/u4ib7yq2IIRlc6LVntrqXEtUXci1sM6JHNCD5/4uUrIp60+4E848ufd63dMmLqBJnHcaC6sjIc1tmjaXMzwILib9yhZDIkXAQKnod3Bzjt1hZM51aF7eRVxsoMiC9OeacL18Hw34hdyBVy07394y75uLbgHOi7erhA37PX8JXlZdmuXzD9846Ts9fd26GFSp5s08sTrHTbjR+hVsjqVEkzX1d5mh87Q67+4c57hjfx7hn+5peFSxhYHRq26+I7an8Xe/crSX//sLax8gEVRXJA1ASHfipweCbfw0V2MfBUj/1EnGiEJk9f8StpY+juB/c1LslOXpxW+hryzv29py9fSi2r6RAM2pHQOD0fuadjZUtYRWFfTOA7fJfmHcAkkrt2Vzxfh5gg21Wt3PIkOaRrFVY4hOkNtJgaww7nXnHUFVd4JUpZXGLh+wjaEBMZEhWqwVCdOlBMgi4WA4Un/WSa0U4sFxZlot2/ENt3StMRl7rUD575xqkzhpAqd7s4ObESAz88U7Krcqav9aMhET1cQSI+gbFf5EbWwLjmRKCg719drUPaZI9PUdQLlGmijgcNxBlY9tA+xvEVWaPKSfABLRxEhdQBEJA7xxQB4UbbTGcu0QQ0XreP7LUGXIZ3hdN4HLwVFBhC3Uj4WXkUySJo+g==</CA>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>radius.eduroam.uisrael.edu.ec</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>uisrael.edu.ec</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Universidad Israel - UISRAEL</DisplayName>
+      <ProviderLocation>
+        <Longitude>-79.3666965</Longitude>
+        <Latitude>-1.3397668</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>dfernandez@uisrael.edu.ec</EmailAddress>
+        <Phone>+(593) 2 255-5741 11</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="umw.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFjjCCA3agAwIBAgIQc6FcaQIffo9Cil8df+xfXzANBgkqhkiG9w0BAQsFADBHMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxEzARBgoJkiaJk/IsZAEZFgN1bXcxGTAXBgNVBAMTEHVtdy1GQlVSRy1EQzEtQ0EwHhcNMDkwMjI0MTg1NDMzWhcNMjkwMTA4MTMyMzE4WjBHMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxEzARBgoJkiaJk/IsZAEZFgN1bXcxGTAXBgNVBAMTEHVtdy1GQlVSRy1EQzEtQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDT+L9Q2fstmhLsxQjIiQv/FbG97FSjY20ZrzJxAkuyNEe6I+2rLbegKLpMHv1rkG/Hzh91OiN30iv0SBEVw36iGblavB7cHORMixEJ5bPc0oSlu9pcgsQHsJmKZS/zFetNYWhMzoiBnNa2eWUocF/LxO3iLyUm6Gy9JLQrhNz6xO2wG9N0oOgt2QJ80uXdtpwLTjeglnj8PuWeYojDLk61yifvGPrkv7kuSNL2/HDAsN2nujb1px0ikpxNeH8KmNS0mvxy7xTmYHlWUovkpjdmZev8cMgEXgrJDcTLwQZ96O7pmI8SxYt0JTEkjTRi1AjQEGuqG6tpe8h1HUWYisfcI4AVtPIXKhqKKEIGV3qWmU8QiANJ58sDH7BC4oEURCgUDFgb+Ep2Q2Q3jueXtkzKND2yHaZ41DRjcXfxn50Tyw+RFwLAi3TIkRNU0eGs6iz7oXipah7RyZNDtfy3WMk/wU4QdSofD29Z1p2v/98sprq+zuE+C6Z+AoOfO10bULMsLPelp3+Jw6hHsD6xSYfKKCpLJjsP8BQpYmHKMPzvOjEXKakMCDNsnRhwpYMMjgtjfABbPtP/JUxCf/VoW7ky19dvfYze78fOCqta2KBV0SZZ9dNw0kOjSmWlNdntWCMsoB8TEbgNLtg4tceELZgt3E4UnH35Hnpx9ZlRKpqnfwIDAQABo3YwdDALBgNVHQ8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUDiHaxjMNiiAT1vSekP6ijS8AqvowEAYJKwYBBAGCNxUBBAMCAQMwIwYJKwYBBAGCNxUCBBYEFAQ0HD23GHfe0L8KxdFe3G1/EoMdMA0GCSqGSIb3DQEBCwUAA4ICAQCdbokuS2nfo+hjikYjS8Yjal48kDh0dgdgS1eqp1bSkiv9SjKFTRV3utaVT4BJ488TP6KAmOiSXR7jLdIRkUEAZZ66hLvu+sIt/ftQRLSG4wAc1zd7K0Vq1XXjLFm2peJPpFjp0V5TzOTFjVWMgj+NkSSc4K9zOCL0pGXEiVno5fBKKwlkEjTichHFrl2wZ5vdIox2WHqK1qnueablVbt135eukIUqacmYqmzTgPFs/4xrjZSdY9VST+J+hMRLbLghOiLB1ceBydJWQIeySNuBw+6VRtjNLCB5v58eJK5gYj9IzaZKNjIXfKitK/yhiWVQkS+xBdOB9/s59ez2rmyNVnzHr9qReZvsmxq4270Rw6zYsWzDYQbWtKuuEJUNwQH6aRWO69eBJfMmMdBiMoAxACyUhb6NiZXZjUUW0thH+0/Z+y+zx3G7CkmnGWGzD4XW34SabRQFyD8thyKT7TwV2JmC7yPAC0JrvZbH8HqjLXklnM6M6cZbhrYfvX1u6O+NDSRQ4dd4WMT3pUbjsEPrVxBjC7d8GIiHfXW3Ak454PHsCMM1weiRTZLRbARcWnJbO6vjMhj6SIe9YY1JBiKccCgd5vQfEpJnHkCGQx4jBUa9DWYdVIHweN/jZ78hDhyOx++k8lRX/bE+x20R7gjxJRVNfeiOF1l3KbCR1KKcJg==</CA>
+          <ServerID>UMW-Clearpass01</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>13</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFjjCCA3agAwIBAgIQc6FcaQIffo9Cil8df+xfXzANBgkqhkiG9w0BAQsFADBHMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxEzARBgoJkiaJk/IsZAEZFgN1bXcxGTAXBgNVBAMTEHVtdy1GQlVSRy1EQzEtQ0EwHhcNMDkwMjI0MTg1NDMzWhcNMjkwMTA4MTMyMzE4WjBHMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxEzARBgoJkiaJk/IsZAEZFgN1bXcxGTAXBgNVBAMTEHVtdy1GQlVSRy1EQzEtQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDT+L9Q2fstmhLsxQjIiQv/FbG97FSjY20ZrzJxAkuyNEe6I+2rLbegKLpMHv1rkG/Hzh91OiN30iv0SBEVw36iGblavB7cHORMixEJ5bPc0oSlu9pcgsQHsJmKZS/zFetNYWhMzoiBnNa2eWUocF/LxO3iLyUm6Gy9JLQrhNz6xO2wG9N0oOgt2QJ80uXdtpwLTjeglnj8PuWeYojDLk61yifvGPrkv7kuSNL2/HDAsN2nujb1px0ikpxNeH8KmNS0mvxy7xTmYHlWUovkpjdmZev8cMgEXgrJDcTLwQZ96O7pmI8SxYt0JTEkjTRi1AjQEGuqG6tpe8h1HUWYisfcI4AVtPIXKhqKKEIGV3qWmU8QiANJ58sDH7BC4oEURCgUDFgb+Ep2Q2Q3jueXtkzKND2yHaZ41DRjcXfxn50Tyw+RFwLAi3TIkRNU0eGs6iz7oXipah7RyZNDtfy3WMk/wU4QdSofD29Z1p2v/98sprq+zuE+C6Z+AoOfO10bULMsLPelp3+Jw6hHsD6xSYfKKCpLJjsP8BQpYmHKMPzvOjEXKakMCDNsnRhwpYMMjgtjfABbPtP/JUxCf/VoW7ky19dvfYze78fOCqta2KBV0SZZ9dNw0kOjSmWlNdntWCMsoB8TEbgNLtg4tceELZgt3E4UnH35Hnpx9ZlRKpqnfwIDAQABo3YwdDALBgNVHQ8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUDiHaxjMNiiAT1vSekP6ijS8AqvowEAYJKwYBBAGCNxUBBAMCAQMwIwYJKwYBBAGCNxUCBBYEFAQ0HD23GHfe0L8KxdFe3G1/EoMdMA0GCSqGSIb3DQEBCwUAA4ICAQCdbokuS2nfo+hjikYjS8Yjal48kDh0dgdgS1eqp1bSkiv9SjKFTRV3utaVT4BJ488TP6KAmOiSXR7jLdIRkUEAZZ66hLvu+sIt/ftQRLSG4wAc1zd7K0Vq1XXjLFm2peJPpFjp0V5TzOTFjVWMgj+NkSSc4K9zOCL0pGXEiVno5fBKKwlkEjTichHFrl2wZ5vdIox2WHqK1qnueablVbt135eukIUqacmYqmzTgPFs/4xrjZSdY9VST+J+hMRLbLghOiLB1ceBydJWQIeySNuBw+6VRtjNLCB5v58eJK5gYj9IzaZKNjIXfKitK/yhiWVQkS+xBdOB9/s59ez2rmyNVnzHr9qReZvsmxq4270Rw6zYsWzDYQbWtKuuEJUNwQH6aRWO69eBJfMmMdBiMoAxACyUhb6NiZXZjUUW0thH+0/Z+y+zx3G7CkmnGWGzD4XW34SabRQFyD8thyKT7TwV2JmC7yPAC0JrvZbH8HqjLXklnM6M6cZbhrYfvX1u6O+NDSRQ4dd4WMT3pUbjsEPrVxBjC7d8GIiHfXW3Ak454PHsCMM1weiRTZLRbARcWnJbO6vjMhj6SIe9YY1JBiKccCgd5vQfEpJnHkCGQx4jBUa9DWYdVIHweN/jZ78hDhyOx++k8lRX/bE+x20R7gjxJRVNfeiOF1l3KbCR1KKcJg==</CA>
+          <ServerID>UMW-Clearpass01</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of Mary Washington</DisplayName>
+      <Description>For all UMW users.</Description>
+      <ProviderLocation>
+        <Longitude>-77.47387108040118</Longitude>
+        <Latitude>38.30080382069598</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@umw.edu</EmailAddress>
+        <WebAddress>http://technology.umw.edu/info/</WebAddress>
+        <Phone>(540) 654-2255</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

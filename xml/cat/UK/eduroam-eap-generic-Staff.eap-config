@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="dsdf.org" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFoTCCA4mgAwIBAgIQS7eSGZSa0LhHdBdMKy8WQjANBgkqhkiG9w0BAQ0FADBXMRMwEQYKCZImiZPyLGQBGRYDb3JnMRQwEgYKCZImiZPyLGQBGRYEZHNkZjESMBAGCgmSJomT8ixkARkWAmRkMRYwFAYDVQQDEw1EYWdnZXR0Um9vdENBMB4XDTE5MDYxMjE4NTg1MFoXDTI5MDYxMjE5MDg0OVowVzETMBEGCgmSJomT8ixkARkWA29yZzEUMBIGCgmSJomT8ixkARkWBGRzZGYxEjAQBgoJkiaJk/IsZAEZFgJkZDEWMBQGA1UEAxMNRGFnZ2V0dFJvb3RDQTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAOKb1cOYQdQJo7qEGwVC5ehbCWKeD10EVEtw6XBX5aw+ZKz5lSlhltokY5VBymO7hP+nakg32Ptc+SbTAK8fmJk5bcWbXDqTI4B8tptgP5ogdUkU0XlXS0B/Cj0uDUzsgig8qGzy6G/1M+gWrhrWoQdPXrkQaYdnl385P1rSeocLeSNgcjLQrVoj42+KZiPUxmJ9XRlLuAsaEAbBg3NGVVBxpPbhcGHtlI1CA/+ETVFFeZzayS0jUi6Rdcyh4cOSzSc75Ba3DtIqVKmheTgvtl7VYNMRk1lWPtoHsPiIRvGHuKES2uW0tSFJXftD0x5JsrzhMKyFBDqqnkE8L0zpZ3nSZfeoliGRUu2A2bj7mDgShUX0VoL/vKD6iRCoblVlOl1W8rpj95K85IAfT2+qPC+PiM1/uxO39wjPhsJKZ87xKFhMmMhjsUzTc+DuvOLcr3aEHSyIf+VTJT+CE070OEKU3Cnpn84rXicznKr3rkvCQ22OMjm6v2/G3rngT8P5t9ZDiNC66K5QO//FLDJs2MRdGFJbU5rFXivzfEqAqh8Shku28NjBTWVb0fjWTJbYnOtu8+RG/7VtB4MyGt2XC+ebBUZlMAohTAHB2leM9PV9mttrqc9+jtXJ47AlmuxxgFniFcK34SYjYnTvHBXJ5wRajSm+tMyCYWsJKL9uHgXhAgMBAAGjaTBnMBMGCSsGAQQBgjcUAgQGHgQAQwBBMA4GA1UdDwEB/wQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBT50hocG5zAv7m1qOCTM2Qg6l7aJzAQBgkrBgEEAYI3FQEEAwIBADANBgkqhkiG9w0BAQ0FAAOCAgEAYkFazGj2GpPKMxlATIhdBqxLhHSC+xOmgEffCs1KwjN18djAHa6GCKAwT7B7v0DAw/KX1VA9r9giUbK013Ab3aTt9irs6YzEFx5aocLyV2aeDK0Z+hDB6xDryGDzKXFOQWNKClHgf0+vD3T/uG6RIYfK4EM54qSpz9RPyLC22GFCQnwlZiyTVruJVVBhdTGB0iIzTA9YPC7gptdBoyf8XFizo3g9w5ytVgsviWjstFUYAZambSOptPfyGI3rgl18mcX8KGWiuQMPiiUG8sUAzn6KsIddjQCoYsT7yYS+kTOl6N7Tzcb6/w0iuwDd+OOk8YmEFXX44LnwpFIzN/4rJprANwzJZdYN9lL+2zUigVQLhPni8oiDo3YfkuH7E2un/kZz++GtLRrbQcoe9JQkd3+135vRtd/e+xJf3IyLWswCncrk//3zPxOekX1Y96ejK2YAXZUTa77knjJp+rCBhOWgADlpnDS5z/Fwiuo+hQWY308g+1zC7kFr/EBg4xRNzCvkso9GCtIPdng0KB9bfhof0q0nEzBb8Q176sbR67bnprRwd/3alURkv7+tZijR7X/WHWYH7LW6g5BDx9hibF6vgD19oe9BsWkkiXXtQVSdSBpZ+2jl+ZUV/fnTPo6a1OBU3DP5eKwjqhvvyqXX2vSkf9LoxoCxlWEzvKGoZUs=</CA>
+          <ServerID>powell.dd.dsdf.org</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Daggett School District</DisplayName>
+      <Description>Eduroam Staff Profile</Description>
+      <ProviderLocation>
+        <Longitude>-109.72682923078538</Longitude>
+        <Latitude>40.99218354916573</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <WebAddress>https://docs.google.com/forms/d/e/1FAIpQLSf4EDVckNDKjBgDbHX-4FjwENglxeyMH0HZpZV7PCQ2I_gu6w/viewform?usp=sf_link</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

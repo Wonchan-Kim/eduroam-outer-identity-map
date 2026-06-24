@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="cvasu.ac.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIID9TCCAt2gAwIBAgIUaNtx2OYBPNoFgiwLh+INmJTVvxowDQYJKoZIhvcNAQELBQAwgYkxCzAJBgNVBAYTAkJEMRMwEQYDVQQIDApDaGF0dG9ncmFtMRMwEQYDVQQHDApDaGF0dG9ncmFtMQ4wDAYDVQQKDAVDVkFTVTEeMBwGA1UEAwwVY3Zhc3UtaXJzLmN2YXN1LmFjLmJkMSAwHgYJKoZIhvcNAQkBFhFuYXNpbUBjdmFzdS5hYy5iZDAeFw0yMTAxMTYxNjMwMTJaFw0yMzEwMTMxNjMwMTJaMIGJMQswCQYDVQQGEwJCRDETMBEGA1UECAwKQ2hhdHRvZ3JhbTETMBEGA1UEBwwKQ2hhdHRvZ3JhbTEOMAwGA1UECgwFQ1ZBU1UxHjAcBgNVBAMMFWN2YXN1LWlycy5jdmFzdS5hYy5iZDEgMB4GCSqGSIb3DQEJARYRbmFzaW1AY3Zhc3UuYWMuYmQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxVpyvuXPnEye5jXxphVsyURmfo0//fYf1p1QLwNZWLiMrl8/b60NnPOgym06dzH/rqX/urpetiIV/BmP7peGpgTQ3lVz4iojvpXcYgrw9g4WRw8hDmYjpFhhZxt/z0Vlhqcz/j/Gy/lMrt4ZZzNIgbMTNmcz3kdk5+aSW83agGJgRz3AFI50Epm0Qujv0bB+BaZz6E3KJ6oXTQluPsghMt/smFK8izWoqOUFVXvhRb9PfKAkYiC2QDTjB9m9tvi2MzBiu/58k1k47nnQKeEI/9BSXAPdlkI7QIqRMvc9RkNx8xUQynsI8wfgyICOOn4skCQuQBAGs816RDplEQnClAgMBAAGjUzBRMB0GA1UdDgQWBBTG9yf8LXDzazM8575o54HCMBmOQTAfBgNVHSMEGDAWgBTG9yf8LXDzazM8575o54HCMBmOQTAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCNVE5i5RhTOGszfoRI8qpktYjVjoywXUP+r6n6bJEV+qdUqhDC/uz1yYSPNuGltPTXDLI7IAujYZPPl2ERA75F1Qnkvb3qL+GXONJfQWy9Zg5+/ZwgxWIocOdNGA8hFej9T+PtUMl513bz3r/Hl49O5MZ44oWX7v/rwkwJEGhQY0gPueiblWq3sTVM+TWQ5SkwgQngieFuGXzkR4jSdWNr5/gH8EocDqhkBAXq/L5ity0PUCVC6U5mxXJR3taEDCKqJ5Yjomy816YJeW6Qm7x4MlgqzAK69GpbQaD8cNJEaBlDcVVDbLyA/geZWA4xiZnBe4q+nMvJ4VJ7u9dp8gPY</CA>
+          <ServerID>cvasu-irs.cvasu.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>52</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <ServerID>cvasu-irs.cvasu.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIID9TCCAt2gAwIBAgIUaNtx2OYBPNoFgiwLh+INmJTVvxowDQYJKoZIhvcNAQELBQAwgYkxCzAJBgNVBAYTAkJEMRMwEQYDVQQIDApDaGF0dG9ncmFtMRMwEQYDVQQHDApDaGF0dG9ncmFtMQ4wDAYDVQQKDAVDVkFTVTEeMBwGA1UEAwwVY3Zhc3UtaXJzLmN2YXN1LmFjLmJkMSAwHgYJKoZIhvcNAQkBFhFuYXNpbUBjdmFzdS5hYy5iZDAeFw0yMTAxMTYxNjMwMTJaFw0yMzEwMTMxNjMwMTJaMIGJMQswCQYDVQQGEwJCRDETMBEGA1UECAwKQ2hhdHRvZ3JhbTETMBEGA1UEBwwKQ2hhdHRvZ3JhbTEOMAwGA1UECgwFQ1ZBU1UxHjAcBgNVBAMMFWN2YXN1LWlycy5jdmFzdS5hYy5iZDEgMB4GCSqGSIb3DQEJARYRbmFzaW1AY3Zhc3UuYWMuYmQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxVpyvuXPnEye5jXxphVsyURmfo0//fYf1p1QLwNZWLiMrl8/b60NnPOgym06dzH/rqX/urpetiIV/BmP7peGpgTQ3lVz4iojvpXcYgrw9g4WRw8hDmYjpFhhZxt/z0Vlhqcz/j/Gy/lMrt4ZZzNIgbMTNmcz3kdk5+aSW83agGJgRz3AFI50Epm0Qujv0bB+BaZz6E3KJ6oXTQluPsghMt/smFK8izWoqOUFVXvhRb9PfKAkYiC2QDTjB9m9tvi2MzBiu/58k1k47nnQKeEI/9BSXAPdlkI7QIqRMvc9RkNx8xUQynsI8wfgyICOOn4skCQuQBAGs816RDplEQnClAgMBAAGjUzBRMB0GA1UdDgQWBBTG9yf8LXDzazM8575o54HCMBmOQTAfBgNVHSMEGDAWgBTG9yf8LXDzazM8575o54HCMBmOQTAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCNVE5i5RhTOGszfoRI8qpktYjVjoywXUP+r6n6bJEV+qdUqhDC/uz1yYSPNuGltPTXDLI7IAujYZPPl2ERA75F1Qnkvb3qL+GXONJfQWy9Zg5+/ZwgxWIocOdNGA8hFej9T+PtUMl513bz3r/Hl49O5MZ44oWX7v/rwkwJEGhQY0gPueiblWq3sTVM+TWQ5SkwgQngieFuGXzkR4jSdWNr5/gH8EocDqhkBAXq/L5ity0PUCVC6U5mxXJR3taEDCKqJ5Yjomy816YJeW6Qm7x4MlgqzAK69GpbQaD8cNJEaBlDcVVDbLyA/geZWA4xiZnBe4q+nMvJ4VJ7u9dp8gPY</CA>
+          <ServerID>cvasu-irs.cvasu.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>13</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIID9TCCAt2gAwIBAgIUaNtx2OYBPNoFgiwLh+INmJTVvxowDQYJKoZIhvcNAQELBQAwgYkxCzAJBgNVBAYTAkJEMRMwEQYDVQQIDApDaGF0dG9ncmFtMRMwEQYDVQQHDApDaGF0dG9ncmFtMQ4wDAYDVQQKDAVDVkFTVTEeMBwGA1UEAwwVY3Zhc3UtaXJzLmN2YXN1LmFjLmJkMSAwHgYJKoZIhvcNAQkBFhFuYXNpbUBjdmFzdS5hYy5iZDAeFw0yMTAxMTYxNjMwMTJaFw0yMzEwMTMxNjMwMTJaMIGJMQswCQYDVQQGEwJCRDETMBEGA1UECAwKQ2hhdHRvZ3JhbTETMBEGA1UEBwwKQ2hhdHRvZ3JhbTEOMAwGA1UECgwFQ1ZBU1UxHjAcBgNVBAMMFWN2YXN1LWlycy5jdmFzdS5hYy5iZDEgMB4GCSqGSIb3DQEJARYRbmFzaW1AY3Zhc3UuYWMuYmQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxVpyvuXPnEye5jXxphVsyURmfo0//fYf1p1QLwNZWLiMrl8/b60NnPOgym06dzH/rqX/urpetiIV/BmP7peGpgTQ3lVz4iojvpXcYgrw9g4WRw8hDmYjpFhhZxt/z0Vlhqcz/j/Gy/lMrt4ZZzNIgbMTNmcz3kdk5+aSW83agGJgRz3AFI50Epm0Qujv0bB+BaZz6E3KJ6oXTQluPsghMt/smFK8izWoqOUFVXvhRb9PfKAkYiC2QDTjB9m9tvi2MzBiu/58k1k47nnQKeEI/9BSXAPdlkI7QIqRMvc9RkNx8xUQynsI8wfgyICOOn4skCQuQBAGs816RDplEQnClAgMBAAGjUzBRMB0GA1UdDgQWBBTG9yf8LXDzazM8575o54HCMBmOQTAfBgNVHSMEGDAWgBTG9yf8LXDzazM8575o54HCMBmOQTAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCNVE5i5RhTOGszfoRI8qpktYjVjoywXUP+r6n6bJEV+qdUqhDC/uz1yYSPNuGltPTXDLI7IAujYZPPl2ERA75F1Qnkvb3qL+GXONJfQWy9Zg5+/ZwgxWIocOdNGA8hFej9T+PtUMl513bz3r/Hl49O5MZ44oWX7v/rwkwJEGhQY0gPueiblWq3sTVM+TWQ5SkwgQngieFuGXzkR4jSdWNr5/gH8EocDqhkBAXq/L5ity0PUCVC6U5mxXJR3taEDCKqJ5Yjomy816YJeW6Qm7x4MlgqzAK69GpbQaD8cNJEaBlDcVVDbLyA/geZWA4xiZnBe4q+nMvJ4VJ7u9dp8gPY</CA>
+          <ServerID>cvasu-irs.cvasu.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIID9TCCAt2gAwIBAgIUaNtx2OYBPNoFgiwLh+INmJTVvxowDQYJKoZIhvcNAQELBQAwgYkxCzAJBgNVBAYTAkJEMRMwEQYDVQQIDApDaGF0dG9ncmFtMRMwEQYDVQQHDApDaGF0dG9ncmFtMQ4wDAYDVQQKDAVDVkFTVTEeMBwGA1UEAwwVY3Zhc3UtaXJzLmN2YXN1LmFjLmJkMSAwHgYJKoZIhvcNAQkBFhFuYXNpbUBjdmFzdS5hYy5iZDAeFw0yMTAxMTYxNjMwMTJaFw0yMzEwMTMxNjMwMTJaMIGJMQswCQYDVQQGEwJCRDETMBEGA1UECAwKQ2hhdHRvZ3JhbTETMBEGA1UEBwwKQ2hhdHRvZ3JhbTEOMAwGA1UECgwFQ1ZBU1UxHjAcBgNVBAMMFWN2YXN1LWlycy5jdmFzdS5hYy5iZDEgMB4GCSqGSIb3DQEJARYRbmFzaW1AY3Zhc3UuYWMuYmQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCxVpyvuXPnEye5jXxphVsyURmfo0//fYf1p1QLwNZWLiMrl8/b60NnPOgym06dzH/rqX/urpetiIV/BmP7peGpgTQ3lVz4iojvpXcYgrw9g4WRw8hDmYjpFhhZxt/z0Vlhqcz/j/Gy/lMrt4ZZzNIgbMTNmcz3kdk5+aSW83agGJgRz3AFI50Epm0Qujv0bB+BaZz6E3KJ6oXTQluPsghMt/smFK8izWoqOUFVXvhRb9PfKAkYiC2QDTjB9m9tvi2MzBiu/58k1k47nnQKeEI/9BSXAPdlkI7QIqRMvc9RkNx8xUQynsI8wfgyICOOn4skCQuQBAGs816RDplEQnClAgMBAAGjUzBRMB0GA1UdDgQWBBTG9yf8LXDzazM8575o54HCMBmOQTAfBgNVHSMEGDAWgBTG9yf8LXDzazM8575o54HCMBmOQTAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCNVE5i5RhTOGszfoRI8qpktYjVjoywXUP+r6n6bJEV+qdUqhDC/uz1yYSPNuGltPTXDLI7IAujYZPPl2ERA75F1Qnkvb3qL+GXONJfQWy9Zg5+/ZwgxWIocOdNGA8hFej9T+PtUMl513bz3r/Hl49O5MZ44oWX7v/rwkwJEGhQY0gPueiblWq3sTVM+TWQ5SkwgQngieFuGXzkR4jSdWNr5/gH8EocDqhkBAXq/L5ity0PUCVC6U5mxXJR3taEDCKqJ5Yjomy816YJeW6Qm7x4MlgqzAK69GpbQaD8cNJEaBlDcVVDbLyA/geZWA4xiZnBe4q+nMvJ4VJ7u9dp8gPY</CA>
+          <ServerID>cvasu-irs.cvasu.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Chattogram Veterinary and Animal Sciences University (CVASU)</DisplayName>
+      <ProviderLocation>
+        <Longitude>91.80443917380178</Longitude>
+        <Latitude>22.36321675</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

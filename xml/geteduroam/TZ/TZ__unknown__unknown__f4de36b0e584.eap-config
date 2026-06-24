@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="sumait.ac.tz" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE+jCCA+KgAwIBAgIURUsdyYgE8jihpYXTlfmGgoZQORMwDQYJKoZIhvcNAQELBQAwgZMxCzAJBgNVBAYTAlRaMREwDwYDVQQIDAhUYW56YW5pYTEWMBQGA1UEBwwNRGFyIGVzIHNhbGFhbTEPMA0GA1UECgwGU1VNQUlUMSEwHwYJKoZIhvcNAQkBFhJtYmFnYUB0ZXJuZXQub3IudHoxJTAjBgNVBAMMHFRFUk5FVCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjUxMDIzMDczNjAxWhcNMzUwOTAxMDczNjAxWjCBkzELMAkGA1UEBhMCVFoxETAPBgNVBAgMCFRhbnphbmlhMRYwFAYDVQQHDA1EYXIgZXMgc2FsYWFtMQ8wDQYDVQQKDAZTVU1BSVQxITAfBgkqhkiG9w0BCQEWEm1iYWdhQHRlcm5ldC5vci50ejElMCMGA1UEAwwcVEVSTkVUIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM4bpr/KHeDLh0BFPY0swXQdFDcVG0wrux4HOFrvCr2Bp/lEBxAMGv13YLDJKUw+bu6oMK+LcDajrCahoVFISmip1AX+q+F+ym9VoMtN2PXXaDZ3XscHgEpytvPRTMYnW8tzl+U5axstWQEA+OvO4GZ/SGkSLzEnWyqzJFIIVLWua0Hmnl4sOS/28BGJEVKx25OLDCx5yxLWptHevEh+rErIeVKOdoLK2zQFcCMS5VmcSV5cHXgdTs0G37To0qqihVK8w4fFGKXi7dl3RbzKPzLcy08cenZePxIBXZcIJd0Xt0LK8kOp4LtRXGQFBZMNzZxeS2oWSH39/exku9nq+mUCAwEAAaOCAUIwggE+MB0GA1UdDgQWBBTJ8taLoi0MKZEovk4AgOOU8sgKdTCB0wYDVR0jBIHLMIHIgBTJ8taLoi0MKZEovk4AgOOU8sgKdaGBmaSBljCBkzELMAkGA1UEBhMCVFoxETAPBgNVBAgMCFRhbnphbmlhMRYwFAYDVQQHDA1EYXIgZXMgc2FsYWFtMQ8wDQYDVQQKDAZTVU1BSVQxITAfBgkqhkiG9w0BCQEWEm1iYWdhQHRlcm5ldC5vci50ejElMCMGA1UEAwwcVEVSTkVUIENlcnRpZmljYXRlIEF1dGhvcml0eYIURUsdyYgE8jihpYXTlfmGgoZQORMwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCdBWdhguk8e6iTv/TDfEh+pY7x0ArOIs5KvY4+IrZkaeUWm3XNm8A4JvPe2iz6AY2XDM3Wr0wsFgGN0yMI2BXvbZmvdfUtUwm3n6XpgRFmkHTpuvl+qQj7F3AVEjburmoopT+pdt7B4b6fgJM56IMgOBF3z/OizF3KH+fwnvFxzCO6W5YmeEBLuPG6lKz9hY9Cj1cobV/+acTyMATcbmVFXbnjxMTBWyc0fm90LjexayLh2QO6YLoAfL9N15UfMdVwhJ1UmCgbkpYAofltnXmoW3hAyac+/1Ara0To6tfEgGtobwW8tTxs+AoF1r4YNTFLFJrtdusihue8mqGSx2Ia</CA>
+          <ServerID>eduroam.sumait.ac.tz</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>sumait.ac.tz</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Abdulrahman Al-Sumait University (SUMAIT)</DisplayName>
+      <ProviderLocation>
+        <Longitude>39.21392510044799</Longitude>
+        <Latitude>-6.230658445188951</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>eduroam@ternet.or.tz</EmailAddress>
+        <Phone>255746020404</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

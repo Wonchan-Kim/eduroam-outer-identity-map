@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="campuse.ipc.otaru-uc.ac.jp" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEqzCCA5OgAwIBAgIBADANBgkqhkiG9w0BAQsFADB7MQswCQYDVQQGEwJKUDERMA8GA1UECBMISG9ra2FpZG8xEjAQBgNVBAcTCU90YXJ1LXNoaTElMCMGA1UEChMcb3RhcnUgdW5pdmVyc2l0eSBvZiBjb21tZXJjZTEeMBwGA1UEAxMVcmFkaXVzLm90YXJ1LXVjLmFjLmpwMB4XDTE2MDMxMjA4MDg1MloXDTI2MDMxMDA4MTM1MlowezELMAkGA1UEBhMCSlAxETAPBgNVBAgTCEhva2thaWRvMRIwEAYDVQQHEwlPdGFydS1zaGkxJTAjBgNVBAoTHG90YXJ1IHVuaXZlcnNpdHkgb2YgY29tbWVyY2UxHjAcBgNVBAMTFXJhZGl1cy5vdGFydS11Yy5hYy5qcDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMxQjuh9Ekq4wtLBqVNndF/rBWNN4aj2gCpwT4uLrdpsmKm7iv/reu67UwP9OqMmGsL+KogvHWGnrBX8i2nvyYkp8tg/+ftI1fa6lJXxWqxrrbCZnHJ6XQHNBhcRyAATnKmL6s90LQGQ52hh2t2EwYRk+x7cpBSxvOZ7iYa0JWq1s3NC0NZ73b1tOqZEdCIzlDaa+QByMkusV5T9KOdQvEoIFBdSgTYT6ZkfP7V97npFhC86rqnT9N/ZZuBmPicWzwsTGxfClQ/AdoZmzXk0Qzqf0p8ALNOy1gdPi+h7D4zvKBdwgAgZnNcQA/5jh2Cu6h9uDF2eIP7wu2lRHgzaZCECAwEAAaOCATgwggE0MAwGA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgEGMB0GA1UdDgQWBBR/WrgkKtD9cEp4urwn9A8LCq+2iDCBpQYDVR0jBIGdMIGagBR/WrgkKtD9cEp4urwn9A8LCq+2iKF/pH0wezELMAkGA1UEBhMCSlAxETAPBgNVBAgTCEhva2thaWRvMRIwEAYDVQQHEwlPdGFydS1zaGkxJTAjBgNVBAoTHG90YXJ1IHVuaXZlcnNpdHkgb2YgY29tbWVyY2UxHjAcBgNVBAMTFXJhZGl1cy5vdGFydS11Yy5hYy5qcIIBADARBglghkgBhvhCAQEEBAMCAQYwPQYDVR0fBDYwNDAyoDCgLoYsaHR0cDovL3JhZGl1cy5vdGFydS11Yy5hYy5qcC9jZXJ0cy9jZXJ0cy5jcmwwDQYJKoZIhvcNAQELBQADggEBALGV9ueo2KPvk9j2iZhfCA9zJbccvTek3ypVTZQjcfsu+TzYAwNS0aZxv9MrwByRc9H5D/L54FdTHQOTFDISf/ZB0xEWquCBGCqc301k/Ph8IPXp3vFMsju6r3P6U3tKEs2dThMjjJu9EpUrEbUBFHT8ATFXhsbXypt+dMGgAUtorXdOtUmR7c8yKsVgrvLkCxVPp0I8qK1rYdFFvdTGxNDadxkIcYDdqijyerzp7s1vV/VijSz00YxhVp54z7f5R0agavIUJ+dlILoGJvUJIAu6HDrfehODYge4YPh+1fYeXiudJao9aQdaJsX0+Bgt6mVql1vi55mkVUfHME+Rt7k=</CA>
+          <ServerID>radius.otaru-uc.ac.jp</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Otaru University of Commerce</DisplayName>
+      <ProviderLocation>
+        <Longitude>140.98050802946094</Longitude>
+        <Latitude>43.19029962215265</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>cj@office.otaru-uc.ac.jp</EmailAddress>
+        <WebAddress>https://www.otaru-uc.ac.jp/center/</WebAddress>
+        <Phone>+81-134-27-5284</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

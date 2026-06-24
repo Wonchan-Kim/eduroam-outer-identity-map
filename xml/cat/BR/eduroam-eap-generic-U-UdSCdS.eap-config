@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="unisc.br" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDqDCCAxGgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMjAwMzE5MTMyOTE2WhcNMzAwMzE3MTMyOTE2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo4H9MIH6MAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFDuXcVFFi3iOBq6PPJkvLtlvNsvdMIHKBgNVHSMEgcIwgb+AFDuXcVFFi3iOBq6PPJkvLtlvNsvdoYGbpIGYMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnKCCQDCcRaDGAgAVzANBgkqhkiG9w0BAQUFAAOBgQDDdZa3zWDWN2E3NH1xNtVGSePyQN5rNPoyb62QvyoeUJuP+Ez04MY7J+8W3JmXhkEZ4EW9hSgZyE/9ntE8gIQMcvU8jPaLScm7pWeptA4jY6vyQWFLTJ7H24hEDl7Aftm7bJrISMllSfw14FVO25ijE4IHbVh8aZu8QPlD/Khfjg==</CA>
+          <ServerID>eduroam.unisc.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDqDCCAxGgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMjAwMzE5MTMyOTE2WhcNMzAwMzE3MTMyOTE2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo4H9MIH6MAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFDuXcVFFi3iOBq6PPJkvLtlvNsvdMIHKBgNVHSMEgcIwgb+AFDuXcVFFi3iOBq6PPJkvLtlvNsvdoYGbpIGYMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnKCCQDCcRaDGAgAVzANBgkqhkiG9w0BAQUFAAOBgQDDdZa3zWDWN2E3NH1xNtVGSePyQN5rNPoyb62QvyoeUJuP+Ez04MY7J+8W3JmXhkEZ4EW9hSgZyE/9ntE8gIQMcvU8jPaLScm7pWeptA4jY6vyQWFLTJ7H24hEDl7Aftm7bJrISMllSfw14FVO25ijE4IHbVh8aZu8QPlD/Khfjg==</CA>
+          <ServerID>eduroam.unisc.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>UNISC - Universidade de Santa Cruz do Sul</DisplayName>
+      <ProviderLocation>
+        <Longitude>-52.437241459277345</Longitude>
+        <Latitude>-29.6976916026992</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">iVBORw0KGgoAAAANSUhEUgAAALQAAAAyCAMAAADC+gHFAAAAA3NCSVQICAjb4U/gAAAAWlBMVEX////3///v///m///////3///v///////3///////3///////3///////3///////3///////3///////3///////3///////3///////3//////////////9nI8LpAAAAHnRSTlMAERERIiIiMzNERFVVZmZ3d4iImZmqqru7zMzd7v8eZmniAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAH3RFWHRTb2Z0d2FyZQBNYWNyb21lZGlhIEZpcmV3b3JrcyA4tWjSeAAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNS8xMy8xMHorf9gAAAWtSURBVGiB7ZmLbuMqEIbBLVlqYzuEEswyvP9rngHbgK9Jqu2ujtRfUYW5foxhPFBiknoiU5pXdzvpsyKEVKkkPE1SqTYh2iwk5jp8zrkRUs9pmUpvxjrwKHDW3MQbWekibsaNNZzV3WXK9kmKmJSu320/yb4HaJgKoIC2c+0PQpxfyMx1PoqcblXaGFi2Aqt4Qcx67RY1wOn6FFrPTfVXoD2bbXkITY3fk0rdSzgsfwhtvgQtH0FX1u9rakmPytX3QbtH0PKAyftxhey/h8j2bdC+Poeudt99VBy5PSwOrb8LemrPDqDrY6j4kjb9ZQH/Nuip4hF0tqRtOWOMN3lwtpoToMrn25+GtimzPYVOS9puu+PlineCURQT2Sy2gNa5mRfvTkxyL0GrlTN+CN2n7vpksWIbwuw7CUvWduQmZwnSpjSjapakr0DrKk08DpcaHkG3qbsOJvFitck8XF4H5Dk9DW1y33E8+gg6f0wInVT6ljwnojK0TeqJSmlOU1K/BG2JyG/xBDptRBBkq7SofFH6MQcW/cGarmlKwttrls5Wqk+gC/eAoZLWSvat4NUZdKHceOE9vg6dX6M+gc79l4IpPMzQ9d+AtsVHEOgx9OFn2vIF9Mdfgs5bvz2BTlPbiP8T6ORwyxlsQtNUay1X/QvoPCQ7gSbdUXzR/m3o6OdKV30MTSqh7F6wZ8n7P4BufH46gY7gjH80rVRKZ38LL1n6D/jpCF266rnSAXShHPixpa+f1LlZhCXRIl0V6QVGcGMbaL6CLl31AfSi90ku95egm1ycdy7hSYywlK5Ikb2wXXFcLvPmAcc3kV11dQCtF/U3Rkj8RWhSxB4pdfoZ3wu7UpBROokJIlUXM90BtC9MXVh6JzSlec8+uRGL+fRjN1TkTrbQ2VUfWDpFeftGKA4BDRuHyw7SPQutcz0PYTMUvsoVVprWPPNrraDzAtVtPGu0+e3jxEXZdDUcLoknoU9OxzEwWkFvQ4vnD7bBCHTPf89D1M9C70dlU+Ud6GZd6fkrhLj51HHx8RXCGvqkF0N2oDdQz1/WRAd1Yurjy5oNdHUUKTi62Pnzbl9Pcg19TDUedQ/XT9i5z0ITtn+5ZhjZhV4Puvki8n0rwHwqrPfL45Ty46mfjptxi50uopPdkl9djWkL6PGuo5JbLCez36767Q2QGosPLtVpSqZbm2Bt0at0fa5kk0cQ7agufeHqdiGcHZvTKaDgrdSpPy3b8nZ6Kk/jadXXm0v3H/3o6wrRKqUsJGJASWM0S0MUS1jODukxFYNdEsNcOhbRkFGxqf4UDcc9QMe4GHPxR9k8QKwePWoMlsOP0TPItdA/OmXCXd0NbiHivWMIcrXhq2qtsy0E32ApBqU8eDsrMGToog+B2oALl0pgoEcP1aOrkcwH19Cp8SQMmAPhhtT/onBzLuSGrlsBgG2IxKad64nTTj0kLaEVNrEAwktfg6x952XPQV78HROq9b2vuW+ks6r2nMdctBc6KWeM7dF5aGh1w0G7N3DYTd17zsAEHwmGdlffcX9DaDwH6XAWAs00YIn2OAHXaAHydejQxCprQXqmnLHca8Udjl/j+c720GPnvndao80xdcfiXyGHWGOc6uO/EaGXWCrQaoN/bzyGYdfwhQNNuAixI1qa+F8yBtHIKAFLJPYmQlOIlpYPSQtZp33rJMaMMhjSNwyprqAa/+mUdj1cPfb8CUrB4LXBR63w4wZOQ4/QqiLKSRzUfDoDDUamCF1Z+2ldeAfaY7XWd84aUN7pcIzHllqBBlxZxsrQi8YKTu9f7+2qBm/e7h0ZTDdw/EvZ4NznvSaDwDCj44MwuMavd0LuQ0hdsBiHvuNk327WuQvhgIv2d0W6YagrY2g9XH7XhGMOllg+XMjAr95fhbFhC+B0DMPTmuMxJrDhjwn9XV+x9Y9+9KMf/d/1H7iqADnH3uAoAAAAAElFTkSuQmCC</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>redes@unisc.br</EmailAddress>
+        <WebAddress>http://www.unisc.br/semfio</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

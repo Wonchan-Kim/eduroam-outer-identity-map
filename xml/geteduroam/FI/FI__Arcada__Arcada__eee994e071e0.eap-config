@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="undefined" namespace="urn:undefined">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFpDCCA4ygAwIBAgIQOcqTHO9D88aOk8f0ZIk4fjANBgkqhkiG9w0BAQsFADBsMQswCQYDVQQGEwJHUjE3MDUGA1UECgwuSGVsbGVuaWMgQWNhZGVtaWMgYW5kIFJlc2VhcmNoIEluc3RpdHV0aW9ucyBDQTEkMCIGA1UEAwwbSEFSSUNBIFRMUyBSU0EgUm9vdCBDQSAyMDIxMB4XDTIxMDIxOTEwNTUzOFoXDTQ1MDIxMzEwNTUzN1owbDELMAkGA1UEBhMCR1IxNzA1BgNVBAoMLkhlbGxlbmljIEFjYWRlbWljIGFuZCBSZXNlYXJjaCBJbnN0aXR1dGlvbnMgQ0ExJDAiBgNVBAMMG0hBUklDQSBUTFMgUlNBIFJvb3QgQ0EgMjAyMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAIvC569lmwVnlskNJLnQDmT8zuIkGCyEf3dRywQRNrhe7Wlxp57kJQmXZ8FHws+RFjZiPTgE4VGC/6zStGndLuwRo0Xua2s7TL+MjaQenRG56Tj5eg4MmOIjHdFOY9TnuEFE+2uva9of08WRiFukiZLRgeaMOVig1mlDqa2YUlhu2wr7a89o+uOkXjpFc5gH6l8Cct4MpbOfrqkdtx2z/IpZ525yZa31MJQjB/OCFks1mJxTuy/K5FrZx40d/JiZ+yykgmvwKh+OC19xXFyuQnspiYHLA6OZyoieC0AJQTPb5lh6/a6ZcMBaD9YThnEvdmn8kN3bLW7R8pv1GmuebxWMevBLKKAiOIAkbDakO/IwkfN4E8/BPzWr8R0RI7VDIp4BkrcYAuUR0YLbFQDMYTfBKnya4dC6s1BG7oKsnTH4+yPiAwBIcKMJJnkVU2DzOFytOOqBAGMUuTNe3QvboEUHGjMJ+E20pwKmafTCWQWIZYVWrkvL4N48fS0ayOn7H6NhStYqE613TBoYm5EPWNgGVMWX+Ko/IIqmhaZ39qb8HOLubpQzKoNQhArlT4b4UEV4AIHrW2jjJo3Me1xR9BQsQL4aYB16cmEdH2MtiKrOokWQCPxrvrNQKlr9qEgYRtaQQJKQCoReaDH46+0N0x3GfZkYVVYnZS6NRcUk7M7jAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFApII6ZgpJIKM+qTW8VX6iVNvRLuMA4GA1UdDwEB/wQEAwIBhjANBgkqhkiG9w0BAQsFAAOCAgEAPpBIqm5iFSVmewzVjIuJndftTgfvnNAUX15QvWiWkKQUEapobQk1OUAJ2vQJLDSle1mESSmXdMgHHkdt8s4cUCbjnj1AUz/3f5Z2EMVGpdAgS1D0NTsY9FVqQRtHBmg8uwkIYtlfVUKqrFOFrJVWNlar5AWMxajaH6NpvVMPxP/cyuN+8kyIhkdGGvMA9YCRotxDQpSbIPDRzbLrLFPCU3hKTwSUQZqPJzLB5UkZv/HywouoCjkxKLR9YjYsTewfM7Z+d21+UPCfDtcRj88YxeMn/ibvBZ3PzzfF0HvaO7AWhAw6k9a+F9sPPg4ZeAnHqQJyIkv3N3a6dcSFA1pj1bF1BcK5vZStjBWZp5N99sXzqnTPBIWUmAD04vnKJGW/4GKvyMX6ssmeVkjaef2WdhW+o45WxLM0/L5H9MG0qPzVMIho7suuyWPEdr6sOBjhXlzPrjoiUevRi7PzKzMHVIf6tLITe7pTBGIBnfHAT+7hOtSLIBD6Alfm78ELt5BGnBkpjNxvoEppaZS3JGWg/6w/zgH7IS79aPib8qXPMThcFarmlwDB31qlpzmq6YR/PFGoOtmUW4y/Twhx5duoXNTSpv4Ao8YWxw/ogM4cKGR0GQjTQuPOAF1/sdwTsOEFy9EgqoZ0njnnkf3/W9b3raYvAwtt41dU63ZTGI0RmLo=</CA>
+          <ServerID>radius.arcada.fi</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFpDCCA4ygAwIBAgIQOcqTHO9D88aOk8f0ZIk4fjANBgkqhkiG9w0BAQsFADBsMQswCQYDVQQGEwJHUjE3MDUGA1UECgwuSGVsbGVuaWMgQWNhZGVtaWMgYW5kIFJlc2VhcmNoIEluc3RpdHV0aW9ucyBDQTEkMCIGA1UEAwwbSEFSSUNBIFRMUyBSU0EgUm9vdCBDQSAyMDIxMB4XDTIxMDIxOTEwNTUzOFoXDTQ1MDIxMzEwNTUzN1owbDELMAkGA1UEBhMCR1IxNzA1BgNVBAoMLkhlbGxlbmljIEFjYWRlbWljIGFuZCBSZXNlYXJjaCBJbnN0aXR1dGlvbnMgQ0ExJDAiBgNVBAMMG0hBUklDQSBUTFMgUlNBIFJvb3QgQ0EgMjAyMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAIvC569lmwVnlskNJLnQDmT8zuIkGCyEf3dRywQRNrhe7Wlxp57kJQmXZ8FHws+RFjZiPTgE4VGC/6zStGndLuwRo0Xua2s7TL+MjaQenRG56Tj5eg4MmOIjHdFOY9TnuEFE+2uva9of08WRiFukiZLRgeaMOVig1mlDqa2YUlhu2wr7a89o+uOkXjpFc5gH6l8Cct4MpbOfrqkdtx2z/IpZ525yZa31MJQjB/OCFks1mJxTuy/K5FrZx40d/JiZ+yykgmvwKh+OC19xXFyuQnspiYHLA6OZyoieC0AJQTPb5lh6/a6ZcMBaD9YThnEvdmn8kN3bLW7R8pv1GmuebxWMevBLKKAiOIAkbDakO/IwkfN4E8/BPzWr8R0RI7VDIp4BkrcYAuUR0YLbFQDMYTfBKnya4dC6s1BG7oKsnTH4+yPiAwBIcKMJJnkVU2DzOFytOOqBAGMUuTNe3QvboEUHGjMJ+E20pwKmafTCWQWIZYVWrkvL4N48fS0ayOn7H6NhStYqE613TBoYm5EPWNgGVMWX+Ko/IIqmhaZ39qb8HOLubpQzKoNQhArlT4b4UEV4AIHrW2jjJo3Me1xR9BQsQL4aYB16cmEdH2MtiKrOokWQCPxrvrNQKlr9qEgYRtaQQJKQCoReaDH46+0N0x3GfZkYVVYnZS6NRcUk7M7jAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFApII6ZgpJIKM+qTW8VX6iVNvRLuMA4GA1UdDwEB/wQEAwIBhjANBgkqhkiG9w0BAQsFAAOCAgEAPpBIqm5iFSVmewzVjIuJndftTgfvnNAUX15QvWiWkKQUEapobQk1OUAJ2vQJLDSle1mESSmXdMgHHkdt8s4cUCbjnj1AUz/3f5Z2EMVGpdAgS1D0NTsY9FVqQRtHBmg8uwkIYtlfVUKqrFOFrJVWNlar5AWMxajaH6NpvVMPxP/cyuN+8kyIhkdGGvMA9YCRotxDQpSbIPDRzbLrLFPCU3hKTwSUQZqPJzLB5UkZv/HywouoCjkxKLR9YjYsTewfM7Z+d21+UPCfDtcRj88YxeMn/ibvBZ3PzzfF0HvaO7AWhAw6k9a+F9sPPg4ZeAnHqQJyIkv3N3a6dcSFA1pj1bF1BcK5vZStjBWZp5N99sXzqnTPBIWUmAD04vnKJGW/4GKvyMX6ssmeVkjaef2WdhW+o45WxLM0/L5H9MG0qPzVMIho7suuyWPEdr6sOBjhXlzPrjoiUevRi7PzKzMHVIf6tLITe7pTBGIBnfHAT+7hOtSLIBD6Alfm78ELt5BGnBkpjNxvoEppaZS3JGWg/6w/zgH7IS79aPib8qXPMThcFarmlwDB31qlpzmq6YR/PFGoOtmUW4y/Twhx5duoXNTSpv4Ao8YWxw/ogM4cKGR0GQjTQuPOAF1/sdwTsOEFy9EgqoZ0njnnkf3/W9b3raYvAwtt41dU63ZTGI0RmLo=</CA>
+          <ServerID>radius.arcada.fi</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Arcada</DisplayName>
+      <ProviderLocation>
+        <Longitude>24.96552900000006</Longitude>
+        <Latitude>60.201125</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>it-support@arcada.fi</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

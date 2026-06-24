@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="dmiseu.edu.zm" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFDDCCA/SgAwIBAgIUGiaknd9+pLgvMAWJRxM0N7K8T54wDQYJKoZIhvcNAQELBQAwgZkxCzAJBgNVBAYTAlpNMQ8wDQYDVQQIDAZMdXNha2ExDzANBgNVBAcMBkx1c2FrYTEWMBQGA1UECgwNRE1JIFN0IEV1Z2VuZTEiMCAGCSqGSIb3DQEJARYTYWRtaW5AZG1pc2V1LmVkdS56bTEsMCoGA1UEAwwjRE1JIFN0IEV1Z2VuZSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjUwNjEzMDgzNjQ4WhcNMjgwNjEyMDgzNjQ4WjCBmTELMAkGA1UEBhMCWk0xDzANBgNVBAgMBkx1c2FrYTEPMA0GA1UEBwwGTHVzYWthMRYwFAYDVQQKDA1ETUkgU3QgRXVnZW5lMSIwIAYJKoZIhvcNAQkBFhNhZG1pbkBkbWlzZXUuZWR1LnptMSwwKgYDVQQDDCNETUkgU3QgRXVnZW5lIENlcnRpZmljYXRlIEF1dGhvcml0eTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALhEu6hpMspE9hPQ5zJ7gGpsdMiqKwJBFKpWSCP89onBdlHzqezLZofuoFTdqKA6+n4mvl/HMf+4aGpgA2RvbMfy7n8w1NFDsut6f2phQp/C9w1WBuTWAYqGTMGmhhOMrl9tglMTv0qKXwkvWXYfPifoX0YuI/R2k/hDAAboeoq2B9Yw8BUVbnSlTvXcfBvlhobTKHQjZJlPtKuTu4Uix6sjD7BS10rQLPhL0/LLmO5vSOk7jgDeGdyk9YGIefUHcL67Hr1+0R9khT2S+o6mHVKMYwHLcG7SBbr5fqCyhKPlG/+VrlfrsfhjBW9E8EikKFytcajMDk5tfwkntpPw3skCAwEAAaOCAUgwggFEMB0GA1UdDgQWBBTM+GQgOO2YU+QANuszp7iqkOfYUzCB2QYDVR0jBIHRMIHOgBTM+GQgOO2YU+QANuszp7iqkOfYU6GBn6SBnDCBmTELMAkGA1UEBhMCWk0xDzANBgNVBAgMBkx1c2FrYTEPMA0GA1UEBwwGTHVzYWthMRYwFAYDVQQKDA1ETUkgU3QgRXVnZW5lMSIwIAYJKoZIhvcNAQkBFhNhZG1pbkBkbWlzZXUuZWR1LnptMSwwKgYDVQQDDCNETUkgU3QgRXVnZW5lIENlcnRpZmljYXRlIEF1dGhvcml0eYIUGiaknd9+pLgvMAWJRxM0N7K8T54wDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQA3/V3FXPYFGrUDMXllD13PYw1br+NxpqxEeEO0gLnA31pG87S1ob/w4a9rBNTISQBJtedJzSmxonEoSCbLvN7p/yhzcITClfICDy6swkGYQf5G9bp39NkuvJiTB3vcv+RRXFUy8XF0+9LPnDOu91YiH4vojQOF27QB34WCq6rYzbvXOiBVkDQsIzXfcmMYfcPD8FR7ZNYOscKk98mhZrruMP9DfOEyX5yjBm+fS+iPTtZJErFQ5RXd5XPHoq9mHEgu7+rQ7rOKiX+uX5V2Be7H4+9NmP3ibIv5/YLW7nkomXdMMOCG/15DC/R1s2/d8DTWTrBWOc+LXq7iEmlSsgCk</CA>
+          <ServerID>eduru.dmiseu.edu.zm</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>dmiseu.edu.zm</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>DMI-St.Eugene University</DisplayName>
+      <Description>DMI St Eugene</Description>
+      <Helpdesk>
+        <EmailAddress>systems@zamren.zm</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

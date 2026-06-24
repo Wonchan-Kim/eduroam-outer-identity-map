@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="mut.ac.za" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEJDCCAwygAwIBAgIJAIgFthe0hsyAMA0GCSqGSIb3DQEBDQUAMIGMMRgwFgYDVQQDDA9BUlVCQS1DTEVBUlBBU1MxDDAKBgNVBAsMA0lUTjEsMCoGA1UECgwjTWFuZ29zdXRodSBVbml2ZXJzaXR5IG9mIFRlY2hub2xvZ3kxFjAUBgNVBAgMDUt3YXp1bHUgTmF0YWwxCzAJBgNVBAYTAlpBMQ8wDQYDVQQHDAZEdXJiYW4wHhcNMjIxMjE5MTI1NDIzWhcNMjgwNjEwMTI1NDIzWjCBjDEYMBYGA1UEAwwPQVJVQkEtQ0xFQVJQQVNTMQwwCgYDVQQLDANJVE4xLDAqBgNVBAoMI01hbmdvc3V0aHUgVW5pdmVyc2l0eSBvZiBUZWNobm9sb2d5MRYwFAYDVQQIDA1Ld2F6dWx1IE5hdGFsMQswCQYDVQQGEwJaQTEPMA0GA1UEBwwGRHVyYmFuMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1JFCKYVpThR8u2cPkEPKi/fjnBWt3e4eY+ea4e5sCrnLuMBgytdNKGr5W7wwI3jUqsR9QbET3e7/uiY+eNSmprx6pAb3jzwdXr3D+oa6GBThJArXyJW/CG7hllo2YTFLMg6ruTrlF9vNzhu/g7QwC2p66528Vio6ijZaJa4Cs4ieZNItJp+tF7OFCt29mesg14Zuj3C0VRaFY5qUg3bnMqDek1WaX3fZ5EZ1LCCGxUiDI5s4JlN/mMAhCcae/5jjykV8cGtc8SdwkJhNgTgOcE+M/4b/TZc4aWA64c9nd24IOFb1qWEuPphIhXJQmnQpaxb+c0typvtwupeKAaOQIwIDAQABo4GGMIGDMDkGA1UdEQQyMDCCGUFSVUJBLUNMRUFSUEFTUy5tdXQuYWMuemGCE2NsZWFycGFzcy5tdXQuYWMuemEwJwYDVR0lBCAwHgYIKwYBBQUHAwEGCCsGAQUFBwMDBggrBgEFBQcDDjAdBgNVHQ4EFgQUEQZD4K0KG3rB0MNMIJ2A1Z3FTVkwDQYJKoZIhvcNAQENBQADggEBABe5rRp7pPotJGx+XEcgzG2wJ6ZwamYAgOAS5Usk49LNS+g3i640RnsJ8ND9HO+6p1KjjuAiHIh7uFTdcvlDPVfAqQ1tSmSs275UmSxqNtvERon0m3OiV7L77nebfboPGHjh2ca6L8n8dCccOl1bV3YRFp95IlIoz+aexYwaDevRv63Ep+VPjFZ9m7+LoKUkgd16a8fS8mI89RtLyJfT1E2U0A7jSY9TWB6T5ci1lGKkg4jJEtnTQToTTVTcm+hrOoX2c1fogOpCDN2hD1k8FRZ2GsZH41QhbB3CsUIdNiRf/0c/cIgHtRC4HIFU+7E7HzByPUhLSMt5iGMwp73RKew=</CA>
+          <ServerID>clearpass.mut.ac.za</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>mut.ac.za</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Mangosuthu University of Technology</DisplayName>
+      <ProviderLocation>
+        <Longitude>30.91256149072537</Longitude>
+        <Latitude>-29.9713487</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>support@mut.ac.za</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

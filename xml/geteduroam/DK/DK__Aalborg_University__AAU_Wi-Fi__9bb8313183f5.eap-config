@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="net.aau.dk" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>wifi.aau.dk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>net.aau.dk</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Aalborg University - AAU Wi-Fi</DisplayName>
+      <ProviderLocation>
+        <Longitude>9.981858623773178</Longitude>
+        <Latitude>57.01456362946896</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <WebAddress>https://www.en.its.aau.dk/instructions/wi-fi</WebAddress>
+        <Phone>+45 99402020</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

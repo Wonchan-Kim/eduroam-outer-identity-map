@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="czso.cz" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDlTCCAn2gAwIBAgIIbpgcju2y5QAwDQYJKoZIhvcNAQELBQAwWDETMBEGA1UEAwwKZWR1cm9hbSBDQTESMBAGA1UECgwJQ0VTTkVUIENBMRkwFwYKCZImiZPyLGQBGRYJY2VzbmV0LWNhMRIwEAYKCZImiZPyLGQBGRYCY3owHhcNMTYwNjI5MDgyOTMxWhcNMzYwNjI0MDgyOTMxWjBYMRMwEQYDVQQDDAplZHVyb2FtIENBMRIwEAYDVQQKDAlDRVNORVQgQ0ExGTAXBgoJkiaJk/IsZAEZFgljZXNuZXQtY2ExEjAQBgoJkiaJk/IsZAEZFgJjejCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJsUfe/RUUin2QLGePyXCJ4CwlW7Iyg6A9G7rbee+u+47Z1PAIQGvXn0YYZl2Xb4ZmvzcmBBc6kPAfGg2LC2drIrhkJJ+9S3snvHC4n9toxAEz+ydedAZvPv8GWZp7jYO5QbCmNbRRDaO8mNlC4GuWSZDZ0+XRc5HnOqyxsHvul+B0Epe0c7Jzf6fGmc0W74Dt+LQGCqouKv8p/vIXMyMZB5xzeLs1HTCo1eTgiCCucKHoUAbLmQa19SpW3tz1c5zBg3+xOF7q4lTFapfUMwkycJcaFf7pxHEaoczBf230PBrjuVw5+vB0OqpWph/34XCc3iurrQVD9jjMhkI/oT8fUCAwEAAaNjMGEwHQYDVR0OBBYEFLRdEVjwh/LQI3tVx32Ge1JtH288MA8GA1UdEwEB/wQFMAMBAf8wHwYDVR0jBBgwFoAUtF0RWPCH8tAje1XHfYZ7Um0fbzwwDgYDVR0PAQH/BAQDAgGGMA0GCSqGSIb3DQEBCwUAA4IBAQBzsdDREhsrNDPQH8p3qmH0M4CcHLx5m4ErU5L/CPgGN3xlPoA1N9bK76RJIosIaaZTEvrfOd/KEGEnPsPA4x6yxWYyZcuVT+dLV2NPvymnq+xoVnjlyA1HJVKwHgQLb1HykL0pa0SooA6BC0vwzq4BxxJ1sF7/32Yrh2/EJMQbtEUJrnFszEwDs3eBV4NQPCWc1kK6eqtDQGWboBFefVBEb7omq470jnIy7v883mHdbU35hcaE/8mE+k1LLai8GGK4dXD0iI+w3i9QeRtNXGx1Gz8jUouCz/otkgjhO962erQhYZp7K8rb/MJ3plm9pfrXXhgz7zlvtS0kMOTSAhdd</CA>
+          <ServerID>edu-radius.czso.cz</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>czso.cz</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Czech Statistical Office</DisplayName>
+      <Description>Profil určen pro zaměstnance úřadu</Description>
+      <ProviderLocation>
+        <Longitude>12.8246078</Longitude>
+        <Latitude>50.2170847</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>13.4110359</Longitude>
+        <Latitude>49.7277</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>14.0291957</Longitude>
+        <Latitude>50.6775682</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>14.4803739</Longitude>
+        <Latitude>48.9724096</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>14.50777888298035</Longitude>
+        <Latitude>50.070067952772774</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>15.0582835</Longitude>
+        <Latitude>50.7710249</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>15.5806814</Longitude>
+        <Latitude>49.3930765</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>15.7672017</Longitude>
+        <Latitude>50.028223</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>15.8519527</Longitude>
+        <Latitude>50.2188096</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>16.6096345</Longitude>
+        <Latitude>49.1966745</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>17.2770351</Longitude>
+        <Latitude>49.5901723</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>17.6808813</Longitude>
+        <Latitude>49.2257926</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>18.27814498909303</Longitude>
+        <Latitude>49.847374</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <WebAddress>https://www.czso.cz/csu/czso/the-eduroam-project</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

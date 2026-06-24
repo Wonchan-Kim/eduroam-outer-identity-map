@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="cranfield.ac.uk" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDfjCCAmagAwIBAgIQQuHOQMu37JtFpSGUAIN/4TANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDExxDcmFuZmllbGQgVW5pdmVyc2l0eSBSb290IENBMB4XDTE4MTAxODE0MjU0OVoXDTQzMTAxODE0MzQzM1owJzElMCMGA1UEAxMcQ3JhbmZpZWxkIFVuaXZlcnNpdHkgUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPgo3NmehJhxyOJoD7J7OgyKn9Fy7IVAPObl2yZUjZ9zjk8wiIfxGEkX1yNuyPWwZuP+Vbn+FKrvGzR+3JQo6oar/53GuxTK7HtY+3dhOkOa7UlUhnW8qWFANMXM6ltwIqVxLHlguT+MMrzZ/wSeSxuBaAWOlz6YNFKxkt3jcBtttZ2HmBnPXVRsKdaTCS/bpQu4Nb2Mw8w3vNlatOkf78ejjMLiH/uAPzgk+RqsiGkMVjFVXwExwpvUsQUALNaovAk9jEW6Kg3CoHkpxxyR8jmYwM+JR5TGBgbL9F9Vju5td2XOo4Q+ZenpUnTdvXRYKgGCvYXITCJ9XSKq4BPcAdECAwEAAaOBpTCBojALBgNVHQ8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUPml/Knl3wTFwdUT8J1ffMu5q36EwEAYJKwYBBAGCNxUBBAMCAQAwUQYDVR0gBEowSDBGBg0rBgEEAYOafgEBAQEBMDUwMwYIKwYBBQUHAgEWJ2h0dHA6Ly9wa2kuY3JhbmZpZWxkLmFjLnVrL3BraS9jcHMuaHRtbDANBgkqhkiG9w0BAQsFAAOCAQEAmwX1UfWOspiM+ENfmED5Nc/DDmaeB2JvbsAmUilwfWeQIO4aPQQ5R7MaZSsWJtNaTEVLaTduQQOUryokGAB16rWzcvsixlyDSXBG+NxpT+gKWUxrk+ckTtdX/6I2XbjsJ3Cf6U+CUilferWrv2EfloPHe+bZjq+7yr5EDqQaT2auoD2eCQxn/wjqlbHf6+aIgptlvtLX885SpAwJwbpNQK+zHd1ldLaCXhK5KhNvOGJd2h/d66o3qKGNSmbbopO9Cw6ZFB+P+W0FNWvsW4mKFjBqa0wZBSkqYsTEJLcBdS+S1EKoHM832wgZyaxy3kNSu0rPHDiLb/WYgJvKUXrHKQ==</CA>
+          <ServerID>ccclearpass-vip.central.cranfield.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>cranfield.ac.uk</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Cranfield University - eduroam</DisplayName>
+      <ProviderLocation>
+        <Longitude>-0.6287554000000455</Longitude>
+        <Latitude>52.0739183</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>servicedesk@cranfield.ac.uk</EmailAddress>
+        <WebAddress>http://www.cranfield.ac.uk/study/it-services/eduroam</WebAddress>
+        <Phone>+44 1234 754199</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

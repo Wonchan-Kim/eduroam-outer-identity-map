@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="uantof.cl;ua.cl" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>eduroam.uantof.cl</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>@uantof.cl;ua.cl</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Universidad de Antofagasta</DisplayName>
+      <Description>Para funcionarios uantof.cl</Description>
+      <ProviderLocation>
+        <Longitude>-70.42159080505373</Longitude>
+        <Latitude>-23.70261601531216</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>-71.3187697</Longitude>
+        <Latitude>-31.7613365</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>depto.soportecomputacional@uantof.cl</EmailAddress>
+        <WebAddress>https://toconao.uantof.cl/soportecomputacional/casos.xhtml</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

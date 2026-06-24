@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="umanizales.edu.co" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE9DCCA9ygAwIBAgIUfGo8u/cg4HjpK0d2jL5P2T8OoI4wDQYJKoZIhvcNAQELBQAwgZIxCzAJBgNVBAYTAkNPMQ8wDQYDVQQIDAZDYWxkYXMxEjAQBgNVBAcMCU1hbml6YWxlczEhMB8GA1UECgwYVW5pdmVyc2lkYWQgZGUgTWFuaXphbGVzMSkwJwYJKoZIhvcNAQkBFhpqYWd1ZGVsb0B1bWFuaXphbGVzLmVkdS5jbzEQMA4GA1UEAwwHZWR1cm9hbTAeFw0yMjEyMDIxODA5MDlaFw0yNDEyMDExODA5MDlaMIGSMQswCQYDVQQGEwJDTzEPMA0GA1UECAwGQ2FsZGFzMRIwEAYDVQQHDAlNYW5pemFsZXMxITAfBgNVBAoMGFVuaXZlcnNpZGFkIGRlIE1hbml6YWxlczEpMCcGCSqGSIb3DQEJARYaamFndWRlbG9AdW1hbml6YWxlcy5lZHUuY28xEDAOBgNVBAMMB2VkdXJvYW0wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQClyCq6MBisWUpJezvRhD6XSWIVxG5mDmS0A4aT9BPC+dXBLbyk2DNgCP0AKmfxXYlqZmtHknfASWB8zRf04VgoCg6NneXW5A3s+i52y/G7Z87CbERC0XpklTemK1MiiP0NPM06qRxrjig+eNCpjM9aJPVRl7Ag/gkaoSuWQbDdPoXBD+AM8Y9WS5+aSHQVaqrOFb5cYnMRUM/g3Z7a0eMloe89hUbgyD/Em86MfwXCxwwS3k7Drt9Dev887bavmQfl2EaHrGJbasKXR3HYOmX87kn7xA/KUifYv9+0ohV1qVtroFnakWKy/lXA/tVUy25p9vvlywXqEUuDQH5yqhD9AgMBAAGjggE+MIIBOjAdBgNVHQ4EFgQUQOwtcqiCctVa5Wi7RzlYRg3Ai5MwgdIGA1UdIwSByjCBx4AUQOwtcqiCctVa5Wi7RzlYRg3Ai5OhgZikgZUwgZIxCzAJBgNVBAYTAkNPMQ8wDQYDVQQIDAZDYWxkYXMxEjAQBgNVBAcMCU1hbml6YWxlczEhMB8GA1UECgwYVW5pdmVyc2lkYWQgZGUgTWFuaXphbGVzMSkwJwYJKoZIhvcNAQkBFhpqYWd1ZGVsb0B1bWFuaXphbGVzLmVkdS5jbzEQMA4GA1UEAwwHZWR1cm9hbYIUfGo8u/cg4HjpK0d2jL5P2T8OoI4wDAYDVR0TBAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQCCCj5NIuJ0ycSyQ57GvqUcesHVmgeto0PH08wxHUzPRdqwB/nM0oGFytnb5XSnxBKxRsGxKWtSdH3z+a7Q6g+h4av2lVWTpMDaUvl/RRh1lkOXKfFJDJvta9mu/KoejSJLg+Udblq7HuC99JS6mkwADQ9MxTb+s5UcCcmmgk8hpoZwLImxBW0gspfW42VAyqbMUR6Z9/SSGJXe6Q9toKWckKKJCCucUSQo+m1kGlX1ZLIO0yLB6iimhBDtNmzBsly6qv6W+UW+VKWzSL/0eiwrBHE4R5/yoOEgASWWx+3x7TONPaJroyOkRx1WkAeuu0NJRHiQXSzvprckv8/syHH2</CA>
+          <ServerID>eduroamv2.umanizales.loc</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>umanizales.edu.co</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>UMANIZALES - Universidad de Manizales - Universidad de Manizales</DisplayName>
+      <Description>Universidad de Manizales</Description>
+      <Helpdesk>
+        <EmailAddress>soporte@renata.edu.co</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

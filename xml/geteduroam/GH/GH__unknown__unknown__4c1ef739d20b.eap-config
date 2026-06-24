@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="gcuc.edu.gh" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4WhcNMzUwNjA0MTEwNDM4WjBPMQswCQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJuZXQgU2VjdXJpdHkgUmVzZWFyY2ggR3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBYMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAK3oJHP0FDfzm54rVygch77ct984kIxuPOZXoHj3dcKi/vVqbvYATyjb3miGbESTtrFj/RQSa78f0uoxmyF+0TM8ukj13Xnfs7j/EvEhmkvBioZxaUpmZmyPfjxwv60pIgbz5MDmgK7iS4+3mX6UA5/TR5d8mUgjU+g4rk8Kb4Mu0UlXjIB0ttov0DiNewNwIRt18jA8+o+u3dpjq+sWT8KOEUt+zwvo/7V3LvSye0rgTBIlDHCNAymg4VMk7BPZ7hm/ELNKjD+Jo2FR3qyHB5T0Y3HsLuJvW5iB4YlcNHlsdu87kGJ55tukmi8mxdAQ4Q7e2RCOFvu396j3x+UCB5iPNgiV5+I3lg02dZ77DnKxHZu8A/lJBdiB3QW0KtZB6awBdpUKD9jf1b0SHzUvKBds0pjBqAlkd25HN7rOrFleaJ1/ctaJxQZBKT5ZPt0m9STJEadao0xAH0ahmbWnOlFuhjuefXKnEgV4We0+UXgVCwOPjdAvBbI+e0ocS3MFEvzG6uBQE3xDk3SzynTnjh8BCNAw1FtxNrQHusEwMFxIt4I7mKZ9YIqioymCzLq9gwQbooMDQaHWBfEbwrbwqHyGO0aoSCqI3Haadr8faqU9GY/rOPNk3sgrDQoo//fb4hVC1CLQJ13hef4Y53CIrU7m2Ys6xt0nUW7/vGT1M0NPAgMBAAGjQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR5tFnme7bl5AFzgAiIyBpY9umbbjANBgkqhkiG9w0BAQsFAAOCAgEAVR9YqbyyqFDQDLHYGmkgJykIrGF1XIpu+ILlaS/V9lZLubhzEFnTIZd+50xx+7LSYK05qAvqFyFWhfFQDlnrzuBZ6brJFe+GnY+EgPbk6ZGQ3BebYhtF8GaV0nxvwuo77x/Py9auJ/GpsMiu/X1+mvoiBOv/2X/qkSsisRcOj/KKNFtY2PwByVS5uCbMiogziUwthDyC3+6WVwW6LLv3xLfHTjuCvjHIInNzktHCgKQ5ORAzI4JMPJ+GslWYHb4phowim57iaztXOoJwTdwJx4nLCgdNbOhdjsnvzqvHu7UrTkXWStAmzOVyyghqpZXjFaH3pO3JLF+l+/+sKAIuvtd7u+Nxe5AW0wdeRlN8NwdCjNPElpzVmbUq4JUagEiuTDkHzsxHpFKVK7q4+63SM1N95R1NbdWhscdCb+ZAJzVcoyi3B43njTOQ5yOf+1CceWxG1bQVs5ZufpsMljq4Ui0/1lvh+wjChP4kqKOJ2qxq4RgqsahDYVvTH9w7jXbyLeiNdd8XM2w9U/t7y0Ff/9yi0GE44Za4rF2LN9d11TPAmRGunUHBcnWEvgJBQl9nJEiU0Zsnvgc/ubhPgXRR4Xq37Z0j4r7g1SgEEzwxA57demyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=</CA>
+          <ServerID>radius.gcuc.edu.gh</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>gcuc.edu.gh</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4WhcNMzUwNjA0MTEwNDM4WjBPMQswCQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJuZXQgU2VjdXJpdHkgUmVzZWFyY2ggR3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBYMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAK3oJHP0FDfzm54rVygch77ct984kIxuPOZXoHj3dcKi/vVqbvYATyjb3miGbESTtrFj/RQSa78f0uoxmyF+0TM8ukj13Xnfs7j/EvEhmkvBioZxaUpmZmyPfjxwv60pIgbz5MDmgK7iS4+3mX6UA5/TR5d8mUgjU+g4rk8Kb4Mu0UlXjIB0ttov0DiNewNwIRt18jA8+o+u3dpjq+sWT8KOEUt+zwvo/7V3LvSye0rgTBIlDHCNAymg4VMk7BPZ7hm/ELNKjD+Jo2FR3qyHB5T0Y3HsLuJvW5iB4YlcNHlsdu87kGJ55tukmi8mxdAQ4Q7e2RCOFvu396j3x+UCB5iPNgiV5+I3lg02dZ77DnKxHZu8A/lJBdiB3QW0KtZB6awBdpUKD9jf1b0SHzUvKBds0pjBqAlkd25HN7rOrFleaJ1/ctaJxQZBKT5ZPt0m9STJEadao0xAH0ahmbWnOlFuhjuefXKnEgV4We0+UXgVCwOPjdAvBbI+e0ocS3MFEvzG6uBQE3xDk3SzynTnjh8BCNAw1FtxNrQHusEwMFxIt4I7mKZ9YIqioymCzLq9gwQbooMDQaHWBfEbwrbwqHyGO0aoSCqI3Haadr8faqU9GY/rOPNk3sgrDQoo//fb4hVC1CLQJ13hef4Y53CIrU7m2Ys6xt0nUW7/vGT1M0NPAgMBAAGjQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR5tFnme7bl5AFzgAiIyBpY9umbbjANBgkqhkiG9w0BAQsFAAOCAgEAVR9YqbyyqFDQDLHYGmkgJykIrGF1XIpu+ILlaS/V9lZLubhzEFnTIZd+50xx+7LSYK05qAvqFyFWhfFQDlnrzuBZ6brJFe+GnY+EgPbk6ZGQ3BebYhtF8GaV0nxvwuo77x/Py9auJ/GpsMiu/X1+mvoiBOv/2X/qkSsisRcOj/KKNFtY2PwByVS5uCbMiogziUwthDyC3+6WVwW6LLv3xLfHTjuCvjHIInNzktHCgKQ5ORAzI4JMPJ+GslWYHb4phowim57iaztXOoJwTdwJx4nLCgdNbOhdjsnvzqvHu7UrTkXWStAmzOVyyghqpZXjFaH3pO3JLF+l+/+sKAIuvtd7u+Nxe5AW0wdeRlN8NwdCjNPElpzVmbUq4JUagEiuTDkHzsxHpFKVK7q4+63SM1N95R1NbdWhscdCb+ZAJzVcoyi3B43njTOQ5yOf+1CceWxG1bQVs5ZufpsMljq4Ui0/1lvh+wjChP4kqKOJ2qxq4RgqsahDYVvTH9w7jXbyLeiNdd8XM2w9U/t7y0Ff/9yi0GE44Za4rF2LN9d11TPAmRGunUHBcnWEvgJBQl9nJEiU0Zsnvgc/ubhPgXRR4Xq37Z0j4r7g1SgEEzwxA57demyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=</CA>
+          <ServerID>radius.gcuc.edu.gh</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>gcuc.edu.gh</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Garden City University College</DisplayName>
+      <ProviderLogo mime="image/jpeg" encoding="base64">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</ProviderLogo>
+      <TermsOfUse><![CDATA[Terms of Use for the Eduroam Configuration Assistant Tool
+
+1. Acceptance of Terms
+By downloading and using the eduroam Configuration Assistant Tool (the "Tool"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the Tool.
+
+2. Description of Service
+The Tool provides an automated configuration setup for devices intending to connect to the eduroam network. This service is provided to ensure compatibility and enhance security when connecting to eduroam through GCUC.
+
+3. Privacy
+Your use of the Tool involves the processing of your device's network settings and may involve the collection of personal information. 
+
+4. User Responsibilities
+You are responsible for ensuring that any information required by the Tool is accurate and current. You are also responsible for the security of your device and must not share the configuration files or misuse the service in any way.
+
+5. Intellectual Property
+All intellectual property rights in the Tool and its contents are owned by GCUC or its licensors. You are granted a non-exclusive, non-transferable, revocable license to use the Tool solely for the purpose of configuring your device to connect to the eduroam network as permitted by these Terms.
+
+6. Prohibited Uses
+You may not use the Tool for any purpose that is unlawful or prohibited by these Terms, or to solicit the performance of any illegal activity or other activity which infringes the rights of Garden City University College or others.
+
+7. No Warranty
+The Tool is provided "as is" and GCUC makes no warranty of any kind, express or implied, including but not limited to warranties of performance, merchantability, fitness for a particular purpose, accuracy, omissions, completeness, currentness, and delays.
+
+8. Limitation of Liability
+In no event shall GCUC, its officers, directors, employees, or agents be liable for any direct, indirect, incidental, special, consequential or punitive damages resulting from the use or inability to use the Tool.
+
+9. Modifications to Terms
+GCUC reserves the right, at its sole discretion, to modify or replace these Terms at any time. If the alterations constitute a material change to the Terms, Garden City University College will notify you by posting an announcement on the website.
+
+10. Governing Law
+These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which GCUC is located, without regard to its conflict of law provisions.
+
+11. Contact Information
+If you have any questions about these Terms, please contact us at webmaster@gcuc.edu.gh / helpdesk.gcuc.edu.gh.
+]]></TermsOfUse>
+      <Helpdesk>
+        <EmailAddress>webmaster@gcuc.edu.gh</EmailAddress>
+        <Phone>0596917188</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

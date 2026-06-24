@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="latech.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFDDCCA/SgAwIBAgIJAO0lQZ0ZTtctMA0GCSqGSIb3DQEBCwUAMIG0MQswCQYDVQQGEwJVUzESMBAGA1UECAwJTG91aXNpYW5hMQ8wDQYDVQQHDAZSdXN0b24xIjAgBgNVBAoMGUxvdWlzaWFuYSBUZWNoIFVuaXZlcnNpdHkxIjAgBgkqhkiG9w0BCQEWE2hlbHBkZXNrQGxhdGVjaC5lZHUxODA2BgNVBAMML0xvdWlzaWFuYSBUZWNoIFVuaXZlcnNpdHkgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTE2MDkwOTIxMTE1MFoXDTI2MDkwNzIxMTE1MFowgbQxCzAJBgNVBAYTAlVTMRIwEAYDVQQIDAlMb3Vpc2lhbmExDzANBgNVBAcMBlJ1c3RvbjEiMCAGA1UECgwZTG91aXNpYW5hIFRlY2ggVW5pdmVyc2l0eTEiMCAGCSqGSIb3DQEJARYTaGVscGRlc2tAbGF0ZWNoLmVkdTE4MDYGA1UEAwwvTG91aXNpYW5hIFRlY2ggVW5pdmVyc2l0eSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDg5/7yIwgtZ0enLGRRh0MjTEHadvLMAoLT702bDUUtr1CSKY3TMyQEJul3wBgfv1UySM5AhnsgtmGPjKkyOPF5lNLhMV7OYGcgDtNbTjSOxIO0dLhzY3aLtKmge2ZQM3/RuuMdsdPrHQzlsy+O0PW4tX49QFCKI/ca2nz5j7vo2HWf4CYgS6QvlN8/dF/1sPXZlDzAOMpjk55hRtUQcqXCBaCQg62Kxnk8PCEdLcZ+522zKoTPxuRq/RT4B9/VIbLNUvdvbL/7AVABi5uklUbK1irPPzOZqFAwdemvdTg1LPiMCMVViZnhX428GcBrZOo0jfF8BMORCfbn5A/sMFUtAgMBAAGjggEdMIIBGTAdBgNVHQ4EFgQUP2iz2Sqa86ay0WSnVyPnCxKe+U0wgekGA1UdIwSB4TCB3oAUP2iz2Sqa86ay0WSnVyPnCxKe+U2hgbqkgbcwgbQxCzAJBgNVBAYTAlVTMRIwEAYDVQQIDAlMb3Vpc2lhbmExDzANBgNVBAcMBlJ1c3RvbjEiMCAGA1UECgwZTG91aXNpYW5hIFRlY2ggVW5pdmVyc2l0eTEiMCAGCSqGSIb3DQEJARYTaGVscGRlc2tAbGF0ZWNoLmVkdTE4MDYGA1UEAwwvTG91aXNpYW5hIFRlY2ggVW5pdmVyc2l0eSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHmCCQDtJUGdGU7XLTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQDgPTsF1uIn0ol2iDH+f2EXRLlszurewkda2JTlA4EVCVRCOqagO6uMsGSYmg4oEXgQMIBgzRAqGXUXXu6Ayz8sSL4AehH7qWiA+Zjtg2BSIbQWQjLIRYGoRPmfW04x43aguBwYAjN0gaKohy8wZoViAHXHvZ++Bu0Nr5c9Jkxe1wuxM4LD6F0WEgJPb3xRJKpHMZ52RfoxuF80WY2wxN2TcTnBlERfli/kFbJgq+bQsgIaEDdkvRpQKBseEvm2QKL2Za9eeTqP/c0oH95CflZ/UTCG7R3BtkuA2HLsFzJybJHI4v/9myEqdgiqW4tMO6xNXMc3S7yd3HJoKZZN52x3</CA>
+          <ServerID>eduroam.latech.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFDDCCA/SgAwIBAgIJAO0lQZ0ZTtctMA0GCSqGSIb3DQEBCwUAMIG0MQswCQYDVQQGEwJVUzESMBAGA1UECAwJTG91aXNpYW5hMQ8wDQYDVQQHDAZSdXN0b24xIjAgBgNVBAoMGUxvdWlzaWFuYSBUZWNoIFVuaXZlcnNpdHkxIjAgBgkqhkiG9w0BCQEWE2hlbHBkZXNrQGxhdGVjaC5lZHUxODA2BgNVBAMML0xvdWlzaWFuYSBUZWNoIFVuaXZlcnNpdHkgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTE2MDkwOTIxMTE1MFoXDTI2MDkwNzIxMTE1MFowgbQxCzAJBgNVBAYTAlVTMRIwEAYDVQQIDAlMb3Vpc2lhbmExDzANBgNVBAcMBlJ1c3RvbjEiMCAGA1UECgwZTG91aXNpYW5hIFRlY2ggVW5pdmVyc2l0eTEiMCAGCSqGSIb3DQEJARYTaGVscGRlc2tAbGF0ZWNoLmVkdTE4MDYGA1UEAwwvTG91aXNpYW5hIFRlY2ggVW5pdmVyc2l0eSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDg5/7yIwgtZ0enLGRRh0MjTEHadvLMAoLT702bDUUtr1CSKY3TMyQEJul3wBgfv1UySM5AhnsgtmGPjKkyOPF5lNLhMV7OYGcgDtNbTjSOxIO0dLhzY3aLtKmge2ZQM3/RuuMdsdPrHQzlsy+O0PW4tX49QFCKI/ca2nz5j7vo2HWf4CYgS6QvlN8/dF/1sPXZlDzAOMpjk55hRtUQcqXCBaCQg62Kxnk8PCEdLcZ+522zKoTPxuRq/RT4B9/VIbLNUvdvbL/7AVABi5uklUbK1irPPzOZqFAwdemvdTg1LPiMCMVViZnhX428GcBrZOo0jfF8BMORCfbn5A/sMFUtAgMBAAGjggEdMIIBGTAdBgNVHQ4EFgQUP2iz2Sqa86ay0WSnVyPnCxKe+U0wgekGA1UdIwSB4TCB3oAUP2iz2Sqa86ay0WSnVyPnCxKe+U2hgbqkgbcwgbQxCzAJBgNVBAYTAlVTMRIwEAYDVQQIDAlMb3Vpc2lhbmExDzANBgNVBAcMBlJ1c3RvbjEiMCAGA1UECgwZTG91aXNpYW5hIFRlY2ggVW5pdmVyc2l0eTEiMCAGCSqGSIb3DQEJARYTaGVscGRlc2tAbGF0ZWNoLmVkdTE4MDYGA1UEAwwvTG91aXNpYW5hIFRlY2ggVW5pdmVyc2l0eSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHmCCQDtJUGdGU7XLTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQDgPTsF1uIn0ol2iDH+f2EXRLlszurewkda2JTlA4EVCVRCOqagO6uMsGSYmg4oEXgQMIBgzRAqGXUXXu6Ayz8sSL4AehH7qWiA+Zjtg2BSIbQWQjLIRYGoRPmfW04x43aguBwYAjN0gaKohy8wZoViAHXHvZ++Bu0Nr5c9Jkxe1wuxM4LD6F0WEgJPb3xRJKpHMZ52RfoxuF80WY2wxN2TcTnBlERfli/kFbJgq+bQsgIaEDdkvRpQKBseEvm2QKL2Za9eeTqP/c0oH95CflZ/UTCG7R3BtkuA2HLsFzJybJHI4v/9myEqdgiqW4tMO6xNXMc3S7yd3HJoKZZN52x3</CA>
+          <ServerID>eduroam.latech.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFDDCCA/SgAwIBAgIJAO0lQZ0ZTtctMA0GCSqGSIb3DQEBCwUAMIG0MQswCQYDVQQGEwJVUzESMBAGA1UECAwJTG91aXNpYW5hMQ8wDQYDVQQHDAZSdXN0b24xIjAgBgNVBAoMGUxvdWlzaWFuYSBUZWNoIFVuaXZlcnNpdHkxIjAgBgkqhkiG9w0BCQEWE2hlbHBkZXNrQGxhdGVjaC5lZHUxODA2BgNVBAMML0xvdWlzaWFuYSBUZWNoIFVuaXZlcnNpdHkgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTE2MDkwOTIxMTE1MFoXDTI2MDkwNzIxMTE1MFowgbQxCzAJBgNVBAYTAlVTMRIwEAYDVQQIDAlMb3Vpc2lhbmExDzANBgNVBAcMBlJ1c3RvbjEiMCAGA1UECgwZTG91aXNpYW5hIFRlY2ggVW5pdmVyc2l0eTEiMCAGCSqGSIb3DQEJARYTaGVscGRlc2tAbGF0ZWNoLmVkdTE4MDYGA1UEAwwvTG91aXNpYW5hIFRlY2ggVW5pdmVyc2l0eSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDg5/7yIwgtZ0enLGRRh0MjTEHadvLMAoLT702bDUUtr1CSKY3TMyQEJul3wBgfv1UySM5AhnsgtmGPjKkyOPF5lNLhMV7OYGcgDtNbTjSOxIO0dLhzY3aLtKmge2ZQM3/RuuMdsdPrHQzlsy+O0PW4tX49QFCKI/ca2nz5j7vo2HWf4CYgS6QvlN8/dF/1sPXZlDzAOMpjk55hRtUQcqXCBaCQg62Kxnk8PCEdLcZ+522zKoTPxuRq/RT4B9/VIbLNUvdvbL/7AVABi5uklUbK1irPPzOZqFAwdemvdTg1LPiMCMVViZnhX428GcBrZOo0jfF8BMORCfbn5A/sMFUtAgMBAAGjggEdMIIBGTAdBgNVHQ4EFgQUP2iz2Sqa86ay0WSnVyPnCxKe+U0wgekGA1UdIwSB4TCB3oAUP2iz2Sqa86ay0WSnVyPnCxKe+U2hgbqkgbcwgbQxCzAJBgNVBAYTAlVTMRIwEAYDVQQIDAlMb3Vpc2lhbmExDzANBgNVBAcMBlJ1c3RvbjEiMCAGA1UECgwZTG91aXNpYW5hIFRlY2ggVW5pdmVyc2l0eTEiMCAGCSqGSIb3DQEJARYTaGVscGRlc2tAbGF0ZWNoLmVkdTE4MDYGA1UEAwwvTG91aXNpYW5hIFRlY2ggVW5pdmVyc2l0eSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHmCCQDtJUGdGU7XLTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQDgPTsF1uIn0ol2iDH+f2EXRLlszurewkda2JTlA4EVCVRCOqagO6uMsGSYmg4oEXgQMIBgzRAqGXUXXu6Ayz8sSL4AehH7qWiA+Zjtg2BSIbQWQjLIRYGoRPmfW04x43aguBwYAjN0gaKohy8wZoViAHXHvZ++Bu0Nr5c9Jkxe1wuxM4LD6F0WEgJPb3xRJKpHMZ52RfoxuF80WY2wxN2TcTnBlERfli/kFbJgq+bQsgIaEDdkvRpQKBseEvm2QKL2Za9eeTqP/c0oH95CflZ/UTCG7R3BtkuA2HLsFzJybJHI4v/9myEqdgiqW4tMO6xNXMc3S7yd3HJoKZZN52x3</CA>
+          <ServerID>eduroam.latech.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Louisiana Tech University - Louisiana Tech Wireless Config</DisplayName>
+      <Description>Wireless config tool for Louisiana Tech University eduroam and LaTechWPA2 wireless.</Description>
+      <ProviderLocation>
+        <Longitude>-92.65284989999998</Longitude>
+        <Latitude>32.5301559</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@latech.edu</EmailAddress>
+        <WebAddress>https://helpdesk.latech.edu/</WebAddress>
+        <Phone>318-257-5300</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

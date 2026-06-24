@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="uni-giessen.de" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDwzCCAqugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwHhcNMDgxMDAxMTA0MDE0WhcNMzMxMDAxMjM1OTU5WjCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqX9obX+hzkeXaXPSi5kfl82hVYAUdAqSzm1nzHoqvNK38DcLZSBnuaY/JIPwhqgcZ7bBcrGXHX+0CfHt8LRvWurmAwhiCFoT6ZrAIxlQjgeTNuUk/9k9uN0goOA/FvudocP05l03Sx5iRUKrERLMjfTlH6VJi1hKTXrcxlkIF+3anHqP1wvzpesVsqXFP6st4vGCvx9702cu+fjOlbpSD8DT6IavqjnKgP6TeMFvvhk1qlVtDRKgQFRzlAVfFmPHmBiiRqiDFt1MmUUOyCxGVWOHAD3bZwI18gfNycJ5v/hqO2V81xrJvNHy+SE/iWjnX2J14np+GPgNeGYtEotXHAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBS/WSA2AHmgoCJrjNXyYdK4LMuCSjANBgkqhkiG9w0BAQsFAAOCAQEAMQOiYQsfdOhyNsZt+U2e+iKo4YFWz827n+qrkRk4r6p8FU3ztqONpfSO9kSpp+ghla0+AGIWiPACuvxhI+YzmzB6azZie60EI4RYZeLbK4rnJVM3YlNfvNoBYimipidx5joifsFvHZVwIEoHNN/q/xWA5brXethbdXwFeilHfkCoMRN3zUA7tFFHei4R40cR3p1m0IvVVGb6g1XqfMIpiRvpb7PO4gWEyS8+eIVibslfwXhjdFjASBgMmTnrpMwatXlajRWc2BQN9noHV8cigwUtPJslJj0Ys6lDfMjIq2SPDqO/nBudMNva0Bkuqjzx+zOAduTNrRlPBSeOE6Fuwg==</CA>
+          <ServerID>radius1.uni-giessen.de</ServerID>
+          <ServerID>radius2.uni-giessen.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>eduroam@uni-giessen.de</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDwzCCAqugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwHhcNMDgxMDAxMTA0MDE0WhcNMzMxMDAxMjM1OTU5WjCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqX9obX+hzkeXaXPSi5kfl82hVYAUdAqSzm1nzHoqvNK38DcLZSBnuaY/JIPwhqgcZ7bBcrGXHX+0CfHt8LRvWurmAwhiCFoT6ZrAIxlQjgeTNuUk/9k9uN0goOA/FvudocP05l03Sx5iRUKrERLMjfTlH6VJi1hKTXrcxlkIF+3anHqP1wvzpesVsqXFP6st4vGCvx9702cu+fjOlbpSD8DT6IavqjnKgP6TeMFvvhk1qlVtDRKgQFRzlAVfFmPHmBiiRqiDFt1MmUUOyCxGVWOHAD3bZwI18gfNycJ5v/hqO2V81xrJvNHy+SE/iWjnX2J14np+GPgNeGYtEotXHAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBS/WSA2AHmgoCJrjNXyYdK4LMuCSjANBgkqhkiG9w0BAQsFAAOCAQEAMQOiYQsfdOhyNsZt+U2e+iKo4YFWz827n+qrkRk4r6p8FU3ztqONpfSO9kSpp+ghla0+AGIWiPACuvxhI+YzmzB6azZie60EI4RYZeLbK4rnJVM3YlNfvNoBYimipidx5joifsFvHZVwIEoHNN/q/xWA5brXethbdXwFeilHfkCoMRN3zUA7tFFHei4R40cR3p1m0IvVVGb6g1XqfMIpiRvpb7PO4gWEyS8+eIVibslfwXhjdFjASBgMmTnrpMwatXlajRWc2BQN9noHV8cigwUtPJslJj0Ys6lDfMjIq2SPDqO/nBudMNva0Bkuqjzx+zOAduTNrRlPBSeOE6Fuwg==</CA>
+          <ServerID>radius1.uni-giessen.de</ServerID>
+          <ServerID>radius2.uni-giessen.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>eduroam@uni-giessen.de</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Justus-Liebig-Universität Giessen - Uni Giessen Eduroam</DisplayName>
+      <Description>Das DFN CAT Tool konfiguriert Ihr Gerät für den Eduroam Zugang an der JLU Giessen.</Description>
+      <ProviderLocation>
+        <Longitude>8.65949999999998</Longitude>
+        <Latitude>50.57450000000001</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>8.665134200000011</Longitude>
+        <Latitude>50.5759536</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>8.665836899999931</Longitude>
+        <Latitude>50.5707806</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>8.671538999999939</Longitude>
+        <Latitude>50.570918</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>8.677428999999961</Longitude>
+        <Latitude>50.58058699999999</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>8.678311699999995</Longitude>
+        <Latitude>50.5876352</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>8.693461100000036</Longitude>
+        <Latitude>50.5809258</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>8.695259999999962</Longitude>
+        <Latitude>50.57617</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>8.699780000000032</Longitude>
+        <Latitude>50.58526</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>8.700694699999985</Longitude>
+        <Latitude>50.5739361</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>support@hrz.uni-giessen.de</EmailAddress>
+        <WebAddress>http://www.uni-giessen.de/fbz/svc/hrz/svc/support/helpdesk</WebAddress>
+        <Phone>+49 641 99 13100</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

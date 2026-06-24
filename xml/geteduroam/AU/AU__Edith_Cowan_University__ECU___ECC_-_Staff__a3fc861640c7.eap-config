@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="ecu.edu.au" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIID+DCCAuCgAwIBAgIUCpd9D68JQT3jZLIQwcPmACZNb0QwDQYJKoZIhvcNAQELBQAwgacxCzAJBgNVBAYTAkFVMRowGAYDVQQIDBFXZXN0ZXJuIEF1c3RyYWxpYTEOMAwGA1UEBwwFUGVydGgxHzAdBgNVBAoMFkVkaXRoIENvd2FuIFVuaXZlcnNpdHkxLjAsBgNVBAsMJUluZm9ybWF0aW9uIFRlY2hub2xvZ3kgSW5mcmFzdHJ1Y3R1cmUxGzAZBgNVBAMMEmVkdXJvYW0uZWN1LmVkdS5hdTAeFw0yMDExMzAwMjU1MDVaFw0zMDExMzAwMjU1MDVaMIGnMQswCQYDVQQGEwJBVTEaMBgGA1UECAwRV2VzdGVybiBBdXN0cmFsaWExDjAMBgNVBAcMBVBlcnRoMR8wHQYDVQQKDBZFZGl0aCBDb3dhbiBVbml2ZXJzaXR5MS4wLAYDVQQLDCVJbmZvcm1hdGlvbiBUZWNobm9sb2d5IEluZnJhc3RydWN0dXJlMRswGQYDVQQDDBJlZHVyb2FtLmVjdS5lZHUuYXUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDIIGHjPGjbERvGkJIqCc1hh/+OjtnQBCNm3ssr+gTezjcFcP4LllCqV4Lojkj91DmP49yxh1thD0kF5IaL4Pkahf30F5vfdVMmAZHORXcVOPpFIwT1ttHc5NHtM4UxsRjHNCp+zBOMWc/OKID6f6Jxs8iSUjkfP65knYrqjkbJbE0wfkHT0r7kjmaAjP1gpWeCQFgLXHCgPo9YHB5de2TqNBMb47pz0cIj5P92A661UYt5RfFp57bJbAL+nXWioGAnn727TmWjIFL7j6WAcMxddibw78Zw+LXA+FNjYd7eaE6/orEpxK1hxb+HWZGbRyma1aoOk2Jtb/kAFULFCwbNAgMBAAGjGjAYMAkGA1UdEwQCMAAwCwYDVR0PBAQDAgXgMA0GCSqGSIb3DQEBCwUAA4IBAQA+yTqDM1DAIW58ZcfIqitxcYapKMVkZ7TyE12jHOS0LB5SfpP7Xp3tU6g4Qu0cWh2p8auYhDR5WRDS1T8cpvYDmgj/mqPfscAC/428eNnF2ek2gdkUuna2eAcFKO6epNJgET0d/D36EWJdebqdpORMsL5xpRBswNwLKSlNxX8AEdFUjYa4E9CZIjrbRrj4bfcLVALmTfFKoILZ2dnFCS1T7L5tarKkA8xs6JC6LosbAMpRLcHROtNTCQV6OiLYe2McjmFWD5YRL84tPmlLkIOhSPWgDKh2j9BZ1OBObkW4MYuKvFggLbRs6MQ4hY/4/nB2jnDq/04MnmmeKhx8jrKO</CA>
+          <ServerID>eduroam.ecu.edu.au</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>ecu.edu.au</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Edith Cowan University - ECU &amp; ECC - Staff</DisplayName>
+      <Description/>
+      <ProviderLocation>
+        <Longitude>115.653527594615</Longitude>
+        <Latitude>-33.36731705</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>115.77096200000005</Longitude>
+        <Latitude>-31.752426</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>115.86677614599465</Longitude>
+        <Latitude>-31.920505136781408</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">iVBORw0KGgoAAAANSUhEUgAAAFsAAABDCAMAAAGzarnLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALlUExURffz9bY6SLAuPa4pN60lMa8sO6wjLqslOtN9TOvEXeq8XLtITKMvRsI4RMAuOb8sN74oMsdIU9RzfMEyPb4qNdBlb8tVX8lPWtmDir0kLs9ha9Z7g9JsdspSXcU/S7wkMuGAR//OWv/GWP7GWf7GV/3FV//FWP3GV//GWf7GWP3FWP/HWcpJPbsfJ+i0uf///7sgKfXf4eawteKgprcbGe/Mzvjm5/nq7NuLkroeI+WtsvPa3eGdo+e0uLwiKv7HWLwjLO/O0PLV2Pvz9MdFUOm5veq9wd+aofHT1e3FyPDO0eB/R81eaPbh4+OlquWpr/fn6c1aZchLVv/FV/nt7sdHUuCXnd2RmO7Kzfjo6f/HWP78/L8kLOmytuzBxf/JVv34+bguO7UlMrYpNbUiLrQjOPfKXPPBWv/+/vH0+CxShSBHfR5UgSlagKQvRsMoMBFWjABMhgBKhgBIhsQrNABLhQBKhABIgwBFgQ1KhgBCgAA/fgA9fRdXjStikzVolzBmliFckAJLhgBIhABFh8EjKvT3+V2DqVF8pU96o0d0nwVNhmOIrKq90dbf6ezx9ff5+/n7/Nvk7K7B01hueVBrei9cf/v8/eLp8AxRiMza5jpsmgBCiImJb//PVf/OVml4dQBDiP/MVZKNbQhPiIOgvP/MVmuNsOvw9P/KVxdVi+Tr8a2+0vz8/Nri636cuunu852zynSUtdTe6P3+/rnJ2RtZjgNOh9Hb5rDC1AA3ebLE1cnV4ebs8rsiK6C1y0t3otnh6rjH2LzK2vb4+u3y9sbT4ODn7oeHcP39/Yikv4ymwa2/0gAwdQRLhO/z97/N3P/9/cPQ3kNwnV9yd4KCcnR8c5Cpw6/B082sYruiZQA/ifzGV/rFWTlhfteyXwNLhVZ/p560yqmZaaS4zbXF1rzM2/jp6t3n7vv+/6i7z5mxyO7z97jI2VqAp3qXtqW7z7bH2DlnlwJJhQAtc73M2wAAAGgPAHQAAAD3dFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wDuZjaTAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAMHUlEQVRIS6VXz2tbVxbWENPOOIgH2khIhkd3WQhO4rGKL/aqoFWpitCTdg3etIvEVbXwJlyIx4tIiTBGVHEXDgnRCyZvMWiRLt4iWgxehCLw201DW8gQF8RDDXiTP2C+794nW24NM9DzpPvrnXvuud89P+5LSfMDd2HBWVxcdN3Uxp3bt+/cuXPr603XSfVEtEjoa9/Npno6fKVbUS30t5ZSvdNxrKOQHbBpPdaCTg0CesO9SOLwV3/glikgaIvEIuoqOwmBrblA+oqLpm5jydt3NkFuCsuJ9P3Ij/IpiUIJW2yXU4IVIrR87WA8Apcf+mE6NRqGLYm0vxh5qWCvHUtbNiROQ86MVKpXVZWcUpnyjYrnfFQzpHJY68H9B90w1LF0wvDhfhjtPwyVUGsdhlEHJTfvh6Ffi7a4NYoDt46iCOP8h86G4Y9CvSdaSy/ya+QP75VLlj8EgrG80j/U/MWar9VN6IPpUYglUNhaR8oD/zFZj2Ui72W6He6+EDlQVY9YpfH/MO2k3QUgRnLdD1NO+YZaLXtVV60Ert2WT2yBJs7QlBZWUN25kvpXp/PgfqQ7EmvsdVNH+19jh1csVlFgykHtKf7PwnzenAUIgzuiZ+NuFfhzPEIZtUKM4/8sLJc4LtLGOOChHDPuCccPx6eUg2lm/NqzgeMYORgCZrr3aCb/4zrXJUAocbIcG9Qeh6uK49RQBLjC9Go/+bVBKFU3dbA3HMZhBCvDvgY1378VDrzgSgrSE4i1xokS54FAn3YcS7A3DALZk1G8EcNqpPgXyL/feY7T6mKJvsiRhJM3UjX6/JGUgv6OEuWVV26Uc55aW0cncCtqveC4iZFZ8l2F3bqpd+mGqi6VVal6fdUt5Boqv97IqcznrmG/dg1/PGDPSKUB6VSYZHaAmntIBowFsgnDU2WFBea8Cy9g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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>itservicedesk@ecu.edu.au</EmailAddress>
+        <WebAddress>https://www.ecu.edu.au/centres/digital-and-campus-services/overview</WebAddress>
+        <Phone>+61 8 6304 6000</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

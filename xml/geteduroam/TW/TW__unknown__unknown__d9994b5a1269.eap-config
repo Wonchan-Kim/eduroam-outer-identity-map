@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="eduroam.ncku.edu.tw" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFQTCCAymgAwIBAgICDL4wDQYJKoZIhvcNAQELBQAwUTELMAkGA1UEBhMCVFcxEjAQBgNVBAoTCVRBSVdBTi1DQTEQMA4GA1UECxMHUm9vdCBDQTEcMBoGA1UEAxMTVFdDQSBHbG9iYWwgUm9vdCBDQTAeFw0xMjA2MjcwNjI4MzNaFw0zMDEyMzExNTU5NTlaMFExCzAJBgNVBAYTAlRXMRIwEAYDVQQKEwlUQUlXQU4tQ0ExEDAOBgNVBAsTB1Jvb3QgQ0ExHDAaBgNVBAMTE1RXQ0EgR2xvYmFsIFJvb3QgQ0EwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCwBdvI64zEbooh745NnHEKH1Jw7W2CnJfF10xORUnLQEK1EjRsGcJ0pDFfhQKX7EMzClPSnIyOt7h52yvVavKOZsTuKwEHktSz0ALfUPZVr2YOy+BHYC8rMjk1Ujoog/h7FsYYuGLWRyWRzvAZEk2tY/XTP3VfKfChMBwqoJimFb3u/Rk28OKRQ4/6ytYQJ0lM793B8YVwm8rqqFpD/G2Gb3PpN0Wp8DbHzIh1HrtsBv+baz4X7GGqcXzGHaL3SekVtTzWoWH1EfcFbx39Eb7QMAfCKbAJTibc46KokWofwpFFiFzlmLhxpRUZyXx1EcxwdE8tmx2RRP1WKKD+u4ZqyPpcC1jcxkt2yKsi2XMPpfRaAok/T54igu6idFMqPVMnaR1sjjIsZAAmY2E2TqNGtz99sy2sbZCilaLOz9qC5wc0GZbpuCGqKX6mOL6OKUohZnkfs8O1CWfe1tQHRvMq2uYiN2DLgbYPoA/pyJV/v1WRBXrPPRXAb94JlAGD1zQbzECl8LibZ9WYkTunhHiVJqRaCPgrdLQABDzfuBSO6N+pjWxnkjMdwLfS7JLIvgm/LCkFbwJrnu+8vyq8W8BQj0FwcYeyTbcEqYSjMq+u7msXi7Kx/mzhkIyIqJdIzshNy/MGz19qCkKxHh53L46g5pIOBvwFItIm4TFRfTLcDwIDAQABoyMwITAOBgNVHQ8BAf8EBAMCAQYwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEAXzSBdu+WHdXltdkCY4QWwa6gcFGn90xHNcgL1yg9iXHZqjNB6hQbbCEAwGxCGX6faVsgQt+i0trEfJdLjbDorMjupWkEmQqSpqsnLhpNgb+E1HAerUf+/UqdM+DyucRFCCEK2mlpc3INvjT+lIutwx4116KD7+U4x6WFH6vPNOw/KP4M8VeGTslV9xzU2KV9Bnpv1d8Q34FOIWWxtuEXeZVFBs5fzNxGiWNoRI2T9GRwoD2dKAXDOXC4Ynsg/eTb6QihuJ49CcdP+yz4k3ZB3lLg4VfSnQO8d57+nile98FRYB/e2guyLXW3Q0iT5/Z5xoRdgFlglPx4mI88k1HtQJAH32RjJMtOcQWh15QaiDLxInQirqWm2BJpTGCjAu4r7NRjkgtevi92a6O2JryPA9gK8kxkRr05YuWW6zRjESjMlfGt7+/cgFhI6Uu46mWs6fyAtbXIRfmswZ/ZuepiiI7E8UuDEq3mi4TWnsLrgxifarsbJGAzcMzs9zLzXNl5fe+epP7JI8Mk7hWSsT2RTyaGvWZzJBPqpK5jwa19hAM8EHiGG3njxPPyBJUgriOCxLM6AGK/5jYk4Ve6xx6QddVfP5VhK8E7zeWzaGHQRiapIVJpLesux+t3zqY6tQMzT3bR51xUAV3LePTJDL/PEo4XLSNolOer/qmyKwbQBM0=</CA>
+          <ServerID>aaa.ncku.edu.tw</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>loginwifincku@eduroam.ncku.edu.tw</OuterIdentity>
+          <InnerIdentitySuffix>eduroam.ncku.edu.tw</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <SSID>NCKU-WiFi(2.4G)</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <SSID>NCKU-WiFi(5G)</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <SSID>NCKU-WiFi(H)</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>[NCKU] 國立成功大學 (National Cheng Kung University) [學網漫遊第三方資料庫維運]</DisplayName>
+      <Description>Please log in using the account and password provided by your institution.
+
+This configuration file is maintained by the "eduroam TW Third-party Database" and is supervised by the TANet Roaming Center.
+If you are unable to connect despite entering the correct credentials, please contact eduroamtw@googlegroups.com
+ or roamingcenter@gms.ndhu.edu.tw
+.
+
+For more information about this project, please visit: https://edur.isli.me/
+
+Source:	https://cc.ncku.edu.tw/p/412-1213-3314.php?Lang=en</Description>
+      <ProviderLocation>
+        <Longitude>120.216189622879</Longitude>
+        <Latitude>22.999068249370325</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>em61000@email.ncku.edu.tw</EmailAddress>
+        <WebAddress>https://cc.ncku.edu.tw/p/412-1213-3314.php?Lang=en</WebAddress>
+        <Phone>+88662368855</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

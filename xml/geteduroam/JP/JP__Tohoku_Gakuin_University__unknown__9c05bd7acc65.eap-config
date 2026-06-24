@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="aa.nc.tohoku-gakuin.ac.jp" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDrDCCApSgAwIBAgIJAMROHB35W8swMA0GCSqGSIb3DQEBCwUAMEIxCzAJBgNVBAYTAkpQMQ8wDQYDVQQIEwZtaXlhZ2kxIjAgBgNVBAMTGWFhLm5jLnRvaG9rdS1nYWt1aW4uYWMuanAwHhcNMjQwODEzMDI0OTIwWhcNMzkwODExMDI0OTIwWjBCMQswCQYDVQQGEwJKUDEPMA0GA1UECBMGbWl5YWdpMSIwIAYDVQQDExlhYS5uYy50b2hva3UtZ2FrdWluLmFjLmpwMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq+WPR/MZsaZv2/CtFJUakkR6tCCzPjyhmADkXI2fBcJNrepTVMIJabrqqrKTXvnuG1Z0WsSW7y/S+5Fmr5bs98Bjxj/Tk6m3G22tSyC63PwIpQqkjrbMkaS64oLIP5XHTd3JtzG8I7qxSNJI3G0IViP8FGtgl/Z6GeflFBBDQ6RWN/9EghPyW1yopBvfEm8Y5uhvcRyVgHSa8CoGKKLRf3XGnC9aiIlu2zL6JyP5ouhWGTnyEqNTsit7094szMPWD3YIeelD3ttJRVMWFASji/122zU4aVcmoxIix2hXWHPIL9wFGYd6MHdcRlqoSOqJDFg1MYALpIIuETfUvCzqXQIDAQABo4GkMIGhMB0GA1UdDgQWBBTWsku2RBddU7ZTjd+hlSGyWZOdpDByBgNVHSMEazBpgBTWsku2RBddU7ZTjd+hlSGyWZOdpKFGpEQwQjELMAkGA1UEBhMCSlAxDzANBgNVBAgTBm1peWFnaTEiMCAGA1UEAxMZYWEubmMudG9ob2t1LWdha3Vpbi5hYy5qcIIJAMROHB35W8swMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAA+SLaY/wD1/Zi1njNESYkUzMji2pytvddepBfQK68fi3Y4sNzzRYnPmG7NFJDZgEPZfs9Q09bU0/mNnVAElRPH7m9cAj3d6gCYFLACRdud2JnQYI8aDJ+bRBEHizRlkV3MQcJD3YEc1/LTZwUoTmwiY3jtJIrUH3AaQ5FzZ38BlCD7/k171xy75Za1TvHCXyECYYxK2QDwI9JzYiFcDDAz3OxG5JwaVA69DP1cS9nJ38ktjfhN7o2eWo1MKnW8XFoKw2UXTE+EZOp0aI4fxdhzf70py39uHH3uvJBWlA5VdGdDMSMBxuTQf5Ew/czfQ2qckncxT1vOMRVgot82+M+w=</CA>
+          <ServerID>aa.nc.tohoku-gakuin.ac.jp</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>13</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDrDCCApSgAwIBAgIJAMROHB35W8swMA0GCSqGSIb3DQEBCwUAMEIxCzAJBgNVBAYTAkpQMQ8wDQYDVQQIEwZtaXlhZ2kxIjAgBgNVBAMTGWFhLm5jLnRvaG9rdS1nYWt1aW4uYWMuanAwHhcNMjQwODEzMDI0OTIwWhcNMzkwODExMDI0OTIwWjBCMQswCQYDVQQGEwJKUDEPMA0GA1UECBMGbWl5YWdpMSIwIAYDVQQDExlhYS5uYy50b2hva3UtZ2FrdWluLmFjLmpwMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq+WPR/MZsaZv2/CtFJUakkR6tCCzPjyhmADkXI2fBcJNrepTVMIJabrqqrKTXvnuG1Z0WsSW7y/S+5Fmr5bs98Bjxj/Tk6m3G22tSyC63PwIpQqkjrbMkaS64oLIP5XHTd3JtzG8I7qxSNJI3G0IViP8FGtgl/Z6GeflFBBDQ6RWN/9EghPyW1yopBvfEm8Y5uhvcRyVgHSa8CoGKKLRf3XGnC9aiIlu2zL6JyP5ouhWGTnyEqNTsit7094szMPWD3YIeelD3ttJRVMWFASji/122zU4aVcmoxIix2hXWHPIL9wFGYd6MHdcRlqoSOqJDFg1MYALpIIuETfUvCzqXQIDAQABo4GkMIGhMB0GA1UdDgQWBBTWsku2RBddU7ZTjd+hlSGyWZOdpDByBgNVHSMEazBpgBTWsku2RBddU7ZTjd+hlSGyWZOdpKFGpEQwQjELMAkGA1UEBhMCSlAxDzANBgNVBAgTBm1peWFnaTEiMCAGA1UEAxMZYWEubmMudG9ob2t1LWdha3Vpbi5hYy5qcIIJAMROHB35W8swMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAA+SLaY/wD1/Zi1njNESYkUzMji2pytvddepBfQK68fi3Y4sNzzRYnPmG7NFJDZgEPZfs9Q09bU0/mNnVAElRPH7m9cAj3d6gCYFLACRdud2JnQYI8aDJ+bRBEHizRlkV3MQcJD3YEc1/LTZwUoTmwiY3jtJIrUH3AaQ5FzZ38BlCD7/k171xy75Za1TvHCXyECYYxK2QDwI9JzYiFcDDAz3OxG5JwaVA69DP1cS9nJ38ktjfhN7o2eWo1MKnW8XFoKw2UXTE+EZOp0aI4fxdhzf70py39uHH3uvJBWlA5VdGdDMSMBxuTQf5Ew/czfQ2qckncxT1vOMRVgot82+M+w=</CA>
+          <ServerID>aa.nc.tohoku-gakuin.ac.jp</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDrDCCApSgAwIBAgIJAMROHB35W8swMA0GCSqGSIb3DQEBCwUAMEIxCzAJBgNVBAYTAkpQMQ8wDQYDVQQIEwZtaXlhZ2kxIjAgBgNVBAMTGWFhLm5jLnRvaG9rdS1nYWt1aW4uYWMuanAwHhcNMjQwODEzMDI0OTIwWhcNMzkwODExMDI0OTIwWjBCMQswCQYDVQQGEwJKUDEPMA0GA1UECBMGbWl5YWdpMSIwIAYDVQQDExlhYS5uYy50b2hva3UtZ2FrdWluLmFjLmpwMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq+WPR/MZsaZv2/CtFJUakkR6tCCzPjyhmADkXI2fBcJNrepTVMIJabrqqrKTXvnuG1Z0WsSW7y/S+5Fmr5bs98Bjxj/Tk6m3G22tSyC63PwIpQqkjrbMkaS64oLIP5XHTd3JtzG8I7qxSNJI3G0IViP8FGtgl/Z6GeflFBBDQ6RWN/9EghPyW1yopBvfEm8Y5uhvcRyVgHSa8CoGKKLRf3XGnC9aiIlu2zL6JyP5ouhWGTnyEqNTsit7094szMPWD3YIeelD3ttJRVMWFASji/122zU4aVcmoxIix2hXWHPIL9wFGYd6MHdcRlqoSOqJDFg1MYALpIIuETfUvCzqXQIDAQABo4GkMIGhMB0GA1UdDgQWBBTWsku2RBddU7ZTjd+hlSGyWZOdpDByBgNVHSMEazBpgBTWsku2RBddU7ZTjd+hlSGyWZOdpKFGpEQwQjELMAkGA1UEBhMCSlAxDzANBgNVBAgTBm1peWFnaTEiMCAGA1UEAxMZYWEubmMudG9ob2t1LWdha3Vpbi5hYy5qcIIJAMROHB35W8swMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAA+SLaY/wD1/Zi1njNESYkUzMji2pytvddepBfQK68fi3Y4sNzzRYnPmG7NFJDZgEPZfs9Q09bU0/mNnVAElRPH7m9cAj3d6gCYFLACRdud2JnQYI8aDJ+bRBEHizRlkV3MQcJD3YEc1/LTZwUoTmwiY3jtJIrUH3AaQ5FzZ38BlCD7/k171xy75Za1TvHCXyECYYxK2QDwI9JzYiFcDDAz3OxG5JwaVA69DP1cS9nJ38ktjfhN7o2eWo1MKnW8XFoKw2UXTE+EZOp0aI4fxdhzf70py39uHH3uvJBWlA5VdGdDMSMBxuTQf5Ew/czfQ2qckncxT1vOMRVgot82+M+w=</CA>
+          <ServerID>aa.nc.tohoku-gakuin.ac.jp</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDrDCCApSgAwIBAgIJAMROHB35W8swMA0GCSqGSIb3DQEBCwUAMEIxCzAJBgNVBAYTAkpQMQ8wDQYDVQQIEwZtaXlhZ2kxIjAgBgNVBAMTGWFhLm5jLnRvaG9rdS1nYWt1aW4uYWMuanAwHhcNMjQwODEzMDI0OTIwWhcNMzkwODExMDI0OTIwWjBCMQswCQYDVQQGEwJKUDEPMA0GA1UECBMGbWl5YWdpMSIwIAYDVQQDExlhYS5uYy50b2hva3UtZ2FrdWluLmFjLmpwMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq+WPR/MZsaZv2/CtFJUakkR6tCCzPjyhmADkXI2fBcJNrepTVMIJabrqqrKTXvnuG1Z0WsSW7y/S+5Fmr5bs98Bjxj/Tk6m3G22tSyC63PwIpQqkjrbMkaS64oLIP5XHTd3JtzG8I7qxSNJI3G0IViP8FGtgl/Z6GeflFBBDQ6RWN/9EghPyW1yopBvfEm8Y5uhvcRyVgHSa8CoGKKLRf3XGnC9aiIlu2zL6JyP5ouhWGTnyEqNTsit7094szMPWD3YIeelD3ttJRVMWFASji/122zU4aVcmoxIix2hXWHPIL9wFGYd6MHdcRlqoSOqJDFg1MYALpIIuETfUvCzqXQIDAQABo4GkMIGhMB0GA1UdDgQWBBTWsku2RBddU7ZTjd+hlSGyWZOdpDByBgNVHSMEazBpgBTWsku2RBddU7ZTjd+hlSGyWZOdpKFGpEQwQjELMAkGA1UEBhMCSlAxDzANBgNVBAgTBm1peWFnaTEiMCAGA1UEAxMZYWEubmMudG9ob2t1LWdha3Vpbi5hYy5qcIIJAMROHB35W8swMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAA+SLaY/wD1/Zi1njNESYkUzMji2pytvddepBfQK68fi3Y4sNzzRYnPmG7NFJDZgEPZfs9Q09bU0/mNnVAElRPH7m9cAj3d6gCYFLACRdud2JnQYI8aDJ+bRBEHizRlkV3MQcJD3YEc1/LTZwUoTmwiY3jtJIrUH3AaQ5FzZ38BlCD7/k171xy75Za1TvHCXyECYYxK2QDwI9JzYiFcDDAz3OxG5JwaVA69DP1cS9nJ38ktjfhN7o2eWo1MKnW8XFoKw2UXTE+EZOp0aI4fxdhzf70py39uHH3uvJBWlA5VdGdDMSMBxuTQf5Ew/czfQ2qckncxT1vOMRVgot82+M+w=</CA>
+          <ServerID>aa.nc.tohoku-gakuin.ac.jp</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Tohoku Gakuin University</DisplayName>
+      <ProviderLocation>
+        <Longitude>140.87701499462128</Longitude>
+        <Latitude>38.24962766495685</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <WebAddress>https://www.tohoku-gakuin.ac.jp/itnavi/services/eduroam/</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

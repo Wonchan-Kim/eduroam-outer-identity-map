@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="edgehill.ac.uk" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>lib3.edgehill.ac.uk</ServerID>
+          <ServerID>radius1.eduroam.edgehill.ac.uk</ServerID>
+          <ServerID>radius2.eduroam.edgehill.ac.uk</ServerID>
+          <ServerID>radius3.eduroam.edgehill.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>edgehill.ac.uk</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>lib3.edgehill.ac.uk</ServerID>
+          <ServerID>radius1.eduroam.edgehill.ac.uk</ServerID>
+          <ServerID>radius2.eduroam.edgehill.ac.uk</ServerID>
+          <ServerID>radius3.eduroam.edgehill.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>edgehill.ac.uk</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>lib3.edgehill.ac.uk</ServerID>
+          <ServerID>radius1.eduroam.edgehill.ac.uk</ServerID>
+          <ServerID>radius2.eduroam.edgehill.ac.uk</ServerID>
+          <ServerID>radius3.eduroam.edgehill.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>edgehill.ac.uk</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Edge Hill University</DisplayName>
+      <ProviderLocation>
+        <Longitude>-2.8735556877441013</Longitude>
+        <Latitude>53.559682751429136</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>ITServicedesk@edgehill.ac.uk</EmailAddress>
+        <WebAddress>https://www.edgehill.ac.uk/departments/support/itservices/edu-roam-wi-fi-network/</WebAddress>
+        <Phone>01695 650444</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

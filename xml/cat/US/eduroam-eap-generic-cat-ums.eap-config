@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="maine.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDhDCCAmygAwIBAgIBATANBgkqhkiG9w0BAQsFADBnMQswCQYDVQQGEwJVUzEOMAwGA1UECAwFTWFpbmUxDjAMBgNVBAcMBU9yb25vMRUwEwYDVQQKDAxOZXR3b3JrbWFpbmUxITAfBgNVBAMMGE5ldHdvcmttYWluZSBFQVAgQ0EgUm9vdDAeFw0xODA3MjQxNTE1MTlaFw0zODA3MTkxNTE1MTlaMGcxCzAJBgNVBAYTAlVTMQ4wDAYDVQQIDAVNYWluZTEOMAwGA1UEBwwFT3Jvbm8xFTATBgNVBAoMDE5ldHdvcmttYWluZTEhMB8GA1UEAwwYTmV0d29ya21haW5lIEVBUCBDQSBSb290MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtVLEueyCU5Tu18sI/OKz5RYLNSXb9RE9ajYmoVYdeqxvHjlBFHDZC4N+84bFUufVqHx+Lkniu6cCbCYMQdIID6x8O4yBD6EFhNpB/YHTtRymOr5AeJ//NxE0F29MpiaG8vN3Dc8Jj9HfXfVjDVJxob60FWMZtwisy9tuCQLTjN3y9/7Itr2/gUIteDHyiRm1dF+bzYOoVLgg/AwYuc6nOXw3mIzlNntdEyEydXWHN675UolvFqutiHCW5pS8LGkTE5o55AZvsGB8BeKchU/Mq+f36IvNCvK64JEk2MD55tEq0W+HhKHSyLyXCX/8a/wt4TNmYry7TlT62FSSmv9VTwIDAQABozswOTASBgNVHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwICBDATBgNVHSUEDDAKBggrBgEFBQcDATANBgkqhkiG9w0BAQsFAAOCAQEAHHqPvkB1aJW2o+JDCWm0LU3GwK6mP+7cwDUl9C7E3kMDnf2SnQqjNolRJuSHp19cCe7zmDbprSc4L1ZWGZFzeIX5220TP8kBAQHw/DXZD6Zh9U9F7MXmzEaWfHCeCy8cQ7m6EB1vmhF2toFMuONe5NYoCitBTRqiM+SiIwivw93WGRH+MUEFCGou6GYxAzNPkg5jODl1Kcot5NIafGbLMt3Orpatgf+bCLy5yR55NY+10dl87RcTU3k+4mey5DmCFyUdNfE1d3zE3CKKv7ZazkYLTFvpYW2rTnM7JNh+yRlqMNyR+oeA5nqBnbgpyQYgqvhwHEqysDWzrT0GpyKA/g==</CA>
+          <ServerID>ise-o-psn.net.maine.edu</ServerID>
+          <ServerID>ise-p-psn.net.maine.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>maine.edu</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of Maine System</DisplayName>
+      <ProviderLocation>
+        <Longitude>-68.67034196990832</Longitude>
+        <Latitude>44.899929549999996</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>help@maine.edu</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

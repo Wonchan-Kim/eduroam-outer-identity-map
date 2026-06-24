@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="bau.edu.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFMjCCBBqgAwIBAgIJAPWtl9BF69SfMA0GCSqGSIb3DQEBCwUAMIGtMQswCQYDVQQGEwJCRDETMBEGA1UECAwKTXltZW5zaW5naDETMBEGA1UEBwwKTXltZW5zaW5naDErMCkGA1UECgwiQmFuZ2xhZGVzaCBBZ3JpY3VsdHVyYWwgVW5pdmVyc2l0eTEjMCEGCSqGSIb3DQEJARYUc29oZWwuaWN0QGJhdS5lZHUuYmQxIjAgBgNVBAMMGUJBVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjMwNjIyMDkyNTQ4WhcNMzMwNjE5MDkyNTQ4WjCBrTELMAkGA1UEBhMCQkQxEzARBgNVBAgMCk15bWVuc2luZ2gxEzARBgNVBAcMCk15bWVuc2luZ2gxKzApBgNVBAoMIkJhbmdsYWRlc2ggQWdyaWN1bHR1cmFsIFVuaXZlcnNpdHkxIzAhBgkqhkiG9w0BCQEWFHNvaGVsLmljdEBiYXUuZWR1LmJkMSIwIAYDVQQDDBlCQVUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAue6COTxEfl/7JKg5Qw+6rLWLzoToEvKQ59Tu1mXFgxtkbV7Q6Yo7UuTYttZemp7iu0BF5q+DCRDkAw7ALC5jsN6BaOr/Sjxx+P5cHbSRxoyxnQQWHDrZaPQ4Z/HTF8cRBiexMCnIAPwCcypvj4bjIf1Z49ign8+eqqD17Wa6tBRLceJcIQnhb4dhz1D8M2BiCsZE2nhmBIOvBaXnoF75UVKQGyKLEmZK5iC5TZS1vQV2GPnPnqwPfEHq5ipFD1leVM0s86SVFdjZE0KEMNs7mx2+9ZepInn9kjKKteCGZZjaBUYs9BAuNdi7xRC8M7VOGIcyHo/BwWbCC+ngmsuMfQIDAQABo4IBUTCCAU0wHQYDVR0OBBYEFPvon6A9QJckuxU327LZzXj6WQAkMIHiBgNVHSMEgdowgdeAFPvon6A9QJckuxU327LZzXj6WQAkoYGzpIGwMIGtMQswCQYDVQQGEwJCRDETMBEGA1UECAwKTXltZW5zaW5naDETMBEGA1UEBwwKTXltZW5zaW5naDErMCkGA1UECgwiQmFuZ2xhZGVzaCBBZ3JpY3VsdHVyYWwgVW5pdmVyc2l0eTEjMCEGCSqGSIb3DQEJARYUc29oZWwuaWN0QGJhdS5lZHUuYmQxIjAgBgNVBAMMGUJBVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHmCCQD1rZfQRevUnzAPBgNVHRMBAf8EBTADAQH/MDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly93d3cuZXhhbXBsZS5vcmcvZXhhbXBsZV9jYS5jcmwwDQYJKoZIhvcNAQELBQADggEBAAXzawNvKjaDbfxbawa1QjqbuLijnjNnWyZrUZsoxd3yqBDAa5r1zgqW8C6yW08UnfhlUx7HrgI7JG3oq7B0mJSUBDcJ0rgSNxWXI/GYFpvgy7F5A64V35cF0ekQtUzjRNZFA8n77QvUXlUYHrHLYEVNp1Q20DnvJlCloCD3E1w2q/nuazs/uXO09LW0GbnQ5oCmDmsvWVZ5ejX3etHdRnrhXWgNpDYO8mud+VKt/55ruizpCN4bDg9a5tJOCIhzDWLchLye9T6iv4hRs6pYbqY0u1h+wfBZfJWVl5jjTCF9WG7ogniErGO/WkUxJMx/BUbyUu/EpsnXHHK+Kw8esq4=</CA>
+          <ServerID>irs.bau.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@bau.edu.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFMjCCBBqgAwIBAgIJAPWtl9BF69SfMA0GCSqGSIb3DQEBCwUAMIGtMQswCQYDVQQGEwJCRDETMBEGA1UECAwKTXltZW5zaW5naDETMBEGA1UEBwwKTXltZW5zaW5naDErMCkGA1UECgwiQmFuZ2xhZGVzaCBBZ3JpY3VsdHVyYWwgVW5pdmVyc2l0eTEjMCEGCSqGSIb3DQEJARYUc29oZWwuaWN0QGJhdS5lZHUuYmQxIjAgBgNVBAMMGUJBVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwHhcNMjMwNjIyMDkyNTQ4WhcNMzMwNjE5MDkyNTQ4WjCBrTELMAkGA1UEBhMCQkQxEzARBgNVBAgMCk15bWVuc2luZ2gxEzARBgNVBAcMCk15bWVuc2luZ2gxKzApBgNVBAoMIkJhbmdsYWRlc2ggQWdyaWN1bHR1cmFsIFVuaXZlcnNpdHkxIzAhBgkqhkiG9w0BCQEWFHNvaGVsLmljdEBiYXUuZWR1LmJkMSIwIAYDVQQDDBlCQVUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAue6COTxEfl/7JKg5Qw+6rLWLzoToEvKQ59Tu1mXFgxtkbV7Q6Yo7UuTYttZemp7iu0BF5q+DCRDkAw7ALC5jsN6BaOr/Sjxx+P5cHbSRxoyxnQQWHDrZaPQ4Z/HTF8cRBiexMCnIAPwCcypvj4bjIf1Z49ign8+eqqD17Wa6tBRLceJcIQnhb4dhz1D8M2BiCsZE2nhmBIOvBaXnoF75UVKQGyKLEmZK5iC5TZS1vQV2GPnPnqwPfEHq5ipFD1leVM0s86SVFdjZE0KEMNs7mx2+9ZepInn9kjKKteCGZZjaBUYs9BAuNdi7xRC8M7VOGIcyHo/BwWbCC+ngmsuMfQIDAQABo4IBUTCCAU0wHQYDVR0OBBYEFPvon6A9QJckuxU327LZzXj6WQAkMIHiBgNVHSMEgdowgdeAFPvon6A9QJckuxU327LZzXj6WQAkoYGzpIGwMIGtMQswCQYDVQQGEwJCRDETMBEGA1UECAwKTXltZW5zaW5naDETMBEGA1UEBwwKTXltZW5zaW5naDErMCkGA1UECgwiQmFuZ2xhZGVzaCBBZ3JpY3VsdHVyYWwgVW5pdmVyc2l0eTEjMCEGCSqGSIb3DQEJARYUc29oZWwuaWN0QGJhdS5lZHUuYmQxIjAgBgNVBAMMGUJBVSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHmCCQD1rZfQRevUnzAPBgNVHRMBAf8EBTADAQH/MDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly93d3cuZXhhbXBsZS5vcmcvZXhhbXBsZV9jYS5jcmwwDQYJKoZIhvcNAQELBQADggEBAAXzawNvKjaDbfxbawa1QjqbuLijnjNnWyZrUZsoxd3yqBDAa5r1zgqW8C6yW08UnfhlUx7HrgI7JG3oq7B0mJSUBDcJ0rgSNxWXI/GYFpvgy7F5A64V35cF0ekQtUzjRNZFA8n77QvUXlUYHrHLYEVNp1Q20DnvJlCloCD3E1w2q/nuazs/uXO09LW0GbnQ5oCmDmsvWVZ5ejX3etHdRnrhXWgNpDYO8mud+VKt/55ruizpCN4bDg9a5tJOCIhzDWLchLye9T6iv4hRs6pYbqY0u1h+wfBZfJWVl5jjTCF9WG7ogniErGO/WkUxJMx/BUbyUu/EpsnXHHK+Kw8esq4=</CA>
+          <ServerID>irs.bau.edu.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@bau.edu.bd</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Bangladesh Agricultural University (BAU)</DisplayName>
+      <ProviderLocation>
+        <Longitude>90.43032030478088</Longitude>
+        <Latitude>24.7231668</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>sohel.ict@bau.edu.bd</EmailAddress>
+        <Phone>+8801716625873</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

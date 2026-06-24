@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="amasya.edu.tr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE4TCCA8mgAwIBAgIJAOxaIDNYzKh9MA0GCSqGSIb3DQEBBQUAMIGTMQswCQYDVQQGEwJGUjEPMA0GA1UECAwGUmFkaXVzMRIwEAYDVQQHDAlTb21ld2hlcmUxFTATBgNVBAoMDEV4YW1wbGUgSW5jLjEgMB4GCSqGSIb3DQEJARYRYWRtaW5AZXhhbXBsZS5jb20xJjAkBgNVBAMMHUV4YW1wbGUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTE1MTAwMjEwNDExM1oXDTE2MTAwMTEwNDExM1owgZMxCzAJBgNVBAYTAkZSMQ8wDQYDVQQIDAZSYWRpdXMxEjAQBgNVBAcMCVNvbWV3aGVyZTEVMBMGA1UECgwMRXhhbXBsZSBJbmMuMSAwHgYJKoZIhvcNAQkBFhFhZG1pbkBleGFtcGxlLmNvbTEmMCQGA1UEAwwdRXhhbXBsZSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDhp9u8jfljncA/MsAAmcPFBBYI6cHoKm6TttHNOLjFOh+pnNXMyp8ZKSPxb610Dw3ttnQvtm02yEJiRk4aiJJN02A4zFwn58mzdiXDy49nnn+sWLvYP/DywJ88mtLWhPWPABcAR/DtIRSS1e88OAVx/62ylp+LwKgBdPywn2Gj3m2GEK47QtweULM/CVDR0av3fHMv3fgfMyQAN7hsZM/Okiy5OVpi3spat8EEasuztj0n6T27x0zoly3S572o5sZBVUf+ezP73UgRy2R6QUHse/9J/yBPNb6PxRf1vpDwRe03XtTSE3Ynnkk//AHQq455OV6IZL8GVBTcXQUn7UM7AgMBAAGjggE0MIIBMDAdBgNVHQ4EFgQUq9O5VfBhTBg774GapQLSEkh85tkwgcgGA1UdIwSBwDCBvYAUq9O5VfBhTBg774GapQLSEkh85tmhgZmkgZYwgZMxCzAJBgNVBAYTAkZSMQ8wDQYDVQQIDAZSYWRpdXMxEjAQBgNVBAcMCVNvbWV3aGVyZTEVMBMGA1UECgwMRXhhbXBsZSBJbmMuMSAwHgYJKoZIhvcNAQkBFhFhZG1pbkBleGFtcGxlLmNvbTEmMCQGA1UEAwwdRXhhbXBsZSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHmCCQDsWiAzWMyofTAMBgNVHRMEBTADAQH/MDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly93d3cuZXhhbXBsZS5jb20vZXhhbXBsZV9jYS5jcmwwDQYJKoZIhvcNAQEFBQADggEBALQELee2HthIMcXozTWO70zjdPKCuAlFWUGxrcwaCnPifE5HePgksnvwG43puT2id4oeYejuTZvvrPKLeZfBr3rAUMAR7pnLnmG4ddar6ZEmJ9T61aHyuZW2sOPM2WRPkmE61Yh72J8ZLev7xBAQh8Lo00iteALIBNNzfSUX96S61CaO7hd7exKTQxvr7M0bpFQ5WX/SCgp3vkHmauQ79WNn0shh8PANAm/iHBpYEc0qunZPUUukUi+Wrmkaz7FtEqRhQdBFh7fx/9KkXUKtHi5J7gaAvJ8mONJlzzBGn37HapJRjtUzT2svHkf+B5cbmPfkNi2xiKu7XpmXwFXbVDk=</CA>
+          <ServerID>Example Server Certificate</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@amasya.edu.tr</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Amasya University</DisplayName>
+      <ProviderLocation>
+        <Longitude>35.80767278051495</Longitude>
+        <Latitude>40.654312781716555</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>bilgiislem@amasya.edu.tr</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

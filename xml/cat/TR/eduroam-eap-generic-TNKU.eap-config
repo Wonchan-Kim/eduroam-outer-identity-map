@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="nku.edu.tr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFBDCCA+ygAwIBAgIUK/iucWLQ2b2FXbAMavj99M7jNDAwDQYJKoZIhvcNAQELBQAwgZgxCzAJBgNVBAYTAlRSMREwDwYDVQQIDAhURUtJUkRBRzEVMBMGA1UEBwwMU1VMRVlNQU5QQVNBMRIwEAYDVQQKDAlUTktVIEJJREIxHjAcBgkqhkiG9w0BCQEWD2JpZGJAbmt1LmVkdS50cjErMCkGA1UEAwwiVE5LVSBlZHVyb2FtIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yMzEwMjAxMDUyMTRaFw0zMzA4MjgxMDUyMTRaMIGYMQswCQYDVQQGEwJUUjERMA8GA1UECAwIVEVLSVJEQUcxFTATBgNVBAcMDFNVTEVZTUFOUEFTQTESMBAGA1UECgwJVE5LVSBCSURCMR4wHAYJKoZIhvcNAQkBFg9iaWRiQG5rdS5lZHUudHIxKzApBgNVBAMMIlROS1UgZWR1cm9hbSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCze4/lTy/6mRh49frBH9Oeyj8meuIREB/g3v3MmYe8FaynxN2UbYnAMEn4Aa9BDloIqS1Wqq2RG+SKy85kJX/BYbQ0QAckoDhoCnnu9tsR7toI1ie0u+ute/u+fhQskjjLMBoz76eMnGWGToHLApaiJpVGHaD18dt/f0TjuvsOQDUmmdk+9FYqrE8kEQxXDzkjnCqI7gckkwtpWhEvWUYE9Xu7ZhTc4vRP5DFo4+T1WT1/TvJhRasBk8GTGKv6ZHaTV18FgVTwfBctuMZJlwsNJ6nxJvHerWiX1SePfy3wMacAnJ47ZDrvfuMuwZfCTykLg505HcPbtxSA6LUXc6g1AgMBAAGjggFCMIIBPjAdBgNVHQ4EFgQUZiqJvhbp8QNrxUCtvbBfpyDZxjwwgdgGA1UdIwSB0DCBzYAUZiqJvhbp8QNrxUCtvbBfpyDZxjyhgZ6kgZswgZgxCzAJBgNVBAYTAlRSMREwDwYDVQQIDAhURUtJUkRBRzEVMBMGA1UEBwwMU1VMRVlNQU5QQVNBMRIwEAYDVQQKDAlUTktVIEJJREIxHjAcBgkqhkiG9w0BCQEWD2JpZGJAbmt1LmVkdS50cjErMCkGA1UEAwwiVE5LVSBlZHVyb2FtIENlcnRpZmljYXRlIEF1dGhvcml0eYIUK/iucWLQ2b2FXbAMavj99M7jNDAwDwYDVR0TAQH/BAUwAwEB/zAxBgNVHR8EKjAoMCagJKAihiBodHRwOi8vd3d3Lm5rdS5lZHUudHIvY3JsL2NhLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAfGp98yMVCzzWmu0mZLz3ldmLFFCHWUDxa+rMvxakakWob+ocN+H77YFYgS/8iAmTLZT8BxrLuConOqyokYmQ74ME33enUhnusGEidGA3f5XAJVo1rBQU+hM3B7n/xoIIQtM2BbCXcZOvsXGfn7IQSn/qg+Kpy09cADF3ramVhhuTGyjYUAKsb2QBaj9BO/Odky7zGYmFXIjpALCI/HP7k0u+eP1e1MpG1+Cl71+ddNzhpE1o/9UJtvi2kwWBd6ShzdKEKO0E51q/ySxHKDgXx2KVVZL/0eoiXbAbGfmxAbWH6SPE7K1hIeueyj/km4v+MJpt+Q7/kmCselZljhNNjg==</CA>
+          <ServerID>TNKU eduroam Radius Server Certificate</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>nku.edu.tr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Tekirdağ Namık Kemal University</DisplayName>
+      <ProviderLocation>
+        <Longitude>27.58733510971069</Longitude>
+        <Latitude>40.994976833715754</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>bidb@nku.edu.tr</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

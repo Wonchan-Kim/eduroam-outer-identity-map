@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="newman.ac.uk" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFTDCCBDSgAwIBAgIJALMoZ5z7nhMDMA0GCSqGSIb3DQEBCwUAMIG1MQswCQYDVQQGEwJHQjEWMBQGA1UECAwNV2VzdCBNaWRsYW5kczETMBEGA1UEBwwKQmlybWluZ2hhbTEaMBgGA1UECgwRTmV3bWFuIFVuaXZlcnNpdHkxIzAhBgkqhkiG9w0BCQEWFHN1cHBvcnRAbmV3bWFuLmFjLnVrMTgwNgYDVQQDDC9OZXdtYW4gVW5pdmVyc2l0eSBlZHVyb2FtIENlcnRpZmljYXRlIEF1dGhvcml0eTAgFw0xNzAzMzExMDI5NDdaGA8yMjE3MDIxMTEwMjk0N1owgbUxCzAJBgNVBAYTAkdCMRYwFAYDVQQIDA1XZXN0IE1pZGxhbmRzMRMwEQYDVQQHDApCaXJtaW5naGFtMRowGAYDVQQKDBFOZXdtYW4gVW5pdmVyc2l0eTEjMCEGCSqGSIb3DQEJARYUc3VwcG9ydEBuZXdtYW4uYWMudWsxODA2BgNVBAMML05ld21hbiBVbml2ZXJzaXR5IGVkdXJvYW0gQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs4V9NQQTzv17OK/6IFxz03SBn6BC++DKGuJLSaQT1eEOZM7TMLeS8oM4Atji81Dy0819Es5A0iS7Gr7gU1lAneSq8fGo5VFuTaXgZsC2fj3K0yk7SEXQxrubMk7DVOy1M8zuhOBkEtCrf5SSGTL2HJUT5WXGg9PTSTRYGMFbXbOrnrJbAuyDuIXw5q6DZnzzRL2LRmzUAvZ953BVMJdAs9eB2TdGH+Z+2HihgWp39dD741pN5os8Ha0uLF1GoFCUsu2H6isgoKKEr0SKNN3fJzEz1pvgAZ8Ffn3wAlL5QSoA36ftaUZCIAvjqJzz8//Veq9XwxrMOkevvFVlwweuOQIDAQABo4IBWTCCAVUwHQYDVR0OBBYEFMTe1Ul8T1wCZuIDYuqOw9h2gnMrMIHqBgNVHSMEgeIwgd+AFMTe1Ul8T1wCZuIDYuqOw9h2gnMroYG7pIG4MIG1MQswCQYDVQQGEwJHQjEWMBQGA1UECAwNV2VzdCBNaWRsYW5kczETMBEGA1UEBwwKQmlybWluZ2hhbTEaMBgGA1UECgwRTmV3bWFuIFVuaXZlcnNpdHkxIzAhBgkqhkiG9w0BCQEWFHN1cHBvcnRAbmV3bWFuLmFjLnVrMTgwNgYDVQQDDC9OZXdtYW4gVW5pdmVyc2l0eSBlZHVyb2FtIENlcnRpZmljYXRlIEF1dGhvcml0eYIJALMoZ5z7nhMDMA8GA1UdEwEB/wQFMAMBAf8wNgYDVR0fBC8wLTAroCmgJ4YlaHR0cDovL3d3dy5leGFtcGxlLm9yZy9leGFtcGxlX2NhLmNybDANBgkqhkiG9w0BAQsFAAOCAQEAjxOP9MBD4+2G/VIdHKwK/u25QU1Vg3oJTiJL5ahHlK2WFg28z218tr4DA3PmtN71tmkj1ermbNhy/Rts6HRH3box2Sn45JpRY8m8dxy9V1CekV33x86HlLXlFdZbWC5ACQweKnS//SYZQNK/GGrunRCnyPF3zMvT7yNNCjLRe0JyMDt8PN7dIo/0R72XtZ/FWgBiVSgVTm7eorDpMiElb1A1yVRNyCSl5NNMFNS5p1nvSCMcizlppriVm8abjrH10AiedaVosmFLi4EUEdBI8irjyAdvlC9ZTMjA8Io/2ggzXwxszo6C7twPQrTPHggePat5iOdi8qTKFZbbErIGQw==</CA>
+          <ServerID>newman.ac.uk</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@newman.ac.uk</OuterIdentity>
+          <InnerIdentitySuffix>newman.ac.uk</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Birmingham Newman University - Older username/password method - Staff and Students</DisplayName>
+      <ProviderLocation>
+        <Longitude>-1.9950284999999894</Longitude>
+        <Latitude>52.4341222</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>support@newman.ac.uk</EmailAddress>
+        <WebAddress>http://www.newman.ac.uk/eduroam</WebAddress>
+        <Phone>0121 476 1181 x 2293</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

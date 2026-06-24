@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="bethelcollege.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEujCCA6KgAwIBAgIQHTO6KoNWqpZF/YmmYcQNVjANBgkqhkiG9w0BAQUFADBFMRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxFjAUBgoJkiaJk/IsZAEZFgZiZXRoZWwxFDASBgNVBAMTCzAwMiBSb290IENBMB4XDTE3MDgzMDE4Mjg1M1oXDTIyMDgzMTE4MzUxMVowRTEVMBMGCgmSJomT8ixkARkWBWxvY2FsMRYwFAYKCZImiZPyLGQBGRYGYmV0aGVsMRQwEgYDVQQDEwswMDIgUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMnheVQMEOAGbC3vnVJdZsINlDPqa+2gjvlv0FejzTbOW8EddTpowfFnjTZJE77wBZC0klyWVeFrZKCX7i8UoWlSVo4f69pB/HlaWIdzqb1enJ4L8qGhVBJOJa3UsxDk/ga4FDmTmFO1IAJwsXPjBKfHkYVYbQWRTTrg1J21m61g0V7cTQEF3CugDh0/OVlRlobFC2BoerRKfPstL24j9TUBQh0j5WK6l5B/2UngTALbVwdFTTkMaMNuMCcVNTDFKHisk2nFVRgNCfKoGkFj+wN4Wqt5VdCX9liLDFqrN6vOXpkwkevwn7/C21MWQ+yZ0eNycKDozV9JQS/xDfpfsRMCAwEAAaOCAaQwggGgMBMGCSsGAQQBgjcUAgQGHgQAQwBBMAsGA1UdDwQEAwIBRjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR1weI+ERK2n4eu2gWk89ff0WCcDTCCAREGA1UdHwSCAQgwggEEMIIBAKCB/aCB+oaBuWxkYXA6Ly8vQ049MDAyJTIwUm9vdCUyMENBKDEpLENOPWJjdnNjYSxDTj1DRFAsQ049UHVibGljJTIwS2V5JTIwU2VydmljZXMsQ049U2VydmljZXMsQ049Q29uZmlndXJhdGlvbixEQz1iZXRoZWwsREM9bG9jYWw/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdENsYXNzPWNSTERpc3RyaWJ1dGlvblBvaW50hjxodHRwOi8vYmN2c2NhLmJldGhlbC5sb2NhbC9DZXJ0RW5yb2xsLzAwMiUyMFJvb3QlMjBDQSgxKS5jcmwwEgYJKwYBBAGCNxUBBAUCAwIAAjAjBgkrBgEEAYI3FQIEFgQUZh75hneAADNFy5A8miKUun9fvAQwDQYJKoZIhvcNAQEFBQADggEBADC3v3IM7cF7No0g9WLYrOnUxmJDXqlgkwwOMD7ib7VCzCC5lnBrQWbm9RdOASuG5+h/E/K86bing0a19e6nOHtEo7VTOtH93r/NPQ83tVvtNHp4CAq6+t0EUQijA+EFB6Tw7MbBuBc1l8KBgHbAeRRD44yKLex0mhnXepGId7DLp7bV1JZuo+ibITmbybn6soDTz6K0ATTzCEZj0uyUlo8mMbWthNJA5zo4Ct4wvbMwTMgyWvutrhB5PPC1SFk0trG75ARyMXFSRY96Nv9exiV2mE2IHo4t6wbIowdzp+e8hgzaAyKG0gAoRKCgTGYqK74Eub1CUiheuYb2Zfuwxw8=</CA>
+          <ServerID>buradius01.bethel.local</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Bethel College</DisplayName>
+      <Description>Bethel University Indiana EduRoam wifi profile.</Description>
+      <ProviderLocation>
+        <Longitude>-86.19627595125</Longitude>
+        <Latitude>41.67835685</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@betheluniversity.edu</EmailAddress>
+        <Phone>574.807.7777</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

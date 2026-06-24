@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="wou.edu" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIICITCCAYqgAwIBAgIQVI8o5AAAAAC+3tfaa+2f0jANBgkqhkiG9w0BAQUFADAXMRUwEwYDVQQDEwxpc2UyLndvdS5lZHUwHhcNMTQxMjE1MTgzMTAwWhcNMTgxMjEzMjM0OTI3WjAXMRUwEwYDVQQDEwxpc2UyLndvdS5lZHUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAONXBNl1CJuhdtdvT1hIzNWD1p7Rn5iM2VpSSqEFKc7Z8NGd/Sz/6tBckOzLcalLEsnqO2zR/GDd9/KocYEMOje922cgBcie4p7PrgpAMFaGduTEJ3BBgVWmfTNu3PYfGaoxazyCO93TFo4KU7SR/doIqF/a430pSrLmhjr8O4hlAgMBAAGjbjBsMAwGA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgKsMB0GA1UdDgQWBBSIzn5o+d+o6Su5GULl/P+j2nqMXDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwEQYJYIZIAYb4QgEBBAQDAgZAMA0GCSqGSIb3DQEBBQUAA4GBAEngFaVxSmo2u680+P2b6E9RAZfgybnB6djvW8rmHJT+/5Ja98RVMZeeiR1LhcD+Vcc9UiJ5iaNwqHjIIrFLq/vdsjad/rwsUejnqEbdvqfSyciUNtGiPg3LA/+QbcpVCK63DziPtBnPrIJhZ1Q3LQ+Na9Z6UfJOdYwMABi8E+f2</CA>
+          <ServerID>ise2.wou.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIICITCCAYqgAwIBAgIQVI8o5AAAAAC+3tfaa+2f0jANBgkqhkiG9w0BAQUFADAXMRUwEwYDVQQDEwxpc2UyLndvdS5lZHUwHhcNMTQxMjE1MTgzMTAwWhcNMTgxMjEzMjM0OTI3WjAXMRUwEwYDVQQDEwxpc2UyLndvdS5lZHUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAONXBNl1CJuhdtdvT1hIzNWD1p7Rn5iM2VpSSqEFKc7Z8NGd/Sz/6tBckOzLcalLEsnqO2zR/GDd9/KocYEMOje922cgBcie4p7PrgpAMFaGduTEJ3BBgVWmfTNu3PYfGaoxazyCO93TFo4KU7SR/doIqF/a430pSrLmhjr8O4hlAgMBAAGjbjBsMAwGA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgKsMB0GA1UdDgQWBBSIzn5o+d+o6Su5GULl/P+j2nqMXDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwEQYJYIZIAYb4QgEBBAQDAgZAMA0GCSqGSIb3DQEBBQUAA4GBAEngFaVxSmo2u680+P2b6E9RAZfgybnB6djvW8rmHJT+/5Ja98RVMZeeiR1LhcD+Vcc9UiJ5iaNwqHjIIrFLq/vdsjad/rwsUejnqEbdvqfSyciUNtGiPg3LA/+QbcpVCK63DziPtBnPrIJhZ1Q3LQ+Na9Z6UfJOdYwMABi8E+f2</CA>
+          <ServerID>ise2.wou.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIICITCCAYqgAwIBAgIQVI8o5AAAAAC+3tfaa+2f0jANBgkqhkiG9w0BAQUFADAXMRUwEwYDVQQDEwxpc2UyLndvdS5lZHUwHhcNMTQxMjE1MTgzMTAwWhcNMTgxMjEzMjM0OTI3WjAXMRUwEwYDVQQDEwxpc2UyLndvdS5lZHUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAONXBNl1CJuhdtdvT1hIzNWD1p7Rn5iM2VpSSqEFKc7Z8NGd/Sz/6tBckOzLcalLEsnqO2zR/GDd9/KocYEMOje922cgBcie4p7PrgpAMFaGduTEJ3BBgVWmfTNu3PYfGaoxazyCO93TFo4KU7SR/doIqF/a430pSrLmhjr8O4hlAgMBAAGjbjBsMAwGA1UdEwQFMAMBAf8wCwYDVR0PBAQDAgKsMB0GA1UdDgQWBBSIzn5o+d+o6Su5GULl/P+j2nqMXDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwEQYJYIZIAYb4QgEBBAQDAgZAMA0GCSqGSIb3DQEBBQUAA4GBAEngFaVxSmo2u680+P2b6E9RAZfgybnB6djvW8rmHJT+/5Ja98RVMZeeiR1LhcD+Vcc9UiJ5iaNwqHjIIrFLq/vdsjad/rwsUejnqEbdvqfSyciUNtGiPg3LA/+QbcpVCK63DziPtBnPrIJhZ1Q3LQ+Na9Z6UfJOdYwMABi8E+f2</CA>
+          <ServerID>ise2.wou.edu</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Western Oregon University</DisplayName>
+      <Description>Western Oregon University</Description>
+      <ProviderLocation>
+        <Longitude>-123.24097979999999</Longitude>
+        <Latitude>44.8536068</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>ucshelpdesk@wou.edu</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

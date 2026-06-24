@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="de" ID="ruhr-uni-bochum.de" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDwzCCAqugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwHhcNMDgxMDAxMTA0MDE0WhcNMzMxMDAxMjM1OTU5WjCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqX9obX+hzkeXaXPSi5kfl82hVYAUdAqSzm1nzHoqvNK38DcLZSBnuaY/JIPwhqgcZ7bBcrGXHX+0CfHt8LRvWurmAwhiCFoT6ZrAIxlQjgeTNuUk/9k9uN0goOA/FvudocP05l03Sx5iRUKrERLMjfTlH6VJi1hKTXrcxlkIF+3anHqP1wvzpesVsqXFP6st4vGCvx9702cu+fjOlbpSD8DT6IavqjnKgP6TeMFvvhk1qlVtDRKgQFRzlAVfFmPHmBiiRqiDFt1MmUUOyCxGVWOHAD3bZwI18gfNycJ5v/hqO2V81xrJvNHy+SE/iWjnX2J14np+GPgNeGYtEotXHAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBS/WSA2AHmgoCJrjNXyYdK4LMuCSjANBgkqhkiG9w0BAQsFAAOCAQEAMQOiYQsfdOhyNsZt+U2e+iKo4YFWz827n+qrkRk4r6p8FU3ztqONpfSO9kSpp+ghla0+AGIWiPACuvxhI+YzmzB6azZie60EI4RYZeLbK4rnJVM3YlNfvNoBYimipidx5joifsFvHZVwIEoHNN/q/xWA5brXethbdXwFeilHfkCoMRN3zUA7tFFHei4R40cR3p1m0IvVVGb6g1XqfMIpiRvpb7PO4gWEyS8+eIVibslfwXhjdFjASBgMmTnrpMwatXlajRWc2BQN9noHV8cigwUtPJslJj0Ys6lDfMjIq2SPDqO/nBudMNva0Bkuqjzx+zOAduTNrRlPBSeOE6Fuwg==</CA>
+          <ServerID>radius.ruhr-uni-bochum.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>eduroam@ruhr-uni-bochum.de</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Ruhr-Universität Bochum - eduroam</DisplayName>
+      <Description>Zugang zum eduroam für Studierende und Bedienstete an der Ruhr-Universität Bochum</Description>
+      <ProviderLocation>
+        <Longitude>7.261262951342815</Longitude>
+        <Latitude>51.4443494886937</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/gif" encoding="base64">R0lGODlhZgBmAMQAAL/N10BoiICasBBCau/y9d/m6yBOdM/Z4TBbfp+zw2CBnI+nuXCNpq/AzVB0kv///wA1YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAABmAGYAAAX/ICSOZGmeaKqubOu+cCzPdG3feK7vfO//wKBwSCwaj8ikcslsOp/QqHRKrVqv2Kx2y+16v+CweEwum8/otHrNbrvf8Lh8Tq/b7/i8fs/v+/+AgYKDhIWGh4iJiouMjY6PkJGNAZSVlpYDKpcBKQOXCCQIm5cGRg+nqKmqDZwnqg8pAaoAJACvrwUKRLe8pwmZJa+xs7UPBADIyQWzwEC9vQcmwiiyqbQjttcmBgIEpwtCz73gJNMn1ajaENkqCN4Ppc6qAvT0De+q8SLmJuin6uxUCDjFIAi/EQNVkdunapi1YupOGDglwGDDEwlRFSh38RwxbA8iunpQUV4qFAPw/53ieJLaRxEBO1G02PKErVSgGNbs93JdyBUKTuX8cbAYzhFFR/j7CVIkiQHLnO5ICmEAP6oQlgJkem4ZAX1EO5bIeGojUrEltBYrUK/tgmUPDgw1ieoEg1cLIWBVC1LcAbB0T3Gr1wBuqq8s67p8CPJYssf4foVreLNXwcQrF6eDmALBzWg066bslUAaWhJ8YXJFkWBmYFgQHPAqGey00p4xU3gNnRnCgle6RqZqZSJoqgacV9x9QLwHvwOqCjQjAT3VZRO/U9H2KRX1qeY8+LlbdaJB9BOjUwVX3X2EbOavSyxXb2I+KskjBlRPNT03iuzgTXWaeYcBNtErBCRAT3YCKvlSgn8mjEYAb7A91SBoJGQnToEPrhbhTds5Z9tSJJWg34b0dSiVAQzAdcB0Iu5EAlnfmVjZMwQ4YBOKccEYo2In7FeWjwoYhiB+JtzIywHrBbFJJ5v4KAICAiTwmAAOSDmCKKNUApgkYIYp5phklmnmHiEAADs=</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>its-helpdesk@rub.de</EmailAddress>
+        <WebAddress>http://www.it-services.ruhr-uni-bochum.de/support</WebAddress>
+        <Phone>+49 234 32-24025</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="undefined" namespace="urn:undefined">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDVzCCAj+gAwIBAgIQfJfiJ8lCrohPhY/6YSF+NjANBgkqhkiG9w0BAQsFADA9MRUwEwYKCZImiZPyLGQBGRYFbG9jYWwxEzARBgoJkiaJk/IsZAEZFgN0aHMxDzANBgNVBAMTBkVIUy1DQTAgFw0yMDA4MTgxNjA0MDNaGA8yMDYwMDgxODE2MTQwMlowPTEVMBMGCgmSJomT8ixkARkWBWxvY2FsMRMwEQYKCZImiZPyLGQBGRYDdGhzMQ8wDQYDVQQDEwZFSFMtQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDVJk4RmVHvR5eO8nO1ieS75bMfETQXPJ0NjgwxpH+pOXVIHBX6bEVJbmsfcCyy9cN2FbEu5JevAGdOe6UDP2KU8ZkcikhcEXvL7HT9wz8e8u9SuXyPE+3ZQCnrQdwg9GuY8AFs7vQUNniA5iclQNgVCcJcr4WK3FAKq0NKkpLVXQJhvlVelIrkCzqyh5HMbG5ICRud+nLbe29oufLxaGUKonscrB/j4s7Dw5ZjESGv1Oh6ndfN41QhNTDzBay5fIJ7oabreRY1QPAo223VE2ENUfV3ywzdJzBt636/HZRjq8/YK3zuaiBmK5kUyy9mZr5yHaVikiBZiq6oRhW27p25AgMBAAGjUTBPMAsGA1UdDwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBSttVWgMIkTMJVm1T+j2hEeVxm6pDAQBgkrBgEEAYI3FQEEAwIBADANBgkqhkiG9w0BAQsFAAOCAQEAMyg4106/rKK0BeNMDWC8qKH+B/i9TF8xHhKjx6+Zjf3Zn6XzsErMJ4PO+pjcMwlLQeii24wDaauf5bU3uvouR+LEGYv2O9FvTlLv/oEAVweF0JPVTZC4r1NC4TRpD2ReKabdWPQDsmmr9t7ykrhOek8CGDus2bp8JPwsPxNWvD9rBcZVVeK7cOKTG22cp8lo+Ajyi4kAlLDSJca5mDOPXi4b86GUriw/oDDeAGok8OHUhTSB2NLwcecztdPNF9n4/IsurBVGMqOBcEs8KIiiw5TF0HZnVEvide3eR/+VegLaFnSj9Pa1fCxAoh90T9sEQPGNXiuJjnWsI2pfHOSrzw==</CA>
+          <ServerID>remote.ehs.se</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Enskilda Högskolan Stockholm</DisplayName>
+      <Description>eduroam for Enskilda Högskolan Stockholm</Description>
+      <ProviderLocation>
+        <Longitude>17.926994562149048</Longitude>
+        <Latitude>59.33602903070371</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>support@ehs.se</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

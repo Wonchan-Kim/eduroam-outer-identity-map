@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="unibe.ch" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDjjCCAnagAwIBAgIQAzrx5qcRqaC7KGSxHQn65TANBgkqhkiG9w0BAQsFADBhMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBHMjAeFw0xMzA4MDExMjAwMDBaFw0zODAxMTUxMjAwMDBaMGExCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5jb20xIDAeBgNVBAMTF0RpZ2lDZXJ0IEdsb2JhbCBSb290IEcyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuzfNNNx7a8myaJCtSnX/RrohCgiN9RlUyfuI2/Ou8jqJkTx65qsGGmvPrC3oXgkkRLpimn7Wo6h+4FR1IAWsULecYxpsMNzaHxmx1x7e/dfgy5SDN67sH0NO3Xss0r0upS/kqbitOtSZpLYl6ZtrAGCSYP9PIUkY92eQq2EGnI/yuum06ZIya7XzV+hdG82MHauVBJVJ8zUtluNJbd134/tJS7SsVQepj5WztCO7TG1F8PapspUwtP1MVYwnSlcUfIKdzXOS0xZKBgyMUNGPHgm+F6HmIcr9g+UQvIOlCsRnKPZzFBQ9RnbDhxSJITRNrw9FDKZJobq7nMWxM4MphQIDAQABo0IwQDAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBhjAdBgNVHQ4EFgQUTiJUIBiV5uNu5g/6+rkS7QYXjzkwDQYJKoZIhvcNAQELBQADggEBAGBnKJRvDkhj6zHd6mcY1Yl9PMWLSn/pvtsrF9+wX3N3KjITOYFnQoQj8kVnNeyIv/iPsGEMNKSuIEyExtv4NeF22d+mQrvHRAiGfzZ0JFrabA0UWTW98kndth/Jsw1HKj2ZL7tcu7XUIOGZX1NGFdtom/DzMNU+MeKNhJ7jitralj41E6Vf8PlwUHBHQRFXGU7Aj64GxJUTFy8bJZ918rGOmaFvE7FBcf6IKshPECBV1/MUReXgRPTqh5Uykw7+U0b6LJ3/iyK5S9kJRaTepLiaWN0bfVKfjllDiIGknibVb63dDcY3fe0Dkhvld1927jyNxF1WW6LZZm6zNTflMrY=</CA>
+          <CA format="X.509" encoding="base64">MIIEyDCCA7CgAwIBAgIQDPW9BitWAvR6uFAsI8zwZjANBgkqhkiG9w0BAQsFADBhMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBHMjAeFw0yMTAzMzAwMDAwMDBaFw0zMTAzMjkyMzU5NTlaMFkxCzAJBgNVBAYTAlVTMRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxMzAxBgNVBAMTKkRpZ2lDZXJ0IEdsb2JhbCBHMiBUTFMgUlNBIFNIQTI1NiAyMDIwIENBMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMz3EGJPprtjb+2QUlbFbSd7ehJWivH0+dbn4Y+9lavyYEEVcNsSAPonCrVXOFt9slGTcZUOakGUWzUb+nv6u8W+JDD+Vu/E832X4xT1FE3LpxDyFuqrIvAxIhFhaZAmunjZlx/jfWardUSVc8is/+9dCopZQ+GssjoP80j812s3wWPc3kbW20X+fSP9kOhRBx5Ro1/tSUZUfyyIxfQTnJcVPAPooTncaQwywa8WV0yUR0J8osicfebUTVSvQpmowQTCd5zWSOTOEeAqgJnwQ3DPP3Zr0UxJqyRewg2C/Uaoq2yTzGJSQnWS+Jr6Xl6ysGHlHx+5fwmY6D36g39HaaECAwEAAaOCAYIwggF+MBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFHSFgMBmx9833s+9KTeqAx2+7c0XMB8GA1UdIwQYMBaAFE4iVCAYlebjbuYP+vq5Eu0GF485MA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwdgYIKwYBBQUHAQEEajBoMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdpY2VydC5jb20wQAYIKwYBBQUHMAKGNGh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNvbS9EaWdpQ2VydEdsb2JhbFJvb3RHMi5jcnQwQgYDVR0fBDswOTA3oDWgM4YxaHR0cDovL2NybDMuZGlnaWNlcnQuY29tL0RpZ2lDZXJ0R2xvYmFsUm9vdEcyLmNybDA9BgNVHSAENjA0MAsGCWCGSAGG/WwCATAHBgVngQwBATAIBgZngQwBAgEwCAYGZ4EMAQICMAgGBmeBDAECAzANBgkqhkiG9w0BAQsFAAOCAQEAkPFwyyiXaZd8dP3A+iZ7U6utzWX9upwGnIrXWkOH7U1MVl+twcW1BSAuWdH/SvWgKtiwla3JLko716f2b4gp/DA/JIS7w7d7kwcsr4drdjPtAFVSslme5LnQ89/nD/7d+MS5EHKBCQRfz5eeLjJ1js+aWNJXMX43AYGyZm0pGrFmCW3RbpD0ufovARTFXFZkAdl9h6g4U5+LXUZtXMYnhIHUfoyMo5tS58aI7Dd8KvvwVVo4chDYABPPTHPbqjc1qCmBaZx2vN4Ye5DUys/vZwP9BFohFrH/6j/f3IL16/RZkiMNJCqVJUzKoZHm1Lesh3Sz8W2jmdv51b2EQJ8HmA==</CA>
+          <ServerID>aai.unibe.ch</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@unibe.ch</OuterIdentity>
+          <InnerIdentitySuffix>unibe.ch</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of Bern - eduroam@UniBE</DisplayName>
+      <ProviderLocation>
+        <Longitude>7.438146400000051</Longitude>
+        <Latitude>46.9504081</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/gif" encoding="base64">R0lGODlhpgB8ANUAAP9/mf+/zP9AZn9/f0BAQL+/vxAQEJ+fn/8QQP8gTf/f5c/Pz+/v7//v8iAgIP+fsnBwcN/f3zAwMI+Pj1BQUP/P2a+vr2BgYP9ggP+vv/8wWf9Qc/9wjf+Ppf8AMwAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAACmAHwAAAb/QJBwSCwaj8jj4vMhJJ/QqHRKrVqvWGSBOch6v+CweAwaMCfktHrNtkKYhbZ8Tk8TmJG6fs+PSph9gYJ9TBIMExQQB4OMjWIRTA4GTEwEDI6YmVNblA4OlBCaoqNFB4VxIKZ4pKyaZh8WRBdMi622jBRMC0QWXLe/gXcfRZxdwMd1kcS+yM1tlUWvaM7UZJyhRJ8fedXdYL0fxkKvTt7mWa+oDK8fu+fvVbMfFwMEk7Tw+VPClJXu+gCTHCBAkACFAf8CZlpQoKGFAeIUAuTXr2ITKBbxSWyVMWNEI5wsctv4a0nGWEnY9TNA8pgqi5eSUKREoSWwNxYlQLlXcZpN/1t/LGJDYtIiqp8cM9ZCMqEjUlshK448kstiuaekmlp0sNMjVlZVK154AunkV1Laej55WTHm2UxlLSY0Iq8i17eawFVk+SRtv7F4M6mkSbbj0sCNZjJDorfiXMSCOh49gnMvZEdFK0IJWrHmZUZsKV09wqDjx8986vY7TSQ0pcmo+XDuB7tIWM1GpsZeUzqjWyO9cxoxxXq3mKiUdKbsOHTIp9HGyQxmApg0z4ooh6iqHT2Mako+jVQWSYTBJOjdxSj+wD3Vh+udbMNJr6bj7yEFDBjQWnG0qub0iWGfEU0ZwJBXQiwwiQP3BQiGX6AQUcAdBoIQVz/Y5PfeYw5+8f9dchAF5cA/EFJXVYUdknFhRx9Q8Nt0/YyYohoWwNcPAdx9yAQEDc4YxiEEaOMAAQitRcEkBhAwgW4+Nunkk1BGKeWUVFZp5ZVYZqnlllx26eWXYIYp5phklmnmmWimqeaabLbp5ptwxinnnHS+w+KdeOap55589unnn4AGKuighBZq6KF+1qnoooyao0ijfmQHKRLhHDZpeR9IYACAl4KQHwgWoHfpQKmIOukAEtRYHKQTEGRpp7DGKutlDwhQgQAPzAoCAB4E4AEAqPEqgBAe9LprsbnyCiwIxQbArAcZCIGAB7kWay2wvhaLwAYNCPFAAsUmIISwIAhgbbFDgIv/QLflnuvBWeQ+6yyvHoirLLHGbuABByBU4MG6z2ogAK4g+IqAuR5g0G+xA28wrgfDcoCwwEJkYG2uIEhcLMVfxdvsscjeKy8ID9R7rMIjD+HrsBgkXHCx0Q4Rb8ogtKwBxER8DC/OI/MKbgIif9xAsQrcHLO7zmYbbgUgKDDtv/weOyy+zoIwtAf+eqDAEDp3zPPHyt4M7rI668srAlwnDAAAWxus7hAKcAAu1lKnXXUH/wIwbdQ0Y2Ux1tlurazSZBtL8r8uU03Eyg1Mm2sD0V49L88p33yuuIqf1cDcDD8MLMKFV301tGlf+zLLHjis9L/dzvxx1lsrAHPmmgMwvXAH7AYAgLMVrF312lt7uzYRaxfvrAIA5No7sMgPzLYQumO86/PRD9HB7uM+r+v23Hef3urcvnzuw9aiTC+wIpdpsADTYvvvwFP7jHC09K6bPpkrV3Cz+1PL/OvmxqLXr+43ptUBbHXxO5cAWgcxqP3qTL4C2s0UFsG1Ycxn4HLYsQCgr/ZBEGIV0NewVlaEwRFtg7Ir1rLU5y73jW+DIABXB2DYsgeaCXnFY1rTije8gmEvA8nz4fF8d6YgAAA7</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>servicedesk@unibe.ch</EmailAddress>
+        <WebAddress>https://serviceportal.unibe.ch/sp</WebAddress>
+        <Phone>+41 31 684 49 99</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="mak.ac.ug" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFSDCCBDCgAwIBAgIUR2M6sDGvCDSyXPXw528FUfpYBl0wDQYJKoZIhvcNAQELBQAwga0xCzAJBgNVBAYTAlVHMRAwDgYDVQQIDAdLYW1wYWxhMREwDwYDVQQHDAhNYWtlcmVyZTEcMBoGA1UECgwTTWFrZXJlcmUgVW5pdmVyc2l0eTEnMCUGCSqGSIb3DQEJARYYZGdhYW11d2FAZGljdHMubWFrLmFjLnVnMTIwMAYDVQQDDClNYWtlcmVyZSBVbml2ZXJzaXR5IENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yMzA2MjkxNTI4MDFaFw0zMzA1MDcxNTI4MDFaMIGtMQswCQYDVQQGEwJVRzEQMA4GA1UECAwHS2FtcGFsYTERMA8GA1UEBwwITWFrZXJlcmUxHDAaBgNVBAoME01ha2VyZXJlIFVuaXZlcnNpdHkxJzAlBgkqhkiG9w0BCQEWGGRnYWFtdXdhQGRpY3RzLm1hay5hYy51ZzEyMDAGA1UEAwwpTWFrZXJlcmUgVW5pdmVyc2l0eSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDrgaswTSKqb2GCBTzR6nRWZX/oFZyvz5f4qQGI4OWOAaYHpExs/spPts4cPFh8cIJIa1L42uYPPKsZ0upGEcC5JsRunWREjhntFfpJp6VXiI9YnUk0t96Y/lwduzCv3HReaWyQh1/J/pG1vmqju1yr6OsfophVCxfWBAcesqvYqDSPES42kXSjzilOLANtnWB/ZHYFyfLT4GI+VO23hDcAEtShI61pn+nvhd4nWoM7L63hEhYKaWaYm7Lb+JBWMvMtAY1O+xbCM+B4nVXaLLj2H5RvOfIOwGLpvhq+vYCT5TlJRTN+pd/YixI3L04FaA049oPZu1IIu2jvnfaxhio1AgMBAAGjggFcMIIBWDAdBgNVHQ4EFgQUsWzNmSkQVunWszVoyUGccXWP1i0wge0GA1UdIwSB5TCB4oAUsWzNmSkQVunWszVoyUGccXWP1i2hgbOkgbAwga0xCzAJBgNVBAYTAlVHMRAwDgYDVQQIDAdLYW1wYWxhMREwDwYDVQQHDAhNYWtlcmVyZTEcMBoGA1UECgwTTWFrZXJlcmUgVW5pdmVyc2l0eTEnMCUGCSqGSIb3DQEJARYYZGdhYW11d2FAZGljdHMubWFrLmFjLnVnMTIwMAYDVQQDDClNYWtlcmVyZSBVbml2ZXJzaXR5IENlcnRpZmljYXRlIEF1dGhvcml0eYIUR2M6sDGvCDSyXPXw528FUfpYBl0wDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQA5bw/7PtO1rhowm21sqL3AatebuYaidxwTeV2Wiq/RG1mfPSWoWIfIMBVclKUFu3AMDRPBnEIrg1+nl51kf6dM6ciKwUN79o92ZsZXfCUp5x1puzNNS0CI9jO1enEVjje+nV8UYXcUCgq/AR6Tn28s3WodeYhDf3CCsmr2R9W/4P8A3cWGXE66PT2RPpIup/bTGoOnOO0Fm17h7vIGwMaP6Y9McB2uUGsg4LR3DmC1Zjpz82Ql3z7d3V4s4PW6TseFeHCASRo4FMsUd+q2OJnBP6Q3Wri/HBYa+As9peK6EpOJoYb0uC1R+pnDN/qSVEWVPwleg/e/MheKbclYjLEq</CA>
+          <ServerID>radius.mak.ac.ug</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>mak.ac.ug</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFSDCCBDCgAwIBAgIUR2M6sDGvCDSyXPXw528FUfpYBl0wDQYJKoZIhvcNAQELBQAwga0xCzAJBgNVBAYTAlVHMRAwDgYDVQQIDAdLYW1wYWxhMREwDwYDVQQHDAhNYWtlcmVyZTEcMBoGA1UECgwTTWFrZXJlcmUgVW5pdmVyc2l0eTEnMCUGCSqGSIb3DQEJARYYZGdhYW11d2FAZGljdHMubWFrLmFjLnVnMTIwMAYDVQQDDClNYWtlcmVyZSBVbml2ZXJzaXR5IENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yMzA2MjkxNTI4MDFaFw0zMzA1MDcxNTI4MDFaMIGtMQswCQYDVQQGEwJVRzEQMA4GA1UECAwHS2FtcGFsYTERMA8GA1UEBwwITWFrZXJlcmUxHDAaBgNVBAoME01ha2VyZXJlIFVuaXZlcnNpdHkxJzAlBgkqhkiG9w0BCQEWGGRnYWFtdXdhQGRpY3RzLm1hay5hYy51ZzEyMDAGA1UEAwwpTWFrZXJlcmUgVW5pdmVyc2l0eSBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDrgaswTSKqb2GCBTzR6nRWZX/oFZyvz5f4qQGI4OWOAaYHpExs/spPts4cPFh8cIJIa1L42uYPPKsZ0upGEcC5JsRunWREjhntFfpJp6VXiI9YnUk0t96Y/lwduzCv3HReaWyQh1/J/pG1vmqju1yr6OsfophVCxfWBAcesqvYqDSPES42kXSjzilOLANtnWB/ZHYFyfLT4GI+VO23hDcAEtShI61pn+nvhd4nWoM7L63hEhYKaWaYm7Lb+JBWMvMtAY1O+xbCM+B4nVXaLLj2H5RvOfIOwGLpvhq+vYCT5TlJRTN+pd/YixI3L04FaA049oPZu1IIu2jvnfaxhio1AgMBAAGjggFcMIIBWDAdBgNVHQ4EFgQUsWzNmSkQVunWszVoyUGccXWP1i0wge0GA1UdIwSB5TCB4oAUsWzNmSkQVunWszVoyUGccXWP1i2hgbOkgbAwga0xCzAJBgNVBAYTAlVHMRAwDgYDVQQIDAdLYW1wYWxhMREwDwYDVQQHDAhNYWtlcmVyZTEcMBoGA1UECgwTTWFrZXJlcmUgVW5pdmVyc2l0eTEnMCUGCSqGSIb3DQEJARYYZGdhYW11d2FAZGljdHMubWFrLmFjLnVnMTIwMAYDVQQDDClNYWtlcmVyZSBVbml2ZXJzaXR5IENlcnRpZmljYXRlIEF1dGhvcml0eYIUR2M6sDGvCDSyXPXw528FUfpYBl0wDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQA5bw/7PtO1rhowm21sqL3AatebuYaidxwTeV2Wiq/RG1mfPSWoWIfIMBVclKUFu3AMDRPBnEIrg1+nl51kf6dM6ciKwUN79o92ZsZXfCUp5x1puzNNS0CI9jO1enEVjje+nV8UYXcUCgq/AR6Tn28s3WodeYhDf3CCsmr2R9W/4P8A3cWGXE66PT2RPpIup/bTGoOnOO0Fm17h7vIGwMaP6Y9McB2uUGsg4LR3DmC1Zjpz82Ql3z7d3V4s4PW6TseFeHCASRo4FMsUd+q2OJnBP6Q3Wri/HBYa+As9peK6EpOJoYb0uC1R+pnDN/qSVEWVPwleg/e/MheKbclYjLEq</CA>
+          <ServerID>radius.mak.ac.ug</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>mak.ac.ug</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Makerere University</DisplayName>
+      <Description>eduroam for Makerere University</Description>
+      <ProviderLocation>
+        <Longitude>32.2166578</Longitude>
+        <Latitude>1.5333554</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>32.56823417636991</Longitude>
+        <Latitude>0.335151</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>dicts@mak.ac.ug</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="anadolu.edu.tr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDXzCCAkegAwIBAgILBAAAAAABIVhTCKIwDQYJKoZIhvcNAQELBQAwTDEgMB4GA1UECxMXR2xvYmFsU2lnbiBSb290IENBIC0gUjMxEzARBgNVBAoTCkdsb2JhbFNpZ24xEzARBgNVBAMTCkdsb2JhbFNpZ24wHhcNMDkwMzE4MTAwMDAwWhcNMjkwMzE4MTAwMDAwWjBMMSAwHgYDVQQLExdHbG9iYWxTaWduIFJvb3QgQ0EgLSBSMzETMBEGA1UEChMKR2xvYmFsU2lnbjETMBEGA1UEAxMKR2xvYmFsU2lnbjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMwldpB5BngiFvXAg7aEyiie/QV2EcWtiHL8RgJDx7KKnQRfJMsuS+FggkbhUqsMgUdwbN1k0ev1LKMPgj0MK66X17YUhhB5uzsTgHeMCOFJ0mpiLx9e+pZo34knlTifBtc+ycsmWQ1z3rDI6SYOgxXG71uL0gRgykmmKPZpO/bLyCiR5Z2KYVc3rHQU3HTgOu5yLy6c+9C7v/U9AOEGM+iCK65TpjoWc4zdQQ4gOsC0p6Hpsk+QLjJg6VfLuQSSaGjlOCZgdbKfd/+RFO+uIEn8rUAVSNECMWEZXriX7613t2Saer9fwRPvm2L7DWzgVGkWqQPabumDk3F2xmmFghcCAwEAAaNCMEAwDgYDVR0PAQH/BAQDAgEGMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFI/wS3+oLkUkrk1Q+mOai97i3Ru8MA0GCSqGSIb3DQEBCwUAA4IBAQBLQNvAUKr+yAzv95ZURUm7lgAJQayzE4aGKAczymvmdLm6AC2upArT9fHxD4q/c2dKg8dEe3jgr25sbwMpjjM5RcOO5LlXbKr8EpbsU8Yt5CRsuZRj+9xTaGdWPoO4zzUhw8lo/s7awlOqzJCK6fBdRoyV3XpYKBovHd7NADdBj+1EbddTKJd+82cEHhXXipa0095MJ6RMG3NzdvQXmcIfeg7jLQitChws/zyrVQ4PkX4268NXSb7hLi18YIvDQVETI53O9zJrlAGomecsMx86OyXShkDOOyyGeMlhLxS67ttVb9+E7gUJTb0o2HLO02JQZR7rkpeDMdmztcpHWD9f</CA>
+          <ServerID>anadolu.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>anadolu.edu.tr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDXzCCAkegAwIBAgILBAAAAAABIVhTCKIwDQYJKoZIhvcNAQELBQAwTDEgMB4GA1UECxMXR2xvYmFsU2lnbiBSb290IENBIC0gUjMxEzARBgNVBAoTCkdsb2JhbFNpZ24xEzARBgNVBAMTCkdsb2JhbFNpZ24wHhcNMDkwMzE4MTAwMDAwWhcNMjkwMzE4MTAwMDAwWjBMMSAwHgYDVQQLExdHbG9iYWxTaWduIFJvb3QgQ0EgLSBSMzETMBEGA1UEChMKR2xvYmFsU2lnbjETMBEGA1UEAxMKR2xvYmFsU2lnbjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMwldpB5BngiFvXAg7aEyiie/QV2EcWtiHL8RgJDx7KKnQRfJMsuS+FggkbhUqsMgUdwbN1k0ev1LKMPgj0MK66X17YUhhB5uzsTgHeMCOFJ0mpiLx9e+pZo34knlTifBtc+ycsmWQ1z3rDI6SYOgxXG71uL0gRgykmmKPZpO/bLyCiR5Z2KYVc3rHQU3HTgOu5yLy6c+9C7v/U9AOEGM+iCK65TpjoWc4zdQQ4gOsC0p6Hpsk+QLjJg6VfLuQSSaGjlOCZgdbKfd/+RFO+uIEn8rUAVSNECMWEZXriX7613t2Saer9fwRPvm2L7DWzgVGkWqQPabumDk3F2xmmFghcCAwEAAaNCMEAwDgYDVR0PAQH/BAQDAgEGMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFI/wS3+oLkUkrk1Q+mOai97i3Ru8MA0GCSqGSIb3DQEBCwUAA4IBAQBLQNvAUKr+yAzv95ZURUm7lgAJQayzE4aGKAczymvmdLm6AC2upArT9fHxD4q/c2dKg8dEe3jgr25sbwMpjjM5RcOO5LlXbKr8EpbsU8Yt5CRsuZRj+9xTaGdWPoO4zzUhw8lo/s7awlOqzJCK6fBdRoyV3XpYKBovHd7NADdBj+1EbddTKJd+82cEHhXXipa0095MJ6RMG3NzdvQXmcIfeg7jLQitChws/zyrVQ4PkX4268NXSb7hLi18YIvDQVETI53O9zJrlAGomecsMx86OyXShkDOOyyGeMlhLxS67ttVb9+E7gUJTb0o2HLO02JQZR7rkpeDMdmztcpHWD9f</CA>
+          <ServerID>anadolu.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>anadolu.edu.tr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDXzCCAkegAwIBAgILBAAAAAABIVhTCKIwDQYJKoZIhvcNAQELBQAwTDEgMB4GA1UECxMXR2xvYmFsU2lnbiBSb290IENBIC0gUjMxEzARBgNVBAoTCkdsb2JhbFNpZ24xEzARBgNVBAMTCkdsb2JhbFNpZ24wHhcNMDkwMzE4MTAwMDAwWhcNMjkwMzE4MTAwMDAwWjBMMSAwHgYDVQQLExdHbG9iYWxTaWduIFJvb3QgQ0EgLSBSMzETMBEGA1UEChMKR2xvYmFsU2lnbjETMBEGA1UEAxMKR2xvYmFsU2lnbjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMwldpB5BngiFvXAg7aEyiie/QV2EcWtiHL8RgJDx7KKnQRfJMsuS+FggkbhUqsMgUdwbN1k0ev1LKMPgj0MK66X17YUhhB5uzsTgHeMCOFJ0mpiLx9e+pZo34knlTifBtc+ycsmWQ1z3rDI6SYOgxXG71uL0gRgykmmKPZpO/bLyCiR5Z2KYVc3rHQU3HTgOu5yLy6c+9C7v/U9AOEGM+iCK65TpjoWc4zdQQ4gOsC0p6Hpsk+QLjJg6VfLuQSSaGjlOCZgdbKfd/+RFO+uIEn8rUAVSNECMWEZXriX7613t2Saer9fwRPvm2L7DWzgVGkWqQPabumDk3F2xmmFghcCAwEAAaNCMEAwDgYDVR0PAQH/BAQDAgEGMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFI/wS3+oLkUkrk1Q+mOai97i3Ru8MA0GCSqGSIb3DQEBCwUAA4IBAQBLQNvAUKr+yAzv95ZURUm7lgAJQayzE4aGKAczymvmdLm6AC2upArT9fHxD4q/c2dKg8dEe3jgr25sbwMpjjM5RcOO5LlXbKr8EpbsU8Yt5CRsuZRj+9xTaGdWPoO4zzUhw8lo/s7awlOqzJCK6fBdRoyV3XpYKBovHd7NADdBj+1EbddTKJd+82cEHhXXipa0095MJ6RMG3NzdvQXmcIfeg7jLQitChws/zyrVQ4PkX4268NXSb7hLi18YIvDQVETI53O9zJrlAGomecsMx86OyXShkDOOyyGeMlhLxS67ttVb9+E7gUJTb0o2HLO02JQZR7rkpeDMdmztcpHWD9f</CA>
+          <ServerID>anadolu.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>anadolu.edu.tr</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Anadolu University</DisplayName>
+      <Description>Anadolu University Eduroam Profile</Description>
+      <ProviderLocation>
+        <Longitude>30.500523104239637</Longitude>
+        <Latitude>39.7918989</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>30.500523104239637</Longitude>
+        <Latitude>39.7918989</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFG2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDYgNzkuZGFiYWNiYiwgMjAyMS8wNC8xNC0wMDozOTo0NCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjQgKE1hY2ludG9zaCkiIHhtcDpDcmVhdGVEYXRlPSIyMDIxLTA5LTAxVDE0OjMwOjA5KzAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIxLTA5LTAxVDE0OjMwOjA5KzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMS0wOS0wMVQxNDozMDowOSswMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NmU4NjYwZjMtYTNkMi00N2U2LWJhNGUtZWU1YzYwMzEwZTc0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjZlODY2MGYzLWEzZDIt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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>anadolu@anadolu.edu.tr</EmailAddress>
+        <WebAddress>https://eduroam.anadolu.edu.tr</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

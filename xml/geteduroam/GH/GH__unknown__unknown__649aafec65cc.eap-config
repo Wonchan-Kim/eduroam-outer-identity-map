@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="csuc.edu.gh" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAwTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2VhcmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4WhcNMzUwNjA0MTEwNDM4WjBPMQswCQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJuZXQgU2VjdXJpdHkgUmVzZWFyY2ggR3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBYMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAK3oJHP0FDfzm54rVygch77ct984kIxuPOZXoHj3dcKi/vVqbvYATyjb3miGbESTtrFj/RQSa78f0uoxmyF+0TM8ukj13Xnfs7j/EvEhmkvBioZxaUpmZmyPfjxwv60pIgbz5MDmgK7iS4+3mX6UA5/TR5d8mUgjU+g4rk8Kb4Mu0UlXjIB0ttov0DiNewNwIRt18jA8+o+u3dpjq+sWT8KOEUt+zwvo/7V3LvSye0rgTBIlDHCNAymg4VMk7BPZ7hm/ELNKjD+Jo2FR3qyHB5T0Y3HsLuJvW5iB4YlcNHlsdu87kGJ55tukmi8mxdAQ4Q7e2RCOFvu396j3x+UCB5iPNgiV5+I3lg02dZ77DnKxHZu8A/lJBdiB3QW0KtZB6awBdpUKD9jf1b0SHzUvKBds0pjBqAlkd25HN7rOrFleaJ1/ctaJxQZBKT5ZPt0m9STJEadao0xAH0ahmbWnOlFuhjuefXKnEgV4We0+UXgVCwOPjdAvBbI+e0ocS3MFEvzG6uBQE3xDk3SzynTnjh8BCNAw1FtxNrQHusEwMFxIt4I7mKZ9YIqioymCzLq9gwQbooMDQaHWBfEbwrbwqHyGO0aoSCqI3Haadr8faqU9GY/rOPNk3sgrDQoo//fb4hVC1CLQJ13hef4Y53CIrU7m2Ys6xt0nUW7/vGT1M0NPAgMBAAGjQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR5tFnme7bl5AFzgAiIyBpY9umbbjANBgkqhkiG9w0BAQsFAAOCAgEAVR9YqbyyqFDQDLHYGmkgJykIrGF1XIpu+ILlaS/V9lZLubhzEFnTIZd+50xx+7LSYK05qAvqFyFWhfFQDlnrzuBZ6brJFe+GnY+EgPbk6ZGQ3BebYhtF8GaV0nxvwuo77x/Py9auJ/GpsMiu/X1+mvoiBOv/2X/qkSsisRcOj/KKNFtY2PwByVS5uCbMiogziUwthDyC3+6WVwW6LLv3xLfHTjuCvjHIInNzktHCgKQ5ORAzI4JMPJ+GslWYHb4phowim57iaztXOoJwTdwJx4nLCgdNbOhdjsnvzqvHu7UrTkXWStAmzOVyyghqpZXjFaH3pO3JLF+l+/+sKAIuvtd7u+Nxe5AW0wdeRlN8NwdCjNPElpzVmbUq4JUagEiuTDkHzsxHpFKVK7q4+63SM1N95R1NbdWhscdCb+ZAJzVcoyi3B43njTOQ5yOf+1CceWxG1bQVs5ZufpsMljq4Ui0/1lvh+wjChP4kqKOJ2qxq4RgqsahDYVvTH9w7jXbyLeiNdd8XM2w9U/t7y0Ff/9yi0GE44Za4rF2LN9d11TPAmRGunUHBcnWEvgJBQl9nJEiU0Zsnvgc/ubhPgXRR4Xq37Z0j4r7g1SgEEzwxA57demyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=</CA>
+          <ServerID>rad.csuc.edu.gh</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>csuc.edu.gh</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Christian Service University</DisplayName>
+      <Description>This configuration profile is designed for staff and students of Christian Service University</Description>
+      <ProviderLogo mime="image/jpeg" encoding="base64">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</ProviderLogo>
+      <TermsOfUse><![CDATA[Terms of Use for the Eduroam Configuration Assistant Tool
+
+1. Acceptance of Terms
+By downloading and using the eduroam Configuration Assistant Tool (the "Tool"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the Tool.
+
+2. Description of Service
+The Tool provides an automated configuration setup for devices intending to connect to the eduroam network. This service is provided to ensure compatibility and enhance security when connecting to eduroam through your institution.
+
+3. Privacy
+Your use of the Tool involves the processing of your device's network settings and may involve the collection of personal information. 
+
+4. User Responsibilities
+You are responsible for ensuring that any information required by the Tool is accurate and current. You are also responsible for the security of your device and must not share the configuration files or misuse the service in any way.
+
+5. Intellectual Property
+All intellectual property rights in the Tool and its contents are owned by CSU or its licensors. You are granted a non-exclusive, non-transferable, revocable license to use the Tool solely for the purpose of configuring your device to connect to the eduroam network as permitted by these Terms.
+
+6. Prohibited Uses
+You may not use the Tool for any purpose that is unlawful or prohibited by these Terms, or to solicit the performance of any illegal activity or other activity which infringes the rights of [Institution Name] or others.
+
+7. No Warranty
+The Tool is provided "as is" and CSU makes no warranty of any kind, express or implied, including but not limited to warranties of performance, merchantability, fitness for a particular purpose, accuracy, omissions, completeness, currentness, and delays.
+
+8. Limitation of Liability
+In no event shall CSU,its officers, directors, employees, or agents be liable for any direct, indirect, incidental, special, consequential or punitive damages resulting from the use or inability to use the Tool.
+
+9. Modifications to Terms
+CSU reserves the right, at its sole discretion, to modify or replace these Terms at any time. If the alterations constitute a material change to the Terms, [Institution Name] will notify you by posting an announcement on the website.
+
+10. Governing Law
+These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which CSU is located, without regard to its conflict of law provisions.
+
+11. Contact Information
+If you have any questions about these Terms, please contact us at support@csuc.edu.gh]]></TermsOfUse>
+      <Helpdesk>
+        <EmailAddress>support@csuc.edu.gh</EmailAddress>
+        <Phone>0242832562</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

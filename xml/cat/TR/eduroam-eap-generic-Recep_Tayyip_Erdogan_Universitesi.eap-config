@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="erdogan.edu.tr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIFXDCCBESgAwIBAgIJAIln/Yt4dj11MA0GCSqGSIb3DQEBCwUAMIG6MQswCQYDVQQGEwJUUjENMAsGA1UECBMEUml6ZTENMAsGA1UEBxMEUml6ZTEqMCgGA1UEChMhUmVjZXAgVGF5eWlwIEVyZG9nYW4gVW5pdmVyc2l0ZXNpMSEwHwYJKoZIhvcNAQkBFhJiaW1AZXJkb2dhbi5lZHUudHIxPjA8BgNVBAMTNVJlY2VwIFRheXlpcCBFcmRvZ2FuIFVuaXZlcnNpdGVzaSBTZXJ0aWZpa2EgT3Rvcml0ZXNpMB4XDTE2MDMyNDEyNTgzOFoXDTI2MDMyMjEyNTgzOFowgboxCzAJBgNVBAYTAlRSMQ0wCwYDVQQIEwRSaXplMQ0wCwYDVQQHEwRSaXplMSowKAYDVQQKEyFSZWNlcCBUYXl5aXAgRXJkb2dhbiBVbml2ZXJzaXRlc2kxITAfBgkqhkiG9w0BCQEWEmJpbUBlcmRvZ2FuLmVkdS50cjE+MDwGA1UEAxM1UmVjZXAgVGF5eWlwIEVyZG9nYW4gVW5pdmVyc2l0ZXNpIFNlcnRpZmlrYSBPdG9yaXRlc2kwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCgoJaA/ZoWcpPe6vuFDC3tJmjHFe/kntvxhg++fUKuLURv3dZkA9lCVtWI71GHJIDPCsEkpt8O5xCayFauH6qsf6qC5qd+/nyEPe9gIMncLgLTjMjaOQEPVipzbIONws4NywVfuPjmXu9eLKDJnJmjhe7koAm9APNMI0IPJUjxZyNedcw4dQ9XnpbDI5iO4j51perpo7iuZMKH23srzfG5HSi2xDuSpOFFcXqoHQi1Ufa3jU//3NWfT5Z9O0m6LFat8z/f3yVGuRtbEt/cGNt17pptWYZXzVte5/hLvN5MgRfdW6hzCCieYKlMPMjeMWWyXDOXebat4kHv+VGH3yHrAgMBAAGjggFhMIIBXTAdBgNVHQ4EFgQUC+mZmXbRKQVOkeQdA5kUJFJp8X0wge8GA1UdIwSB5zCB5IAUC+mZmXbRKQVOkeQdA5kUJFJp8X2hgcCkgb0wgboxCzAJBgNVBAYTAlRSMQ0wCwYDVQQIEwRSaXplMQ0wCwYDVQQHEwRSaXplMSowKAYDVQQKEyFSZWNlcCBUYXl5aXAgRXJkb2dhbiBVbml2ZXJzaXRlc2kxITAfBgkqhkiG9w0BCQEWEmJpbUBlcmRvZ2FuLmVkdS50cjE+MDwGA1UEAxM1UmVjZXAgVGF5eWlwIEVyZG9nYW4gVW5pdmVyc2l0ZXNpIFNlcnRpZmlrYSBPdG9yaXRlc2mCCQCJZ/2LeHY9dTAPBgNVHRMBAf8EBTADAQH/MDkGA1UdHwQyMDAwLqAsoCqGKGh0dHA6Ly93d3cuZXJkb2dhbi5lZHUudHIvZXhhbXBsZV9jYS5jcmwwDQYJKoZIhvcNAQELBQADggEBAGeYDe64722pRbFWFJ6LTbqbEgp/iCAQM6LOeHzTRC0u+KTQzvSE/nfR7d5HDOL6VxFXdHzUt3rhie0IQ/yHju4A+87oPuqUezCr8+mn/IPlhDw+e3IgtDCXFnUs3vNHxUK7OoPpBL+DHsKuUHTr21t4QMNXXZFYa+2wwrnRWyCd5xZBeekflU9E+l3flKno3DZMUqNzpkAslN1SIIa0rZeuhL/ECKuw7PIR/ezO6xuSv2fRUYqnnFFHjr3AJLJ7fV7zqWfhb8BZnLwZ9NXSVoB5neyesQdI453f2IzHYKFeLN8QjJ1KVs0wapm3XR13m9FXzsFyhShPUp1eeQXLyNc=</CA>
+          <ServerID>Recep Tayyip Erdogan University</ServerID>
+          <ServerID>anonymous@erdogan.edu.tr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@erdogan.edu.tr</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Recep Tayyip Erdogan University</DisplayName>
+      <Description>eduroam</Description>
+      <ProviderLocation>
+        <Longitude>40.51307201385498</Longitude>
+        <Latitude>41.028023653034154</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>bidb@erdogan.edu.tr</EmailAddress>
+        <WebAddress>http://bidb.idari.erdogan.edu.tr/tr</WebAddress>
+        <Phone>0(464) 223 3180</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

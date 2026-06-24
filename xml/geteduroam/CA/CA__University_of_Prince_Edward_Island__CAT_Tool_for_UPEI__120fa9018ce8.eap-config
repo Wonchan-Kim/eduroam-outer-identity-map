@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="upei.ca" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDrjCCApagAwIBAgIQFw9cmJGLjZhD9NKBPDbxxDANBgkqhkiG9w0BAQsFADBWMRIwEAYKCZImiZPyLGQBGRYCQ0ExFDASBgoJkiaJk/IsZAEZFgRVUEVJMRQwEgYKCZImiZPyLGQBGRYEQUREUzEUMBIGA1UEAxMLQUREUy1DQTEtQ0EwHhcNMjUwNjI0MTQxMTAxWhcNMzUwNjI1MTQyMTAxWjBWMRIwEAYKCZImiZPyLGQBGRYCQ0ExFDASBgoJkiaJk/IsZAEZFgRVUEVJMRQwEgYKCZImiZPyLGQBGRYEQUREUzEUMBIGA1UEAxMLQUREUy1DQTEtQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC+YizE0VNfwk9r0T4rLW4hILVHq7/NQ3vknj6BXenDLaPvTvqSk+r3fA19pDd05fIGACCZV9RBo9686Q64e9VJOhAEx/L5nhuiIdY1bAtOV1Dnd8zLUf3WNgdoB25/dC26Vm5shTToi8ej1ad02oQy/ga9nRYM7zj+efKDo34RTG2cT4WKEVDhaPfM57Z7q1oGSPfWHlW+lrC7UVXfx0G6L8oneXUQDVMFFa3Nx513le2DruhEj+GOGFhASbQGZ9mUn1Y8C9u+WTfIl6McBvVWuiadGDK+JnqUN6xwceaxuaWiKwc33OoTpv3KV1eFEI6md0fYBk14y7rgj5SY/qXXAgMBAAGjeDB2MAsGA1UdDwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQ18QISA8akXhuvPuIWLm6KIxin2jASBgkrBgEEAYI3FQEEBQIDAQABMCMGCSsGAQQBgjcVAgQWBBTnynP089AKQe0XIyE+jhjfVTlgrDANBgkqhkiG9w0BAQsFAAOCAQEATqoNEdhN2TkSqZUJF7QcrOY5cSqHyKSkX/TONfKe+RduuN9wgXTAY0hcSTnt7fFfvN60J49hUfHl9NuH+e/7dZ1dhP/sApaTnGHuAfWGzy42B8Jf2jFctmc0sPNEVeHD9CqOedgRrevQDEc3ooqlcHWNEnd8+3N7pIjPyp49ZdMuKb9h0d7jCdmu3l+t9X9hTcv2yHSd5WHbTBInE7AinbwOIE6eSG5bxIziKPeiz4hXzI9XRbVcABTFO9rEOKs4Xc8QVAzTr4naT538SYKx0LNQXjJJVK0gZ3XOxe1gA+dKHVLkurLaFcSeY4FaYh6Y6A0BIllLNFVClibRxMmYNA==</CA>
+          <ServerID>AVC-ISE-03.internal.upei.ca</ServerID>
+          <ServerID>AVC-ISE-04.internal.upei.ca</ServerID>
+          <ServerID>WinRadius1.ADDS.UPEI.CA</ServerID>
+          <ServerID>WinRadius2.ADDS.UPEI.CA</ServerID>
+          <ServerID>winradius1.upei.ca</ServerID>
+          <ServerID>winradius2.upei.ca</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous985715@upei.ca</OuterIdentity>
+          <InnerIdentitySuffix>upei.ca</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of Prince Edward Island - CAT Tool for UPEI</DisplayName>
+      <Description>Connect to eduroam for UPEI Staff and Students</Description>
+      <ProviderLocation>
+        <Longitude>-63.13883543014525</Longitude>
+        <Latitude>46.25608321550516</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>helpdesk@upei.ca</EmailAddress>
+        <Phone>902-566-0465</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

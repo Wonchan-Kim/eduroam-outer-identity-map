@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="ufgd.edu.br" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDyTCCArGgAwIBAgIQdkQWcsTLeZpMTSs58qwFJDANBgkqhkiG9w0BAQsFADBYMRIwEAYKCZImiZPyLGQBGRYCYnIxEzARBgoJkiaJk/IsZAEZFgNlZHUxFDASBgoJkiaJk/IsZAEZFgR1ZmdkMRcwFQYDVQQDEw5OSUJJUlUtVUZHRC1DQTAeFw0yMjA4MTYxOTM2NThaFw0yNzA4MTYxOTQ2NTdaMFgxEjAQBgoJkiaJk/IsZAEZFgJicjETMBEGCgmSJomT8ixkARkWA2VkdTEUMBIGCgmSJomT8ixkARkWBHVmZ2QxFzAVBgNVBAMTDk5JQklSVS1VRkdELUNBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzq/EkYHfRVEaSJ10DNs8ZyBDb/wIUEgTJ2APd11rOQ0Cnxi7gcu6Nn1vLiCxdScSlNeCff2Kukj9/9DSqoGhyYmleM0El0JvVA4EReA95z0vOzqWuNEc0JhyaD5qesEgyQuw1i2/0Y9bC1chDnI75d79yGx1ew9EDWCfPJ/72VJ0FCIm5DeyBYXvAxnBEzsnR5C9dRCEE9WZaO7MCv39LyFwAQUhzizioY2xk0D0rQn3UDlGz5K/qyT8vbTMPnQbByQt6Y41iiXySMMBxrQI0uyiURPy5GJb6EDv0pNEslFlasxfiLt1JH7Shuzskj5zqipvDMrvjxgHiS+SkomlrwIDAQABo4GOMIGLMBMGCSsGAQQBgjcUAgQGHgQAQwBBMAsGA1UdDwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBQC6oMbBuSwv18haVgVdzXSmuVI3TASBgkrBgEEAYI3FQEEBQIDAQABMCMGCSsGAQQBgjcVAgQWBBTPk5hA8JeyZccxISjOVCJk7rhnfzANBgkqhkiG9w0BAQsFAAOCAQEAeUuDmIaxmQr7Pmo2LsAUfo3zb+REgSbUpT/+DGNWSO+FmEZzLhxrLqdI1vFaKSQrNDtigdX9gk52Koflc/KFLmqRW/ll0bnnM9Zvei7uougf97+2/kaw4YALxh9vEUIGYbkn1vPJVjGpEg6v5DvUjljThEPvCDo3p8Ow+BYSsxKHQUvyIhEHBdP/CHr8tffgNpM+cOxe7IvBQ/mS/NN6yFhoRhUrfIebX+RfbSRORyKyg+mLbwIFrO8nDT8Du1o/EVEwAoO8gJHUCkHr1d+pxCOEW0XU5UvbOu1sqKJTqvmA4TYEH7i9Ds8DgUhzl/PK/YH0LE6jhQEXuYnSYji9vQ==</CA>
+          <ServerID>ufgd.edu.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>ufgd.edu.br</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>UFGD - Universidade Federal da Grande Dourados</DisplayName>
+      <Description>Testing Profile</Description>
+      <ProviderLocation>
+        <Longitude>-54.81504269999999</Longitude>
+        <Latitude>-22.216717</Latitude>
+      </ProviderLocation>
+      <Helpdesk/>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

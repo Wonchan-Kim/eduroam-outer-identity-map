@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="uom.gr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEdTCCA12gAwIBAgIJAOJ2iz+h5jtPMA0GCSqGSIb3DQEBCwUAMGwxCzAJBgNVBAYTAkdSMSAwHgYDVQQKExdVbml2ZXJzaXR5IG9mIE1hY2Vkb25pYTE7MDkGA1UEAxMyVW5pdmVyc2l0eSBvZiBNYWNlZG9uaWEgZWR1cm9hbSBFQVAgc2VydmVyIENBIDIwMTkwHhcNMTkwMjE1MTI1NDEzWhcNMjkwMjEyMTI1NDEzWjBsMQswCQYDVQQGEwJHUjEgMB4GA1UEChMXVW5pdmVyc2l0eSBvZiBNYWNlZG9uaWExOzA5BgNVBAMTMlVuaXZlcnNpdHkgb2YgTWFjZWRvbmlhIGVkdXJvYW0gRUFQIHNlcnZlciBDQSAyMDE5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAurDmckuUiqhT7Ie5ypsnAZ827RJcl9pI3vrSRt5uOXQtjvKUhLy6qqkUUTrYDmmSDGy3wQ95IWTY5HFi5IuElAusK9Cxjbp1kXZPrb4+HmpH1k7Phxdrq4Z26C9QH8ltbcSNLSbhxrPAaayV1JPXtX33V3sQjaGBGJbQegyl07lfkZ5Rj/vSpV6jbU5C3A/VklR5xEuTmZMEXi8yjHBC6bjiXVpsQJ3ioMeRNppBCaHCKVyHLw88CAwK2Be3Exe46Dz6fZVQcWhXo/AesrE00QbTd62+rRK+MteYSQq+v2H6HcVgXPFVUEr/Scsq+Fxq2v5RvqR2crKlQ3a5gLCT6QIDAQABo4IBGDCCARQwHQYDVR0OBBYEFPAZZCLkQsVKj9wkYcmmu/D5RbynMIGeBgNVHSMEgZYwgZOAFPAZZCLkQsVKj9wkYcmmu/D5RbynoXCkbjBsMQswCQYDVQQGEwJHUjEgMB4GA1UEChMXVW5pdmVyc2l0eSBvZiBNYWNlZG9uaWExOzA5BgNVBAMTMlVuaXZlcnNpdHkgb2YgTWFjZWRvbmlhIGVkdXJvYW0gRUFQIHNlcnZlciBDQSAyMDE5ggkA4naLP6HmO08wDwYDVR0TAQH/BAUwAwEB/zBBBgNVHR8EOjA4MDagNKAyhjBodHRwOi8vb3JzLWNybC5lZHVyb2FtLmdyL2NybC9lZHVyb2FtLnVvbS5nci5jcmwwDQYJKoZIhvcNAQELBQADggEBAG4q+zhGcjaHhAKHnCSnW3SCdcdgg8wRmOrzSn9KhixMDpmzf/YhCd0r/vrPcTymIle2XeCsnJosPuz1vUwvhHFzuQepEQmmo+C/7/3/9xZJRsKdfV1C0XnVmbsmSCSZQpvhDO3nR3UmTwB1yGyJFat4lSCeRXPsBiuvW8yi22Bu4DW10Otfa0AX10p0y6/SRc68ko1GeIOvciw/deh8VTigpK2bi+hEXpZu3SPWfvoNyAV5JieL2f83e/K4s/DkPE2J78HXs86fsSEG4qUKcKpjRpMhgSTDNDAYFeUGCtpl/4aek6WMvUiP+qxpIYm48fr4P5G56727ER3CKwqUoPg=</CA>
+          <CA format="X.509" encoding="base64">MIIFHjCCAwagAwIBAgIUHa6GdhYkZ8yt/QZMjhQFpgqHphEwDQYJKoZIhvcNAQELBQAwNTELMAkGA1UEBhMCR1IxDDAKBgNVBAoMA1VPTTEYMBYGA1UEAwwPR1VORVRfUkFESVVTX0NBMB4XDTI2MDIyNTEwMDAzMloXDTQ4MDIyMDEwMDAzMlowNTELMAkGA1UEBhMCR1IxDDAKBgNVBAoMA1VPTTEYMBYGA1UEAwwPR1VORVRfUkFESVVTX0NBMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA3ewdfrXWtbJzA/4H7gWk6PsrYGb2f4AeGjbSD2ccYSZw+hYgrjCT58EBEbUTaOktyzesJFaE0/ABV8wskTW/oW5SSxqvEDO2QxDKiAaSiSdNzsP1SigOqUVxVdZynlghbx+PTIfmQDPAlqo0sCQMdvk6pfwtB+aP1Y9ygYOK13vHaR0KNGoaQasBTtcga+Gc6ZQ8NFxj5T/Fo+r5vv9VQ6e+7H5iutrHXhee7juRfy7Z/qCjnM5NcGyMko74xpB/xYynem+AsnTJ0rlZgBzc2I+4dDLY8Ocj1AfDe2M7jkpUhn4bDVFcksgWXijjezytjTmJBZ1YAd8vEyhJweXEAwcljc/HAPdhyfswJ8tI3NBhvklWUYkqA5CHX7vB+hU6pNh5UU8eixJ1ZV3JttVIPh8TCFvosR0lVXzL5fJ5YAOtAgP1zCj/V5ZNy26FjoYqj3SRU6fYAuFCF6WT2Kp6sw7PmUb+VHYEgko7PlOD4PcB9fR52RkaZJ+vyEsVwMdRbOtygHa7spPHnEw1ycQztmtj1yQDrD/Mj8dOMwkPVd9eBxFWcNuI4KFxoBvgvnkuqERZ7qYvVV2D5IKHZ53/50I2dsQeCMOnKvDkfAFVZWuEVT6orHaCQ3i57BLRADQ7ZRcaa08mEJR/XFohaqjEMZ6EJ+lJSAFIKIyP3XyUYJECAwEAAaMmMCQwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMCAuQwDQYJKoZIhvcNAQELBQADggIBAI7nDpyyNCYqrB+DCUYRENvLLCbxxCHkSUGX24KV+2NdRT+POfTrefB5ee2v/BOLz+Ft7XzPJSp+Pyx6445OA1OKcM2OX66C1bdhPzBS0Z06U+CaWonlkbDZ8zPGN5Rw/C01Qouf9DHuGpvIoawubPQ0jTizdZ9m39b63hfcM2ZxJmgFhTOvP/G4lTAXYOjYGEhoQD/3a8eFyvdo8VcygeSUMN0dudKDBuNnPLVaQ6kbaXQgIJAxvng8Eb7Ieqbcrmn6zM/3ZERNMcVDxhODWzoJt3cv761VhA7tJL5Xv4POjkWkVy1yVSVE9T0eA78MbREE2bvjRi4bKhOKak3RUvuDJTW0oxTjrap/jiNMcWpRP1vzUNqaj1m5OJ6IjYhJT0bX+DpwCK5/JA4SRJj7Ssg3jv/B2H2BUpwvtajhp5SrVsNxNUutfEQux7WmIizRp7qvHQpyV6PIAua3i2XodAIzwqXd4msyZ8WKnYOg5tphtSlWWCFvkX38em+VBLj1cHr2v2z58stvwwb+VPo9VSAad1Odn3k7YLUQ0cJc0+IigvDG6LS+1mlxyG0pIYZUnz+YBbLWIov/LqZBE+AvIVdlQr71lZkp6UlGS+7Yl1tM1CFsIKB89ShdyJtulORPSqRoHCCmu4P4glR3qSv9gbvLfmrhxJ2Y7Kiu+zxaeVWn</CA>
+          <ServerID>eduroam.uom.gr</ServerID>
+          <ServerID>ridp.uom.gr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@uom.gr</OuterIdentity>
+          <InnerIdentitySuffix>uom.gr</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEdTCCA12gAwIBAgIJAOJ2iz+h5jtPMA0GCSqGSIb3DQEBCwUAMGwxCzAJBgNVBAYTAkdSMSAwHgYDVQQKExdVbml2ZXJzaXR5IG9mIE1hY2Vkb25pYTE7MDkGA1UEAxMyVW5pdmVyc2l0eSBvZiBNYWNlZG9uaWEgZWR1cm9hbSBFQVAgc2VydmVyIENBIDIwMTkwHhcNMTkwMjE1MTI1NDEzWhcNMjkwMjEyMTI1NDEzWjBsMQswCQYDVQQGEwJHUjEgMB4GA1UEChMXVW5pdmVyc2l0eSBvZiBNYWNlZG9uaWExOzA5BgNVBAMTMlVuaXZlcnNpdHkgb2YgTWFjZWRvbmlhIGVkdXJvYW0gRUFQIHNlcnZlciBDQSAyMDE5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAurDmckuUiqhT7Ie5ypsnAZ827RJcl9pI3vrSRt5uOXQtjvKUhLy6qqkUUTrYDmmSDGy3wQ95IWTY5HFi5IuElAusK9Cxjbp1kXZPrb4+HmpH1k7Phxdrq4Z26C9QH8ltbcSNLSbhxrPAaayV1JPXtX33V3sQjaGBGJbQegyl07lfkZ5Rj/vSpV6jbU5C3A/VklR5xEuTmZMEXi8yjHBC6bjiXVpsQJ3ioMeRNppBCaHCKVyHLw88CAwK2Be3Exe46Dz6fZVQcWhXo/AesrE00QbTd62+rRK+MteYSQq+v2H6HcVgXPFVUEr/Scsq+Fxq2v5RvqR2crKlQ3a5gLCT6QIDAQABo4IBGDCCARQwHQYDVR0OBBYEFPAZZCLkQsVKj9wkYcmmu/D5RbynMIGeBgNVHSMEgZYwgZOAFPAZZCLkQsVKj9wkYcmmu/D5RbynoXCkbjBsMQswCQYDVQQGEwJHUjEgMB4GA1UEChMXVW5pdmVyc2l0eSBvZiBNYWNlZG9uaWExOzA5BgNVBAMTMlVuaXZlcnNpdHkgb2YgTWFjZWRvbmlhIGVkdXJvYW0gRUFQIHNlcnZlciBDQSAyMDE5ggkA4naLP6HmO08wDwYDVR0TAQH/BAUwAwEB/zBBBgNVHR8EOjA4MDagNKAyhjBodHRwOi8vb3JzLWNybC5lZHVyb2FtLmdyL2NybC9lZHVyb2FtLnVvbS5nci5jcmwwDQYJKoZIhvcNAQELBQADggEBAG4q+zhGcjaHhAKHnCSnW3SCdcdgg8wRmOrzSn9KhixMDpmzf/YhCd0r/vrPcTymIle2XeCsnJosPuz1vUwvhHFzuQepEQmmo+C/7/3/9xZJRsKdfV1C0XnVmbsmSCSZQpvhDO3nR3UmTwB1yGyJFat4lSCeRXPsBiuvW8yi22Bu4DW10Otfa0AX10p0y6/SRc68ko1GeIOvciw/deh8VTigpK2bi+hEXpZu3SPWfvoNyAV5JieL2f83e/K4s/DkPE2J78HXs86fsSEG4qUKcKpjRpMhgSTDNDAYFeUGCtpl/4aek6WMvUiP+qxpIYm48fr4P5G56727ER3CKwqUoPg=</CA>
+          <CA format="X.509" encoding="base64">MIIFHjCCAwagAwIBAgIUHa6GdhYkZ8yt/QZMjhQFpgqHphEwDQYJKoZIhvcNAQELBQAwNTELMAkGA1UEBhMCR1IxDDAKBgNVBAoMA1VPTTEYMBYGA1UEAwwPR1VORVRfUkFESVVTX0NBMB4XDTI2MDIyNTEwMDAzMloXDTQ4MDIyMDEwMDAzMlowNTELMAkGA1UEBhMCR1IxDDAKBgNVBAoMA1VPTTEYMBYGA1UEAwwPR1VORVRfUkFESVVTX0NBMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA3ewdfrXWtbJzA/4H7gWk6PsrYGb2f4AeGjbSD2ccYSZw+hYgrjCT58EBEbUTaOktyzesJFaE0/ABV8wskTW/oW5SSxqvEDO2QxDKiAaSiSdNzsP1SigOqUVxVdZynlghbx+PTIfmQDPAlqo0sCQMdvk6pfwtB+aP1Y9ygYOK13vHaR0KNGoaQasBTtcga+Gc6ZQ8NFxj5T/Fo+r5vv9VQ6e+7H5iutrHXhee7juRfy7Z/qCjnM5NcGyMko74xpB/xYynem+AsnTJ0rlZgBzc2I+4dDLY8Ocj1AfDe2M7jkpUhn4bDVFcksgWXijjezytjTmJBZ1YAd8vEyhJweXEAwcljc/HAPdhyfswJ8tI3NBhvklWUYkqA5CHX7vB+hU6pNh5UU8eixJ1ZV3JttVIPh8TCFvosR0lVXzL5fJ5YAOtAgP1zCj/V5ZNy26FjoYqj3SRU6fYAuFCF6WT2Kp6sw7PmUb+VHYEgko7PlOD4PcB9fR52RkaZJ+vyEsVwMdRbOtygHa7spPHnEw1ycQztmtj1yQDrD/Mj8dOMwkPVd9eBxFWcNuI4KFxoBvgvnkuqERZ7qYvVV2D5IKHZ53/50I2dsQeCMOnKvDkfAFVZWuEVT6orHaCQ3i57BLRADQ7ZRcaa08mEJR/XFohaqjEMZ6EJ+lJSAFIKIyP3XyUYJECAwEAAaMmMCQwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMCAuQwDQYJKoZIhvcNAQELBQADggIBAI7nDpyyNCYqrB+DCUYRENvLLCbxxCHkSUGX24KV+2NdRT+POfTrefB5ee2v/BOLz+Ft7XzPJSp+Pyx6445OA1OKcM2OX66C1bdhPzBS0Z06U+CaWonlkbDZ8zPGN5Rw/C01Qouf9DHuGpvIoawubPQ0jTizdZ9m39b63hfcM2ZxJmgFhTOvP/G4lTAXYOjYGEhoQD/3a8eFyvdo8VcygeSUMN0dudKDBuNnPLVaQ6kbaXQgIJAxvng8Eb7Ieqbcrmn6zM/3ZERNMcVDxhODWzoJt3cv761VhA7tJL5Xv4POjkWkVy1yVSVE9T0eA78MbREE2bvjRi4bKhOKak3RUvuDJTW0oxTjrap/jiNMcWpRP1vzUNqaj1m5OJ6IjYhJT0bX+DpwCK5/JA4SRJj7Ssg3jv/B2H2BUpwvtajhp5SrVsNxNUutfEQux7WmIizRp7qvHQpyV6PIAua3i2XodAIzwqXd4msyZ8WKnYOg5tphtSlWWCFvkX38em+VBLj1cHr2v2z58stvwwb+VPo9VSAad1Odn3k7YLUQ0cJc0+IigvDG6LS+1mlxyG0pIYZUnz+YBbLWIov/LqZBE+AvIVdlQr71lZkp6UlGS+7Yl1tM1CFsIKB89ShdyJtulORPSqRoHCCmu4P4glR3qSv9gbvLfmrhxJ2Y7Kiu+zxaeVWn</CA>
+          <ServerID>eduroam.uom.gr</ServerID>
+          <ServerID>ridp.uom.gr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@uom.gr</OuterIdentity>
+          <InnerIdentitySuffix>uom.gr</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIEdTCCA12gAwIBAgIJAOJ2iz+h5jtPMA0GCSqGSIb3DQEBCwUAMGwxCzAJBgNVBAYTAkdSMSAwHgYDVQQKExdVbml2ZXJzaXR5IG9mIE1hY2Vkb25pYTE7MDkGA1UEAxMyVW5pdmVyc2l0eSBvZiBNYWNlZG9uaWEgZWR1cm9hbSBFQVAgc2VydmVyIENBIDIwMTkwHhcNMTkwMjE1MTI1NDEzWhcNMjkwMjEyMTI1NDEzWjBsMQswCQYDVQQGEwJHUjEgMB4GA1UEChMXVW5pdmVyc2l0eSBvZiBNYWNlZG9uaWExOzA5BgNVBAMTMlVuaXZlcnNpdHkgb2YgTWFjZWRvbmlhIGVkdXJvYW0gRUFQIHNlcnZlciBDQSAyMDE5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAurDmckuUiqhT7Ie5ypsnAZ827RJcl9pI3vrSRt5uOXQtjvKUhLy6qqkUUTrYDmmSDGy3wQ95IWTY5HFi5IuElAusK9Cxjbp1kXZPrb4+HmpH1k7Phxdrq4Z26C9QH8ltbcSNLSbhxrPAaayV1JPXtX33V3sQjaGBGJbQegyl07lfkZ5Rj/vSpV6jbU5C3A/VklR5xEuTmZMEXi8yjHBC6bjiXVpsQJ3ioMeRNppBCaHCKVyHLw88CAwK2Be3Exe46Dz6fZVQcWhXo/AesrE00QbTd62+rRK+MteYSQq+v2H6HcVgXPFVUEr/Scsq+Fxq2v5RvqR2crKlQ3a5gLCT6QIDAQABo4IBGDCCARQwHQYDVR0OBBYEFPAZZCLkQsVKj9wkYcmmu/D5RbynMIGeBgNVHSMEgZYwgZOAFPAZZCLkQsVKj9wkYcmmu/D5RbynoXCkbjBsMQswCQYDVQQGEwJHUjEgMB4GA1UEChMXVW5pdmVyc2l0eSBvZiBNYWNlZG9uaWExOzA5BgNVBAMTMlVuaXZlcnNpdHkgb2YgTWFjZWRvbmlhIGVkdXJvYW0gRUFQIHNlcnZlciBDQSAyMDE5ggkA4naLP6HmO08wDwYDVR0TAQH/BAUwAwEB/zBBBgNVHR8EOjA4MDagNKAyhjBodHRwOi8vb3JzLWNybC5lZHVyb2FtLmdyL2NybC9lZHVyb2FtLnVvbS5nci5jcmwwDQYJKoZIhvcNAQELBQADggEBAG4q+zhGcjaHhAKHnCSnW3SCdcdgg8wRmOrzSn9KhixMDpmzf/YhCd0r/vrPcTymIle2XeCsnJosPuz1vUwvhHFzuQepEQmmo+C/7/3/9xZJRsKdfV1C0XnVmbsmSCSZQpvhDO3nR3UmTwB1yGyJFat4lSCeRXPsBiuvW8yi22Bu4DW10Otfa0AX10p0y6/SRc68ko1GeIOvciw/deh8VTigpK2bi+hEXpZu3SPWfvoNyAV5JieL2f83e/K4s/DkPE2J78HXs86fsSEG4qUKcKpjRpMhgSTDNDAYFeUGCtpl/4aek6WMvUiP+qxpIYm48fr4P5G56727ER3CKwqUoPg=</CA>
+          <CA format="X.509" encoding="base64">MIIFHjCCAwagAwIBAgIUHa6GdhYkZ8yt/QZMjhQFpgqHphEwDQYJKoZIhvcNAQELBQAwNTELMAkGA1UEBhMCR1IxDDAKBgNVBAoMA1VPTTEYMBYGA1UEAwwPR1VORVRfUkFESVVTX0NBMB4XDTI2MDIyNTEwMDAzMloXDTQ4MDIyMDEwMDAzMlowNTELMAkGA1UEBhMCR1IxDDAKBgNVBAoMA1VPTTEYMBYGA1UEAwwPR1VORVRfUkFESVVTX0NBMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA3ewdfrXWtbJzA/4H7gWk6PsrYGb2f4AeGjbSD2ccYSZw+hYgrjCT58EBEbUTaOktyzesJFaE0/ABV8wskTW/oW5SSxqvEDO2QxDKiAaSiSdNzsP1SigOqUVxVdZynlghbx+PTIfmQDPAlqo0sCQMdvk6pfwtB+aP1Y9ygYOK13vHaR0KNGoaQasBTtcga+Gc6ZQ8NFxj5T/Fo+r5vv9VQ6e+7H5iutrHXhee7juRfy7Z/qCjnM5NcGyMko74xpB/xYynem+AsnTJ0rlZgBzc2I+4dDLY8Ocj1AfDe2M7jkpUhn4bDVFcksgWXijjezytjTmJBZ1YAd8vEyhJweXEAwcljc/HAPdhyfswJ8tI3NBhvklWUYkqA5CHX7vB+hU6pNh5UU8eixJ1ZV3JttVIPh8TCFvosR0lVXzL5fJ5YAOtAgP1zCj/V5ZNy26FjoYqj3SRU6fYAuFCF6WT2Kp6sw7PmUb+VHYEgko7PlOD4PcB9fR52RkaZJ+vyEsVwMdRbOtygHa7spPHnEw1ycQztmtj1yQDrD/Mj8dOMwkPVd9eBxFWcNuI4KFxoBvgvnkuqERZ7qYvVV2D5IKHZ53/50I2dsQeCMOnKvDkfAFVZWuEVT6orHaCQ3i57BLRADQ7ZRcaa08mEJR/XFohaqjEMZ6EJ+lJSAFIKIyP3XyUYJECAwEAAaMmMCQwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMCAuQwDQYJKoZIhvcNAQELBQADggIBAI7nDpyyNCYqrB+DCUYRENvLLCbxxCHkSUGX24KV+2NdRT+POfTrefB5ee2v/BOLz+Ft7XzPJSp+Pyx6445OA1OKcM2OX66C1bdhPzBS0Z06U+CaWonlkbDZ8zPGN5Rw/C01Qouf9DHuGpvIoawubPQ0jTizdZ9m39b63hfcM2ZxJmgFhTOvP/G4lTAXYOjYGEhoQD/3a8eFyvdo8VcygeSUMN0dudKDBuNnPLVaQ6kbaXQgIJAxvng8Eb7Ieqbcrmn6zM/3ZERNMcVDxhODWzoJt3cv761VhA7tJL5Xv4POjkWkVy1yVSVE9T0eA78MbREE2bvjRi4bKhOKak3RUvuDJTW0oxTjrap/jiNMcWpRP1vzUNqaj1m5OJ6IjYhJT0bX+DpwCK5/JA4SRJj7Ssg3jv/B2H2BUpwvtajhp5SrVsNxNUutfEQux7WmIizRp7qvHQpyV6PIAua3i2XodAIzwqXd4msyZ8WKnYOg5tphtSlWWCFvkX38em+VBLj1cHr2v2z58stvwwb+VPo9VSAad1Odn3k7YLUQ0cJc0+IigvDG6LS+1mlxyG0pIYZUnz+YBbLWIov/LqZBE+AvIVdlQr71lZkp6UlGS+7Yl1tM1CFsIKB89ShdyJtulORPSqRoHCCmu4P4glR3qSv9gbvLfmrhxJ2Y7Kiu+zxaeVWn</CA>
+          <ServerID>eduroam.uom.gr</ServerID>
+          <ServerID>ridp.uom.gr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@uom.gr</OuterIdentity>
+          <InnerIdentitySuffix>uom.gr</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>University of Macedonia</DisplayName>
+      <ProviderLocation>
+        <Longitude>22.9597184</Longitude>
+        <Latitude>40.6265856</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>help@uom.gr</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

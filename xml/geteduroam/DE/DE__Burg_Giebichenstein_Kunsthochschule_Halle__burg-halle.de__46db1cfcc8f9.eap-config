@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="burg-halle.de" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>sni.burg-halle.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>burg-halle.de</InnerIdentitySuffix>
+          <InnerIdentityHint>true</InnerIdentityHint>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+      <IEEE8023/>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Burg Giebichenstein Kunsthochschule Halle</DisplayName>
+      <Description>EAP-PEAP - MSCHAPv2</Description>
+      <ProviderLocation>
+        <Longitude>11.9573148</Longitude>
+        <Latitude>51.4906101</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>rechenzentrum@burg-halle.de</EmailAddress>
+        <WebAddress>http://burg-halle.de</WebAddress>
+        <Phone>+49-345-7751-960</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

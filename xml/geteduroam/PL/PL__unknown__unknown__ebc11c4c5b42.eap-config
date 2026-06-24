@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="stud.ur.edu.pl" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE/TCCAuWgAwIBAgIQHnWvDM+FGadPazFvadHFBjANBgkqhkiG9w0BAQUFADAQMQ4wDAYDVQQDEwVDQS1VUjAgFw0xNDAyMTMwNTA2MjNaGA8yMTEzMDIxMzA1MTYyMFowEDEOMAwGA1UEAxMFQ0EtVVIwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDifxhUR9E1rAhbVNzxHAZa7XsspnDqRzGShyHV1I+mfyWnRT4SUyrOp13vP/SekYPyvyqzC6z5iDsFoSzqw50CPcClb+WIhZGKAwJyoHXKmpnqZW8IW5w8ko+fl2zSHGtHzoad+ANPvcrcus4hm9CXAKiZBMd52RenNPaXe/GfgNkG9cpRKSSDX8P8nKTcJUQe4goa8VRUdIP22mJCakVOcqzWlGcdg1JLZpyfAqNFAQFtpaWjA5w7p7EzekDRYHnJnl8zvUqvY9IkdemEPRI9TPi3R+XuVdKa2KvxJgWrzLhkRHsFl5f9OLyKBhv6zg2+GG2vOqV+H1lcK7pxoPvGOn+8T40rcS8oNkHXhgFGLzLQMtcQ/SwIB8TPWCSnGewwGV4aflUSxxrDUfyMAQ9bJRoZRM7at9xNdq6jvNjQgKw6bepv3brCuaP9h2LboprcWZmGIxyY3S1Tt571DI+KpjiigylSNgDGo0/uOcdPorG4VELCZ5XpBOdOAWQ33UmPWyI3Fw+y3VGIDpA+81CMksvjzw/lOeqY5lfRdBAV8V8hWvQa+uIkqJ2UFdCp0wYVfoHMA9etq546GZupVpQ+oPHhYFeZ1TLzP2MDIPXmlQkYa4tpUWOdq6i9bx6AQBndFhbiAU9rFCZfZm2yl1YSQqwulQouEWR08zNp70RBgwIDAQABo1EwTzALBgNVHQ8EBAMCAYYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUQaJ5rOM12vNKOSMONWOb5XIu57UwEAYJKwYBBAGCNxUBBAMCAQAwDQYJKoZIhvcNAQEFBQADggIBAFHJpVhs1qGPa8Lkqx8Fy4JB1O5OrHMu/SqkWKS4C1POZBU2Yot3GLXHkdQzC6zsGzBeQAbfHV8fugWAhShs/EhuZqH7XFRSmBaCscrSknE+OaYRTilwIVjjs7N2YEOaJ1Pkulun2Xz3WzzUl992IkkVqdwPqaH93kz1CNq+Xb5RtBU3Wll0qxubq2v0JTv8R4ZmEtRtrrS2t/vgAeRIYO3M1tNEmxb6nJODXSAVcdcgNSAFrGZFch4qxeaLxWyopbOg1BP+/epcAxAQ+Ju3SC6RMWJK42zXrGWhqreK3kiQJ6RZb5WWlHYIAL7O2i02jR57jq+ZQNxgHHTmjXgFzgMPgz+VIYOv/BPDUmdapHc3JIn9OJ9eCx3OPpZ8NYcWgwmpRyfWBIukcDBG3WHYCp+e3DwrSc9W7rMWJteiAN3PSouxXcpGHJBoVjguVTefzcNJeiLW82rV2b45FYWsEyHuGou7WgAjFariXO1hACu02zg/exdnr4zRPEp/MxgLJwVBa6sz5eUYO8Sa+KUlUcg/2jHD91sYaCHjN4oWxsEI7+faPK5b0Hwb1aMwLFuNIQfTCTbqGuF158deyeWJnAWi4W/OdsmDT63HUd2DbxWgHxvaTB4/ppYlJJNYqZQYe7ghFYELpHVDz6E580qvvzxKFeCcM1tA4uyUz+ZO5fYa</CA>
+          <ServerID>NPS01.ur.local</ServerID>
+          <ServerID>NPS02.ur.local</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <InnerIdentitySuffix>stud.ur.edu.pl</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Uniwersytet Rzeszowski - Konfigurator EDUROAM dla studentów UR</DisplayName>
+      <Description>Konfigurator EDUROAM dla studentów UR</Description>
+      <ProviderLocation>
+        <Longitude>22.01551870000003</Longitude>
+        <Latitude>50.0292715</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>eduroam@ur.edu.pl</EmailAddress>
+        <WebAddress>https://eduroam.ur.edu.pl</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

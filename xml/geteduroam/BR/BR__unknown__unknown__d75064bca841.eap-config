@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="unoesc.edu.br" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDqDCCAxGgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMjAwMzE5MTMyOTE2WhcNMzAwMzE3MTMyOTE2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo4H9MIH6MAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFDuXcVFFi3iOBq6PPJkvLtlvNsvdMIHKBgNVHSMEgcIwgb+AFDuXcVFFi3iOBq6PPJkvLtlvNsvdoYGbpIGYMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnKCCQDCcRaDGAgAVzANBgkqhkiG9w0BAQUFAAOBgQDDdZa3zWDWN2E3NH1xNtVGSePyQN5rNPoyb62QvyoeUJuP+Ez04MY7J+8W3JmXhkEZ4EW9hSgZyE/9ntE8gIQMcvU8jPaLScm7pWeptA4jY6vyQWFLTJ7H24hEDl7Aftm7bJrISMllSfw14FVO25ijE4IHbVh8aZu8QPlD/Khfjg==</CA>
+          <ServerID>eduroam2.unoesc.edu.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDqDCCAxGgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMjAwMzE5MTMyOTE2WhcNMzAwMzE3MTMyOTE2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo4H9MIH6MAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFDuXcVFFi3iOBq6PPJkvLtlvNsvdMIHKBgNVHSMEgcIwgb+AFDuXcVFFi3iOBq6PPJkvLtlvNsvdoYGbpIGYMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnKCCQDCcRaDGAgAVzANBgkqhkiG9w0BAQUFAAOBgQDDdZa3zWDWN2E3NH1xNtVGSePyQN5rNPoyb62QvyoeUJuP+Ez04MY7J+8W3JmXhkEZ4EW9hSgZyE/9ntE8gIQMcvU8jPaLScm7pWeptA4jY6vyQWFLTJ7H24hEDl7Aftm7bJrISMllSfw14FVO25ijE4IHbVh8aZu8QPlD/Khfjg==</CA>
+          <ServerID>eduroam2.unoesc.edu.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDqDCCAxGgAwIBAgIJAMJxFoMYCABXMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnIwHhcNMjAwMzE5MTMyOTE2WhcNMzAwMzE3MTMyOTE2WjCBlTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRcwFQYDVQQHDA5SaW8gZGUgSmFuZWlybzErMCkGA1UECgwiUmVkZSBOYWNpb25hbCBkZSBFbnNpbm8gZSBQZXNxdWlzYTEaMBgGA1UECwwRRmVkZXJhY2FvIEVkdXJvYW0xFzAVBgNVBAMMDmVkdXJvYW0ucm5wLmJyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFH/If0agmiuRA+UY+rRAJO2Pob33Td3ShUroEI09bQ1uLdvgDSm1P74Fh3HKu62nmkYX5JhRnIkuFpqnEdTaDDuA3QfaVdyDpF+LJIBdqS037lYuD8g11qu62ehX+wafe8LmrjyA+9Ipoi8qVUKdZHhKNqVMWJJZp5sI2eLszlQIDAQABo4H9MIH6MAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFDuXcVFFi3iOBq6PPJkvLtlvNsvdMIHKBgNVHSMEgcIwgb+AFDuXcVFFi3iOBq6PPJkvLtlvNsvdoYGbpIGYMIGVMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFzAVBgNVBAcMDlJpbyBkZSBKYW5laXJvMSswKQYDVQQKDCJSZWRlIE5hY2lvbmFsIGRlIEVuc2lubyBlIFBlc3F1aXNhMRowGAYDVQQLDBFGZWRlcmFjYW8gRWR1cm9hbTEXMBUGA1UEAwwOZWR1cm9hbS5ybnAuYnKCCQDCcRaDGAgAVzANBgkqhkiG9w0BAQUFAAOBgQDDdZa3zWDWN2E3NH1xNtVGSePyQN5rNPoyb62QvyoeUJuP+Ez04MY7J+8W3JmXhkEZ4EW9hSgZyE/9ntE8gIQMcvU8jPaLScm7pWeptA4jY6vyQWFLTJ7H24hEDl7Aftm7bJrISMllSfw14FVO25ijE4IHbVh8aZu8QPlD/Khfjg==</CA>
+          <ServerID>eduroam2.unoesc.edu.br</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential/>
+        <InnerAuthenticationMethod>
+          <NonEAPAuthMethod>
+            <Type>1</Type>
+          </NonEAPAuthMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Unoesc – Universidade do Oeste de Santa Catarina</DisplayName>
+      <Description>instalador eduroam</Description>
+      <ProviderLocation>
+        <Longitude>-51.51805609999997</Longitude>
+        <Latitude>-27.16615</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA9pJREFUeNrsWD+I01AY7x2dXMyggyBcDgcdhMs5C6aOXdqC+6V78JrVJdfFte0REARJb3MQW5fgZFMQxEHuDhQXwYq6iEME3f1e8nvtd7n2mtrQnJAPXl/z3vde3u/7/1Io5JRTTiun+/6DvVW/cy1lACr+HlIr7esPj/47INCCTa1JbYuaCjAB41Go61HTMdSmeSuN96+nBMIFCEEVakNqGjU3xuoyEIIatLZxLoAAhMGGBABpUlXMS6pO2aIS/pqeQk3PBAgdUo+BkCTGu/hvMDDTfGaEvpWZj9ABD6GBOAm/KMHpJQlgL+AjnG97/9ltOwTvlDf/9SzFJUBoM0AIUpjjS9+RmtuU/799v9x//uZ6D/s0lxFqcYm11QTzQgN9xhsCoEhVJ3/QoB0Vmmln5exbCXiE3XdiviF9RgOIQqgNpxxkBURJyCOkbp0Cc+/1Herrocac8lLaSC2PJACjDd/eqLNINgHjlGtZ55Ek5cfRp89XahSVKsdfLx1SP4w5tZFWXbYMkOM58206eMd7d41nc5fGNqivwcEF2QSmmiWQ/ozx4M/vCxYdWEFJosTyxpDm1Pcf1RrTqos6bPVAUAx24yB+/FRqT17e2pmS8dtwbpFXWq8+XO0RIAt7KMtm9mWd3WImEpCUraf+zV4sUXaR5VWWN2QQGBCYYwA02DVgtUCglbrUBEm5xUzJx5ygwRkJdET7dJm2sruP3H30WBWmAk34SIKVGQUl9xeLwm+XF6EEys/uYmV6LUjcApjdOQnTB4jUbpDFFEDoOPR2WGaYnpD0BkKuGivXBYAD4vML545MTy3klFNCZze9AW5sa3iWX0hq6JUwNzjlERxdo/8l8FbBo7EKoDl2bNMTkWznxPvE2tPjRzRuwQfjweNUoCgmLNE32IcFecBdFqV0Fr0aCK0+9qmG86a3jXBss8gVBYEIhDtFoBpykCxSAxa6E0UtLVbdqrEPBfK2ZwGED8k1sK40vihNwNlsn81Qm5MD7zFJt+eOL5jZgyka4oAUSFLSzozbXjO2Nvq+Jcw3AsmvBC2M64teGdZn5IW49KWGLuK5w8xL8qozXsr309mYPjZTp9xHPSZ5BvC1rVmmtHitFdmpPIh8cfvEc6HwhQGw2VqFPR+MfUMEkaiVmMP7+BzUZMJTMDdXI8Uzbn4Gkp3GDrLL+Dqs9JYlvYF1GsbkYbrhQU0vOmBkUr9YVGtN8ceACcSFsKQg/Pkaiey7ztQcPUfq11i06YInwAeEEcyjzyLZKAzZTrnO7iQKc357HNUmTQn5Iq13sIfB+PU8a+aU0+L0V4ABAF0ScE5vP+GeAAAAAElFTkSuQmCC</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>suporte.ti@unoesc.edu.br</EmailAddress>
+        <WebAddress>http://www.unoesc.edu.br/portal/configuracao-wifi</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

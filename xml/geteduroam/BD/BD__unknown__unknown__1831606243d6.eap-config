@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="duet.ac.bd" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE2TCCA8GgAwIBAgIUXKY+jigbmQ+/MMKqJnNCd5i6MxYwDQYJKoZIhvcNAQELBQAwgYgxCzAJBgNVBAYTAkJEMRAwDgYDVQQIDAdHYXppcHVyMRAwDgYDVQQHDAdHYXppcHVyMQ0wCwYDVQQKDAREVUVUMSEwHwYJKoZIhvcNAQkBFhJpY3RjZWxsQGR1ZXQuYWMuYmQxIzAhBgNVBAMMGkRVRVQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTI0MDgxNTA4NTI0MFoXDTMwMDUxMTA4NTI0MFowgYgxCzAJBgNVBAYTAkJEMRAwDgYDVQQIDAdHYXppcHVyMRAwDgYDVQQHDAdHYXppcHVyMQ0wCwYDVQQKDAREVUVUMSEwHwYJKoZIhvcNAQkBFhJpY3RjZWxsQGR1ZXQuYWMuYmQxIzAhBgNVBAMMGkRVRVQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzuIOfIxxz1zxW9EZa/eFbQGA7rJ7wQVQzuvw6T62MR2ZwamzyQ1fhO/g3KOTW8lA3ljOoOuo9JcqHWNRCcPQpVoaSlcPO1UjL8zqgOcQK3AfaKu3HgkuqIvKcV99tMGVYCn33qOCZca+GUmL4zXL4dDDwAxte0+g+jQigVesrSsyvRFWzFSjQAGCuDBUc8BGkrhDdss+wJbQE3G/u6aMyRzxKTattxBKkJHEOnddzjAkr61cogo6d3h0oHpGo62aWQvG/t2CejW+6OQFwcmBPFEZdJ046/lYeaiuMLQoyHUJ8mcKhh67MiwWmqf2r6TqDBswkFUXFh2A7Ix0668bnQIDAQABo4IBNzCCATMwHQYDVR0OBBYEFKNqLFaGHjOBNaRXcSpgZLH2B25OMIHIBgNVHSMEgcAwgb2AFKNqLFaGHjOBNaRXcSpgZLH2B25OoYGOpIGLMIGIMQswCQYDVQQGEwJCRDEQMA4GA1UECAwHR2F6aXB1cjEQMA4GA1UEBwwHR2F6aXB1cjENMAsGA1UECgwERFVFVDEhMB8GCSqGSIb3DQEJARYSaWN0Y2VsbEBkdWV0LmFjLmJkMSMwIQYDVQQDDBpEVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUXKY+jigbmQ+/MMKqJnNCd5i6MxYwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAM8rcx1KeUPzBGTLaKyk87+O5oGjnI5Q1WjaBTpA1ZAXYfCEJrVpuCRcdeA9gL/ZxZXb97HS4p8qc5Mjizm+/MyabKSM0v41JvTUv0ZgKFS9vAH1A5SQuyIIKkyyY4Zun65c5WUL67qkJCZ4DgO8IIq6RHFk9nZ0FYIkomZetAgtv4lHCnjAtL4uv+QzLnu6N21fQNNtuPTg1xE9Vk7uQTGPOsuFAzw67Eo571NtQSFFTukETjZY0VdoGISn3yOaM4SoN2COHHYuDmSIua2loiiz8KntGfSfe0f3RYmuT+odHY2lwsr+84dfjq96GfgAJB3o2oIO1Cp6gYTjB0UJBu</CA>
+          <ServerID>irs.duet.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@duet.ac.bd</OuterIdentity>
+          <InnerIdentitySuffix>duet.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIE2TCCA8GgAwIBAgIUXKY+jigbmQ+/MMKqJnNCd5i6MxYwDQYJKoZIhvcNAQELBQAwgYgxCzAJBgNVBAYTAkJEMRAwDgYDVQQIDAdHYXppcHVyMRAwDgYDVQQHDAdHYXppcHVyMQ0wCwYDVQQKDAREVUVUMSEwHwYJKoZIhvcNAQkBFhJpY3RjZWxsQGR1ZXQuYWMuYmQxIzAhBgNVBAMMGkRVRVQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTI0MDgxNTA4NTI0MFoXDTMwMDUxMTA4NTI0MFowgYgxCzAJBgNVBAYTAkJEMRAwDgYDVQQIDAdHYXppcHVyMRAwDgYDVQQHDAdHYXppcHVyMQ0wCwYDVQQKDAREVUVUMSEwHwYJKoZIhvcNAQkBFhJpY3RjZWxsQGR1ZXQuYWMuYmQxIzAhBgNVBAMMGkRVRVQgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzuIOfIxxz1zxW9EZa/eFbQGA7rJ7wQVQzuvw6T62MR2ZwamzyQ1fhO/g3KOTW8lA3ljOoOuo9JcqHWNRCcPQpVoaSlcPO1UjL8zqgOcQK3AfaKu3HgkuqIvKcV99tMGVYCn33qOCZca+GUmL4zXL4dDDwAxte0+g+jQigVesrSsyvRFWzFSjQAGCuDBUc8BGkrhDdss+wJbQE3G/u6aMyRzxKTattxBKkJHEOnddzjAkr61cogo6d3h0oHpGo62aWQvG/t2CejW+6OQFwcmBPFEZdJ046/lYeaiuMLQoyHUJ8mcKhh67MiwWmqf2r6TqDBswkFUXFh2A7Ix0668bnQIDAQABo4IBNzCCATMwHQYDVR0OBBYEFKNqLFaGHjOBNaRXcSpgZLH2B25OMIHIBgNVHSMEgcAwgb2AFKNqLFaGHjOBNaRXcSpgZLH2B25OoYGOpIGLMIGIMQswCQYDVQQGEwJCRDEQMA4GA1UECAwHR2F6aXB1cjEQMA4GA1UEBwwHR2F6aXB1cjENMAsGA1UECgwERFVFVDEhMB8GCSqGSIb3DQEJARYSaWN0Y2VsbEBkdWV0LmFjLmJkMSMwIQYDVQQDDBpEVUVUIENlcnRpZmljYXRlIEF1dGhvcml0eYIUXKY+jigbmQ+/MMKqJnNCd5i6MxYwDwYDVR0TAQH/BAUwAwEB/zA2BgNVHR8ELzAtMCugKaAnhiVodHRwOi8vd3d3LmV4YW1wbGUub3JnL2V4YW1wbGVfY2EuY3JsMA0GCSqGSIb3DQEBCwUAA4IBAQAM8rcx1KeUPzBGTLaKyk87+O5oGjnI5Q1WjaBTpA1ZAXYfCEJrVpuCRcdeA9gL/ZxZXb97HS4p8qc5Mjizm+/MyabKSM0v41JvTUv0ZgKFS9vAH1A5SQuyIIKkyyY4Zun65c5WUL67qkJCZ4DgO8IIq6RHFk9nZ0FYIkomZetAgtv4lHCnjAtL4uv+QzLnu6N21fQNNtuPTg1xE9Vk7uQTGPOsuFAzw67Eo571NtQSFFTukETjZY0VdoGISn3yOaM4SoN2COHHYuDmSIua2loiiz8KntGfSfe0f3RYmuT+odHY2lwsr+84dfjq96GfgAJB3o2oIO1Cp6gYTjB0UJBu</CA>
+          <ServerID>irs.duet.ac.bd</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@duet.ac.bd</OuterIdentity>
+          <InnerIdentitySuffix>duet.ac.bd</InnerIdentitySuffix>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Dhaka University of Engineering &amp; Technology (DUET)</DisplayName>
+      <ProviderLocation>
+        <Longitude>90.4191314</Longitude>
+        <Latitude>24.0182486</Latitude>
+      </ProviderLocation>
+      <Helpdesk>
+        <EmailAddress>noc@bdren.net.bd</EmailAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="esiee.fr" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">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</CA>
+          <ServerID>radius.esiee.fr</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>anonymous@esiee.fr</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>ESIEE PARIS</DisplayName>
+      <Description>Eduroam users in ESIEE PARIS</Description>
+      <ProviderLocation>
+        <Longitude>2.5838753809509853</Longitude>
+        <Latitude>48.840289570225174</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/png" encoding="base64">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</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>eduroam@esiee.fr</EmailAddress>
+        <WebAddress>https://www.esiee.fr/eduroam/</WebAddress>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>

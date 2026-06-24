@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EAPIdentityProviderList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="eap-metadata.xsd">
+  <EAPIdentityProvider version="1" lang="en" ID="hszg.de" namespace="urn:RFC4282:realm">
+    <AuthenticationMethods>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>25</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDwzCCAqugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwHhcNMDgxMDAxMTA0MDE0WhcNMzMxMDAxMjM1OTU5WjCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqX9obX+hzkeXaXPSi5kfl82hVYAUdAqSzm1nzHoqvNK38DcLZSBnuaY/JIPwhqgcZ7bBcrGXHX+0CfHt8LRvWurmAwhiCFoT6ZrAIxlQjgeTNuUk/9k9uN0goOA/FvudocP05l03Sx5iRUKrERLMjfTlH6VJi1hKTXrcxlkIF+3anHqP1wvzpesVsqXFP6st4vGCvx9702cu+fjOlbpSD8DT6IavqjnKgP6TeMFvvhk1qlVtDRKgQFRzlAVfFmPHmBiiRqiDFt1MmUUOyCxGVWOHAD3bZwI18gfNycJ5v/hqO2V81xrJvNHy+SE/iWjnX2J14np+GPgNeGYtEotXHAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBS/WSA2AHmgoCJrjNXyYdK4LMuCSjANBgkqhkiG9w0BAQsFAAOCAQEAMQOiYQsfdOhyNsZt+U2e+iKo4YFWz827n+qrkRk4r6p8FU3ztqONpfSO9kSpp+ghla0+AGIWiPACuvxhI+YzmzB6azZie60EI4RYZeLbK4rnJVM3YlNfvNoBYimipidx5joifsFvHZVwIEoHNN/q/xWA5brXethbdXwFeilHfkCoMRN3zUA7tFFHei4R40cR3p1m0IvVVGb6g1XqfMIpiRvpb7PO4gWEyS8+eIVibslfwXhjdFjASBgMmTnrpMwatXlajRWc2BQN9noHV8cigwUtPJslJj0Ys6lDfMjIq2SPDqO/nBudMNva0Bkuqjzx+zOAduTNrRlPBSeOE6Fuwg==</CA>
+          <ServerID>radius2.hszg.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>eduroam@hszg.de</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+      <AuthenticationMethod>
+        <EAPMethod>
+          <Type>21</Type>
+        </EAPMethod>
+        <ServerSideCredential>
+          <CA format="X.509" encoding="base64">MIIDwzCCAqugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwHhcNMDgxMDAxMTA0MDE0WhcNMzMxMDAxMjM1OTU5WjCBgjELMAkGA1UEBhMCREUxKzApBgNVBAoMIlQtU3lzdGVtcyBFbnRlcnByaXNlIFNlcnZpY2VzIEdtYkgxHzAdBgNVBAsMFlQtU3lzdGVtcyBUcnVzdCBDZW50ZXIxJTAjBgNVBAMMHFQtVGVsZVNlYyBHbG9iYWxSb290IENsYXNzIDIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCqX9obX+hzkeXaXPSi5kfl82hVYAUdAqSzm1nzHoqvNK38DcLZSBnuaY/JIPwhqgcZ7bBcrGXHX+0CfHt8LRvWurmAwhiCFoT6ZrAIxlQjgeTNuUk/9k9uN0goOA/FvudocP05l03Sx5iRUKrERLMjfTlH6VJi1hKTXrcxlkIF+3anHqP1wvzpesVsqXFP6st4vGCvx9702cu+fjOlbpSD8DT6IavqjnKgP6TeMFvvhk1qlVtDRKgQFRzlAVfFmPHmBiiRqiDFt1MmUUOyCxGVWOHAD3bZwI18gfNycJ5v/hqO2V81xrJvNHy+SE/iWjnX2J14np+GPgNeGYtEotXHAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMB0GA1UdDgQWBBS/WSA2AHmgoCJrjNXyYdK4LMuCSjANBgkqhkiG9w0BAQsFAAOCAQEAMQOiYQsfdOhyNsZt+U2e+iKo4YFWz827n+qrkRk4r6p8FU3ztqONpfSO9kSpp+ghla0+AGIWiPACuvxhI+YzmzB6azZie60EI4RYZeLbK4rnJVM3YlNfvNoBYimipidx5joifsFvHZVwIEoHNN/q/xWA5brXethbdXwFeilHfkCoMRN3zUA7tFFHei4R40cR3p1m0IvVVGb6g1XqfMIpiRvpb7PO4gWEyS8+eIVibslfwXhjdFjASBgMmTnrpMwatXlajRWc2BQN9noHV8cigwUtPJslJj0Ys6lDfMjIq2SPDqO/nBudMNva0Bkuqjzx+zOAduTNrRlPBSeOE6Fuwg==</CA>
+          <ServerID>radius2.hszg.de</ServerID>
+        </ServerSideCredential>
+        <ClientSideCredential>
+          <OuterIdentity>eduroam@hszg.de</OuterIdentity>
+        </ClientSideCredential>
+        <InnerAuthenticationMethod>
+          <EAPMethod>
+            <Type>26</Type>
+          </EAPMethod>
+        </InnerAuthenticationMethod>
+      </AuthenticationMethod>
+    </AuthenticationMethods>
+    <CredentialApplicability>
+      <IEEE80211>
+        <SSID>eduroam</SSID>
+        <MinRSNProto>CCMP</MinRSNProto>
+      </IEEE80211>
+      <IEEE80211>
+        <ConsortiumOID>001bc50460</ConsortiumOID>
+      </IEEE80211>
+    </CredentialApplicability>
+    <ProviderInfo>
+      <DisplayName>Hochschule Zittau/Goerlitz</DisplayName>
+      <ProviderLocation>
+        <Longitude>14.80449913704831</Longitude>
+        <Latitude>50.893390673334835</Latitude>
+      </ProviderLocation>
+      <ProviderLocation>
+        <Longitude>14.997629999999958</Longitude>
+        <Latitude>51.148978857052036</Latitude>
+      </ProviderLocation>
+      <ProviderLogo mime="image/gif" encoding="base64">R0lGODlhCgFMAMQAAKSmp8LDxKjMTo6PkPf4+Ojp6dHS05WXmJ2en/Dw8Lu8vbS1teLuxMrLy9na2qytrprEMdPlpq/QXZK/Iuny09vqtfD24aHIP7fVbL7Ze8zhl8XdieHh4Yu7E4aIif///yH5BAAAAAAALAAAAAAKAUwAAAX/YCeOZGmeaKqu6ue+cAx7NCfDHO3dfO/LudpvSPTpbMVkLKBTvjqCjXRKrVqv2Kx2axV0nK6jL7gDm11k5Hn9ErOHTJq5s3nb75sv2M0j35Npf2d8gktNYHSFikl5ZoRAh4t9j5JGQpUucWVOiZieMI17l5NynziUpjOjlZpzdZ4WFp+hTqgvfqlotrm7f62Ir4sMEiQSDJW0Sr24uYG5N713v5zBggTEJxIEi8lJy5E3HAYBDRzbRAUOAQEOBaeXCeoN7j4EHOvtP+n49G2XBPL6SQMXo8A4dudcdCrkJYUAbnpqrYJUKgaBAAN06FiQoMfFAxppDHCgqwaBBSEB/wh8QUBBSA8H1LAMADLkSH8ezKHUiGDlB2YxdASAMQ0HgpcLzi38k2eFBkXdinyr+KJAzZceBsisevUlyZ86DGR8OcDnUawrrWKl8fWDDgdnba4EqsrD0BdFM631gGDb0jsTWEyAGlEZjQXrEisOsHOTiwRjPSxwwMFB47IFIx9gd+/BgFs6Mg5ArODqAUM0AnCovOA0jAKaOQd44CFh6KykTcegi/OuXqofDOh44C4BRhoAPvx9w4CFiGOCohLZuzcGgLAxhNNw7YLA1QYyEpLh27F73LYfavruHuN7+LrkWV6nYeCd47rri0KmAd4+h+VsaOBcB09FV5g31GFl3/96L7hEH1469NcDGQMk9NhGdW0VQwMRDhFaeS8kgCFowPVGFDgOJifDTgsAuEZTLFRjh3QeHrbYYo3BsFOFNxAw3As1qTiGDgrccJaQbtHwgA81cWeJB0XKMB+SvIWR2olUjYXeCw6I5OIZEQwYQSE0/jCVYzUt0MN8n31QAHY/OBNDijrqAICGH4jI33QT/eZYlUnaheUmb5ZYkgdfmmHBgLIY6Eif9uHXwy9kgDghKnEguZ8OCNTnH5853VAUoEINSmKCNCRqRkMqPETmgVJBemqGkx6SFymhypBpDAnMp8MB/QAqA6bgkHolhBVpgqqqYDS3AgWEPZorrnV5Kqr/rQThiueuMhjga1b0kGFhD8RSZaygyG6iyY03MgtGmCmMGa0o04YDTqk85AiWrJ/qilwPCdCm5KF4DgvpqDqMayW6fs76g7tgVACBCRBUIEmZTxZ8KAxnIdBDkBfSEOWQB//rg8Bl6CkZqNsWiwq+DbtQqAdbygCxGRFgIIAAGMh7Mawsk+yYg/W+oJ0HEtbEo9Ate4CkvRWdNYClPJTr2MwSGg3zB0XVtKQPNz8DBsbk8ruvYyr3ZdFYS3/AIQ1qX1qy0z90WdHRcZdddMwvjHWAhQRElh84mlh7Q9hiK0F21WbTpUlPt1xl+AdxHWBAQpad2jSSAFweYscch+Y5/xpq4tT0fY1BHlxkDHMNjnfDCZSAAeAhnngRi0PTeLaN8QVAV6W/xnpWGoVbrpBpA/CtTATEJZJGaljN6/Ch7TQ4cLClVLlyMt6OB9A17h2pv1gNMLl8e3kqJ5ZCHm3T+QSg/JKE0sfgAPXAxnH9fXl++xIBHYDAzgZIwAIa8IAITKACF3jAiZkhMVTjVWJ4kIAGACAjB3jA6HpQAAVcECYAUEBbjLOOCP5kHYYrQAB+B8IGKKwqHsRgCNEDwXBMUAYJUMBRBtA5NKAQBzeUQQcBcBTlKcBzA0qiEpc4IO858YlQHAITp0jFKUbxiliEYhW3yMUWZPGLYDRFF8dIRv/whfGMaDxDGddYxTS68Y1zYKMclQjHOtoRbHPMIwvuyMc+cq8HFGBABTYggQvoMQUXkMAGKsAAaPEgd36MpBa75wMGZMCQerxABqCDOzNK8pOTVFQGJlbGCWSgUU6AJChXKbPVvNAOtoNBBEi5RQj4zAyqhIE9VsPLXvaSJT6BYwNUAzBfYmI+MtEYNWa0RUqm0pNyQxUaMjKyOhZKQwloDVbuZJGjROl+WkkCMl+wQxMu0w4UCMwSJ+DIN+TyVAniWx1R4qQPtCRBW8GFwBjkg3GeLWtqdCYY0qlEdjIFmjzYpS9Xc79jvc1jIbJgMB2ggGomLiPrad6vVMNLA7T/BocZUdHbzremf4ylHwBZAEnBJtCIKdFiB1WEgyDqAtpZyJ/veNoztAMijWZlpRQ0R1WCWdJpGSeZx0pCLHuASRZc4FWFIANRX4BTEuk0F9f5mgschBmxVZUi/HwYBhhA1rKa9axoTSs2WGCMtLr1rWXFAEKTELg9sWQ14eLAWcqxmjxx4KG8tJQ6ElOzBKwmggVwJcDYEqJo8KAAw0ShwgyLhHvcBaeJRUJi37aAwPp1ob08pGhPIAiBPS0IKqqOsjRylwbgTyD6kxK/mNCmrZpMCb0iC0Dj8AF94XQ+LvBfqVb7Eihw4bhTYNUKooDc43rhD3ab2m5Mptq13GUn/wBYgGdEkpDYWodfIKnmWYD62Mgo7yrBc51dNBLcUQD3A8K9EnE1MoClPnJALR3bXIdQV6RRhHN9Qi0QApAQn/rGuzD4KokspQNzJjRICXkbzZCVkc4i4bfmSqpHtGTfG8BoBfl95h1MCzUA703AQ9CTkBBMVVmhhKYLC8dCX/C2v6GGO5oAKIb/pOEenaVIHZbBh1UQYsXt1wfake5/Exzg25opWT2GL6R85AHDqUx3ISHng9ZGA3rEoZ5SntZ7SxJWGAgMokGOwZBTUGRGHJmCWiKFiTWE4vB49IORYHF7xSectsXYYFn+swwE1p84WDTMahjzvsrsgrctLc2gwP8vVNkwH60uucUndnK6XoIsfiqYcisLSpf7WYogwBhLd9EzojH9DkbPTA2QfsGaUdDmTrLB0a/c15wvzWTcGGA1Z+m0bPd2TRnsldRlqDNqUh3lHbf6wRqOtQtmfYJaE+GdMNhUzXLaazprWjsIsNSYVa1gl4D5Aw46N6vdJJJ8HYvc7s1w63pt6T8ayDnWHgK2MZ3eEneb13veUrB/0+9VxyAjAA2Zf3kwZh0EsyZIgLeY5R3WL49rtBgfwRksHicnK7hQT5uPQKi8iSDUU2Vb4SkPiLbSMQus4NEV9ncnzuN5n80nxm0uF5TbKp3v/M1VcayyBUbShPXacPqyZ4f/zPMI2tRbl3HhyLBPlcKxHLjZ8a75qftLUml/gNomyPcP9i015Zn97Mpzh7IdrYAAGK4mCCihes1XmW/VyUYKwOAq9LRtljgPAW1nTFxgQDQLH4cvqB52oqlC8gesYxtlR7vyvA72EojdB/tGlRiU3V8nu8+/PuWJwHRJPQTYTSZMULcuD1+du78EABaS+OLvQzQhLOvyPag8CXB/XzNI/vdpd5MRC+KrfjdAaZ46id8I7C2V6HIByxd+D4EEpSIQwAAPiAsCZqgwDmxXSedr/vk86PytKk8GeReJO4B/dspL2lGsfEOhHBx/lr4K35Ouv/4T5378w3//AJgK/Rcj//kXgAZYCQMIYgV4gAwoCBmXcQ0YgQ4oQAxUgTtDSytAgRbIQA4kgR7IBglIZAv4gSRYBCHIZiNYgirYAydIaym4gjAIAy1YbS8YgzE4g2FXgz5QJAbgDgZQJArgDgWgPPXRKy4AUeQXJcrzAOewANM3hNNndkVCUT9RcPb0AE9odkRVfvAVQjKjPP1hAIZDflRFhMGhPGU2hExYUwCwhl0YJVCoIgpgA1HCAcHXhdPnQQaAg5ang2vCNTbABATATScEJAlQABD1NDvwAOBhh95xC/mBBJBxEiTVAAoQOD40JBICe9x0D5PINQxCiPBlHd4RTAAwWPY0NexAVZCYYP9LoiLAIoZhYBSBw4e754cMB4hcMwAWVFm+oVLrEFxBgW5DYRWWcg9EoQaIUVvWYQMA0BHIOCkPoFXJ0VmFeAAdEYwJlmjWgW4J9wGOdws6JSTRGFx/kxwJcGpXg432dlD+F1NgkBzEJHiEWI4OgIX0oIVhcEHlQRPWUo66KDM2F1zOaAMccABeaCSw0TdEtA0HiQBfo41UpQY8JCTyGFa9Ans/cWjkiJBK6HbJYYdBcX6NZjm2OAK852FAJ4zzOBsxkYndMQC1pYje8holF4kc80rc5HwAaRFO4wH5CEREEYrcmGCg2AMV9RPj2IpUFTDJMYTDmBk553NZwHMOQZWkWvBcYOAx1ohCuQKQDxA8ipgeNmCJ6cGUmSATV7VVLpRsjHaP3iiMaHmU28iKRokAeFIhmZMAf5NYdlmIrLh9LlAh6TCLNFYkB/CAGGcGCIAANvZ4oYKIlkNjbSGFs4h9eTIACFA6kmktxPSXIHUAdcho5PABcDmKc0kTJJl3NFWR9SEWCMkDNPGS6HYAXXVBdYiQKpIcFlRTBzCZbmGGkAGRIQAAOw==</ProviderLogo>
+      <Helpdesk>
+        <EmailAddress>hrz-service@hszg.de</EmailAddress>
+        <WebAddress>https://hrz.hszg.de</WebAddress>
+        <Phone>+49 3583 612 3333</Phone>
+      </Helpdesk>
+    </ProviderInfo>
+  </EAPIdentityProvider>
+</EAPIdentityProviderList>
